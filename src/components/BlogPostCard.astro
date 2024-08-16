@@ -5,10 +5,11 @@ import ButtonLink from "./ButtonLink.astro";
 import FormattedDate from '@/components/FormattedDate.astro';
 
 const { frontmatter, href } = Astro.props;
+const route = `/blog/${href}`;
 ---
 
 <li class="post-card">
-  <a href={href} role="button" data-astro-prefetch>
+  <a href={route} role="button" data-astro-prefetch>
     <article class="md:flex md:flex-row-reverse">
 
       { frontmatter.coverImage && 
@@ -23,7 +24,7 @@ const { frontmatter, href } = Astro.props;
               <>, <FormattedDate date={frontmatter.pubDate} /></> }
         </small>
         <p class="mb-2">{frontmatter.description}</p>
-        <ButtonLink href={href} text="Leer" small />
+        <ButtonLink href={route} text="Leer" small />
       </div>
       
     </article>
