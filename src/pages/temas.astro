@@ -1,0 +1,54 @@
+---
+interface Resource {
+  href: string;
+  title: string;
+}
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BlogPostLink from "@/components/BlogPostLink.astro";
+import { getCollection } from 'astro:content';
+import TagLabel from '@/components/TagLabel.astro';
+import resources from "@/content/_resources.json";
+
+const allPosts: Record<string, any>[] = await getCollection('posts');
+const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+---
+
+<BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
+
+  <ul class="link-card-grid">
+    { resources.in.length ? (
+      <li>
+        <ul class="md:mb-4">
+          <h2 class="mt-0 md:mt-2 md:pb-2">Destacados del blog</h2>
+          {resources.in.map((resource: Resource) => (
+            <BlogPostLink href={`blog/${resource.href}`} title={resource.title} />
+          ))}
+        </ul>
+      </li>
+      ) : ( "" )
+    }
+
+    { resources.out.length ? (
+      <li>
+        <ul class="md:mb-4">
+          <h2 class="mt-0 md:mt-2 md:pb-2">Enlaces externos</h2>
+          {resources.out.map((resource: Resource) => (
+            <BlogPostLink href={resource.href} title={resource.title} />
+          ))}
+        </ul>
+      </li>
+      ) : ( "" )
+    }
+  </ul>
+
+  { allTags.length ? (
+    <>
+      <h2>Temas etiquetados en el blog</h2>
+      <div class="flex flex-wrap mt-4">
+        {allTags.sort().map(tag => <TagLabel tag={tag} />)}
+      </div>
+    </>
+  ) : ( "" ) }
+
+</BaseLayout>

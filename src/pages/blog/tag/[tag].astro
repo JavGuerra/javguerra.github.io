@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogPostLink from '@/components/BlogPostLink.astro';
+import ButtonLink from '@/components/ButtonLink.astro';
+import TagLabel from '@/components/TagLabel.astro';
+
+export async function getStaticPaths() {
+  const allPosts: Record<string, any>[] = await getCollection('posts');
+
+  const uniqueTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+
+  return uniqueTags.map((tag, index, allTags) => {
+    const tags = allTags.filter(tagName => tagName !== tag);
+    const filteredPosts = allPosts.filter(post => post.data.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts, tags },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts, tags } = Astro.props;
+---
+
+<BaseLayout pageTitle={`Tema: ${tag}`}>
+  
+  <h2>{`${posts.length} entradas`}</h2>
+  <ul class="mt-8 mb-12 list-disc">
+    {posts.map(post => <BlogPostLink title={post.data.title} 
+        href=`../${post.data.route || post.slug}` />
+    )}
+  </ul>
+
+  <h2>Otros temas</h2>
+  <div class="mt-4 mb-12 flex flex-wrap">
+    {tags.sort().map(tag => <TagLabel tag={tag} />)}
+	</div>
+  
+  <ButtonLink text="←&nbsp;Volver" />
+
+</BaseLayout>

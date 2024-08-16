@@ -1,0 +1,9 @@
+---
+const { href, label } = Astro.props;
+---
+
+<li>
+  <a href={href} class="menuItem" data-astro-prefetch>
+    {label}
+  </a>
+</li>

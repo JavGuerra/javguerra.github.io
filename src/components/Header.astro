@@ -1,0 +1,21 @@
+---
+import siteConfig from '@/siteConfig.json';
+import Navigation from './Navigation.astro';
+---
+
+<nav class="flex flex-wrap justify-between">
+
+    <a id="brand" class="tag" href="/">{siteConfig.default.title}</a>
+
+    <!-- Botón para menú móvil -->
+    <button id="menu-btn">
+      <span class="sr-only">Abrir menú principal</span>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <title>Hamburguesa</title>
+        <g fill="none"><path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g>
+      </svg>
+    </button>
+
+    <Navigation />
+</nav>

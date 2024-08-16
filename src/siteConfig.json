@@ -1,0 +1,17 @@
+{
+    "default": {
+        "title": "Códice",
+        "autor": "Javier Guerra",
+        "site": "https://javguerra.github.io/",
+        "description": "Programación y Formación TIC",
+        "footer": "Desarrollado con Astro y Tailwind",
+        "license": "CC BY-SA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
+        "social": {
+            "github": "JavGuerra",
+            "linkedin": "in/javguerra",
+            "x": "javgr"
+        },
+        "pageSize": 5
+    }
+}

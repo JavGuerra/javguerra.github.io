@@ -1,0 +1,90 @@
+{
+    "in": [
+        {
+            "title": "Aprende Informática en línea",
+            "href": "recursos-aprendizaje-tic"
+        },
+        {
+            "title": "Aprende Programación en línea",
+            "href": "recursos-aprendizaje-programacion"
+        },
+        {
+            "title": "Becas para estudios TIC",
+            "href": "recursos-becas-tic"
+        },
+        {
+            "title": "Desarrollos web para el bien público",
+            "href": "desarrollos"
+        },
+        {
+            "title": "Publicaciones y artículos",
+            "href": "publicaciones"
+        },
+        {
+            "title": "Curso de Python y algoritmia",
+            "href": "curso-python"
+        },
+        {
+            "title": "Materiales sobre competencias digitales",
+            "href": "competencias-digitales"
+        },
+        {
+            "title": "Apuntes TIC",
+            "href": "apuntes"
+        },
+        {
+            "title": "Traducciones de software",
+            "href": "traducciones"
+        },
+        {
+            "title": "Cliparts",
+            "href": "cliparts"
+        },
+        {
+            "title": "Logotipos",
+            "href": "logos"
+        },
+        {
+            "title": "Series de TV",
+            "href": "series-recomendadas"
+        }
+    ], 
+    "out": [
+        {
+            "title": "Diseño web en 4 minutos",
+            "href": "https://javguerra.github.io/diseno-web-en-4-minutos/"
+        },
+        {
+            "title": "Aprende Markdown",
+            "href": "https://www.markdowntutorial.com/es/"
+        },
+        {
+            "title": "Aprende Git",
+            "href": "https://learngitbranching.js.org/?locale=es_ES"
+        },
+        {
+            "title": "Git, la guía sencilla",
+            "href": "https://rogerdudler.github.io/git-guide/index.es.html"
+        },
+        {
+            "title": "Lenguaje JavaScript",
+            "href": "https://lenguajejs.com/javascript/introduccion/que-es-javascript/"
+        },
+        {
+            "title": "El tutorial de JavaScript moderno",
+            "href": "https://es.javascript.info/"
+        },
+        {
+            "title": "Expresiones regulares",
+            "href": "https://regexr.com/"
+        },
+        {
+            "title": "Algoritmos y estructuras en Python",
+            "href": "https://runestone.academy/ns/books/published/pythoned/index.html"
+        },
+        {
+            "title": "PageSpeed Insights",
+            "href": "https://pagespeed.web.dev/"
+        }
+    ]
+}

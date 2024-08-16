@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import siteConfig from '@/siteConfig.json';
+import '@/styles/markdown.css';
+import { Image } from 'astro:assets';
+
+import TagLabel from '@/components/TagLabel.astro';
+import ButtonLink from '@/components/ButtonLink.astro';
+import FormattedDate from '@/components/FormattedDate.astro';
+
+const { frontmatter } = Astro.props;
+const { title, description, author, pubDate, coverImage, tags } = frontmatter;
+---
+
+<BaseLayout pageTitle={title} subTitle={description}>
+
+    <p class="-mt-6 mb-2 gray"><small>
+        {author ? author : siteConfig.default.autor}{
+            pubDate && <>, <FormattedDate date={pubDate} /></>}
+    </small></p>
+
+    {coverImage && <Image src={coverImage.image}
+        alt={coverImage.alt} inferSize class="my-8" loading="eager" />}
+
+    <div class="flex flex-wrap mt-4">
+        {tags && tags.map((tag: string) => ( <TagLabel tag={tag} /> ))}
+    </div>
+
+    <div class="my-8 md-content">
+        <slot />
+    </div>
+
+    <ButtonLink text="←&nbsp;Volver" />
+
+</BaseLayout>

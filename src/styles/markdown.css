@@ -1,0 +1,42 @@
+.md-content {
+
+    @apply prose dark:prose-invert prose-sm sm:prose lg:prose-lg xl:prose-xl;
+
+    h1 { @apply text-5xl font-medium mt-10 mb-4 }
+    
+    h2 { @apply text-4xl font-medium mt-8 mb-3 }
+    
+    h3 { @apply text-3xl font-normal mt-6 mb-2 }
+    
+    h4 { @apply text-2xl font-normal mt-4 mb-1 }
+
+    a { @apply no-underline hover:underline text-blue-600 dark:text-blue-400; }
+
+    li, ol { @apply leading-normal; } 
+
+    th { @apply text-gray-900 dark:text-gray-50; }
+
+    blockquote { @apply text-black dark:text-white font-serif !important; }
+    
+    code { @apply text-orange-600 dark:text-orange-400 font-normal; }
+    
+    blockquote p:first-of-type::before, blockquote p:first-of-type::after,
+    code::before, code::after { content: none; }
+    
+    strong { @apply text-violet-700 dark:text-violet-300; }
+
+    hr { @apply my-8 }
+
+    .note {
+        @apply inline-block w-full py-2 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100;
+    }
+
+    .note strong { @apply text-gray-900 dark:text-gray-50; }
+    
+    pre { @apply leading-tight; }
+
+    button {
+        @apply px-3 bg-violet-500 text-white font-bold rounded hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 transition-colors;
+    }
+
+}

@@ -1,0 +1,52 @@
+BARCO
+-----
+
+Soluci�n 1
+----------
+Comenzando en el v�rtice inferior de la vela.
+
+GIRAR -45
+PINTAR S�
+MOVER 27,5
+GIRAR 90
+PINTAR 27,5
+GIRAR 135
+MOVER 60
+GIRAR 90
+MOVER 40
+GIRAR -135
+MOVER 55
+GIRAR -90
+MOVER 55
+GIRAR -90
+MOVER 27,5
+GIRAR -90
+MOVER 27,5
+GIRAR -135
+MOVER 40
+PINTAR NO
+
+Soluci�n 2
+----------
+Comenzando en el v�rtice m�s a la derecha del dibujo.
+
+GIRAR -90
+PINTAR S�
+MOVER 40
+GIRAR 135
+MOVER 27,5
+GIRAR 90
+MOVER 27,5
+GIRAR 90
+MOVER 55
+GIRAR 90
+MOVER 55
+GIRAR 135
+MOVER 40
+GIRAR -90
+MOVER 60
+GIRAR -135
+MOVER 27,5
+GIRAR -90
+MOVER 27,5
+PINTAR NO

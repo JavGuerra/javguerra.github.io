@@ -1,16 +1,70 @@
 ---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import siteConfig from '@/siteConfig.json';
+import BlogPostCard from "@/components/BlogPostCard.astro";
+import { getSlugName } from '@/scripts/urlUtils';
+import { getCollection } from 'astro:content';
+import HeroCard from '@/components/HeroCard.astro';
+import Card from '@/components/Card.astro';
+import ButtonLink from '@/components/ButtonLink.astro';
 
+const allPosts: Record<string, any>[] = await getCollection('posts');
+const href = "/acerca-de";
+import javImg from '@/assets/javguerra.png';
+
+let post;
+
+if (allPosts.length) {
+    const sortedPosts = allPosts.sort(
+        (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+    )
+
+    const lastPost = sortedPosts[0];
+    post = { ...lastPost };
+    post.data = { ...post.data };
+    const title = "Nuevo: " + post.data.title;
+    post.data.title = title;
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={siteConfig.default.autor} subTitle={siteConfig.default.description}>
+
+    <h2>Bienvenida</h2>
+
+    <ul class="-mt-4">
+        <HeroCard href={href} img={javImg} alt="Javier Guerra"
+            styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
+            <p class="text-2xl leading-snug">👋🏻 Soy <strong>Javier Guerra</strong>,<br />
+            Técnico Superior en Desarrollo de Aplicaciones Web.
+                
+            <p>Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
+
+            <div class="mt-4 md:mt-6">
+                <ButtonLink href={href} text="Sobre mi&nbsp;→" />
+            </div>
+        </HeroCard>
+
+        <Card href="/portfolio" title="Portfolio"
+            body="Visita mi portfolio para saber algo más sobre mis conocimientos aplicados." 
+        />
+    </ul>
+
+    <ul role="list" class="link-card-grid mt-8">
+        <Card href="/blog" title="Blog"
+            body="Conoce algo más sobre los temas de estudio que me interesan." 
+        />
+        <Card href="/temas" title="Temas"
+            body="Accede a la lista de temas del blog y a los enlaces recomendados."
+        />
+    </ul>
+    
+    { post && 
+        <ul class="mb-8">
+            <BlogPostCard
+                frontmatter={post.data}
+                href=`/blog/${post.data.route || getSlugName(post.slug)}`
+            />
+        </ul>
+    }
+    
+</BaseLayout>

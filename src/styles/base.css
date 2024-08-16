@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Blogger_Sans';
+    src: url('/fonts/Blogger_Sans-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body { @apply mx-auto max-w-prose p-4 md:py-8 lg:text-lg xl:text-xl text-gray-900 dark:text-gray-50 bg-gray-50 dark:bg-gray-950;
+
+    @apply w-screen h-screen bg-cover bg-center;
+
+    background-image: url('../assets/bg.svg') !important;
+    background-attachment: fixed !important;
+}
+
+.gray { @apply text-gray-500 dark:text-gray-400; }
+
+.subtitle { @apply text-2xl md:text-3xl md:my-2 !important; }
+
+h1 { @apply text-4xl md:text-5xl font-medium mt-10 mb-2; }
+
+h2 { @apply text-3xl md:text-4xl font-medium mt-8 mb-4; }
+
+h3 { @apply text-2xl md:text-3xl font-normal mt-6 mb-3; }
+
+h4 { @apply text-xl md:text-2xl font-normal mt-4 mb-2; }
+
+h1, h2, h3, h4 {
+    font-family: 'Blogger_Sans', sans-serif;
+    @apply font-normal text-transparent bg-clip-text bg-gradient-to-br from-violet-800 dark:from-violet-400 via-blue-500 dark:via-pink-200 to-green-400 dark:to-orange-500 !important;
+}
+
+footer a:hover { @apply underline; }
+
+.postLink { 
+    @apply leading-loose ms-6 list-disc leading-snug my-3; 
+
+    a { @apply no-underline px-3 border rounded-full border-gray-50 dark:border-gray-950; }
+
+    a:hover { @apply text-violet-900 dark:text-violet-300 rounded-lg bg-gray-200 dark:bg-gray-800 border rounded-full border-gray-300 dark:border-gray-700; } 
+}
+
+article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
+
+#brand { @apply md:-mt-1 -ms-1 pt-1 px-4 md:text-2xl font-semibold whitespace-nowrap text-violet-700 dark:text-violet-300; }
+
+#menu-btn { @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600; }
+
+.menuItem { @apply block py-2 px-3 rounded md:border-0 hover:bg-gray-200 md:hover:bg-transparent  md:hover:text-violet-700 md:p-0 md:dark:hover:text-violet-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent; }
+
+.navigation { @apply w-full md:flex md:w-auto font-medium flex-col p-4 md:p-0 px-4 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-950 dark:border-gray-700; }
+
+.tag { @apply m-1 px-3 pb-1 md:text-lg bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-800 !important; }
+
+.tag a { @apply leading-none; }
+
+.post-card {
+    @apply w-full font-medium p-3 md:p-5 my-8 bg-white dark:bg-black rounded-lg hover:bg-gray-200 hover:dark:bg-gray-800 border-2 border-gray-50 dark:border-gray-950 hover:border-gray-300 dark:hover:border-gray-700;
+
+    p { @apply mb-1 md:mb-3; }
+
+    strong { @apply text-violet-700 dark:text-violet-300; }
+}
+
+.link-card-grid { @apply grid grid-cols-[repeat(auto-fit,minmax(24ch,1fr))] gap-8 p-0; }
+
+li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-400; }

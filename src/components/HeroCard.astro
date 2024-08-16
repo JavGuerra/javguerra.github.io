@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+const { href, img, alt, styles } = Astro.props;
+---
+
+<li class="post-card">
+    <a href={href} role="button" data-astro-prefetch>
+
+        <div class="md:flex">
+            <Image src={img} alt={alt} inferSize loading="eager" class={styles} />
+
+            <div class="md:ms-8">
+                <slot />
+            </div>
+        </div>
+
+    </a>
+</li>

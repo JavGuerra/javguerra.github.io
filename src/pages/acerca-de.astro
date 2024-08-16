@@ -1,0 +1,104 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Card from '@/components/Card.astro';
+import { Image } from 'astro:assets';
+import { Code } from 'astro:components';
+import '@/styles/markdown.css';
+
+import qrCodeImg from '@/assets/img/qr-code.png';
+---
+
+<BaseLayout pageTitle="Sobre mi" subTitle="¿Por qué querrías conocerme?">
+    
+<div class="md-content">
+    
+    <a href="#experiencia">Experiencia</a> | <a href="#actitudes">Actitudes</a> | <a href="#conocimientos">Conocimientos</a> | <a href="#portfolio">Portfolio</a> | <a href="#meritos">Méritos</a> | <a href="#sabermas">Saber más</a>
+
+    <h2 id="experiencia">Experiencia</h2>
+    
+    <p>👋🏻 Soy <strong>Javier Guerra</strong>, Técnico Superior en Desarrollo de Aplicaciones Web.</p>
+
+    <p><a href="/assets/doc/CV-javguerra.pdf"><button>📄&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV&nbsp;en&nbsp;PDF</button></a> &nbsp; <a href="mailto:javguerra(arroba)badared.com"><button>📧&nbsp;&nbsp;Escríbeme</button></a></p>
+
+    <p>👍🏻 Estas son algunas de las areas de mi desempeño profesional:</p>
+
+    <p class="note">Teaching · IT Manager · Sysadmin · AI prompter · Accesibilidad digital · Jr. Fullstack Web Developer: JavaScript MERN stack · Java + Spring · PHP + Laravel (TALL stack) · Python · Graphic designer · Sinclair QL</p>
+
+    <h3>Me presento</h3>
+
+    <p>Además de programar, me apasiona aprender y compartir mis conocimientos, la Informática, la 
+    <a href="/blog/museohc-en-g-seis">retroinformática</a>, la tecnología en general, el diseño gráfico y las <a href="/blog/series-recomendadas">series de TV</a>.</p>
+
+    <p>Durante mi trayectoria profesional he tenido la oportunidad de conocer varios sectores productivos relacionados con las TIC, adquiriendo una amplia visión de conjunto en el área.</p>
+
+    <p>Como programador, soy cuidadoso y aplicado, y me gusta el trabajo bien hecho. Pienso que el buen software debe cumplir su objetivo siendo intuitivo y fácil de aprender, y que los pequeños errores en el resultado desmerecen el trabajo del equipo de desarrollo.</p>
+
+    <p>Estoy abierto a nuevas experiencias y a aprender de las personas con las que trabajo para superarme personalmente. Me motiva especialmente el teletrabajo y el trabajo en equipo.</p>
+
+    <h2 id="actitudes">Actitudes</h2>
+
+    <p>👍🏻 Mis actitudes destacadas son:</p>
+
+    <p><span class="tag">Compañerismo</span> <span class="tag">Compromiso</span> <span class="tag">Integridad</span> <span class="tag">Liderazgo</span> <span class="tag">Iniciativa</span> <span class="tag">Creatividad</span> <span class="tag">Comunicación&nbsp;escrita</span> <span class="tag">Planificación&nbsp;y&nbsp;organización</span></p>  
+
+    <h2 id="conocimientos">Conocimientos</h2>
+
+    <p>👍🏻 Algunas de las tecnologías con las que trabajo:</p>
+
+    <Code lang="json" code={`
+{
+  "code": ["JavaScript", "Java", "PHP", "Python", "HTML5", "CSS3", "SQL", "Bash"],
+  "methodologies": ["Kanban", "ITIL", "OOP", "Jamstack", "PWA"],
+  "technologies": {
+    "frontend": {
+      "javascript": ["React", "AlpineJS", "AJAX", "JQuery", "ES6", "TS"],
+      "html": ["xHTML", "SVG", "JSX", "Blade", "Accessibility"],
+      "css": ["Sass", "Bootstrap", "Tailwind", "Bulma", "Responsive"]
+    },
+    "backend": {
+      "javascript": ["Node.js", "Express"],
+      "java": ["Spring Boot", "Thymeleaf"],
+      "php": ["Laravel", "LiveWire"]
+    },
+    "software": {
+      "tools": ["Git/GitHub", "VS Codium", "IntelliJ Idea", "Brackets"],
+      "design": ["InkScape", "Illustrator", "Draw", "Gimp", "Photoshop", "Scribus"]
+    },
+    "systems": ["Linux", "OS X", "Windows", "DOS"],
+    "databases": ["MySQL/MariaDB", "SQLite", "MongoDB", "Oracle DB"],
+    "infrastructures": ["nextCloud", "Apache", "Docker", "AWS", "Firebase", "Netlify", "Heroku", "CI/CD", "Networks"]
+  }
+}
+    `} />  
+
+    <p><a href="/blog/certificaciones"><button>👉🏻&nbsp;Ver mis certificaciones TIC</button></a></p>
+   
+    <div class="mt-12 mb-10">
+      <ul id="portfolio" class="-ms-8">
+        <Card href="/portfolio" title="Portfolio" body="Visita mi portfolio para saber algo más sobre mis conocimientos aplicados." />
+      </ul>
+    </div>
+
+    <h2 id="meritos">Méritos y publicaciones</h2>
+
+    <p>✌🏻 Fundador de varias ONG. Autor de publicaciones, artículos y proyectos de retro-informática y tele-educación.</p>
+
+    <ul>
+      <li><a href="/blog/">Mantengo este blog desde hace algunos años</a></li>
+      <li><a href="/blog/desarrollos">Desarrollos web para el bien público</a></li>
+      <li><a href="/blog/publicaciones">Publicaciones y artículos</a></li>
+      <li><a href="/blog/traducciones">Traducciones de software</a></li>
+      <li><a href="/blog/cliparts">Cliparts</a> y <a href="/blog/logos">Logotipos</a></li>
+    </ul>
+
+    <h2 id="sabermas">Saber más</h2>
+
+    <p>🔗 Visita <a href="https://linkedin.com/in/javguerra">mi perfil en Linkedin</a> para conocer más sobre mi trabajo y sobre mi.</p>
+
+    <a href="https://linkedin.com/in/javguerra">
+    <Image src={qrCodeImg} alt="Código QR" loading="lazy" />
+    </a>
+
+</div>
+
+</BaseLayout>

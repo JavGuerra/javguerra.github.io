@@ -1,0 +1,61 @@
+---
+import siteConfig from '@/siteConfig.json';
+
+import type { Page } from 'astro';
+import { getCollection } from 'astro:content';
+import { getSlugName } from '@/scripts/urlUtils';
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BlogPostCard from "@/components/BlogPostCard.astro";
+import ButtonLink from '@/components/ButtonLink.astro';
+import Card from '@/components/Card.astro';
+
+export async function getStaticPaths({ paginate }: any) {
+    const allPosts: Record<string, any>[] = await getCollection('posts');
+
+    const sortedPosts = allPosts.sort(
+        (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+    )
+    
+    return paginate(sortedPosts, { pageSize: siteConfig.default.pageSize });
+}
+
+const { page } = Astro.props as { page: Page };
+---
+
+<BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
+
+  <h2>Entradas</h2>
+
+  { page.data.length ? (
+
+    <ul class="-mt-2">
+      {page.data.map(post => (
+        <BlogPostCard frontmatter={post.data} href={post.data.route || getSlugName(post.slug)} />
+      ))}
+    </ul>
+
+    <div class="mt-8 mb-14 flex justify-between items-center gap-3">
+      <ButtonLink href={page.url.prev ? page.url.prev : "#"} text="←&nbsp;Anterior" />
+      <span class="gray text-center">
+        <small>Página {page.currentPage}&nbsp;de&nbsp;{page.lastPage}</small>
+      </span>
+      <span class="mt-2">
+        <ButtonLink href={page.url.next ? page.url.next : "#"} text="Siguiente&nbsp;→" />
+      </span>
+    </div>
+
+  ) : <span class="inline-block w-full my-4 pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100">
+    Aún no hay entradas en este blog.</span> }
+
+  <div class="my-8">
+    <ul>
+      <Card 
+        href="/temas"
+        title="Lista de temas"
+        body="Accede a la lista de temas etiquetados en el blog y a los enlaces recomendados."
+      />
+    </ul>
+  </div>
+  
+</BaseLayout>

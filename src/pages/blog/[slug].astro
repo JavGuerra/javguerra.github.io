@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import { getSlugName } from '@/scripts/urlUtils';
+
+import MarkdownPostLayout from '@/layouts/MarkdownPostLayout.astro';
+
+export async function getStaticPaths() {
+  const allPosts: Record<string, any>[] = await getCollection('posts');
+
+  return allPosts.map(post => ({
+    params: { slug: post.data.route || getSlugName(post.slug) },
+    props: { post }
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<MarkdownPostLayout frontmatter={post.data}>
+  <Content />
+</MarkdownPostLayout>

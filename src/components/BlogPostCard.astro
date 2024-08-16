@@ -1,0 +1,31 @@
+---
+import siteConfig from '@/siteConfig.json';
+import { Image } from "astro:assets";
+import ButtonLink from "./ButtonLink.astro";
+import FormattedDate from '@/components/FormattedDate.astro';
+
+const { frontmatter, href } = Astro.props;
+---
+
+<li class="post-card">
+  <a href={href} role="button" data-astro-prefetch>
+    <article class="md:flex md:flex-row-reverse">
+
+      { frontmatter.coverImage && 
+        <Image src={frontmatter.coverImage.image} alt={frontmatter.coverImage.alt}
+          class="mb-4 md:mb-0 w-[192px]" inferSize loading="eager" />} 
+      
+      <div class="w-full md:me-4">
+        <h3 class="mb-0">{frontmatter.title}</h3>
+        <small class="gray">
+          {frontmatter.author ? frontmatter.author : siteConfig.default.autor}{
+            frontmatter.pubDate &&
+              <>, <FormattedDate date={frontmatter.pubDate} /></> }
+        </small>
+        <p class="mb-2">{frontmatter.description}</p>
+        <ButtonLink href={href} text="Leer" small />
+      </div>
+      
+    </article>
+  </a>
+</li>

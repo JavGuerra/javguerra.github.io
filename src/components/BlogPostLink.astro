@@ -1,0 +1,9 @@
+---
+const { href, title } = Astro.props;
+---
+
+<li class="postLink">
+    <a href={href} data-astro-prefetch>
+        {title}
+    </a>
+</li>

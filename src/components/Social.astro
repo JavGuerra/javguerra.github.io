@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+const { platform, username } = Astro.props;
+
+const socialIcons = import.meta.glob('@/assets/social/*.svg', { eager: true });
+const svgIcon = socialIcons[`/src/assets/social/${platform}.svg`] as Record<string, any>;
+
+const socialUrl = `https://www.${platform}.com/${username}`;
+---
+
+<a href={socialUrl}>
+    <Image src={svgIcon.default} alt={platform} loading="lazy" />
+</a>

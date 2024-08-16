@@ -1,0 +1,46 @@
+{
+    "projects": [
+        { 
+            "route": "cartelera-daw",
+            "img": "cartelera-daw.png",
+            "alt": "Logo Cartelera DAW",
+            "title": "Cartelera DAW",
+            "description": "Página realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker."
+        },
+        { 
+            "route": "proyecto-final-bootcamp",
+            "img": "tienda-8-bits.png",
+            "alt": "Banner Tienda 8 bits",
+            "title": "Tienda 8 bits",
+            "description": "Página realizada en JavaScript con Node.js, Express, React y MongoDB como BBDD. Incluye la elaboración de la API."
+        },
+        { 
+            "route": "summer-quiz",
+            "img": "summer-quiz.png",
+            "alt": "Banner Summer Quiz",
+            "title": "Summer Quiz",
+            "description": "Juego SPA de preguntas y respuestas realizado en JavaScript Vanilla, que obtiene datos de una API y guarda resultados en Local Storage."
+        },
+        { 
+            "route": "buscaminas",
+            "img": "buscaminas.png",
+            "alt": "Captura del buscaminas",
+            "title": "Buscaminas JS",
+            "description": "Juego JavaScript con tablero dimensionable, que hace uso de eventos, emplea JQuery y Bootstrap, y soporta navegadores antiguos."
+        },
+        { 
+            "route": "pagina-de-ejemplo",
+            "img": "conceptos-fswd.jpg",
+            "alt": "Portada de la página",
+            "title": "Conceptos FSWD",
+            "description": "Maquetación elaborada con HTML 5, CSS 3 y JavaScript Vanilla que incluye formulario y es accesible y responsive."
+        },
+        { 
+            "route": "galeria-carousel",
+            "img": "galeria-vnzla.jpg",
+            "alt": "Captura de la página",
+            "title": "Carousel con Bootstrap",
+            "description": "Maquetación de una pequeña galería de fotos de viaje a Venezuela elaborada con Bootstrap que es accesible y responsive."
+        }
+    ]
+}

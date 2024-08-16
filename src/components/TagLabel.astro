@@ -1,0 +1,9 @@
+---
+const { tag } = Astro.props;
+---
+
+<p class="tag">
+    <a href={`/blog/tag/${tag}`} data-astro-prefetch>
+        <small>{tag}</small>
+    </a>
+</p>
