@@ -123,14 +123,14 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 
 # Recursos propios
 
-* [Aprende Informática en línea](recursos-aprendizaje-tic)
-* [Recursos becas TIC](recursos-becas-tic)
-* [Algoritmia](algoritmia)
-* [Lógica interactiva](logica-interactiva)
-* [Accesibilidad](accesibilidad)
-* [Materiales sobre competencias digitales](competencias-digitales)
-* [Curso de Pyton y algoritmia](curso-python)
+* [Aprende Informática en línea](/blog/recursos-aprendizaje-tic)
+* [Recursos becas TIC](/blog/recursos-becas-tic)
+* [Algoritmia](/blog/algoritmia)
+* [Lógica interactiva](/blog/logica-interactiva)
+* [Accesibilidad](/blog/accesibilidad)
+* [Materiales sobre competencias digitales](/blog/competencias-digitales)
+* [Curso de Pyton y algoritmia](/blog/curso-python)
 * [JavaScript en 14 minutos](https://javguerra.github.io/javascript-en-14-minutos/)
 * [Diseño web en 4 minutos](https://javguerra.github.io/diseno-web-en-4-minutos/)
 * [Full Stack web developer - conceptos](https://javguerra.github.io/conceptos-fswd/index.html)
-* [Fizz buzz](fizzbuzz)
+* [Fizz buzz](/blog/fizzbuzz)

@@ -20,7 +20,7 @@ tags:
     - responsive
 ---
 
-Durante el año 2022 cursé el [Bootcamp de Desarrollo Web Full Stack](beca-santander-fswd) que [Becas Santander](https://www.becas-santander.com/es/index.html) llevó a cabo en colaboración con [Fundación Universia](https://jobs.universia.net/), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
+Durante el año 2022 cursé el [Bootcamp de Desarrollo Web Full Stack](/blog/beca-santander-fswd) que [Becas Santander](https://www.becas-santander.com/es/index.html) llevó a cabo en colaboración con [Fundación Universia](https://jobs.universia.net/), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
 
 
 [<button>Ir a la aplicación on-line</button>](https://javguerra.badared.com/proyecto/tienda8bits/)
@@ -97,7 +97,7 @@ Material usado sin ánimo de lucro bajo criterios didácticos y formativos.
 
 __Artículos informativos elaborados por el autor relacionados con esta práctica:__:  
 
-- [Usando populate con paginate y filtrando los resultados](populate-paginate-fitrado)  
-- [Generar enlaces dinámicos de imágenes almacenadas en MongoDB](rutas-dinamicas-imagenes-mongodb)  
-- [Ordenando resultados en React](ordenacion-react)  
-- [Spinner loader asíncrono](spinner-loader-asincrono)  
+- [Usando populate con paginate y filtrando los resultados](/blog/populate-paginate-fitrado)  
+- [Generar enlaces dinámicos de imágenes almacenadas en MongoDB](/blog/rutas-dinamicas-imagenes-mongodb)  
+- [Ordenando resultados en React](/blog/ordenacion-react)  
+- [Spinner loader asíncrono](/blog/spinner-loader-asincrono)  

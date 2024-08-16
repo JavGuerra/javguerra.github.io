@@ -100,7 +100,7 @@ El acceso al panel de administración requiere de usuario y contraseña. Por def
 
 ## Licencia
 
-Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE Version 3](LICENSE)
+Sobre el código fuente: GNU GENERAL PUBLIC LICENSE Version 3
 
 ## Enlaces
 

@@ -115,7 +115,7 @@ Cursos online vinculados a unidades de competencia del Catálogo Nacional de Cua
 
 # Otros recursos
 
-* [Aprende Programación en línea](recursos-aprendizaje-programacion)
+* [Aprende Programación en línea](/blog/recursos-aprendizaje-programacion)
 * [Formación profesional a distancia](https://www.educacionyfp.gob.es/fpadistancia/oferta-formativa/oferta-formativa-ciclos/informatica-comunicaciones.html) - Formación Profesional oficial en España sobre Informática y comunicaciones. Listado por regiones.
 * [Educaweb](https://www.educaweb.com/) - Buscador
 * [Apuntes Marea verde - Informática](https://www.apuntesmareaverde.org.es/)

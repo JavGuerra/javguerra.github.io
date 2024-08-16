@@ -14,7 +14,7 @@ tags:
     - HTML
     - JavaScript
 ---
-Ejercicio de programación realizado en el [bootcamp Full Stack Web Developer](beca-santander-fswd) que estoy haciendo.
+Ejercicio de programación realizado en el [bootcamp Full Stack Web Developer](/blog/beca-santander-fswd) que estoy haciendo.
 
 [<button>Usar el cronómetro</button>](https://javguerra.github.io/CronometroJS/index.html)
 
@@ -42,7 +42,7 @@ La aplicación que he desarrollado cumple con el enunciado, haciendo uso de las 
 
 **Operativa de la aplicación**:
 
-- Los botones del cronómetro se activan y desactivan según sean necesarios en cada función de la aplicación. Se recomienda leer mi entrada sobre [lógica interactiva](logica-interactiva).
+- Los botones del cronómetro se activan y desactivan según sean necesarios en cada función de la aplicación. Se recomienda leer mi entrada sobre [lógica interactiva](/blog/logica-interactiva).
 - Implementa cuenta regresiva en el contador hasta 10.
 - Al guardar un cronometraje, se muestra la lista de los cronometrajes de la sesión actual. Podemos listar también los cronometrajes de todas las sesiones, incluida la actual. El listado mostrará la sesión, el número del cronometraje dentro de esta sesión, el tiempo guardado (minutos y segundos), la fecha y hora, y el botón de borrar.
 - Al borrar una sesión desde la lista de sesiones, si no se trata de la sesión actual, la aplicación reordena las sesiones para no dejar huecos entre ellas. Si tenemos cinco sesiones, y borramos la sesión tres, la sesión cuatro pasará a ser la tres, y la sesión cinco pasará a ser la cuatro. 
@@ -51,7 +51,7 @@ La aplicación que he desarrollado cumple con el enunciado, haciendo uso de las 
 
 - Web adaptable según el dispositivo.
 - Cuidado aspecto visual empleando CSS.
-- El formateo básico se realiza mediante una clase CSS llamada [wysiwyg.css](https://jgthms.com/wysiwyg.css/) de la que hablé en [este post](wysiwyg-css).
+- El formateo básico se realiza mediante una clase CSS llamada [wysiwyg.css](https://jgthms.com/wysiwyg.css/) de la que hablé en [este post](/blog/wysiwyg-css).
 - Usa [Bootstrap Icons](https://icons.getbootstrap.com/) y fuente personalizada llamada [Digit](https://www.dafont.com/digit.font) (_sin info del autor_).
 - Es accesible, empleando etiquetas descriptivas y etiquetas [WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA) para señalar las regiones de la web que cambian durante la ejecución de la aplicación.
 - Ha sido probada en los navegadores web **Firefox** y **Chrome**.

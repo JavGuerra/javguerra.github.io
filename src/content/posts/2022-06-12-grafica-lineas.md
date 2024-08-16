@@ -15,7 +15,7 @@ tags:
     - SVG
     - usabilidad
 ---
-Como comentaba en el anterior artículo sobre [la creación de un contador de resultados](contador-resultados), la representación visual ayuda a asumir mejor la información. En este artículo mostraré cómo elaborar una gráfica de líneas dinámica que represente, por ejemplo, las puntuaciones de las últimas cinco jugadas con valores en un rango entre cero y diez.
+Como comentaba en el anterior artículo sobre [la creación de un contador de resultados](/blog/contador-resultados), la representación visual ayuda a asumir mejor la información. En este artículo mostraré cómo elaborar una gráfica de líneas dinámica que represente, por ejemplo, las puntuaciones de las últimas cinco jugadas con valores en un rango entre cero y diez.
 
 [<button>Ver gráfica de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/graficalineas.html)
 
@@ -45,7 +45,7 @@ Para los círculos en los puntos de conexión de la línea, que son referenciado
 
 ## Presentación
 
-Como hicimos en [la creación de un contador de resultados](contador-resultados), para poder acceder al identificador dentro del SVG, este debe estar disponible en el DOM, por lo que no sería posible acceder a su __id__ haciendo uso del elemento ```<img>``` de HTML.
+Como hicimos en [la creación de un contador de resultados](/blog/contador-resultados), para poder acceder al identificador dentro del SVG, este debe estar disponible en el DOM, por lo que no sería posible acceder a su __id__ haciendo uso del elemento ```<img>``` de HTML.
 
 El código HTML para insertar «en linea» el SVG sería el siguiente:
 
@@ -70,7 +70,7 @@ Para no ocupar espacio de esta entrada, el SVG no se muestra completo. Los punto
 
 En el párrafo ```"arreglo"``` es donde se mostrarán los valores numéricos que se usarán para representar la gráfica.
 
-Como dijimos en el anterior artículo, la gráfica en SVG ocupa lo suyo. Hay técnicas para [cargar dinámicamente la imagen](carga-svg) sin necesidad de colocar el SVG _in-line_ desde el principio.
+Como dijimos en el anterior artículo, la gráfica en SVG ocupa lo suyo. Hay técnicas para [cargar dinámicamente la imagen](/blog/carga-svg) sin necesidad de colocar el SVG _in-line_ desde el principio.
 
 Deliberadamente he eliminado los atributos ```width="400"``` y ```height="300"``` de la etiqueta ```svg``` porque voy a manejar estos valores desde CSS, aunque dejarlas tampoco sería un problema.
 
@@ -212,7 +212,7 @@ Para conocer más sobre SVG y cómo editarlo, te recomiendo el libro [SCALABLE](
 [<button>Ver gráfica de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/graficalineas.html)  
 
 * Ver ejemplo de aplicación práctica. [Summer Quiz](https://javguerra.github.io/summer-quiz/) (Es necesario terminar una partida para obtener resultados.)
-* Ver también: [Creación de un contador de resultados](contador-resultados)
-* Ver también: [Cargar SVG dinámicamente](carga-svg)
+* Ver también: [Creación de un contador de resultados](/blog/contador-resultados)
+* Ver también: [Cargar SVG dinámicamente](/blog/carga-svg)
 * [Tutorial SVG](http://w3.unpocodetodo.info/svg/introduccion.php).
 * Libro sobre SVG [SCALABLE](https://leanpub.com/scalable/) de Jorge Aznar.

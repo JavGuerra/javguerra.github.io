@@ -15,7 +15,7 @@ tags:
   - seguridad
 ---
 
-En un [artículo anterior](notificaciones-thymeleaft) he usado variables de sesión para guardar información de la aplicación: mensajes para el usuario, aviso de cookies... Puede que, cuando el usuario salga de su sesión, queramos conservar estos datos que seguirán siendo útiles aunque no esté autenticado. En esta entrada muestro mi solución usando Spring Security.
+En un [artículo anterior](/blog/notificaciones-thymeleaft) he usado variables de sesión para guardar información de la aplicación: mensajes para el usuario, aviso de cookies... Puede que, cuando el usuario salga de su sesión, queramos conservar estos datos que seguirán siendo útiles aunque no esté autenticado. En esta entrada muestro mi solución usando Spring Security.
 
 Se asume que el lector tiene conocimientos generales de Spring Boot y Spring Security para aplicar el contenido.
 
@@ -152,10 +152,10 @@ Se han de tener en cuenta las consideraciones de seguridad relacionadas con este
 
 # Un ejemplo
 
-Puedes ver el código que implementan esta funcionalidad en el repositorio de la aplicación [Cartelera DAW]({2024-06-20-cartelera-daw).
+Puedes ver el código que implementan esta funcionalidad en el repositorio de la aplicación [Cartelera DAW](/blog/cartelera-daw).
 
 - [Repositorio de Cartelera DAW](https://github.com/JavGuerra/cartelera-daw)
 
 Mira también el artículo donde se usan las variables de sesión que quiero preservar:
 
-- [Notificaciones con Thymeleaft]({2024-07-03-notificaciones-thymeleaft)
+- [Notificaciones con Thymeleaft](/blog/notificaciones-thymeleaft)

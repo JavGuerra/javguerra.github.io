@@ -21,7 +21,7 @@ Repositorio en GitHub: [ JavGuerra / conceptos-fswd](https://github.com/JavGuerr
 
 ## La página
 
-Esta página corresponde a la práctica final del ramp-up del [bootcamp sobre Full Stack Web Developer](beca-santander-fswd) que estoy realizando en este momento.
+Esta página corresponde a la práctica final del ramp-up del [bootcamp sobre Full Stack Web Developer](/blog/beca-santander-fswd) que estoy realizando en este momento.
 
 En ella se muestran algunos conceptos aprendidos en esta primera fase, e incluye «algo más» de mi propia cosecha. A continuación algunas de estas mejoras.
 

@@ -67,7 +67,7 @@ Tecnologías: HTML + CSS
 
 * __El cadáver exquisito__ (1997)  
 [http://badared.com/javguerra/contenidos/lce/juego.htm](http://badared.com/javguerra/contenidos/lce/juego.htm)  
-Página de una de las actividades desarrolladas en el Taller de Arte por ordenador en el MEIAC. [Más info](el-cadaver-exquisito).  
+Página de una de las actividades desarrolladas en el Taller de Arte por ordenador en el MEIAC. [Más info](/blog/el-cadaver-exquisito).  
 Tecnologías: HTML + CSS + JavaScript Vanilla
 
 ## EPOF

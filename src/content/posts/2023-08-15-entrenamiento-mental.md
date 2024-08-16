@@ -101,4 +101,4 @@ Valorar el avance de nuestras habilidades cognitivas no siempre es sencillo, per
 
 # Enlaces
 
-* Leer el post [Algoritmia](algoritmia) para conocer más sobre capacidades cognitivas.
+* Leer el post [Algoritmia](/blog/algoritmia) para conocer más sobre capacidades cognitivas.

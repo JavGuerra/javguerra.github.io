@@ -16,7 +16,7 @@ tags:
 
 A veces, el tiempo de respuesta del servidor es alto, y el usuario puede sentir que la aplicación web no está funcionando bien. Aquí explico cómo usar un spinner loader o animación de carga propia, generada con CSS, que se active al cargar la página y permanezca activa hasta que se muestre completamente.
 
-Esta entrada hace uso y adapta los contenidos ya explicados anteriormente en este blog en [Spinner loader asíncrono]({2022-05-30-spinner-loader-asincrono), pero en este caso se simplifica el proceso al plantear una solución que no se basa en eventos asíncronos.
+Esta entrada hace uso y adapta los contenidos ya explicados anteriormente en este blog en [Spinner loader asíncrono](/blog/spinner-loader-asincrono), pero en este caso se simplifica el proceso al plantear una solución que no se basa en eventos asíncronos.
 
 # Manos a la obra
 
@@ -162,7 +162,7 @@ Como ya sabemos que vamos a cambiar de vista al enviar el formulario, no es nece
 
 # Un ejemplo
 
-Puedes ver el código que implementa esta solución en el repositorio de la aplicación [Cartelera DAW](cartelera-daw).
+Puedes ver el código que implementa esta solución en el repositorio de la aplicación [Cartelera DAW](/blog/cartelera-daw).
 
 - [Aplicación web Cartelera DAW](https://cartelera-daw.up.railway.app/)
 - [Repositorio de Cartelera DAW](https://github.com/JavGuerra/cartelera-daw) 

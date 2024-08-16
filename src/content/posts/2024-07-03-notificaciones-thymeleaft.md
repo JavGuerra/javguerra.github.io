@@ -459,6 +459,6 @@ Con `.requestMatchers(HttpMethod.POST, "/cookie").permitAll()` la ruta `/cookie`
 
 # Un ejemplo
 
-Puedes ver el código que implementan estos métodos, tanto las notificaciones como los mensajes fijos de cookies, en el repositorio de la aplicación [Cartelera DAW](cartelera-daw).
+Puedes ver el código que implementan estos métodos, tanto las notificaciones como los mensajes fijos de cookies, en el repositorio de la aplicación [Cartelera DAW](/blog/cartelera-daw).
 
 - [Repositorio de Cartelera DAW](https://github.com/JavGuerra/cartelera-daw) 

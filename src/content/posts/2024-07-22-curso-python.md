@@ -14,7 +14,7 @@ tags:
   - alumnos
 ---
 
-Durante el mes de julio del pasado año llevé a cabo una formación sobre introducción a Python orientado a la automatización para la Fundación GoodJob en el que incluí el material sobre [algoritmia](algoritmia) disponible en este blog así como varios ejercicios.
+Durante el mes de julio del pasado año llevé a cabo una formación sobre introducción a Python orientado a la automatización para la Fundación GoodJob en el que incluí el material sobre [algoritmia](/blog/algoritmia) disponible en este blog así como varios ejercicios.
 
 [<button>Ir al curso de Python</button>](https://github.com/JavGuerra/curso-python-algoritmia)
 
@@ -56,7 +56,7 @@ Los listados de código de los contenidos impartidos pueden encontrarse en la ca
 
 ## Ver también
 
-- [Algoritmia](algoritmia), Los algoritmos nos enseñan el camino.
+- [Algoritmia](/blog/algoritmia), Los algoritmos nos enseñan el camino.
 
 ## Actualizaciones
 

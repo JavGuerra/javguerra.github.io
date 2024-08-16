@@ -40,4 +40,4 @@ De paso, este ejercicio sirve para mostrar el uso de JavaScript en el manejo de 
 
 Descargar la tabla de decisiones completa del ejercicio en formato [.ods (Open Document)](https://javguerra.github.io/ejercicios-web-javascript/12-nodos-tabla.ods) o [.xls (Excel)](https://javguerra.github.io/ejercicios-web-javascript/12-nodos-tabla.xls).
 
-**Actualización**. Ver este ejemplo de uso de botonera aún más complicado: [Cronómetro en JavaScript](cronometro-js)
+**Actualización**. Ver este ejemplo de uso de botonera aún más complicado: [Cronómetro en JavaScript](/blog/cronometro-js)

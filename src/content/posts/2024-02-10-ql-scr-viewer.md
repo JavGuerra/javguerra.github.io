@@ -80,4 +80,4 @@ Para el desarrollo se ha tenido en cuenta el uso accesible de la aplicación, me
 * [QL SCR Viewer en línea](https://javguerra.github.io/Sinclair-QL-SCR-viewer/)
 * [Artículo sobre QL SCR Viewer para QBLog](https://sinclairqles.wordpress.com/2024/02/10/ql-scr-viewer-en-linea/)
 * [Repositorio de QL SCR Viewer en GitHub](https://github.com/JavGuerra/Sinclair-QL-SCR-viewer)
-* [Info sobre Sinclair QL](sinclair-ql)
+* [Info sobre Sinclair QL](/blog/sinclair-ql)

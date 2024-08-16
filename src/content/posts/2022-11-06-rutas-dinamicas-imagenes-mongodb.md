@@ -20,7 +20,7 @@ Las bases de datos a menudo contienen referencias a recursos que no son almacena
 
 Partimos de la siguiente premisa. En las variables globales del sistema tenemos almacenadas la ruta y el puerto del servidor donde están ubicadas las imágenes, que es la información susceptible de cambiar de lugar. Tal vez estos datos estén disponibles mediante [dotenv](https://www.npmjs.com/package/dotenv).
 
-Tomemos como referencia el ejemplo de la [entrada anterior](populate-paginate-fitrado). Dos colecciones relacionadas, `libros` y `autores`, y en las que queremos incluir un dato en cada documento de la colección libros con la foto de portada del libro, y un dato con la foto del autor en cada documento de la colección autores. Algo como:
+Tomemos como referencia el ejemplo de la [entrada anterior](/blog/populate-paginate-fitrado). Dos colecciones relacionadas, `libros` y `autores`, y en las que queremos incluir un dato en cada documento de la colección libros con la foto de portada del libro, y un dato con la foto del autor en cada documento de la colección autores. Algo como:
 
 ```javascript
 libro: {
@@ -95,4 +95,4 @@ Con el condicional (`if`) me aseguro de que la foto no contiene ya la ruta compl
 
 # Enlaces
 
-* [Usando populate con paginate y filtrando los resultados](populate-paginate-fitrado)  
+* [Usando populate con paginate y filtrando los resultados](/blog/populate-paginate-fitrado)  

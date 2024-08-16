@@ -19,7 +19,7 @@ Esta semana tocó aprender sobre **MongoDB**. Una de las cuestiones que me llama
 
 ## Cambiando el chip
 
-Pasar de manejar datos embebidos en módulos como en el caso de la publicación sobre [filtrado múltiple](filtrado-multiple) a consultar una base de datos como **MongoDB** presenta retos importantes. el principal es que debo establecer la conexión al servicio y esperar una respuesta. Una consulta típica a MongoDB tendría esta forma:
+Pasar de manejar datos embebidos en módulos como en el caso de la publicación sobre [filtrado múltiple](/blog/filtrado-multiple) a consultar una base de datos como **MongoDB** presenta retos importantes. el principal es que debo establecer la conexión al servicio y esperar una respuesta. Una consulta típica a MongoDB tendría esta forma:
 
 ```javascript
 if (process.env.NODE_ENV !== 'production') require('dotenv').config();

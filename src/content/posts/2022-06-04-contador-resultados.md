@@ -81,7 +81,7 @@ Para no ocupar espacio de esta entrada el SVG no se muestra completo. Los puntos
 
 En el párrafo se mostraría el resultado de forma textual. ambos, imagen y resultado, están dentro de un DIV contenedor llamado «resultados».
 
-La gráfica en SVG ocupa lo suyo. Hay técnicas para [cargar dinámicamente la imagen](carga-svg) sin necesidad de colocar el SVG in-line desde el principio. Por ahora el SVG aparecerá incrustado en la página, ya que si lo enlazamos como una imagen (```<img src="contador.svg" alt="Contador"/>```) no podremos acceder a la etiqueta «aguja» que necesitamos para hacer la gráfica interactiva.
+La gráfica en SVG ocupa lo suyo. Hay técnicas para [cargar dinámicamente la imagen](/blog/carga-svg) sin necesidad de colocar el SVG in-line desde el principio. Por ahora el SVG aparecerá incrustado en la página, ya que si lo enlazamos como una imagen (```<img src="contador.svg" alt="Contador"/>```) no podremos acceder a la etiqueta «aguja» que necesitamos para hacer la gráfica interactiva.
 
 Deliberadamente he eliminado las etiquetas ```width``` y ```height``` de ```svg``` para poderlas manejar desde CSS.
 
@@ -242,7 +242,7 @@ Con cada recarga de la página, la gráfica y el cuadro de texto mostrarán un v
 [<button>Ver contador de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/contador.html)  
 
 * Ver ejemplo de aplicación práctica. [Summer Quiz](https://javguerra.github.io/summer-quiz/) Es necesario terminar una partida para obtener resultados.
-* Ver también: [Creación de gráfica de lineas dinámica con SVG](grafica-lineas)
-* Ver también: [Cargar SVG dinámicamente](carga-svg)
+* Ver también: [Creación de gráfica de lineas dinámica con SVG](/blog/grafica-lineas)
+* Ver también: [Cargar SVG dinámicamente](/blog/carga-svg)
 * [Tutorial SVG](http://w3.unpocodetodo.info/svg/introduccion.php).
 * Libro sobre SVG [SCALABLE](https://leanpub.com/scalable/) de Jorge Aznar.
