@@ -1,9 +1,10 @@
 # TO DO
 
-- README
 - Header
-- Botón hamburguesa
 - Botón volver
+- README
+
+# Propuestas
 
 - Post anterior y Post siguiente
 - Iconos footer cambian color cuando hover

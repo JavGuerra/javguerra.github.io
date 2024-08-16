@@ -5,14 +5,14 @@
             "img": "cartelera-daw.png",
             "alt": "Logo Cartelera DAW",
             "title": "Cartelera DAW",
-            "description": "Página realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker."
+            "description": "Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker."
         },
         { 
             "route": "proyecto-final-bootcamp",
             "img": "tienda-8-bits.png",
             "alt": "Banner Tienda 8 bits",
             "title": "Tienda 8 bits",
-            "description": "Página realizada en JavaScript con Node.js, Express, React y MongoDB como BBDD. Incluye la elaboración de la API."
+            "description": "Aplicación realizada en JavaScript con Node.js, Express, React y MongoDB como BBDD. Incluye la elaboración de la API."
         },
         { 
             "route": "summer-quiz",

@@ -44,7 +44,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 
   { allTags.length ? (
     <>
-      <h2>Temas etiquetados en el blog</h2>
+      <h2>Etiquetas del blog</h2>
       <div class="flex flex-wrap mt-4">
         {allTags.sort().map(tag => <TagLabel tag={tag} />)}
       </div>
