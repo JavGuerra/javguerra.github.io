@@ -22,7 +22,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
         <ul class="md:mb-4">
           <h2 class="mt-0 md:mt-2 md:pb-2">Destacados del blog</h2>
           {resources.in.map((resource: Resource) => (
-            <BlogPostLink href={`blog/${resource.href}`} title={resource.title} />
+            <BlogPostLink href={`/blog/${resource.href}`} title={resource.title} />
           ))}
         </ul>
       </li>
