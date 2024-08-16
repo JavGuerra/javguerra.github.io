@@ -62,7 +62,7 @@ if (allPosts.length) {
         <ul class="mb-8">
             <BlogPostCard
                 frontmatter={post.data}
-                href=`/blog/${post.data.route || getSlugName(post.slug)}`
+                href=`${post.data.route || getSlugName(post.slug)}`
             />
         </ul>
     }

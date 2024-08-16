@@ -30,7 +30,7 @@ const { posts, tags } = Astro.props;
   <h2>{`${posts.length} entradas`}</h2>
   <ul class="mt-8 mb-12 list-disc">
     {posts.map(post => <BlogPostLink title={post.data.title} 
-        href=`../${post.data.route || post.slug}` />
+        href=`/blog/${post.data.route || post.slug}` />
     )}
   </ul>
 
