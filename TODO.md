@@ -2,11 +2,12 @@
 
 - README
 - Header
-- Enlaces a entradas del blog desde .md
 - Botón hamburguesa
-- Buscador
-- Selector de modo claro/oscuro
-- Iconos footer cambian color cuando hover
+- Botón volver
+
 - Post anterior y Post siguiente
+- Iconos footer cambian color cuando hover
+- Selector de modo claro/oscuro
 - Compartir en redes
 - Integración con Disqus
+- Buscador
