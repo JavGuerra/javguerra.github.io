@@ -2,6 +2,8 @@
 
 - README
 - Header
+- Enlaces a entradas del blog desde .md
+- Botón hamburguesa
 - Buscador
 - Selector de modo claro/oscuro
 - Iconos footer cambian color cuando hover
