@@ -2,6 +2,7 @@
 interface Props {
   date: Date | string;
 }
+
 const { date } = Astro.props;
 
 const dateObject = date instanceof Date ? date : new Date(date);

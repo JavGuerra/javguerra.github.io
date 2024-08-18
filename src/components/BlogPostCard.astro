@@ -1,4 +1,18 @@
 ---
+interface frontmatterInfo {
+  title: string;
+  description: string;
+  author: string;
+  pubDate: string;
+  coverImage: Record<string, string>;
+  tags: Array<string>;
+}
+  
+interface Props {
+  frontmatter: frontmatterInfo;
+  href: string;
+}
+  
 import siteConfig from '@/siteConfig.json';
 import { Image } from "astro:assets";
 import ButtonLink from "./ButtonLink.astro";

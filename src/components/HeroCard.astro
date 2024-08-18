@@ -1,4 +1,11 @@
 ---
+interface Props {
+  href: string;
+  img: any;
+  alt: string;
+  styles: string;
+}
+
 import { Image } from "astro:assets";
 
 const { href, img, alt, styles } = Astro.props;

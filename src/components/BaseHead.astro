@@ -1,0 +1,25 @@
+---
+interface Props {
+    pageTitle: string;
+    subTitle?: string;
+}
+
+import { ViewTransitions } from 'astro:transitions';
+
+const { pageTitle, subTitle } = Astro.props;
+---
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="title" content={pageTitle} />
+    {subTitle && <meta name="description" content={subTitle} />}
+    <link rel="preload"
+      href="/fonts/Blogger_Sans-Medium.otf"
+      as="font" type="font/truetype" crossorigin
+      />
+    <ViewTransitions />
+</head>

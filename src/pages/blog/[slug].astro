@@ -1,4 +1,8 @@
 ---
+interface Props {
+    post: Record<string, any>;
+}
+
 import { getCollection } from 'astro:content';
 import { getSlugName } from '@/scripts/urlUtils';
 

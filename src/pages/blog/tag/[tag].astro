@@ -1,4 +1,9 @@
 ---
+interface Props {
+    posts: Record<string, any>[];
+    tags: Array<string>;
+}
+
 import { getCollection } from 'astro:content';
 
 import BaseLayout from '@/layouts/BaseLayout.astro';

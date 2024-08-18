@@ -1,5 +1,11 @@
 ---
+interface Props {
+    platform: string;
+    username: string;
+}
+
 import { Image } from "astro:assets";
+
 const { platform, username } = Astro.props;
 
 const socialIcons = import.meta.glob('@/assets/social/*.svg', { eager: true });

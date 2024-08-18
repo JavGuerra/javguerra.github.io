@@ -1,4 +1,11 @@
 ---
+interface Props {
+    href?: string;
+    text: string;
+    ariaLabel?: string;
+    small?: boolean;
+}
+
 let { href, text, ariaLabel, small } = Astro.props;
 // Si 'href' es "#" se entiende como botón deshabilitado, pero se muestra.
 const isDisabled = href == "#";

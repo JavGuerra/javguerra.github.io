@@ -4,13 +4,17 @@ interface Resource {
   title: string;
 }
 
+interface allPosts {
+  allPosts: Record<string, any>[];
+}
+
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPostLink from "@/components/BlogPostLink.astro";
 import { getCollection } from 'astro:content';
 import TagLabel from '@/components/TagLabel.astro';
 import resources from "@/content/_resources.json";
 
-const allPosts: Record<string, any>[] = await getCollection('posts');
+const allPosts = await getCollection('posts');
 const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 ---
 
@@ -46,7 +50,9 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     <>
       <h2>Etiquetas del blog</h2>
       <div class="flex flex-wrap mt-4">
-        {allTags.sort().map(tag => <TagLabel tag={tag} />)}
+        {allTags
+          .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
+          .map(tag => <TagLabel tag={tag} />)}
       </div>
     </>
   ) : ( "" ) }

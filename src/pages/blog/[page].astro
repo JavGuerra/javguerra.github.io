@@ -1,4 +1,8 @@
 ---
+interface Props {
+    page: Page<any>;
+}
+
 import siteConfig from '@/siteConfig.json';
 
 import type { Page } from 'astro';
@@ -20,7 +24,7 @@ export async function getStaticPaths({ paginate }: any) {
     return paginate(sortedPosts, { pageSize: siteConfig.default.pageSize });
 }
 
-const { page } = Astro.props as { page: Page };
+const { page } = Astro.props;
 ---
 
 <BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
