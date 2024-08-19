@@ -50,6 +50,7 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     <>
       <h2>Etiquetas del blog</h2>
       <div class="flex flex-wrap mt-4">
+        <TagLabel tag="Todas las entradas" />
         {allTags
           .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
           .map(tag => <TagLabel tag={tag} />)}

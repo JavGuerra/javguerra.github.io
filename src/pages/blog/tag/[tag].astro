@@ -43,6 +43,7 @@ const { posts, tags } = Astro.props;
     <>
       <h2>Otros temas</h2>
       <div class="mt-4 mb-12 flex flex-wrap">
+        <TagLabel tag="Todas las entradas" />
         {tags
           .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
           .map(tag => <TagLabel tag={tag} />)}

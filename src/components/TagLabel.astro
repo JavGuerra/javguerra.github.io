@@ -3,12 +3,15 @@ interface Props {
     tag: string | undefined;
 }
 
-const { tag } = Astro.props;
+let { tag } = Astro.props;
+let href;
+if (tag == "Todas las entradas") href = "/blog/1";
+else href = `/blog/tag/${tag}`;
 ---
 
 { (tag !== undefined) &&
     <p class="tag">
-        <a href={`/blog/tag/${tag}`} data-astro-prefetch>
+        <a href={href} data-astro-prefetch>
             <small>{tag}</small>
         </a>
     </p>
