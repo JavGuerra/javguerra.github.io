@@ -39,11 +39,17 @@ const { posts, tags } = Astro.props;
     )}
   </ul>
 
-  <h2>Otros temas</h2>
-  <div class="mt-4 mb-12 flex flex-wrap">
-    {tags.sort().map(tag => <TagLabel tag={tag} />)}
-	</div>
-  
+  { tags.length ? (
+    <>
+      <h2>Otros temas</h2>
+      <div class="mt-4 mb-12 flex flex-wrap">
+        {tags
+          .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
+          .map(tag => <TagLabel tag={tag} />)}
+      </div>
+    </>
+  ) : ( "" ) }
+
   <ButtonLink text="←&nbsp;Volver" />
 
 </BaseLayout>

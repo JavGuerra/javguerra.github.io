@@ -4,6 +4,8 @@
 - Botón volver
 - README
 - Revisar enlaces externos al blog desde proyectos
+- RSS en orden? Todos?
+- Filtrado de etiquetas muestra lista de enlaces o entradas?
 
 # Propuestas
 

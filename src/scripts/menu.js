@@ -1,3 +1,9 @@
+// document.getElementById('menu-btn').addEventListener('click', function () {
+//   const menu = document.getElementById('menu-items');
+//   menu.classList.toggle('hidden');
+//   menu.classList.toggle('block');
+// });
+
 // Muestra u oculta (toggle) el menú hamburguesa
 function toggleMenu() {
   const menuItems = document.querySelector('#menu-items');

@@ -24,7 +24,7 @@ const { frontmatter } = Astro.props;
 const { title, description, author, pubDate, coverImage, tags } = frontmatter;
 ---
 
-<BaseLayout pageTitle={title} subTitle={description}>
+<BaseLayout transition:name={title} pageTitle={title} subTitle={description}>
 
     <p class="-mt-6 mb-2 gray"><small>
         {author ? author : siteConfig.default.autor}{
