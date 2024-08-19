@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://javguerra.github.io/sitemap-index.xml

@@ -1,6 +1,5 @@
 # TO DO
 
-- Header
 - Botón volver
 - README
 - Revisar enlaces externos al blog desde proyectos
