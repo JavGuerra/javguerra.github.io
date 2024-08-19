@@ -4,10 +4,10 @@ interface Props {
     subTitle?: string;
 }
 
+import '@/styles/base.css';
 import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import '@/styles/base.css';
 
 const { pageTitle, subTitle } = Astro.props;
 ---

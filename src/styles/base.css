@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Blogger_Sans';
-    src: url('/assets/fonts/Blogger_Sans-Medium.otf') format('truetype');
+    src: url('/assets/fonts/Blogger_Sans-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

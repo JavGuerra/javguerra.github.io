@@ -12,10 +12,10 @@ interface Props {
     frontmatter: frontmatterInfo;
 }
 
-import BaseLayout from './BaseLayout.astro';
-import siteConfig from '@/siteConfig.json';
 import '@/styles/markdown.css';
 import { Image } from 'astro:assets';
+import siteConfig from '@/siteConfig.json';
+import BaseLayout from './BaseLayout.astro';
 import TagLabel from '@/components/TagLabel.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
 import FormattedDate from '@/components/FormattedDate.astro';
