@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
   const uniqueTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 
-  return uniqueTags.map((tag, index, allTags) => {
+  return uniqueTags.map((tag, _, allTags) => {
     const tags = allTags.filter(tagName => tagName !== tag);
     const filteredPosts = allPosts.filter(post => post.data.tags.includes(tag));
     return {
