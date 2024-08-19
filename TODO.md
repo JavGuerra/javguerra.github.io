@@ -1,10 +1,8 @@
 # TO DO
 
-- Botón volver
-- README
+- Artículo sobre la nueva página
+- Manifest
 - Revisar enlaces externos al blog desde proyectos
-- RSS en orden? Todos?
-- Filtrado de etiquetas muestra lista de enlaces o entradas?
 
 # Propuestas
 
@@ -14,3 +12,4 @@
 - Compartir en redes
 - Integración con Disqus
 - Buscador
+- Lista de entradas filtradas en vez de enlaces.
