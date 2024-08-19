@@ -13,3 +13,4 @@
 - Integración con Disqus
 - Buscador
 - Lista de entradas filtradas en vez de enlaces.
+- Estadísticas
