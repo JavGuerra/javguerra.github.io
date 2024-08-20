@@ -13,7 +13,7 @@ tags:
     - CSS
 ---
 
-Parallax es un efecto que se aplica generalmente a las imágenes de fondo de una página web, y que consiste en mantener estático, o mover a una velocidad distinta, el resto de los elementos de la página al hacer _scroll_. Parecerá de esa forma que la página tiene profundidad. En mi [página de ejemplo](https://javguerra.github.io/conceptos-fswd/index.html) a la que hacía referencia en este [_post_](/blog/pagina-de-ejemplo), puede verse aplicado en la portada o zona «_Hero_».
+Parallax es un efecto que se aplica generalmente a las imágenes de fondo de una página web, y que consiste en mantener estático, o mover a una velocidad distinta, el resto de los elementos de la página al hacer _scroll_. Parecerá de esa forma que la página tiene profundidad. En mi [página de ejemplo](https://javguerra.github.io/conceptos-fswd/index.html) a la que hacía referencia en este [_post_](/blog/conceptos-fswd), puede verse aplicado en la portada o zona «_Hero_».
 
 esto se consigue de una forma muy sencilla. Sólo tienes que crear un div en el HTML y ponerle una clase, p. ej. «`.parallax`», y luego, en el CSS, en esa clase, incluir la altura que le darás al `div` y la imagen de fondo que le vas a poner. Por supuesto, dentro de ese `div` puedes incluir texto, imágenes... En el caso del ejemplo mencionado puse el título de la página.
 
@@ -34,7 +34,7 @@ Este efecto tiene un inconveniente, y es que no funciona bien en el navegador Sa
 
 Mis páginas de ejemplo con este efecto Parallax:
 
-[<button>página de ejemplo</button>](https://javguerra.github.io/conceptos-fswd/index.html) - [post](/blog/pagina-de-ejemplo)
+[<button>página de ejemplo</button>](https://javguerra.github.io/conceptos-fswd/index.html) - [post](/blog/conceptos-fswd)
 
 [<button>página _landing_</button>](https://badared.com/conectiva/evento/THTC2021/)
 

@@ -2,6 +2,7 @@
 route: summer-quiz
 title: Summer Quiz
 description: Un juego que obtiene sus preguntas a través de una API.
+info: Juego SPA de preguntas y respuestas realizado en JavaScript Vanilla, que obtiene datos de una API y guarda resultados en Local Storage.
 author: JavGuerra
 pubDate: 2022-06-21
 coverImage:

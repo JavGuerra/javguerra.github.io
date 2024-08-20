@@ -1,7 +1,8 @@
 ---
 route: galeria-carousel
 title: Carousel con Bootstrap
-description: Una pequeña galería de fotos de ejemplo
+description: Una pequeña galería de fotos de ejemplo.
+info: Maquetación de una pequeña galería de fotos de viaje a Venezuela elaborada con Bootstrap que es accesible y responsive.
 author: JavGuerra
 pubDate: 2022-04-29
 coverImage:

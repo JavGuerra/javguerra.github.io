@@ -16,7 +16,7 @@ Cuando mostramos al usuario un listado con muchos resultados totales, le estamos
 
 # El ejemplo
 
-Esta entrada está basada en el [proyecto «Tienda 8 bits»](/blog/proyecto-final-bootcamp), y aquí puedes ver su funcionamiento en esta [página de ejemplo](https://javguerra.badared.com/proyecto/tienda8bits/).
+Esta entrada está basada en el [proyecto «Tienda 8 bits»](/blog/tienda-8-bits), y aquí puedes ver su funcionamiento en esta [página de ejemplo](https://javguerra.badared.com/proyecto/tienda8bits/).
 
 Queremos listar una serie de fichas de productos por tres criterios, modelo de producto, precio y año de fabricación, y lo haremos alternativamente, es decir, por uno de entre esos tres criterios de ordenación cada vez.
 
@@ -171,5 +171,5 @@ Los iconos corresponden a la librería [Heroicons](https://heroicons.com/), desc
 # Enlaces
 
 * [Página de ejemplo «Tienda 8 bits»](https://javguerra.badared.com/proyecto/tienda8bits/)  
-* [Información sobre el proyecto](/blog/proyecto-final-bootcamp)  
+* [Información sobre el proyecto](/blog/tienda-8-bits)  
 * [Heroicons](https://heroicons.com/)  

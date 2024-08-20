@@ -8,7 +8,7 @@
             "description": "Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker."
         },
         { 
-            "route": "proyecto-final-bootcamp",
+            "route": "tienda-8-bits",
             "img": "tienda-8-bits.png",
             "alt": "Banner Tienda 8 bits",
             "title": "Tienda 8 bits",
@@ -29,7 +29,7 @@
             "description": "Juego JavaScript con tablero dimensionable, que hace uso de eventos, emplea JQuery y Bootstrap, y soporta navegadores antiguos."
         },
         { 
-            "route": "pagina-de-ejemplo",
+            "route": "conceptos-fswd",
             "img": "conceptos-fswd.jpg",
             "alt": "Portada de la página",
             "title": "Conceptos FSWD",

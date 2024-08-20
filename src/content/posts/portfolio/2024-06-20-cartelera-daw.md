@@ -2,6 +2,7 @@
 route: cartelera-daw
 title: Cartelera DAW
 description: Proyecto final de FPGS DAW con Java y Spring Boot.
+info: Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker.
 author: JavGuerra
 pubDate: 2024-06-20
 coverImage:

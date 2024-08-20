@@ -2,6 +2,7 @@
 route: buscaminas
 title: Buscaminas en JavaScript
 description: Pequeño juego online para manejo de eventos.
+info: Juego JavaScript con tablero dimensionable, que hace uso de eventos, emplea JQuery y Bootstrap, y soporta navegadores antiguos.
 author: JavGuerra
 pubDate: 2022-04-28
 coverImage:

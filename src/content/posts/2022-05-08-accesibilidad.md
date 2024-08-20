@@ -22,7 +22,7 @@ tags:
 
 Todos presentaremos en algún momento de nuestra vida alguna discapacidad en menor o mayor grado. El envejecimiento de la población acentúa esto, sumando un número destacable de personas que requieren algún tipo de adaptación (visual, auditiva, cognitiva, motriz) a la hora de acceder a la información en línea, por eso es importante que nuestras webs tengan esto en cuenta para poder llegar a cualquier tipo de público.
 
-Con ayuda de la página de ejemplo que preparé y reseñe en [esta entrada](/blog/pagina-de-ejemplo), iré describiendo algunas buenas prácticas que suelo emplear en las webs que desarrollo.
+Con ayuda de la página de ejemplo que preparé y reseñe en [esta entrada](/blog/conceptos-fswd), iré describiendo algunas buenas prácticas que suelo emplear en las webs que desarrollo.
 
 [<button>Acceder a la página web</button>](https://javguerra.github.io/conceptos-fswd/index.html)
 
