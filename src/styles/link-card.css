@@ -1,5 +1,5 @@
 .link-card {
-    @apply list-none transition-all duration-300 ease-in-out bg-gray-200 dark:bg-gray-800 hover:bg-gradient-to-r hover:from-purple-400 hover:to-gray-50 dark:hover:from-purple-700 dark:hover:to-gray-900 bg-[length:200%] bg-[position:0%] hover:bg-[position:100%] rounded-lg relative cursor-pointer border-2 border-gray-300 dark:border-gray-700 hover:border-purple-300 hover:dark:border-purple-900;
+    @apply list-none transition-all duration-300 ease-in-out bg-gray-100 dark:bg-gray-900 hover:bg-gradient-to-r hover:from-purple-400 hover:to-gray-50 dark:hover:from-purple-700 dark:hover:to-gray-900 bg-[length:200%] bg-[position:0%] hover:bg-[position:100%] rounded-lg relative cursor-pointer border-2 border-gray-200 dark:border-gray-800 hover:border-purple-300 hover:dark:border-purple-900;
   
     a {
       @apply p-3 md:p-6 block no-underline hover:no-underline text-black dark:text-white !important;

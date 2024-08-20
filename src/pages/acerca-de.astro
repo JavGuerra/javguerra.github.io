@@ -1,18 +1,25 @@
 ---
+import '@/styles/markdown.css';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Card from '@/components/Card.astro';
 import { Image } from 'astro:assets';
 import { Code } from 'astro:components';
-import '@/styles/markdown.css';
 
+import bannerImg from '@/assets/banner-1.svg';
 import qrCodeImg from '@/assets/img/qr-code.png';
 ---
 
 <BaseLayout pageTitle="Sobre mi" subTitle="¿Por qué querrías conocerme?">
-    
+
+<Image src={bannerImg} alt="banner" />
+
 <div class="md-content">
     
-    <a href="#experiencia">Experiencia</a> | <a href="#actitudes">Actitudes</a> | <a href="#conocimientos">Conocimientos</a> | <a href="#portfolio">Portfolio</a> | <a href="#meritos">Méritos</a> | <a href="#sabermas">Saber más</a>
+    <nav class="mt-2 -mb-5">
+      <a href="#experiencia">Experiencia</a> ▫️ <a href="#actitudes">Actitudes</a> ▫️ <a href="#conocimientos">Conocimientos</a> ▫️ <a href="#portfolio">Portfolio</a> ▫️ <a href="#meritos">Méritos</a> ▫️ <a href="#sabermas">Saber más</a>
+    </nav>
+
+    <hr />
 
     <h2 id="experiencia">Experiencia</h2>
     
@@ -27,13 +34,13 @@ import qrCodeImg from '@/assets/img/qr-code.png';
     <h3>Me presento</h3>
 
     <p>Además de programar, me apasiona aprender y compartir mis conocimientos, la Informática, la 
-    <a href="/blog/museohc-en-g-seis">retroinformática</a>, la tecnología en general, el diseño gráfico y las <a href="/blog/series-recomendadas">series de TV</a>.</p>
+    <a href="/blog/museohc-en-g-seis">retroinformática</a>, la tecnología, el diseño gráfico y las <a href="/blog/series-recomendadas">series de TV</a>.</p>
 
-    <p>Durante mi trayectoria profesional he tenido la oportunidad de conocer varios sectores productivos relacionados con las TIC, adquiriendo una amplia visión de conjunto en el área.</p>
+    <p>Durante mi trayectoria profesional he conocido varios sectores productivos relacionados con las TIC, adquiriendo una amplia visión de conjunto en el área.</p>
 
-    <p>Como programador, soy cuidadoso y aplicado, y me gusta el trabajo bien hecho. Pienso que el buen software debe cumplir su objetivo siendo intuitivo y fácil de aprender, y que los pequeños errores en el resultado desmerecen el trabajo del equipo de desarrollo.</p>
+    <p>Como programador, me gusta el trabajo bien hecho. Pienso que el buen software debe ser intuitivo y fácil de aprender, y que los errores de diseño desmerecen el trabajo del equipo de desarrollo.</p>
 
-    <p>Estoy abierto a nuevas experiencias y a aprender de las personas con las que trabajo para superarme personalmente. Me motiva especialmente el teletrabajo y el trabajo en equipo.</p>
+    <p>Estoy abierto a nuevas experiencias y a aprender para superarme. Me motiva especialmente el teletrabajo y el trabajo en equipo.</p>
 
     <h2 id="actitudes">Actitudes</h2>
 
@@ -53,15 +60,15 @@ import qrCodeImg from '@/assets/img/qr-code.png';
     "frontend": {
       "javascript": ["React", "AlpineJS", "AJAX", "JQuery", "ES6", "TS"],
       "html": ["xHTML", "SVG", "JSX", "Blade", "Accessibility"],
-      "css": ["Sass", "Bootstrap", "Tailwind", "Bulma", "Responsive"]
+      "css": ["Sass", "Bootstrap", "Tailwind", "Bulma", "Responsive", "accesible"]
     },
     "backend": {
-      "javascript": ["Node.js", "Express"],
+      "javascript": ["Node.js", "Express", "Astro"],
       "java": ["Spring Boot", "Thymeleaf"],
       "php": ["Laravel", "LiveWire"]
     },
     "software": {
-      "tools": ["Git/GitHub", "VS Codium", "IntelliJ Idea", "Brackets"],
+      "tools": ["Git/GitHub", "VS Code", "IntelliJ Idea", "Brackets"],
       "design": ["InkScape", "Illustrator", "Draw", "Gimp", "Photoshop", "Scribus"]
     },
     "systems": ["Linux", "OS X", "Windows", "DOS"],

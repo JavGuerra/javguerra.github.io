@@ -5,11 +5,12 @@ interface Props {
 }
 
 import { getCollection } from 'astro:content';
-
+import { Image } from 'astro:assets';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
 import TagLabel from '@/components/TagLabel.astro';
+import bannerImg from '@/assets/banner-2.svg';
 
 export async function getStaticPaths() {
   const allPosts: Record<string, any>[] = await getCollection('posts');
@@ -31,8 +32,10 @@ const { posts, tags } = Astro.props;
 ---
 
 <BaseLayout pageTitle={`Tema: ${tag}`}>
+
+  <Image src={bannerImg} alt="banner" />
   
-  <h2>{`${posts.length} entradas`}</h2>
+  <h2>{' ' + `${posts.length} entradas`}</h2>
   <ul class="mt-8 mb-12 list-disc">
     {posts.map(post => <BlogPostLink title={post.data.title} 
         href=`/blog/${post.data.route || post.slug}` />

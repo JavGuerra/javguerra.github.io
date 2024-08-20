@@ -34,12 +34,14 @@ if (allPosts.length) {
     <ul class="-mt-4">
         <HeroCard href={href} img={javImg} alt="Javier Guerra"
             styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
-            <p class="text-2xl leading-snug md:leading-relaxed">👋🏻 Soy <strong>Javier Guerra</strong>, técnico superior DAW.
-                
-            <p>Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
+            <div class="text-center md:text-left">
+                <p class="text-2xl leading-snug md:leading-relaxed">👋🏻&nbsp;Soy&nbsp;<strong>Javier&nbsp;Guerra</strong>, técnico&nbsp;superior&nbsp;DAW.
+                    
+                <p class="mt-2">Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
 
-            <div class="mt-4 md:mt-6">
-                <ButtonLink href={href} text="Sobre mi&nbsp;→" />
+                <div class="mt-4 md:mt-6">
+                    <ButtonLink href={href} text="Sobre mi&nbsp;→" />
+                </div>
             </div>
         </HeroCard>
 
@@ -58,7 +60,7 @@ if (allPosts.length) {
     </ul>
     
     { post && 
-        <ul class="mb-8">
+        <ul class="mb-8 text-center md:text-left">
             <BlogPostCard
                 frontmatter={post.data}
                 href=`${post.data.route || getSlugName(post.slug)}`
