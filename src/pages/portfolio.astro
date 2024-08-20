@@ -4,9 +4,8 @@ import HeroCard from "@/components/HeroCard.astro";
 import Card from "@/components/Card.astro";
 import portfolio from "@/content/_portfolio.json";
 
-const posts = await Astro.glob('@posts/portfolio/*.md');
-const images = import.meta.glob("@/assets/portfolio/*", { eager: true });
 const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[256px]";
+const images = import.meta.glob("@/assets/portfolio/*", { eager: true });
 
 const projects = portfolio.projects.map(project => {
   const image = images[`/src/assets/portfolio/${project.img}`] as Record<string, any>;

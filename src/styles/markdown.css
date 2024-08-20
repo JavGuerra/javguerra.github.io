@@ -28,7 +28,7 @@
     hr { @apply my-8 }
 
     .note {
-        @apply inline-block w-full py-2 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100;
+        @apply inline-block w-full pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100;
     }
 
     .note strong { @apply text-gray-900 dark:text-gray-50; }
