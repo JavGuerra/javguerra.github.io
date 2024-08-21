@@ -29,6 +29,6 @@ Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blo
 
 ## Ir a la página
 
-[![Código QR](qr.svg)](https://javguerra.github.io/)  
+[![Código QR](/public/assets/qr.svg)](https://javguerra.github.io/)  
 
 https://javguerra.github.io/
