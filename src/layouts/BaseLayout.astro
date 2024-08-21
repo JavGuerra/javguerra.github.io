@@ -1,6 +1,6 @@
 ---
 interface Props {
-    pageTitle?: string;
+    pageTitle: string;
     subTitle?: string;
 }
 
@@ -10,14 +10,14 @@ import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 
 const { pageTitle, subTitle } = Astro.props;
-const title = pageTitle ? pageTitle : "Códice";
+const showTitle = pageTitle != 'Error 404';
 ---
 
 <html lang="es">
-  <BaseHead pageTitle={title} subTitle={subTitle} />
+  <BaseHead pageTitle={pageTitle} subTitle={subTitle} />
   <body>
     <Header />
-    {pageTitle && <h1>{pageTitle}</h1>}
+    {showTitle && <h1>{pageTitle}</h1>}
     {subTitle && <p class="subtitle">{subTitle}</p>}
     <div class="my-8">
       <slot />
