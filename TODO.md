@@ -1,16 +1,14 @@
 # TO DO
 
-- Artículo sobre la nueva página
-- Manifest
-- Revisar enlaces externos al blog desde proyectos
-
-# Propuestas
-
 - Post anterior y Post siguiente
-- Iconos footer cambian color cuando hover
+- Iconos footer cambian de color cuando 'hover'
 - Selector de modo claro/oscuro
-- Compartir en redes
+- Compartir entradas en redes
 - Integración con Disqus
 - Buscador
-- Lista de entradas filtradas en vez de enlaces.
-- Estadísticas
+- Estadísticas de visitas
+
+# Pendiente
+
+- Manifest
+- Revisar enlaces externos al blog desde los proyectos

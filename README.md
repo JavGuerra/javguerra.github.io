@@ -6,7 +6,15 @@
 
 Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tailwind](https://tailwindcss.com/).
 
-- **Características de este sitio**. Artículo en preparación...
+### Características
+
+- RSS de contenidos
+- Sitemap para SEO
+- Tema de color
+- Es accesible
+- Es responsive
+
+Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog).
 
 ### Licencias
 

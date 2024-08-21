@@ -6,7 +6,7 @@ info: Maquetación de una pequeña galería de fotos de viaje a Venezuela elabor
 author: JavGuerra
 pubDate: 2022-04-29
 coverImage:
-  image: '@/assets/img/galeria-vnzla.jpg'
+  image: '@/assets/portfolio/galeria-vnzla.jpg'
   alt: Galería Venezuela
 tags:
     - web

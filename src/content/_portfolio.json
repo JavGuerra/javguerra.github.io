@@ -41,6 +41,13 @@
             "alt": "Captura de la página",
             "title": "Carousel con Bootstrap",
             "description": "Maquetación de una pequeña galería de fotos de viaje a Venezuela elaborada con Bootstrap que es accesible y responsive."
+        },
+        { 
+            "route": "codice",
+            "img": "codice.png",
+            "alt": "Captura de la página",
+            "title": "Códice",
+            "description": "Página personal y blog Markdown elaborado con Astro y Tailwind que incluye filtrado por etiquetas, RSS y modo claro/oscuro automático."
         }
     ]
 }

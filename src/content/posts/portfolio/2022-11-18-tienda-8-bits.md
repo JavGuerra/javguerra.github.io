@@ -6,7 +6,7 @@ info: Aplicación realizada en JavaScript con Node.js, Express, React y MongoDB 
 author: JavGuerra
 pubDate: 2022-11-18
 coverImage:
-  image: '@/assets/img/banner-tienda8bits.png'
+  image: '@/assets/portfolio/tienda-8-bits.png'
   alt: Banner
 tags:
     - web

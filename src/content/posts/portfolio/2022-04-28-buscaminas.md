@@ -6,7 +6,7 @@ info: Juego JavaScript con tablero dimensionable, que hace uso de eventos, emple
 author: JavGuerra
 pubDate: 2022-04-28
 coverImage:
-  image: '@/assets/img/buscaminas.png'
+  image: '@/assets/portfolio/buscaminas.png'
   alt: Buscaminas
 tags:
     - web

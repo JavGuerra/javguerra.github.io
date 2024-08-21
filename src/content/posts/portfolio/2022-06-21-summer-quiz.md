@@ -6,7 +6,7 @@ info: Juego SPA de preguntas y respuestas realizado en JavaScript Vanilla, que o
 author: JavGuerra
 pubDate: 2022-06-21
 coverImage:
-  image: '@/assets/img/summer-quiz.png'
+  image: '@/assets/portfolio/summer-quiz.png'
   alt: Summer Quiz
 tags:
     - web
@@ -16,7 +16,7 @@ tags:
     - JavaScript
     - juego
     - accesibilidad
-    - Responsive 
+    - responsive 
 ---
 
 «Fun 10-question quiz to test your knowledge». **Práctica final del módulo de JavaScript avanzado del Bootcamp de FSWD**, por Alejandro Rodríguez y Javier Guerra.
