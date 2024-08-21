@@ -8,7 +8,7 @@ coverImage:
   image: '@/assets/img/tv.png'
   alt: Series de TV
 tags:
-    - tv
+    - TV
     - video
 ---
 

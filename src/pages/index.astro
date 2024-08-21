@@ -1,4 +1,5 @@
 ---
+import Search from "astro-pagefind/components/Search";
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import siteConfig from '@/siteConfig.json';
 import BlogPostCard from "@/components/BlogPostCard.astro";
@@ -67,5 +68,7 @@ if (allPosts.length) {
             />
         </ul>
     }
+
+    <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
     
 </BaseLayout>

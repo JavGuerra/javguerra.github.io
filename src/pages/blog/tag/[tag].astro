@@ -31,31 +31,31 @@ const { tag } = Astro.params;
 const { posts, tags } = Astro.props;
 ---
 
-<BaseLayout pageTitle={`Tema: ${tag}`}>
+  <BaseLayout pageTitle={`Tema: ${tag}`}>
 
-  <Image src={bannerImg} alt="banner" />
-  
-  <h2>{' ' + `${posts.length} entradas`}</h2>
-  <ul class="mt-8 mb-12 list-disc">
-    {posts.map(post => <BlogPostLink title={post.data.title} 
-        href=`/blog/${post.data.route || post.slug}` />
-    )}
-  </ul>
+    <Image src={bannerImg} alt="banner" />
+    
+    <h2>{' ' + `${posts.length} entradas`}</h2>
+    <ul class="mt-8 mb-12 list-disc">
+      {posts.map(post => <BlogPostLink title={post.data.title} 
+          href=`/blog/${post.data.route || post.slug}` />
+      )}
+    </ul>
 
-  { tags.length ? (
-    <>
-      <h2>Otros temas</h2>
-      <div class="mt-4 mb-12 flex flex-wrap">
-        <TagLabel tag="Todas las entradas" />
-        {tags
-          .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
-          .map(tag => <TagLabel tag={tag} />)}
-      </div>
-    </>
-  ) : ( "" ) }
+    { tags.length ? (
+      <>
+        <h2>Otros temas</h2>
+        <div class="mt-4 mb-12 flex flex-wrap">
+          <TagLabel tag="Todas las entradas" />
+          {tags
+            .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
+            .map(tag => <TagLabel tag={tag} />)}
+        </div>
+      </>
+    ) : ( "" ) }
 
-  <div class="text-center md:text-left">
-    <ButtonLink text="←&nbsp;Volver" />
-  </div>
+    <div class="text-center md:text-left">
+      <ButtonLink text="←&nbsp;Volver" />
+    </div>
 
-</BaseLayout>
+  </BaseLayout>

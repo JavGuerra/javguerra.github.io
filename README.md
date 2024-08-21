@@ -10,6 +10,7 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 
 - RSS de contenidos
 - Sitemap para SEO
+- Buscador
 - Tema de color
 - Transiciones
 - Es accesible

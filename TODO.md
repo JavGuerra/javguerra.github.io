@@ -6,5 +6,4 @@
 - Selector de modo claro/oscuro
 - Compartir entradas en redes
 - Integración con Disqus
-- Buscador
 - Estadísticas de visitas

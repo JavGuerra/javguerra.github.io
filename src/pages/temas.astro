@@ -8,23 +8,24 @@ interface allPosts {
   allPosts: Record<string, any>[];
 }
 
+import Search from "astro-pagefind/components/Search";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPostLink from "@/components/BlogPostLink.astro";
 import { getCollection } from 'astro:content';
-import { Image } from 'astro:assets';
 import TagLabel from '@/components/TagLabel.astro';
 import resources from "@/content/_resources.json";
-import bannerImg from '@/assets/banner-2.svg';
 
 const allPosts = await getCollection('posts');
 const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 ---
 
 <BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
+  
+  <h2 class="mt-2 mb-6">Buscador</h2>
 
-  <Image src={bannerImg} alt="banner" />
+  <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 
-  <ul class="link-card-grid mt-6">
+  <ul class="link-card-grid mt-8">
     { resources.in.length ? (
       <li>
         <ul class="md:mb-4">

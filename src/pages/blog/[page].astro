@@ -3,6 +3,7 @@ interface Props {
     page: Page<any>;
 }
 
+import Search from "astro-pagefind/components/Search";
 import siteConfig from '@/siteConfig.json';
 
 import type { Page } from 'astro';
@@ -29,11 +30,13 @@ const { page } = Astro.props;
 
 <BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
 
-  <h2 class="mt-2">Entradas</h2>
+  <h2 class="mt-2 mb-6">Entradas</h2>
+
+  <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 
   { page.data.length ? (
 
-    <ul class="-mt-2 text-center md:text-left">
+    <ul class="text-center md:text-left">
       {page.data.map(post => (
         <BlogPostCard frontmatter={post.data} href={post.data.route || getSlugName(post.slug)} />
       ))}

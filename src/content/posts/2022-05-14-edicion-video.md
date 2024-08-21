@@ -12,7 +12,7 @@ tags:
     - CSS
     - edición
     - video
-    - herramientas
+    - herramienta
 ---
 Esta simple edición de video que preparé para la asignatura de Diseño de Interfaces Web de FPGS. de Desarrollo de Aplicaciones Web, no es, desde luego, una obra de arte, ya que incluye filtros de video sin demasiado sentido, tal como pedía el ejercicio, pero ejemplifica el trabajo realizado con una herramienta de edición de video no lineal como es OpenShot Video Editor.
 

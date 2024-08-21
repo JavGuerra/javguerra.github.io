@@ -13,7 +13,7 @@ tags:
     - CSS
     - JavaScript
     - animación
-    - herramientas
+    - herramienta
 ---
 Cree atractivos diseños interactivos basados ​​en HTML5 y gráficos en movimiento que puedan ejecutarse en cualquier dispositivo.
 
