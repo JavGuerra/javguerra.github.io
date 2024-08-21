@@ -33,7 +33,7 @@ const { page } = Astro.props;
 
   { page.data.length ? (
 
-    <ul class="-mt-2">
+    <ul class="-mt-2 text-center md:text-left">
       {page.data.map(post => (
         <BlogPostCard frontmatter={post.data} href={post.data.route || getSlugName(post.slug)} />
       ))}

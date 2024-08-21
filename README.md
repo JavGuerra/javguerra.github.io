@@ -11,18 +11,23 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 - RSS de contenidos
 - Sitemap para SEO
 - Tema de color
+- Transiciones
 - Es accesible
 - Es responsive
+- Usa TypeScript
+- Implementa Open Graph
+- Compatible con PWA
 
-Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog).
+Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog/codice/).
 
 ### Licencias
 
 - Sobre los contenidos (entradas del blog): [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es)
 - Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE](LICENSE)
+- Banners por: [Viscious-Speed](https://openclipart.org/detail/202234/banners-set) en Open ClipArt.
+- Tipografía: [Blogger_Sans-Medium](https://www.fontsquirrel.com/fonts/blogger-sans)
 
-
-## Ir al blog
+## Ir a la página
 
 [![Código QR](qr.svg)](https://javguerra.github.io/)  
 

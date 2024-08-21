@@ -15,8 +15,10 @@ const imageURL = new URL("/assets/banner.png", Astro.url);
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="date" content="2024-08-21" />
+    <meta name="author" content="Javier Guerra" />
+    <meta name="copyright" content="CC BY-SA 4.0" />
 
     <link rel="canonical" href={canonicalURL} />
 
@@ -30,17 +32,21 @@ const imageURL = new URL("/assets/banner.png", Astro.url);
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={subTitle} />
     <meta property="og:image" content={imageURL} />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="es_ES" />
 
+    <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={Astro.url} />
     <meta property="twitter:title" content={pageTitle} />
     <meta property="twitter:description" content={subTitle} />
     <meta property="twitter:image" content={imageURL} />
+    <meta property="twitter:site" content="@javgr" />
     
-    <link rel="sitemap" href="/sitemap-index.xml" />
-
     <link rel="preload" href="/assets/fonts/Blogger_Sans-Medium.otf"
     as="font" type="font/otf" crossorigin />
+    
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <ViewTransitions />
-</head>
+  </head>
