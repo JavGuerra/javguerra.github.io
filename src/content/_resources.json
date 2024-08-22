@@ -85,6 +85,26 @@
         {
             "title": "PageSpeed Insights",
             "href": "https://pagespeed.web.dev/"
+        },
+        {
+            "title": "SVG Repo",
+            "href": "https://www.svgrepo.com"
+        },
+        {
+            "title": "Openclipart",
+            "href": "https://openclipart.org/"
+        },
+        {
+            "title": "Free SVG",
+            "href": "https://freesvg.org/"
+        },
+        {
+            "title": "Font Library",
+            "href": "https://fontlibrary.org/"
+        },
+        {
+            "title": "Pixabay",
+            "href": "https://pixabay.com/"
         }
     ]
 }

@@ -65,6 +65,6 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 
 .link-card-grid { @apply grid grid-cols-[repeat(auto-fit,minmax(24ch,1fr))] gap-8 p-0; }
 
-.link-card-grid-min { @apply grid grid-cols-[repeat(auto-fit,minmax(20ch,1fr))] gap-2 p-0; }
+.link-card-grid-min { @apply grid grid-cols-[repeat(auto-fit,minmax(16ch,1fr))] gap-2 p-0; }
 
 li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-400; }
