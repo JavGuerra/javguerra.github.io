@@ -1,0 +1,25 @@
+@media (prefers-color-scheme: dark) {
+    .pagefind-ui {
+      --pagefind-ui-text: #ffffff;
+      --pagefind-ui-primary: #ffffff;
+      --pagefind-ui-background: #1f2937;
+      --pagefind-ui-border: #374151;
+      --pagefind-ui-tag: #374151;
+    }
+}
+
+.pagefind-ui {
+    @apply dark:text-white;
+}
+
+.pagefind-ui__search-input {
+    @apply dark:text-white;
+}
+
+.pagefind-ui__result-title {
+    @apply dark:text-white;
+}
+
+.pagefind-ui__result-excerpt {
+    @apply dark:text-gray-300;
+}

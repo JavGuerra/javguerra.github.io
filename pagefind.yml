@@ -1,2 +1,3 @@
 exclude:
-  - /blog/tag/*
+  - /blog/tag/**/*
+  - /temas/index.html
