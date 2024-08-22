@@ -56,7 +56,7 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 .tag a { @apply leading-none; }
 
 .post-card {
-    @apply w-full font-medium p-3 md:p-5 my-8 bg-white dark:bg-black rounded-lg hover:bg-gray-100 hover:dark:bg-gray-900 border-2 border-gray-50 dark:border-gray-950 hover:border-gray-200 dark:hover:border-gray-800;
+    @apply w-full font-medium p-3 md:p-5 bg-white dark:bg-black rounded-lg hover:bg-gray-100 hover:dark:bg-gray-900 border-2 border-gray-50 dark:border-gray-950 hover:border-gray-200 dark:hover:border-gray-800;
 
     p { @apply mb-1 md:mb-3; }
 
@@ -64,5 +64,7 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 }
 
 .link-card-grid { @apply grid grid-cols-[repeat(auto-fit,minmax(24ch,1fr))] gap-8 p-0; }
+
+.link-card-grid-min { @apply grid grid-cols-[repeat(auto-fit,minmax(20ch,1fr))] gap-2 p-0; }
 
 li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-400; }

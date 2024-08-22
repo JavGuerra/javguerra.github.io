@@ -34,18 +34,20 @@ if (allPosts.length) {
     <h2>Bienvenida</h2>
 
     <ul class="-mt-4">
-        <HeroCard href={href} img={javImg} alt="Javier Guerra"
-            styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
-            <div class="text-center md:text-left">
-                <p class="text-2xl leading-snug md:leading-relaxed">👋🏻&nbsp;Soy&nbsp;<strong>Javier&nbsp;Guerra</strong>, técnico&nbsp;superior&nbsp;DAW.
-                    
-                <p class="mt-2">Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
+        <div class="my-8">
+            <HeroCard href={href} img={javImg} alt="Javier Guerra"
+                styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
+                <div class="text-center md:text-left">
+                    <p class="text-2xl leading-snug md:leading-relaxed">👋🏻&nbsp;Soy&nbsp;<strong>Javier&nbsp;Guerra</strong>, técnico&nbsp;superior&nbsp;DAW.
+                        
+                    <p class="mt-2">Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
 
-                <div class="mt-4 md:mt-6">
-                    <ButtonLink href={href} text="Sobre mi&nbsp;→" />
+                    <div class="mt-4 md:mt-6">
+                        <ButtonLink href={href} text="Sobre mi&nbsp;→" />
+                    </div>
                 </div>
-            </div>
-        </HeroCard>
+            </HeroCard>
+        </div>
 
         <Card href="/portfolio" title="Portfolio"
             body="Visita mi portfolio para saber algo más sobre mis conocimientos aplicados." 
@@ -66,7 +68,7 @@ if (allPosts.length) {
     </dir>
     
     { post && 
-        <ul class="mb-8 text-center md:text-left">
+        <ul class="my-8 text-center md:text-left">
             <BlogPostCard
                 frontmatter={post.data}
                 href=`${post.data.route || getSlugName(post.slug)}`

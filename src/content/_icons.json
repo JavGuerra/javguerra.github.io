@@ -1,0 +1,76 @@
+{
+   "icons": [
+        {
+            "href": "/blog/tag/formación",
+            "img": "teaching.svg",
+            "alt": "Birrete",
+            "text": "Formación"
+        },
+        {
+            "href": "#",
+            "img": "itman.svg",
+            "alt": "Controles",
+            "text": "IT manager"
+        },
+        {
+            "href": "#",
+            "img": "sysadmin.svg",
+            "alt": "Servidores",
+            "text": "Sysadmin"
+        },
+        {
+            "href": "#",
+            "img": "ai.svg",
+            "alt": "Chip IA",
+            "text": "AI prompter"
+        },
+        {
+            "href": "/blog/tag/accesibilidad",
+            "img": "ally.svg",
+            "alt": "Logo accesibilidad",
+            "text": "Accesibilidad digital"
+        },
+        {
+            "href": "/blog/tag/web",
+            "img": "web.svg",
+            "alt": "Planeta",
+            "text": "Fullstack Web Developer"
+        },
+        {
+            "href": "/blog/tag/JavaScript",
+            "img": "react.svg",
+            "alt": "Logo React",
+            "text": "JavaScript MERN"
+        },
+        {
+            "href": "/blog/tag/Java",
+            "img": "springboot.svg",
+            "alt": "Logo Spring Boot",
+            "text": "Spring Boot Java"
+        },
+        {
+            "href": "/blog/tag/PHP",
+            "img": "laravel.svg",
+            "alt": "Logo Laravel",
+            "text": "PHP + Laravel"
+        },
+        {
+            "href": "/blog/tag/Python",
+            "img": "python.svg",
+            "alt": "Logo Python",
+            "text": "Python"
+        },
+        {
+            "href": "/blog/tag/diseño",
+            "img": "design.svg",
+            "alt": "Bombilla",
+            "text": "Diseño gráfico"
+        },
+        {
+            "href": "/blog/tag/Sinclair QL",
+            "img": "ql.svg",
+            "alt": "Logo QL",
+            "text": "Sinclair QL"
+        }
+    ]
+}

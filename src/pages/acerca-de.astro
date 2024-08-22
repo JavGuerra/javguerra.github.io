@@ -2,18 +2,28 @@
 import '@/styles/markdown.css';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Card from '@/components/Card.astro';
+import HeroCard from '@/components/HeroCard.astro';
 import { Image } from 'astro:assets';
 import { Code } from 'astro:components';
+import areas from "@/content/_icons.json";
 
 import bannerImg from '@/assets/banner-1.svg';
 import qrCodeImg from '@/assets/img/qr-code.png';
+
+const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px]";
+const images = import.meta.glob("@/assets/icon/*", { eager: true });
+
+const icons = areas.icons.map(area => {
+  const image = images[`/src/assets/icon/${area.img}`] as Record<string, any>;
+  return { ...area, image };
+});
 ---
 
 <BaseLayout pageTitle="Sobre mi" subTitle="¿Por qué querrías conocerme?">
 
 <Image src={bannerImg} alt="banner" />
 
-<div class="md-content">
+  <div class="md-content">
     
     <nav class="mt-2 -mb-5 text-center">
       <a href="#experiencia">Experiencia</a> ▫️&nbsp;<a href="#actitudes">Actitudes</a> ▫️&nbsp;<a href="#conocimientos">Conocimientos</a> ▫️&nbsp;<a href="#portfolio">Portfolio</a> ▫️&nbsp;<a href="#meritos">Méritos</a> ▫️&nbsp;<a href="#sabermas">Saber más</a>
@@ -27,10 +37,6 @@ import qrCodeImg from '@/assets/img/qr-code.png';
 
     <p class="md:text-2xl"><a href="/assets/doc/CV-javguerra.pdf"><button class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</button></a> &nbsp; <a href="mailto:javguerra(arroba)badared.com"><button class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</button></a></p>
 
-    <p>👉🏻 Estas son algunas de las areas de mi desempeño profesional:</p>
-
-    <p class="note md:text-2xl text-center">🔹&nbsp;Teaching 🔹&nbsp;IT Manager 🔹&nbsp;Sysadmin 🔹&nbsp;AI&nbsp;prompter 🔹&nbsp;Accesibilidad&nbsp;digital 🔹&nbsp;Jr.&nbsp;Fullstack&nbsp;Web&nbsp;Developer 🔹&nbsp;JavaScript&nbsp;MERN 🔹&nbsp;Java&nbsp;+&nbsp;Spring 🔹&nbsp;PHP&nbsp;+&nbsp;Laravel 🔹&nbsp;Python 🔹&nbsp;Graphic&nbsp;designer 🔹&nbsp;Sinclair&nbsp;QL</p>
-
     <h3>Me presento</h3>
 
     <p>Además de programar, me apasiona aprender y compartir mis conocimientos, la Informática, la 
@@ -41,6 +47,21 @@ import qrCodeImg from '@/assets/img/qr-code.png';
     <p>Como programador, me gusta el trabajo bien hecho. Pienso que el buen software debe ser intuitivo y fácil de aprender, y que los errores de diseño desmerecen el trabajo del equipo de desarrollo.</p>
 
     <p>Estoy abierto a nuevas experiencias y a aprender para superarme. Me motiva especialmente el teletrabajo y el trabajo en equipo.</p>
+
+    <h3>Trayectoria</h3>
+
+    <p>👉🏻 Estas son algunas de las areas de mi desempeño profesional:</p>
+
+  </div>
+
+  <ul role="list" class="link-card-grid-min">
+    {icons.map(icon =>
+      <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt} styles={styles}>
+        {icon.text}
+      </HeroCard>)}
+  </ul>
+
+  <div class="md-content">
 
     <h2 id="actitudes">Actitudes</h2>
 
@@ -108,6 +129,6 @@ import qrCodeImg from '@/assets/img/qr-code.png';
       </a>
     </div>
 
-</div>
+  </div>
 
 </BaseLayout>

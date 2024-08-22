@@ -21,15 +21,17 @@ const projects = portfolio.projects.map(project => {
     {
       projects.map(project => (
         <ul>
-          <HeroCard
-            href={`/blog/${project.route}`}
-            img={project.image.default}
-            alt={project.alt}
-            styles={styles}
-          >
-            <h3 class="my-0 leading-snug">{`${project.title} →`}</h3>
-            <p>{project.description}</p>
-          </HeroCard>
+          <div class="my-8">
+            <HeroCard
+              href={`/blog/${project.route}`}
+              img={project.image.default}
+              alt={project.alt}
+              styles={styles}
+            >
+              <h3 class="my-0 leading-snug">{`${project.title} →`}</h3>
+              <p>{project.description}</p>
+            </HeroCard>
+          </div>
         </ul>
       ))
     }

@@ -25,8 +25,9 @@ Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blo
 
 - Sobre los contenidos (entradas del blog): [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es)
 - Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE](LICENSE)
-- Banners por: [Viscious-Speed](https://openclipart.org/detail/202234/banners-set) en Open ClipArt.
+- Banners por: [Viscious-Speed](https://openclipart.org/detail/202234/banners-set) en Open ClipArt
 - Tipografía: [Blogger_Sans-Medium](https://www.fontsquirrel.com/fonts/blogger-sans)
+- Iconos: [Solar Linear Icons](https://www.svgrepo.com/collection/solar-linear-icons/)
 
 ## Ir a la página
 
