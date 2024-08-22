@@ -47,7 +47,7 @@
             "img": "codice.png",
             "alt": "Captura de la página",
             "title": "Códice",
-            "description": "Página personal y blog Markdown elaborado con Astro y Tailwind que incluye filtrado por etiquetas, RSS y modo claro/oscuro automático."
+            "description": "Página personal y blog Markdown elaborado con Astro y Tailwind que incluye buscador, etiquetas, RSS y modo claro/oscuro automático."
         }
     ]
 }
