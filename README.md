@@ -1,6 +1,6 @@
 # ✨ Códice, mi git-blog personal sobre TICs.
 
-[![Banner](/public/assets/banner.png)](https://javguerra.github.io/)
+[![Banner](/public/assets/img/banner.png)](https://javguerra.github.io/)
 
 ## Sobre el blog
 
@@ -31,6 +31,6 @@ Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blo
 
 ## Ir a la página
 
-[![Código QR](/public/assets/qr.svg)](https://javguerra.github.io/)  
+[![Código QR](/public/assets/img/qr.svg)](https://javguerra.github.io/)  
 
 https://javguerra.github.io/
