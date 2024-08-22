@@ -60,6 +60,10 @@ if (allPosts.length) {
             body="Accede a la lista de temas del blog y a los enlaces recomendados."
         />
     </ul>
+
+    <dir class="mt-8 ps-0">
+        <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+    </dir>
     
     { post && 
         <ul class="mb-8 text-center md:text-left">
@@ -69,7 +73,5 @@ if (allPosts.length) {
             />
         </ul>
     }
-
-    <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
     
 </BaseLayout>
