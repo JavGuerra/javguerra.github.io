@@ -3,6 +3,7 @@ import '@/styles/markdown.css';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Card from '@/components/Card.astro';
 import HeroCard from '@/components/HeroCard.astro';
+import BlogPostLink from '@/components/BlogPostLink.astro';
 import { Image } from 'astro:assets';
 import { Code } from 'astro:components';
 import areas from "@/content/_icons.json";
@@ -35,7 +36,7 @@ const icons = areas.icons.map(area => {
     
     <p class="text-2xl">Soy <strong>Javier Guerra</strong>, Técnico Superior en Desarrollo de Aplicaciones Web.</p>
 
-    <p class="md:text-2xl"><a href="/assets/doc/CV-javguerra.pdf"><button class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</button></a> &nbsp; <a href="mailto:javguerra(arroba)badared.com"><button class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</button></a></p>
+    <p class="md:text-2xl text-center"><a href="/assets/doc/CV-javguerra.pdf"><button class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</button></a> &nbsp; <a href="mailto:javguerra(arroba)badared.com"><button class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</button></a></p>
 
     <h3>Me presento</h3>
 
@@ -67,14 +68,13 @@ const icons = areas.icons.map(area => {
 
     <p>👍🏻 Mis actitudes destacadas son:</p>
 
-    <p class="text-center"><span class="tag">Compañerismo</span> <span class="tag">Compromiso</span> <span class="tag">Integridad</span> <span class="tag">Liderazgo</span> <span class="tag">Iniciativa</span> <span class="tag">Creatividad</span> <span class="tag">Comunicación&nbsp;escrita</span> <span class="tag">Planificación&nbsp;y&nbsp;organización</span></p>  
+    <p class="flex flex-wrap justify-center md:text-2xl pb-2"><span class="tag">🤝&nbsp;Compañerismo</span> <span class="tag">🙋&nbsp;Compromiso</span> <span class="tag">💯&nbsp;Integridad</span> <span class="tag">🤹&nbsp;Liderazgo</span> <span class="tag">🛠️&nbsp;Iniciativa</span> <span class="tag">🌈&nbsp;Creatividad</span> <span class="tag">🖊️&nbsp;Comunicación&nbsp;escrita</span> <span class="tag">📐&nbsp;Planificación&nbsp;y&nbsp;organización</span></p>  
 
     <h2 id="conocimientos">Conocimientos</h2>
 
     <p>👉🏻 Algunas de las tecnologías con las que trabajo:</p>
 
-    <Code lang="json" code={`
-{
+    <Code lang="json" code={`{
   "code": ["JavaScript", "Java", "PHP", "Python", "HTML5", "CSS3", "SQL", "Bash"],
   "methodologies": ["Kanban", "ITIL", "OOP", "Jamstack", "PWA"],
   "technologies": {
@@ -96,10 +96,9 @@ const icons = areas.icons.map(area => {
     "databases": ["MySQL/MariaDB", "SQLite", "MongoDB", "Oracle DB"],
     "infrastructures": ["nextCloud", "Apache", "Docker", "AWS", "Firebase", "Netlify", "Heroku", "CI/CD", "Networks"]
   }
-}
-    `} />  
+}`} />  
 
-    <p class="md:text-2xl"><a href="/blog/certificaciones"><button class="m-2 pt-1 pb-2">🏆&nbsp;Ver mis certificaciones TIC</button></a></p>
+    <p class="md:text-2xl text-center"><a href="/blog/certificaciones"><button class="m-2 pt-1 pb-2">🏆&nbsp;Ver mis certificaciones TIC</button></a></p>
    
     <div class="mt-12 mb-10">
       <ul id="portfolio" class="-ms-8">
@@ -111,23 +110,26 @@ const icons = areas.icons.map(area => {
 
     <p>✌🏻 Fundador de varias ONG. Autor de publicaciones, artículos y proyectos de retro-informática y tele-educación.</p>
 
-    <ul>
-      <li><a href="/blog/1">Mantengo este blog desde hace algunos años</a></li>
-      <li><a href="/blog/desarrollos">Desarrollos web para el bien público</a></li>
-      <li><a href="/blog/publicaciones">Publicaciones y artículos</a></li>
-      <li><a href="/blog/traducciones">Traducciones de software</a></li>
-      <li><a href="/blog/cliparts">Cliparts</a> y <a href="/blog/logos">Logotipos</a></li>
-    </ul>
-    
-    <h2 id="sabermas">Saber más</h2>
+  </div>
 
-    <div class="text-center">
+  <ul>
+    <BlogPostLink href="/blog/1" title="Escribo mi blog desde hace algunos años&nbsp;→" />
+    <BlogPostLink href="/blog/desarrollos" title="Elaboro desarrollos web para el bien&nbsp;público&nbsp;→" />
+    <BlogPostLink href="/blog/publicaciones" title="Realizo publicaciones y artículos&nbsp;→" />
+    <BlogPostLink href="/blog/traducciones" title="Hago traducciones de software&nbsp;→" />
+    <BlogPostLink href="/blog/tag/diseño" title="Comparto diseños con la comunidad&nbsp;→" />
+    <BlogPostLink href="/blog/tag/Sinclair QL" title="Promuevo la comunidad retro del Sinclair&nbsp;QL&nbsp;→" />
+  </ul>
+  
+  <div class="md-content">
+
+  <h2 id="sabermas">Saber más</h2>
+
       <p>🔗 Visita <a href="https://linkedin.com/in/javguerra">mi perfil en Linkedin</a> para conocer más sobre mi trabajo y sobre mi.</p>
 
       <a href="https://linkedin.com/in/javguerra">
       <Image src={qrCodeImg} alt="Código QR" class="mx-auto" loading="lazy" />
       </a>
-    </div>
 
   </div>
 

@@ -51,7 +51,7 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 
 .navigation { @apply w-full md:flex md:w-auto font-medium flex-col p-4 md:p-0 px-4 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-950 dark:border-gray-700; }
 
-.tag { @apply my-1 me-2 px-3 pb-1 md:text-lg bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-800 !important; }
+.tag { @apply my-1 me-2 px-3 pb-1 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-800 !important; }
 
 .tag a { @apply leading-none; }
 
