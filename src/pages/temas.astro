@@ -52,16 +52,18 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     }
   </ul>
 
-  { allTags.length ? (
-    <>
-      <h2>Etiquetas del blog</h2>
-      <div class="flex flex-wrap mt-4">
-        <TagLabel tag="Todas las entradas" />
-        {allTags
-          .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
-          .map(tag => <TagLabel tag={tag} />)}
-      </div>
-    </>
-  ) : ( "" ) }
+  <div data-pagefind-ignore="all">
+    { allTags.length ? (
+      <>
+        <h2>Etiquetas del blog</h2>
+        <div class="flex flex-wrap mt-4">
+          <TagLabel tag="Todas las entradas" />
+          {allTags
+            .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
+            .map(tag => <TagLabel tag={tag} />)}
+        </div>
+      </>
+    ) : ( "" ) }
+  </div>
 
 </BaseLayout>

@@ -34,8 +34,10 @@ const { title, description, author, pubDate, coverImage, tags } = frontmatter;
     {coverImage && <Image src={coverImage.image}
         alt={coverImage.alt} inferSize class="my-8" loading="eager" />}
 
-    <div class="flex flex-wrap mt-4">
-        {tags && tags.map((tag: string) => ( <TagLabel tag={tag} /> ))}
+    <div data-pagefind-ignore="all">
+        <div class="flex flex-wrap mt-4">
+            {tags && tags.map((tag: string) => ( <TagLabel tag={tag} /> ))}
+        </div>
     </div>
 
     <div class="my-8 md-content">

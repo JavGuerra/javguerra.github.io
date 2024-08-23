@@ -31,11 +31,12 @@ const { tag } = Astro.params;
 const { posts, tags } = Astro.props;
 ---
 
-  <BaseLayout pageTitle={`Tema: ${tag}`}>
+<BaseLayout pageTitle={`Tema: ${tag}`}>
 
     <Image src={bannerImg} alt="banner" />
     
     <h2>{' ' + `${posts.length} entradas`}</h2>
+    
     <ul class="mt-8 mb-12 list-disc">
       {posts.map(post => <BlogPostLink title={post.data.title} 
           href=`/blog/${post.data.route || post.slug}` />
@@ -58,4 +59,4 @@ const { posts, tags } = Astro.props;
       <ButtonLink text="←&nbsp;Volver" />
     </div>
 
-  </BaseLayout>
+</BaseLayout>
