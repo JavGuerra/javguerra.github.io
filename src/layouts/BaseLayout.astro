@@ -32,6 +32,24 @@ const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // 
       import '../scripts/menu.js';
     </script>
 
+    <script>
+      document.addEventListener('astro:page-load', () => {
+        if (typeof (window as any).DISQUS !== 'undefined') {
+          const disqusThread = document.getElementById('disqus_thread');
+          if (disqusThread) {
+            const postId = disqusThread.getAttribute('data-post-id');
+            (window as any).DISQUS.reset({
+              reload: true,
+              config: function () {
+                this.page.identifier = postId;
+                this.page.url = window.location.href;
+              }
+            });
+          }
+        }
+      });
+    </script>
+
     <script id="dsq-count-scr" src={'//' + disqusShortname + '.disqus.com/count.js'} async is:inline></script>
     
   </body>
