@@ -43,10 +43,13 @@ if (allPosts.length) {
 
                     <p class="mt-2">Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
 
-                    <div class="md:flex w-full mt-4 md:mt-6">
-                        <ButtonLink href={href} text="Sobre&nbsp;mi&nbsp;→" />
-                        &nbsp;&nbsp;
-                        <small class="w-full text-right">🟢&nbsp;<strong>disponible&nbsp;para&nbsp;trabajar</strong></small>
+                    <div class="md:flex md:flex-row-reverse">
+                        <div class="mt-2 md:mt-3">
+                            <small>&nbsp;&nbsp;🟢&nbsp;<strong>disponible&nbsp;para&nbsp;trabajar&nbsp;&nbsp;</strong></small>
+                        </div>
+                        <div class="w-full mt-5 mb-2 md:mt-3 md:mb-0">
+                            <ButtonLink href={href} text="Sobre&nbsp;mi&nbsp;→" />
+                        </div>
                     </div>
                 </div>
             </HeroCard>
