@@ -1,12 +1,13 @@
 ---
 const disqusShortname = 'codice-1';
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <div id="disqus_thread"></div>
 
 <script is:inline>
     var disqus_config = function () {
-        this.page.url = window.location.href;
+        this.page.url = {canonicalURL};
         this.page.identifier = window.location.pathname;
     };
 
