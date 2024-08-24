@@ -9,6 +9,8 @@ import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
 
+const disqusShortname = 'codice-1';
+
 const { pageTitle, subTitle } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
 const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // ignora búsquedas
@@ -23,12 +25,15 @@ const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // 
     {subTitle && <p class="subtitle">{subTitle}</p>}
     <div class="my-8">
       <slot />
-  </div>
+    </div>
     <Footer />
 
     <script>
       import '../scripts/menu.js';
     </script>
+
+    <script id="dsq-count-scr" src={'//' + disqusShortname + '.disqus.com/count.js'} async is:inline></script>
+    
   </body>
 
 </html>

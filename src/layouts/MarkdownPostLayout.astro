@@ -19,6 +19,7 @@ import BaseLayout from './BaseLayout.astro';
 import TagLabel from '@/components/TagLabel.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
 import FormattedDate from '@/components/FormattedDate.astro';
+import Disqus from '@/components/Disqus.astro';
 
 const { frontmatter } = Astro.props;
 const { title, description, author, pubDate, coverImage, tags } = frontmatter;
@@ -43,6 +44,8 @@ const { title, description, author, pubDate, coverImage, tags } = frontmatter;
     <div class="my-8 md-content">
         <slot />
     </div>
+
+    <Disqus />
 
     <div class="text-center md:text-left">
         <ButtonLink text="←&nbsp;Volver" />

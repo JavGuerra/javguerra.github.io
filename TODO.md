@@ -2,4 +2,3 @@
 
 - Iconos footer cambian de color cuando 'hover'
 - Botones para compartir entradas en redes
-- Integración con Disqus
