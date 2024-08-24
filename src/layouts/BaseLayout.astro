@@ -11,7 +11,7 @@ import Footer from '@/components/Footer.astro';
 
 const { pageTitle, subTitle } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
-const shouldIgnore = pageTitle.startsWith('Tema: '); // ignora búsquedas
+const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // ignora búsquedas
 ---
 
 <html lang="es">
