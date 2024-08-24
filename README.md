@@ -1,4 +1,4 @@
-# ✨ Códice, mi git-blog personal sobre TICs.
+# ✨ Códice, mi git-blog personal sobre TICs
 
 [![Banner](/public/assets/img/banner.png)](https://javguerra.github.io/)
 
