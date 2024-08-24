@@ -8,16 +8,17 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 
 ### Características
 
-- RSS de contenidos
-- Sitemap para SEO
-- Buscador
-- Tema de color
-- Transiciones
+- Incluye RSS de contenidos
+- Implementa sitemap para SEO
+- Incluye estadísticas del sitio
+- Implementa un buscador
+- Usa tema de color claro/oscuro automático
+- Realiza transiciones de página
 - Es accesible
 - Es responsive
 - Usa TypeScript
-- Implementa Open Graph
-- Compatible con PWA
+- Contiene etiquetado Open Graph
+- Es compatible con PWA
 
 Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog/codice/).
 
