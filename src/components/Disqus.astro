@@ -6,17 +6,17 @@ const disqusShortname = 'codice-1';
 <div id="disqus_thread" transition:persist></div>
 
 <script define:vars={{ id, disqusShortname }}>
-  var disqus_config = function () {
-    this.page.url = window.location.href;
-    this.page.identifier = id;
-  };
-  
-  (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
+    var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = id;
+    };
+    
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
 <noscript>Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios.</a></noscript>

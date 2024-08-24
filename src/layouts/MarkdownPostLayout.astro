@@ -46,34 +46,20 @@ const { title, description, author, pubDate, coverImage, tags } = frontmatter;
         <slot />
     </div>
 
-    <div id="comments-section">
-        <h1 id="comments-header" style="display: none;" class="text-center mt-4 mb-4">Comentarios</h1>
-        <!-- Aquí va tu componente Disqus -->
+    <div id="comments-section" class="mt-8">
+        <h1 id="comments-header" style="display: none;" class="text-center mb-4">Comentarios</h1>
+        <Disqus id={id} />
     </div>
   
     <script>
-        function showCommentsHeader() {
-          const header = document.getElementById('comments-header');
-          if (header) {
-            header.style.display = 'block';
-          }
+    // Si está disponiible Disqus...
+    document.addEventListener('astro:page-load', () => {
+        const header = document.getElementById('comments-header');
+        if (header && typeof (window as any).DISQUS !== 'undefined') {
+        header.style.display = 'block';
         }
-  
-        function checkDisqus() {
-          if (typeof (window as any).DISQUS !== 'undefined') {
-            showCommentsHeader();
-          }
-        }
-  
-        // Verificar cuando la página se carga y después de las transiciones
-        document.addEventListener('astro:page-load', () => {
-          checkDisqus();
-          // Verificar nuevamente después de un breve retraso
-          setTimeout(checkDisqus, 1000);
-        });
+    });
     </script>
-
-    <Disqus id={id} />
 
     <div class="text-center mt-8 md:text-left">
         <ButtonLink text="←&nbsp;Volver" />
