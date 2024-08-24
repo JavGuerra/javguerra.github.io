@@ -32,7 +32,7 @@ const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // 
       import '../scripts/menu.js';
     </script>
 
-    <script>
+    <!-- <script>
       document.addEventListener('astro:page-load', () => {
         if (typeof (window as any).DISQUS !== 'undefined') {
           const disqusThread = document.getElementById('disqus_thread');
@@ -48,7 +48,7 @@ const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // 
           }
         }
       });
-    </script>
+    </script> -->
 
     <script id="dsq-count-scr" src={'//' + disqusShortname + '.disqus.com/count.js'} async is:inline></script>
     

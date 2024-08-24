@@ -3,7 +3,7 @@ const { id } = Astro.props;
 const disqusShortname = 'codice-1';
 ---
 
-<div id="disqus_thread" data-post-id={id}></div>
+<div id="disqus_thread" transition:persist></div>
 
 <script define:vars={{ id, disqusShortname }}>
   var disqus_config = function () {
