@@ -39,4 +39,4 @@ Aunque no es muy conocida, es una herramienta potente, y finalmente, el resultad
 
 [<button>Ver animación</button>](http://badared.com/javguerra/daw/animacion/)
 
-[Descargar Google Web Designer](http://badared.com/javguerra/daw/animacion/)
+[Descargar Google Web Designer](https://webdesigner.withgoogle.com/intl/es_es/)

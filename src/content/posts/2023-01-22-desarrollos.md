@@ -34,7 +34,7 @@ Blog implantado sobre el Sinclair QL que gestiono junto con Afx y Zerover.
 Tecnología: Wordpress CMS
 
 * __Paquete QL-ES__ (2024)  
-[https://javguerra.github.io/QL_ES_pack/](https://javguerra.github.io/QL_ES_pack/)  
+[https://javguerra.github.io/Sinclair-QL-ES-pack/](https://javguerra.github.io/Sinclair-QL-ES-pack/)  
 Paquete de supervivencia para QL en español. Contiene una recopilación de recursos y utilidades básicas para Sinclair QL para quienes han adquirido un QL y se quieren poner manos a la obra.  
 Tecnologías: HTML + CSS + JavaScript Vanilla  
 
@@ -52,7 +52,7 @@ Tecnologías: SuperBASIC
 
 * __Web personal__ (2009)  
 [https://javguerra.badared.com/](https://javguerra.badared.com/)  
-Página web en desuso que requiere reescritura actualizada.  
+Página web en desuso que requiere reescritura pra su actualización.  
 Tecnologías: HTML + CSS
 
 * __Cooperantes por Internet__ (1998)  
