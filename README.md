@@ -11,6 +11,7 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 - Incluye RSS de contenidos
 - Implementa sitemap para SEO
 - Incluye estadísticas del sitio
+- Integra Disqus para comentarios
 - Implementa un buscador
 - Usa tema de color claro/oscuro automático
 - Realiza transiciones de página
