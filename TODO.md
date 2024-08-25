@@ -1,5 +1,5 @@
 # TO DO
 
-- Iconos footer cambian de color cuando 'hover'
-- Botones para compartir entradas en redes
-- Implementar un botón «siguiente» en los posts
+- Iconos footer que cambien de color cuando 'hover'
+- Botones en las entradas para compartir en RRSS
+- Botón «siguiente» en los posts

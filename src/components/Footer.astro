@@ -2,38 +2,42 @@
 import siteConfig from '@/siteConfig.json';
 import { Image } from 'astro:assets';
 import Social from './Social.astro';
-import emailImage from '@/assets/email.svg';
-import rssImage from '@/assets/rss.svg';
-import socialImage from '@/assets/social.svg';
+import emailImg from '@/assets/email.svg';
+import rssImg from '@/assets/rss.svg';
+import statsImg from '@/assets/stats.svg';
 ---
 
 <footer class="my-10">
 
   <div class="flex flex-wrap md:flex-row-reverse gap-4 items-center justify-center">
+
     <p class="w-full md:w-auto md:mt-4 leading-tight text-center md:text-left">
+
       <a href={siteConfig.default.licenseUrl} ><small>{siteConfig.default.license}</small></a>
       <strong>{siteConfig.default.autor}</strong><br />
       <small class="gray"><i>{siteConfig.default.footer}</i></small>
+
     </p>
 
     <div class="flex gap-4">
+
       <Social platform="github" username={siteConfig.default.social.github} />
       <Social platform="linkedin" username={siteConfig.default.social.linkedin} />
       <Social platform="x" username={siteConfig.default.social.x} />
 
       <a href="mailto:javguerra(arroba)badared.com">
-        <Image src={emailImage} alt="Correo" loading="lazy" />
+        <Image src={emailImg} alt="Correo" loading="lazy" />
       </a>
 
       <a href="/rss.xml">
-          <Image src={rssImage} alt="Fuente RSS" loading="lazy" />
+          <Image src={rssImg} alt="Fuente RSS" loading="lazy" />
       </a>
 
       <a href="https://codice.goatcounter.com/">
-        <Image src={socialImage} alt="Estadísticas" loading="lazy" />
+        <Image src={statsImg} alt="Estadísticas" loading="lazy" />
       </a>
 
     </div>
+    
   </div>
-
 </footer>
