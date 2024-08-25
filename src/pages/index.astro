@@ -9,10 +9,10 @@ import { getCollection } from 'astro:content';
 import HeroCard from '@/components/HeroCard.astro';
 import Card from '@/components/Card.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
+import javImg from '/public/assets/img/javguerra.png';
 
 const allPosts: Record<string, any>[] = await getCollection('posts');
 const href = "/acerca-de";
-import javImg from '/public/assets/img/javguerra.png';
 
 let post;
 
