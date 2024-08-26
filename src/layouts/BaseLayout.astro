@@ -2,25 +2,30 @@
 interface Props {
     pageTitle: string;
     subTitle?: string;
-    coverImage?: string;
+    coverImage?: Record<string, string>;
 }
 
 import '@/styles/base.css';
 import BaseHead from '@/components/BaseHead.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import { getImage } from 'astro:assets';
 
 const disqusShortname = 'codice-1';
+let routeImage = '/assets/img/banner.png';
 
 const { pageTitle, subTitle, coverImage } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
 const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // ignora búsquedas
 
-const image = coverImage ? coverImage : '/assets/img/banner.png';
+if (coverImage) {
+  const processedImage = await getImage({ src: coverImage.image });
+  routeImage = processedImage.src;
+}
 ---
 
 <html lang="es">
-  <BaseHead pageTitle={pageTitle} subTitle={subTitle} img={image} />
+  <BaseHead pageTitle={pageTitle} subTitle={subTitle} img={routeImage} />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
     <Header />

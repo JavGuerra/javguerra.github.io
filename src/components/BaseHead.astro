@@ -10,7 +10,7 @@ import { ViewTransitions } from 'astro:transitions';
 const { pageTitle, subTitle, img } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const imageURL = new URL(img, Astro.url);
+const imageURL = new URL(img, Astro.site);
 ---
 
 <head>
