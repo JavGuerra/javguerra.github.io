@@ -2,6 +2,7 @@
 interface Props {
     pageTitle: string;
     subTitle?: string;
+    coverImage?: string;
 }
 
 import '@/styles/base.css';
@@ -11,13 +12,15 @@ import Footer from '@/components/Footer.astro';
 
 const disqusShortname = 'codice-1';
 
-const { pageTitle, subTitle } = Astro.props;
+const { pageTitle, subTitle, coverImage } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
 const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // ignora búsquedas
+
+const image = coverImage ? coverImage : '/assets/img/banner.png';
 ---
 
 <html lang="es">
-  <BaseHead pageTitle={pageTitle} subTitle={subTitle} />
+  <BaseHead pageTitle={pageTitle} subTitle={subTitle} img={image} />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
     <Header />
