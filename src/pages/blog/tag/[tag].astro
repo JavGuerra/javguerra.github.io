@@ -16,11 +16,11 @@ export async function getStaticPaths() {
   const uniqueTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 
   return uniqueTags.map((tag, _, allTags) => {
+    const posts = allPosts.filter(post => post.data.tags.includes(tag));
     const tags = allTags.filter(tagName => tagName !== tag);
-    const filteredPosts = allPosts.filter(post => post.data.tags.includes(tag));
     return {
       params: { tag },
-      props: { posts: filteredPosts, tags },
+      props: { posts, tags },
     };
   });
 }
@@ -31,7 +31,7 @@ const { posts, tags } = Astro.props;
 
 <BaseLayout pageTitle={`Tema: ${tag}`} subTitle="Etiquetas del blog">
   
-  <h2>{' ' + `${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
+  <h2>{`${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
 
     <ul class="mt-8 mb-12 list-disc">
       {posts.map(post => <BlogPostLink title={post.data.title} 
