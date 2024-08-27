@@ -26,3 +26,4 @@ Cuando puedo, llevo a cabo traducciones del inglés al español del software lib
 * [Diseño web en 4 minutos](https://javguerra.github.io/diseno-web-en-4-minutos/)
 * [Provincias de España](https://account.limesurvey.org/de/downloads/file/34-provinces-of-spain-provincias-de-espa%C3%B1a?tmpl=component) Complemento en español para el software [Limesurvey](https://www.limesurvey.org/es/).
 * PHP Guestbook [GBook](https://developers.phpjunkyard.com/viewtopic.php?f=3&t=5587&p=24230&hilit=spanish#p24230) y tema [«Conectiva»](https://developers.phpjunkyard.com/viewtopic.php?f=3&t=6629&p=27830&hilit=conectiva#p27830) 
+* [Structured SuperBasic](https://github.com/SinclairQL/StructuredSuperBasic/blob/main/Source/ssblang.ssb) Mensajes de error.
