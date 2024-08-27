@@ -53,7 +53,7 @@ const {
         <slot />
     </div>
 
-    <div id="comments-section" class="mt-8">
+    <div id="comments-section" class="mt-10">
         <h1 id="comments-header" style="display: none;" class="text-center mb-4">Comentarios</h1>
         <Disqus id={id} />
     </div>
@@ -63,9 +63,7 @@ const {
     document.addEventListener('astro:page-load', () => {
         const header = document.getElementById('comments-header');
         if (header && typeof (window as any).DISQUS !== 'undefined') {
-            (window as any).DISQUS.on(
-                'ready', () => {if (header) header.style.display = 'block';}
-            );
+            header.style.display = 'block';
         }
     });
     </script>
