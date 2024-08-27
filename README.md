@@ -20,6 +20,7 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 - Usa TypeScript
 - Contiene etiquetado Open Graph
 - Es compatible con PWA
+- Consigue una calificación de carbono «A» ([ver](https://www.websitecarbon.com/website/javguerra-github-io/))
 
 Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog/codice/).
 
