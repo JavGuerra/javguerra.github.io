@@ -2,10 +2,10 @@
 interface frontmatterInfo {
     title: string;
     description: string;
-    author: string;
+    author?: string;
     pubDate: string;
-    coverImage: Record<string, string>;
-    tags: Array<string>;
+    coverImage?: Record<string, string>;
+    tags?: Array<string>;
 }
 
 interface Props {
@@ -23,7 +23,14 @@ import FormattedDate from '@/components/FormattedDate.astro';
 import Disqus from '@/components/Disqus.astro';
 
 const { frontmatter, id } = Astro.props;
-const { title, description, author, pubDate, coverImage, tags } = frontmatter;
+const { 
+    title,
+    description,
+    author = siteConfig.default.autor,
+    pubDate,
+    coverImage = {image: '', alt: ''},
+    tags = []
+} = frontmatter;
 ---
 
 <BaseLayout transition:name={title} pageTitle={title} subTitle={description} coverImage={coverImage}>
@@ -56,7 +63,9 @@ const { title, description, author, pubDate, coverImage, tags } = frontmatter;
     document.addEventListener('astro:page-load', () => {
         const header = document.getElementById('comments-header');
         if (header && typeof (window as any).DISQUS !== 'undefined') {
-        header.style.display = 'block';
+            (window as any).DISQUS.on(
+                'ready', () => {if (header) header.style.display = 'block';}
+            );
         }
     });
     </script>

@@ -25,7 +25,7 @@ export async function GET(context) {
       link: `${context.site}blog/${post.data.route || getSlugName(post.slug)}`,
       title: post.data.title,
       description: post.data.description,
-      author: post.data.author,
+      author: post.data.author || siteConfig.default.autor,
       pubDate: post.data.pubDate,
       // Añadir la URL de la imagen al ítem RSS si existe
       ...(imageUrl && { customData: `<enclosure url="${imageUrl}" />` }),
@@ -35,7 +35,7 @@ export async function GET(context) {
 
   return rss({
     title: `${siteConfig.default.title} | Blog`,
-    description: `${siteConfig.default.description}`,
+    description: siteConfig.default.description,
     site: context.site,
     items,
   });

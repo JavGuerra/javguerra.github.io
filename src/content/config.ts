@@ -7,6 +7,7 @@ const extendedRssCollection = defineCollection({
     rssSchema.extend({
       route: z.string().optional(),
       info: z.string().optional(),
+      author: z.string().optional(),
       coverImage: z.object({
         image: image(),
         alt: z.string(),
