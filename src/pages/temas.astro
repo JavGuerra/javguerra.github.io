@@ -12,12 +12,18 @@ import Search from "astro-pagefind/components/Search";
 import '@/styles/pagefind-ui-custom.css';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPostLink from "@/components/BlogPostLink.astro";
+import BlogPostCard from "@/components/BlogPostCard.astro";
+import { getSlugName } from '@/scripts/urlUtils';
 import { getCollection } from 'astro:content';
 import TagLabel from '@/components/TagLabel.astro';
 import resources from "@/content/_resources.json";
 
 const allPosts = await getCollection('posts');
+
 const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+
+const randomIndex = Math.floor(Math.random() * allPosts.length);
+const post = allPosts[randomIndex];
 ---
 
 <BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
@@ -51,6 +57,17 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
       ) : ( "" )
     }
   </ul>
+
+
+  { post && 
+    <ul class="my-8 text-center md:text-left">
+      <h2>Entrada aleatoria</h2>
+      <BlogPostCard
+          frontmatter={post.data}
+          href=`${post.data.route || getSlugName(post.slug)}`
+      />
+    </ul>
+  }
 
   <div data-pagefind-ignore="all">
     { allTags.length ? (

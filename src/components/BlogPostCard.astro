@@ -1,15 +1,6 @@
 ---
-interface frontmatterInfo {
-  title: string;
-  description: string;
-  author: string;
-  pubDate: string;
-  coverImage: Record<string, string>;
-  tags: Array<string>;
-}
-  
 interface Props {
-  frontmatter: frontmatterInfo;
+  frontmatter: Record<string, any>;
   href: string;
   firstParagraph?: string;
 }

@@ -32,8 +32,10 @@ if (coverImage && coverImage?.image && coverImage.image !== '') {
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
     <Header />
-    {showTitle && <h1>{pageTitle}</h1>}
-    {subTitle && <p class="subtitle">{subTitle}</p>}
+    <header transition:animate="slide">
+      {showTitle && <h1>{pageTitle}</h1>}
+      {subTitle && <p class="subtitle">{subTitle}</p>}
+    </header>
     <div class="my-8">
       <slot />
     </div>

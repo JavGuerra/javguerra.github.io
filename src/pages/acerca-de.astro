@@ -7,9 +7,12 @@ import BlogPostLink from '@/components/BlogPostLink.astro';
 import { Image } from 'astro:assets';
 import { Code } from 'astro:components';
 import areas from "@/content/_icons.json";
-
+import quotes from '@/content/_quotes.json';
 import bannerImg from '@/assets/banner.png';
 import qrCodeImg from '@/assets/img/qr-code.png';
+
+const randomIndex = Math.floor(Math.random() * quotes.quotes.length);
+const quote = quotes.quotes[randomIndex];
 
 const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px]";
 const images = import.meta.glob("@/assets/icon/*", { eager: true });
@@ -29,8 +32,17 @@ const icons = areas.icons.map(area => {
     <nav class="mt-2 -mb-5 text-center">
       <a href="#experiencia">Experiencia</a> ▫️&nbsp;<a href="#actitudes">Actitudes</a> ▫️&nbsp;<a href="#conocimientos">Conocimientos</a> ▫️&nbsp;<a href="#portfolio">Portfolio</a> ▫️&nbsp;<a href="#meritos">Méritos</a> ▫️&nbsp;<a href="#sabermas">Más</a>
     </nav>
-
+    
     <hr />
+
+  </div>  
+
+    <div class="text-right font-serif">
+      <p>«<span set:html={quote.text} class="italic"></span>»<br /><small class="gray">— {quote.source}</></p>
+    </div>  
+
+
+    <div class="md-content">
 
     <h2 id="experiencia">Experiencia</h2>
     
