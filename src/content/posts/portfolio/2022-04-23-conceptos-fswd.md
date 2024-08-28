@@ -16,6 +16,9 @@ tags:
     - CSS
     - JavaScript
 ---
+
+Maquetación elaborada con HTML 5, CSS 3 y JavaScript Vanilla que incluye formulario y es accesible y responsive.
+
 # Conceptos FSWD
 
 __Práctica final del Ramp-up del Bootcamp de FSWD__  
