@@ -11,9 +11,7 @@ import quotes from '@/content/_quotes.json';
 import bannerImg from '@/assets/banner.png';
 import qrCodeImg from '@/assets/img/qr-code.png';
 
-const randomIndex = Math.floor(Math.random() * quotes.quotes.length);
-const quote = quotes.quotes[randomIndex];
-
+const quotesList = quotes.quotes;
 const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px]";
 const images = import.meta.glob("@/assets/icon/*", { eager: true });
 
@@ -37,12 +35,14 @@ const icons = areas.icons.map(area => {
 
   </div>  
 
-    <div class="text-right font-serif">
-      <p>«<span set:html={quote.text} class="italic"></span>»<br /><small class="gray">— {quote.source}</></p>
-    </div>  
+  <div class="text-right font-serif">
+    <p id="random-quote">
+      «<span id="quote-text" class="italic"></span>»<br />
+      <small id="quote-source" class="gray"></small>
+    </p>
+  </div>  
 
-
-    <div class="md-content">
+  <div class="md-content">
 
     <h2 id="experiencia">Experiencia</h2>
     
@@ -146,3 +146,12 @@ const icons = areas.icons.map(area => {
   </div>
 
 </BaseLayout>
+
+<script define:vars={{ quotesList }} is:inline>
+  document.addEventListener('astro:page-load', () => {
+    const randomIndex = Math.floor(Math.random() * quotesList.length);
+    const quote = quotesList[randomIndex];
+    document.getElementById('quote-text').innerHTML = quote.text;
+    document.getElementById('quote-source').textContent = `— ${quote.source}`;
+  });
+</script>

@@ -21,9 +21,6 @@ import resources from "@/content/_resources.json";
 const allPosts = await getCollection('posts');
 
 const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
-
-const randomIndex = Math.floor(Math.random() * allPosts.length);
-const post = allPosts[randomIndex];
 ---
 
 <BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
@@ -59,15 +56,15 @@ const post = allPosts[randomIndex];
   </ul>
 
 
-  { post && 
-    <ul class="my-8 text-center md:text-left">
+  {/* { post && 
+    <ul id="blogPost" class="my-8 text-center md:text-left">
       <h2>Entrada aleatoria</h2>
       <BlogPostCard
           frontmatter={post.data}
           href=`${post.data.route || getSlugName(post.slug)}`
       />
     </ul>
-  }
+  } */}
 
   <div data-pagefind-ignore="all">
     { allTags.length ? (
@@ -84,3 +81,13 @@ const post = allPosts[randomIndex];
   </div>
 
 </BaseLayout>
+
+{/* <script define:vars={{ allPosts }} is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const randomIndex = Math.floor(Math.random() * allPosts.length);
+    const post = allPosts[randomIndex];
+
+    const element = <BlogPostCard frontmatter={post.data} href={post.data.route || getSlugName(post.slug)} />
+    const blogPost = getElementById['blogPost'];
+  });
+</script> */}

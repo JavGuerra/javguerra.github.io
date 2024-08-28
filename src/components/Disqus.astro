@@ -5,7 +5,7 @@ const disqusShortname = 'codice-1';
 
 <div id="disqus_thread" transition:persist></div>
 
-<script define:vars={{ id, disqusShortname }}>
+<script define:vars={{ id, disqusShortname }} is:inline>
     var disqus_config = function () {
         this.page.url = window.location.href;
         this.page.identifier = id;
