@@ -1,7 +1,7 @@
 ---
 route: ql-scr-viewer
 title: Sinclair QL SCR Viewer
-description: Muestra pantallas del ordenador Sinclair QL.
+description: Muestra pantallas del ordenador Sinclair QL
 author: JavGuerra
 pubDate: 2024-02-10
 coverImage:

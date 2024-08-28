@@ -1,7 +1,7 @@
 ---
 route: sinclair-ql
 title: Sinclair QL
-description: Un ordenador profesional alternativo de 1984.
+description: Un ordenador profesional alternativo de 1984
 author: JavGuerra
 pubDate: 2023-12-35
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: publicaciones
 title: Publicaciones y artículos
-description: Materiales propios relacionados con las TIC y la educación.
+description: Materiales propios relacionados con las TIC y la educación
 author: JavGuerra
 pubDate: 2022-12-03
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: filtrado-multiple
 title: Filtrado múltiple
-description: Como simplificar la búsqueda de información.
+description: Como simplificar la búsqueda de información
 author: JavGuerra
 pubDate: 2022-07-15
 coverImage:

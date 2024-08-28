@@ -1,7 +1,7 @@
 ---
 route: mastermind
 title: Mastermind en PHP
-description: Programado en una sola página web, sin usar librerías.
+description: Programado en una sola página web, sin usar librerías
 author: JavGuerra
 pubDate: 2022-08-06
 coverImage:

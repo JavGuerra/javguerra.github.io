@@ -1,7 +1,7 @@
 ---
 route: beca-santander-fswd
 title: Bootcamp Beca Santander
-description: Programa digital reskilling Desarrollo Web Full Stack - Fundación Universia - Indra.
+description: Programa digital reskilling Desarrollo Web Full Stack - Fundación Universia - Indra
 author: JavGuerra
 pubDate: 2022-04-23
 coverImage:

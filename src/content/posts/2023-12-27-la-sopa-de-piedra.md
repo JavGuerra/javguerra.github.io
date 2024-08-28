@@ -1,7 +1,7 @@
 ---
 route: la-sopa-de-piedra
 title: La sopa de piedra
-description: Una fábula en torno al trabajo colaborativo.
+description: Una fábula en torno al trabajo colaborativo
 author: JavGuerra
 pubDate: 2023-12-27
 coverImage:

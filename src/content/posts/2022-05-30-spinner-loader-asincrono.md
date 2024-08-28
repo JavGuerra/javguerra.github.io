@@ -1,7 +1,7 @@
 ---
 route: spinner-loader-asincrono
 title: Spinner loader asíncrono
-description: Manrtiene el spinner activo mientras terminan todos los procesos asíncronos.
+description: Manrtiene el spinner activo mientras terminan todos los procesos asíncronos
 author: JavGuerra
 pubDate: 2022-05-30
 coverImage:

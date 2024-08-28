@@ -1,7 +1,7 @@
 ---
 route: desarrollos
 title: Desarrollos web para el bien público
-description: Mis páginas «pro bono» desarrolladas, implantadas o administradas.
+description: Mis páginas «pro bono» desarrolladas, implantadas o administradas
 author: JavGuerra
 pubDate: 2023-01-22
 coverImage:

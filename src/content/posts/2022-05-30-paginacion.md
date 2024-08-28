@@ -1,7 +1,7 @@
 ---
 route: paginacion
 title: Paginación
-description: Cómo hacer una barra de navegación en JavaScript.
+description: Cómo hacer una barra de navegación en JavaScript
 author: JavGuerra
 pubDate: 2022-05-30
 coverImage:

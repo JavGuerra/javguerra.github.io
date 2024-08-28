@@ -1,7 +1,7 @@
 ---
 route: mongodb-connect
 title: Conexión persistente a MongoDB en Node.js
-description: Abrir una única conexión a la base de datos a través de los distintos módulos de la aplicación.
+description: Abrir una única conexión a la base de datos a través de los distintos módulos de la aplicación
 author: JavGuerra
 pubDate: 2022-07-24
 coverImage:

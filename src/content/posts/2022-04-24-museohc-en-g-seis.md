@@ -1,7 +1,7 @@
 ---
 route: museohc-en-g-seis
 title: Stand del Museo de Historia de la Computación en Badajoz
-description: Visita al stand del museo en la «G-SEIS», el 23-04-2022.
+description: Visita al stand del museo en la «G-SEIS», el 23-04-2022
 author: JavGuerra
 pubDate: 2022-04-24
 coverImage:

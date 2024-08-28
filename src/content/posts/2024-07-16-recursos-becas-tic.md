@@ -1,7 +1,7 @@
 ---
 route: recursos-becas-tic
 title: Becas para estudios TIC
-description: Recursos económicos para formarte.
+description: Recursos económicos para formarte
 author: JavGuerra
 pubDate: 2024-07-16
 coverImage:
@@ -12,7 +12,7 @@ tags:
   - becas
 ---
 
-Este post es un compendio heterogéneo de becas para estudios para aprender sobre tecnologías de información y las comunicaciones (TIC). Pretende ser una catálogo general para las personas que desean formarse pero no es una guía detallada por materias o áreas o que siga un criterio de idoneidad específico.
+Este post es un compendio heterogéneo de becas de estudio para aprender sobre tecnologías de información y las comunicaciones (TIC). Pretende ser una catálogo general para las personas que desean formarse pero no es una guía detallada por materias o áreas o que siga un criterio de idoneidad específico.
 
 Las becas suelen tener plazos de presentación. Dependiendo de cuándo veas esta entrada, los plazos pueden o no estar activos.
 

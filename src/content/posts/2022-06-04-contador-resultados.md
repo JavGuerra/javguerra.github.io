@@ -1,7 +1,7 @@
 ---
 route: contador-resultados
 title: Contador de resultados
-description: Gráfica SVG dinámica en JavaScript con aguja indicadora de resultados.
+description: Gráfica SVG dinámica en JavaScript con aguja indicadora de resultados
 author: JavGuerra
 pubDate: 2022-06-04
 coverImage:

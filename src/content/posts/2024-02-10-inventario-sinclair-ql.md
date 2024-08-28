@@ -1,7 +1,7 @@
 ---
 route: inventario-sinclair-ql
 title: Inventario Sinclair QL
-description: Mi colección retro.
+description: Mi colección retro
 author: JavGuerra
 pubDate: 2024-02-10
 coverImage:

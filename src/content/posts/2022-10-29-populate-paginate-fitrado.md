@@ -1,7 +1,7 @@
 ---
 route: populate-paginate-fitrado
 title: Usando populate con paginate y filtrando los resultados
-description: Cómo relacionar colecciones cuando se usa mongoose-paginate-v2.
+description: Cómo relacionar colecciones cuando se usa mongoose-paginate-v2
 author: JavGuerra
 pubDate: 2022-10-29
 coverImage:

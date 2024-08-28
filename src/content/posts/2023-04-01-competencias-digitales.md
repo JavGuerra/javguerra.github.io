@@ -1,7 +1,7 @@
 ---
 route: competencias-digitales
 title: Materiales sobre competencias digitales
-description: Materiales sobre Internet, Linux, BBDD, cloud y ciberseguridad.
+description: Materiales sobre Internet, Linux, BBDD, cloud y ciberseguridad
 author: JavGuerra
 pubDate: 2023-04-01
 coverImage:

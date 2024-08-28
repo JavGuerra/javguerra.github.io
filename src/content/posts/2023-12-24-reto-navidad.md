@@ -1,7 +1,7 @@
 ---
 route: reto-navidad
 title: Reto navideño
-description: Cinco ejercicios de programación muy festivos.
+description: Cinco ejercicios de programación muy festivos
 author: JavGuerra
 pubDate: 2023-12-24
 coverImage:

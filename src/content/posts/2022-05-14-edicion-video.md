@@ -1,7 +1,7 @@
 ---
 route: edicion-video
 title: Edición de video
-description: Ejemplo realizado con OpenShot Video Editor.
+description: Ejemplo realizado con OpenShot Video Editor
 author: JavGuerra
 pubDate: 2022-05-14
 coverImage:

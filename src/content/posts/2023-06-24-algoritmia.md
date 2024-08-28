@@ -1,7 +1,7 @@
 ---
 route: algoritmia
 title: Algoritmia
-description: Los algoritmos nos enseñan el camino.
+description: Los algoritmos nos enseñan el camino
 author: JavGuerra
 pubDate: 2023-06-24
 coverImage:

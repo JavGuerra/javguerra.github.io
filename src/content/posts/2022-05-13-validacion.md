@@ -1,7 +1,7 @@
 ---
 route: validacion
 title: Validación de formularios
-description: Combinando validaciones propias con las de HTML5.
+description: Combinando validaciones propias con las de HTML5
 author: JavGuerra
 pubDate: 2022-05-13
 coverImage:

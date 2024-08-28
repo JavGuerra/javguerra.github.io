@@ -1,7 +1,7 @@
 ---
 route: logica-interactiva
 title: Lógica interactiva
-description: Opciones, eventos, disparadores y estados.
+description: Opciones, eventos, disparadores y estados
 author: JavGuerra
 pubDate: 2022-04-30
 coverImage:

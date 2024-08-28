@@ -1,7 +1,7 @@
 ---
 route: recursos-aprendizaje-tic
 title: Aprende Informática en línea
-description: Recursos formativos gratuitos y en español.
+description: Recursos formativos gratuitos y en español
 author: JavGuerra
 pubDate: 2023-07-29
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: cartelera-daw
 title: Cartelera DAW
-description: Proyecto final de FPGS DAW con Java y Spring Boot.
+description: Proyecto final de FPGS DAW con Java y Spring Boot
 info: Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker.
 author: JavGuerra
 pubDate: 2024-06-20
@@ -9,6 +9,7 @@ coverImage:
   image: '@/assets/img/cartelera-daw.svg'
   alt: Logo cartelera daw.
 tags: 
+    - portfolio
     - web
     - Java
     - Spring Boot
@@ -19,7 +20,7 @@ tags:
     - responsive
 ---
 
-Recientemente he presentado mi proyecto fin de estudios de Formación Profesional de Grado Superior DAW. Era algo que tenía aparcado durante demasiado tiempo y finalmente esta etapa se ha cerrado.
+Recientemente he presentado mi proyecto fin de estudios de Formación Profesional de Grado Superior DAW. Era algo que llevaba aparcado durante demasiado tiempo y finalmente esta etapa se ha cerrado.
 
 El proyecto  ha consistido en una aplicación web monolítica, desarrollada en Java, usando el framework Spring Boot, y ha sido desplegada en el servicio de Railway.com.
 

@@ -1,7 +1,7 @@
 ---
 route: ordenacion-react
 title: Ordenando resultados en React
-description: Listando alternativamente, por distintos criterios, la información de menor a mayor y viceversa.
+description: Listando alternativamente, por distintos criterios, la información de menor a mayor y viceversa
 author: JavGuerra
 pubDate: 2022-11-23
 coverImage:

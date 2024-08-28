@@ -1,7 +1,7 @@
 ---
 route: wysiwyg-css
 title: wysiwyg.css
-description: Un pequeño CSS para el contenido HTML o Markdown con una única clase.
+description: Un pequeño CSS para el contenido HTML o Markdown con una única clase
 author: JavGuerra
 pubDate: 2022-04-27
 coverImage:

@@ -27,6 +27,12 @@ export async function getStaticPaths({ paginate }: any) {
 }
 
 const { page } = Astro.props;
+
+function getFirstParagraph(text: string): string {
+  if (!text) return '';
+  const firstParagraph = text.split('\n\n')[0];
+  return firstParagraph.replace(/\[([^\]]+)\](\([^\)]+\))/g, '$1');
+}
 ---
 
 <BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
@@ -40,7 +46,11 @@ const { page } = Astro.props;
     <ul>
         {page.data.map(post => (
           <div class="my-8 text-center md:text-left">
-              <BlogPostCard frontmatter={post.data} href={post.data.route || getSlugName(post.slug)} />
+              <BlogPostCard
+                frontmatter={post.data}
+                href={post.data.route || getSlugName(post.slug)} 
+                firstParagraph={getFirstParagraph(post.body)}
+              />
           </div>
         ))}
     </ul>

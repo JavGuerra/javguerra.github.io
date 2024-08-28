@@ -1,7 +1,7 @@
 ---
 route: mysql-connect
 title: Conexiones asíncronas a MySQL en Node.js
-description: Usando util.promisify() para convertir en promesas conexiones síncronas de BBDD.
+description: Usando util.promisify() para convertir en promesas conexiones síncronas de BBDD
 author: JavGuerra
 pubDate: 2022-09-14
 coverImage:

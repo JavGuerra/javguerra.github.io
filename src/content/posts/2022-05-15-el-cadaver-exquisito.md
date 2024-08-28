@@ -1,7 +1,7 @@
 ---
 route: el-cadaver-exquisito
 title: El cadáver exquisito
-description: Un juego de experimentación artística por ordenador.
+description: Un juego de experimentación artística por ordenador
 author: JavGuerra
 pubDate: 2022-05-15
 coverImage:

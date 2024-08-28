@@ -1,7 +1,7 @@
 ---
 route: sergey-ssg
 title: Usando Sergey SSG
-description: Usando como ejemplo la página de las tarjetas de emergencia de Conectiva.
+description: Usando como ejemplo la página de las tarjetas de emergencia de Conectiva
 author: JavGuerra
 pubDate: 2022-08-26
 coverImage:

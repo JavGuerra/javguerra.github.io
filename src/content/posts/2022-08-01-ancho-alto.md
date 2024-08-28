@@ -1,7 +1,7 @@
 ---
 route: ancho-alto
 title: Conocer el ancho y alto de una imagen con JavaScript antes de usarla en HTML
-description: Ideas para evitar el «FOUC» de contenido cuando desconocemos las medidas de las imágenes.
+description: Ideas para evitar el «FOUC» de contenido cuando desconocemos las medidas de las imágenes
 author: JavGuerra
 pubDate: 2022-08-01
 coverImage:

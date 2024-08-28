@@ -1,7 +1,7 @@
 ---
 route: loader-thymeleaft
 title: Spinner loader en Thymeleaft
-description: Esperando la respuesta del backend.
+description: Esperando la respuesta del backend
 author: JavGuerra
 pubDate: 2024-07-08
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: certificaciones
 title: Mis certificaciones TIC
-description: Tecnologías de la Información y las Comunicaciones.
+description: Tecnologías de la Información y las Comunicaciones
 author: JavGuerra
 pubDate: 2022-08-14
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: clase-scanner-java
 title: ConsoleInput kit
-description: Una clase en Java para lectura de datos por consola.
+description: Una clase en Java para lectura de datos por consola
 author: JavGuerra
 pubDate: 2023-01-31
 coverImage:

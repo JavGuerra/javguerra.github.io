@@ -1,7 +1,7 @@
 ---
 route: logout-spring-security
 title: Logout personalizado con Spring Security
-description: Limpiando el contexto de seguridad sin borrar la cookie.
+description: Limpiando el contexto de seguridad sin borrar la cookie
 author: JavGuerra
 pubDate: 2024-07-13
 coverImage:

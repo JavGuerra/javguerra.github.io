@@ -29,7 +29,7 @@ const projects = portfolio.projects.map(project => {
               styles={styles}
             >
               <h3 class="my-0 leading-snug">{`${project.title} →`}</h3>
-              <p>{project.description}</p>
+              <p set:html={project.description}></p>
             </HeroCard>
           </div>
         </ul>

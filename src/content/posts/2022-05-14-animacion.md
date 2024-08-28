@@ -1,7 +1,7 @@
 ---
 route: animacion
 title: Animación interactiva
-description: Ejemplo realizado con Google Web Designer.
+description: Ejemplo realizado con Google Web Designer
 author: JavGuerra
 pubDate: 2022-05-14
 coverImage:

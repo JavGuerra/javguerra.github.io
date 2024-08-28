@@ -4,50 +4,50 @@
             "route": "cartelera-daw",
             "img": "cartelera-daw.png",
             "alt": "Logo Cartelera DAW",
-            "title": "Cartelera DAW",
-            "description": "Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft y Bootstrap, que fue desplegada con Docker."
+            "title": "Cartelera",
+            "description": "Aplicación realizada en <strong>Java</strong> con <strong>Spring Boot</strong>, Spring Security, <strong>Thymeleaft</strong> y Bootstrap, que fue desplegada con <strong>Docker</strong>."
         },
         { 
             "route": "tienda-8-bits",
             "img": "tienda-8-bits.png",
             "alt": "Banner Tienda 8 bits",
             "title": "Tienda 8 bits",
-            "description": "Aplicación realizada en JavaScript con Node.js, Express, React y MongoDB como BBDD. Incluye la elaboración de la API."
+            "description": "Aplicación realizada en JavaScript con <strong>Node.js</strong>, Express, <strong>React</strong> y <strong>MongoDB</strong> como BBDD. Incluye la elaboración de la <strong>API REST</strong>."
         },
         { 
             "route": "summer-quiz",
             "img": "summer-quiz.png",
             "alt": "Banner Summer Quiz",
             "title": "Summer Quiz",
-            "description": "Juego SPA de preguntas y respuestas realizado en JavaScript Vanilla, que obtiene datos de una API y guarda resultados en Local Storage."
+            "description": "Juego <strong>SPA</strong> de preguntas y respuestas realizado en <strong>JavaScript Vanilla</strong>, que obtiene datos de una <strong>API</strong> y guarda resultados en <strong>Local Storage</strong>."
         },
         { 
             "route": "buscaminas",
             "img": "buscaminas.png",
             "alt": "Captura del buscaminas",
-            "title": "Buscaminas JS",
-            "description": "Juego JavaScript con tablero dimensionable, que hace uso de eventos, emplea JQuery y Bootstrap, y soporta navegadores antiguos."
+            "title": "Buscaminas",
+            "description": "Juego <strong>JavaScript</strong> con tablero dimensionable, que hace uso de <strong>eventos</strong>, emplea <strong>JQuery</strong> y <strong>Bootstrap</strong>, y soporta navegadores antiguos."
         },
         { 
             "route": "conceptos-fswd",
             "img": "conceptos-fswd.jpg",
             "alt": "Portada de la página",
             "title": "Conceptos FSWD",
-            "description": "Maquetación elaborada con HTML 5, CSS 3 y JavaScript Vanilla que incluye formulario y es accesible y responsive."
+            "description": "Maquetación elaborada con <strong>HTML 5</strong>, <strong>CSS 3</strong> y <strong>JavaScript Vanilla</strong> que incluye <strong>formulario</strong> y es accesible y responsive."
         },
         { 
             "route": "galeria-carousel",
             "img": "galeria-vnzla.jpg",
             "alt": "Captura de la página",
-            "title": "Carousel con Bootstrap",
-            "description": "Maquetación de una pequeña galería de fotos de viaje a Venezuela elaborada con Bootstrap que es accesible y responsive."
+            "title": "Carousel",
+            "description": "Maquetación de una pequeña <strong>galería</strong> de fotos de viaje a Venezuela elaborada con <strong>Bootstrap</strong> que es accesible y responsive."
         },
         { 
             "route": "codice",
             "img": "codice.png",
             "alt": "Captura de la página",
             "title": "Códice",
-            "description": "Página personal y blog Markdown elaborado con Astro y Tailwind que incluye buscador, etiquetas, RSS y modo claro/oscuro automático."
+            "description": "Página personal y <strong>blog Markdown</strong> elaborado con <strong>Astro</strong> y <strong>Tailwind</strong> que incluye buscador, etiquetas, <strong>RSS</strong> y modo claro/oscuro automático."
         }
     ]
 }

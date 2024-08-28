@@ -1,7 +1,7 @@
 ---
 route: conceptos-fswd
 title: Conceptos Full Stack Web Developer
-description: Ejemplo de maquetación HTML y CSS.
+description: Ejemplo de maquetación HTML y CSS
 info: Maquetación elaborada con HTML 5, CSS 3 y JavaScript Vanilla que incluye formulario y es accesible y responsive.
 author: JavGuerra
 pubDate: 2022-04-23
@@ -9,6 +9,7 @@ coverImage:
   image: '@/assets/portfolio/conceptos-fswd.jpg'
   alt: Conceptos full stack
 tags:
+    - portfolio
     - web
     - código
     - HTML

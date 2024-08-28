@@ -1,7 +1,7 @@
 ---
 route: accesibilidad
 title: Accesibilidad Web
-description: Buenas prácticas explicadas a través de un ejemplo.
+description: Buenas prácticas explicadas a través de un ejemplo
 author: JavGuerra
 pubDate: 2022-05-08
 coverImage:

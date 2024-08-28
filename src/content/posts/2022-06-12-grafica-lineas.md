@@ -1,7 +1,7 @@
 ---
 route: grafica-lineas
 title: Gráfica de lineas dinámica con SVG
-description: Mostrar resultados gráficos con JavaScript.
+description: Mostrar resultados gráficos con JavaScript
 author: JavGuerra
 pubDate: 2022-06-12
 coverImage:

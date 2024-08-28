@@ -1,7 +1,7 @@
 ---
 route: cronometro-js
 title: Cronómetro en JavaScript
-description: Gestiona cronometros y guarda sesiones de los cronometrajes.
+description: Gestiona cronometros y guarda sesiones de los cronometrajes
 author: JavGuerra
 pubDate: 2022-05-22
 coverImage:

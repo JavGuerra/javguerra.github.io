@@ -1,7 +1,7 @@
 ---
 route: recursos-aprendizaje-programacion
 title: Aprende Programación en línea
-description: Recursos formativos gratuitos y en español.
+description: Recursos formativos gratuitos y en español
 author: JavGuerra
 pubDate: 2023-08-05
 coverImage:

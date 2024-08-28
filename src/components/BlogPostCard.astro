@@ -11,6 +11,7 @@ interface frontmatterInfo {
 interface Props {
   frontmatter: frontmatterInfo;
   href: string;
+  firstParagraph?: string;
 }
   
 import siteConfig from '@/siteConfig.json';
@@ -18,7 +19,7 @@ import { Image } from "astro:assets";
 import ButtonLink from "./ButtonLink.astro";
 import FormattedDate from '@/components/FormattedDate.astro';
 
-const { frontmatter, href } = Astro.props;
+const { frontmatter, href, firstParagraph } = Astro.props;
 const { coverImage, title, author, pubDate, description } = frontmatter;
 const route = `/blog/${href}`;
 ---
@@ -29,15 +30,16 @@ const route = `/blog/${href}`;
 
       { coverImage && 
         <Image src={coverImage.image} alt={coverImage.alt}
-          class="mb-4 md:mb-0 w-[192px] mx-auto" inferSize loading="eager" />} 
+          class="mb-2 w-[192px] mx-auto" inferSize loading="eager" />} 
       
       <div class="w-full md:me-4">
-        <h3 class="mb-0">{title}</h3>
         <small class="gray">
           {author ? author : siteConfig.default.autor}{
             pubDate && <>, <FormattedDate date={pubDate} /></> }
         </small>
-        <p class="mb-2">{description}</p>
+        <h3 class="pt-1">{title}</h3>
+        <p class="mt-2">{description}</p>
+        <p class="gray -mt-2">{firstParagraph}</p>
         <ButtonLink href={route} text="Leer" small />
       </div>
       

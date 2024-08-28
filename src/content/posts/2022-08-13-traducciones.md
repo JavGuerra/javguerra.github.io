@@ -1,7 +1,7 @@
 ---
 route: traducciones
 title: Traducciones de software
-description: Colaboraciones de software libre.
+description: Colaboraciones de software libre
 author: JavGuerra
 pubDate: 2022-08-13
 coverImage:

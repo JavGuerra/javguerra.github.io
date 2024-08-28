@@ -1,7 +1,7 @@
 ---
 route: rutas-dinamicas-imagenes-mongodb
 title: Generar enlaces dinámicos de imágenes almacenadas en MongoDB
-description: Conseguir que nuestros datos no dependan de una ubicación estática.
+description: Conseguir que nuestros datos no dependan de una ubicación estática
 author: JavGuerra
 pubDate: 2022-11-06
 coverImage:

@@ -1,7 +1,7 @@
 ---
 route: tienda-8-bits
 title: Tienda 8 bits
-description: Proyecto de graduación del Bootcamp Full Stack Web Developer.
+description: Proyecto de graduación del Bootcamp Full Stack Web Developer
 info: Aplicación realizada en JavaScript con Node.js, Express, React y MongoDB como BBDD. Incluye la elaboración de la API.
 author: JavGuerra
 pubDate: 2022-11-18
@@ -9,6 +9,7 @@ coverImage:
   image: '@/assets/portfolio/tienda-8-bits.png'
   alt: Banner
 tags:
+    - portfolio
     - web
     - formación
     - becas

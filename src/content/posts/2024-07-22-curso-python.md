@@ -1,7 +1,7 @@
 ---
 route: curso-python
 title: Curso de Python y algoritmia
-description: Materiales para el alumnado.
+description: Materiales para el alumnado
 author: JavGuerra
 pubDate: 2024-07-22
 coverImage:

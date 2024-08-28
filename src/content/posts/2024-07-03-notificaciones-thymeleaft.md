@@ -1,7 +1,7 @@
 ---
 route: notificaciones-thymeleaft
 title: Notificaciones con Thymeleaft
-description: Cómo incluir avisos en Spring Boot.
+description: Cómo incluir avisos en Spring Boot
 author: JavGuerra
 pubDate: 2024-07-03
 coverImage:

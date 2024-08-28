@@ -1,7 +1,7 @@
 ---
 route: entrenamiento-mental
 title: Entrenamiento mental
-description: Cómo ejercitar nuestro cerebro.
+description: Cómo ejercitar nuestro cerebro
 author: JavGuerra
 pubDate: 2023-08-15
 coverImage:
