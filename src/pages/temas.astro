@@ -19,7 +19,7 @@ import resources from "@/content/_resources.json";
 
   <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 
-  <ul class="link-card-grid mt-8">
+  <ul class="link-card-grid mt-10">
     { resources.in.length ? (
       <li>
         <ul class="md:mb-4">
@@ -47,6 +47,8 @@ import resources from "@/content/_resources.json";
 
   <RandomPost />
 
-  <AllTags title="Etiquetas del blog" />
+  <div class="md:-mt-4">
+    <AllTags title="Etiquetas del blog" />
+  </div>
 
 </BaseLayout>
