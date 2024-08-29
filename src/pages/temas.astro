@@ -4,23 +4,13 @@ interface Resource {
   title: string;
 }
 
-interface allPosts {
-  allPosts: Record<string, any>[];
-}
-
-import Search from "astro-pagefind/components/Search";
 import '@/styles/pagefind-ui-custom.css';
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import BlogPostLink from "@/components/BlogPostLink.astro";
-// import BlogPostCard from "@/components/BlogPostCard.astro";
-// import { getSlugName } from '@/scripts/urlUtils';
-import { getCollection } from 'astro:content';
-import TagLabel from '@/components/TagLabel.astro';
+import Search from 'astro-pagefind/components/Search';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogPostLink from '@/components/BlogPostLink.astro';
+import RandomPost from '@/components/RandomPost.astro';
+import AllTags from '@/components/AllTags.astro';
 import resources from "@/content/_resources.json";
-
-const allPosts = await getCollection('posts');
-
-const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 ---
 
 <BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
@@ -55,40 +45,8 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
     }
   </ul>
 
-  {/*
-    <ul id="blogPost" class="my-8 text-center md:text-left">
-      <h2>Entrada aleatoria</h2>
-      <BlogPostCard
-          frontmatter={post.data}
-          href=`${post.data.route || getSlugName(post.slug)}`
-      />
-    </ul>
-  */}
+  <RandomPost />
 
-  <div data-pagefind-ignore="all">
-    { allTags.length ? (
-      <>
-        <h2>Etiquetas del blog</h2>
-        <div class="flex flex-wrap mt-4">
-          <TagLabel tag="Todas las entradas" />
-          {allTags
-            .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
-            .map(tag => <TagLabel tag={tag} />)}
-        </div>
-      </>
-    ) : ( "" ) }
-  </div>
+  <AllTags title="Etiquetas del blog" />
 
 </BaseLayout>
-
-{/* 
-<script define:vars={{ allPosts }} is:inline>
-  document.addEventListener('astro:page-load', () => {
-    const randomIndex = Math.floor(Math.random() * allPosts.length);
-    const post = allPosts[randomIndex];
-
-    //
-
-  });
-</script>
-*/}

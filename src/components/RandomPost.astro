@@ -1,0 +1,52 @@
+---
+interface allPosts {
+  allPosts: Record<string, any>[];
+}
+import { getCollection } from 'astro:content';
+import { getSlugName } from '@/scripts/urlUtils';
+import BlogPostCard from "@/components/BlogPostCard.astro";
+
+const allPosts = await getCollection('posts');
+const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
+---
+
+<ul id="randomPostContainer" class="my-8 text-center md:text-left">
+  <h2>Entrada aleatoria</h2>
+  <div id="blogPost">
+    {allPosts.map((post, index) => (
+      <div class={`transition-shadow ${index === initialRandomIndex ? '' : 'hidden'}`} data-post-index={index}>
+        <BlogPostCard
+          frontmatter={post.data}
+          href={`${post.data.route || getSlugName(post.slug)}`}
+        />
+      </div>
+    ))}
+  </div>
+
+  <div class="md:text-right md:me-4 -mt-8">
+    <button id="refreshButton" class="inline-block text-sm mt-4 px-3 py-1 font-bold rounded bg-violet-500 text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 transition-colors">
+        Nuevo post aleatorio
+    </button>
+  </div>
+</ul>
+
+<script is:inline>
+    document.addEventListener('astro:page-load', () => {
+    const postContainers = document.querySelectorAll('[data-post-index]');
+    const refreshButton = document.getElementById('refreshButton');
+
+    function showRandomPost() {
+        const randomIndex = Math.floor(Math.random() * postContainers.length);
+        postContainers.forEach((container, index) => {
+        if (index === randomIndex) {
+            container.classList.remove('hidden');
+        } else {
+            container.classList.add('hidden');
+        }
+        });
+    }
+
+    // Añadir evento al botón para obtener un nuevo post aleatorio
+    refreshButton?.addEventListener('click', showRandomPost);
+    });
+</script>

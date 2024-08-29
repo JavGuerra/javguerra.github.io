@@ -31,7 +31,9 @@ const route = `/blog/${href}`;
         <h3 class="pt-1">{title}</h3>
         <p class="mt-2">{description}</p>
         <p class="gray -mt-2">{firstParagraph}</p>
-        <ButtonLink href={route} text="Leer" small />
+        <div class="mt-4 md:-mt-2">
+          <ButtonLink href={route} text="Leer" small />
+        </div>
       </div>
       
     </article>
