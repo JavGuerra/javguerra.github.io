@@ -1,16 +1,18 @@
 {
     "default": {
         "title": "Códice",
-        "autor": "Javier Guerra",
         "description": "Programación y Formación TIC",
         "footer": "Desarrollado con Astro y Tailwind",
         "license": "CC BY-SA",
+        "autor": "Javier Guerra",
+        "email": "javguerra(arroba)badared.com",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
         "social": {
             "github": "JavGuerra",
             "linkedin": "in/javguerra",
             "x": "javgr"
         },
+        "stats": "https://codice.goatcounter.com/",
         "opentowork": true,
         "pageSize": 5
     }

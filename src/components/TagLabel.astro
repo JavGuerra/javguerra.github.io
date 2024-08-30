@@ -4,9 +4,7 @@ interface Props {
 }
 
 let { tag } = Astro.props;
-let href;
-if (tag == "Todas las entradas") href = "/blog/1";
-else href = `/blog/tag/${tag}`;
+const href = `/blog/tag/${tag}`;
 ---
 
 { (tag !== undefined) &&

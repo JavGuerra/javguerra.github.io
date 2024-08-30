@@ -18,14 +18,13 @@ const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 ---
 
 
-    { allTags.length ? (
-        <div data-pagefind-ignore="all">
-            {title && <h2>{title}</h2>}
-            <div class="flex flex-wrap mt-4">
-            <TagLabel tag="Todas las entradas" />
-            {allTags
-                .sort((a, b) => String(a).localeCompare(String(b))) // evita undefined
-                .map(tag => <TagLabel tag={tag} />)}
-            </div>
+{ allTags.length ? (
+    <div data-pagefind-ignore="all">
+        {title && <h2>{title}</h2>}
+        <div class="flex flex-wrap mt-4">
+        {allTags
+            .sort((a, b) => String(a).localeCompare(String(b)))
+            .map(tag => <TagLabel tag={tag} />)}
         </div>
-    ) : ( "" ) }
+    </div>
+) : ( "" ) }

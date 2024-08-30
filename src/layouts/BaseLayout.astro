@@ -8,7 +8,7 @@ interface Props {
 import '@/styles/base.css';
 import siteConfig from '@/siteConfig.json';
 import BaseHead from '@/components/BaseHead.astro';
-import Header from '@/components/Header.astro';
+import MenuBar from '@/components/MenuBar.astro';
 import Footer from '@/components/Footer.astro';
 import { getImage } from 'astro:assets';
 
@@ -31,19 +31,19 @@ if (coverImage && coverImage?.image && coverImage.image !== '') {
   <BaseHead pageTitle={pageTitle} description={description} img={routeImage} />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
-    <Header />
+
+    <MenuBar />
+
     <header transition:animate="slide">
       {showTitle && <h1>{pageTitle}</h1>}
       {subTitle && <p class="subtitle">{subTitle}</p>}
     </header>
+
     <div class="my-8">
       <slot />
     </div>
-    <Footer />
 
-    <script>
-      import '../scripts/menu.js';
-    </script>
+    <Footer />
 
     <script id="dsq-count-scr" src={'//' + disqusShortname + '.disqus.com/count.js'} async is:inline></script>
     

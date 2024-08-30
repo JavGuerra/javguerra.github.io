@@ -1,13 +1,8 @@
 ---
-interface Resource {
-  href: string;
-  title: string;
-}
-
 import '@/styles/pagefind-ui-custom.css';
 import Search from 'astro-pagefind/components/Search';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import BlogPostLink from '@/components/BlogPostLink.astro';
+import ResourceList from '@/components/ResourceList.astro';
 import RandomPost from '@/components/RandomPost.astro';
 import AllTags from '@/components/AllTags.astro';
 import resources from "@/content/_resources.json";
@@ -20,29 +15,14 @@ import resources from "@/content/_resources.json";
   <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 
   <ul class="link-card-grid mt-10">
-    { resources.in.length ? (
-      <li>
-        <ul class="md:mb-4">
-          <h2 class="mt-0 md:mt-2 md:pb-2">Destacados del blog</h2>
-          {resources.in.map((resource: Resource) => (
-            <BlogPostLink href={`/blog/${resource.href}`} title={resource.title} />
-          ))}
-        </ul>
-      </li>
-      ) : ( "" )
-    }
-
-    { resources.out.length ? (
-      <li>
-        <ul class="md:mb-4">
-          <h2 class="mt-0 md:mt-2 md:pb-2">Enlaces externos</h2>
-          {resources.out.map((resource: Resource) => (
-            <BlogPostLink href={resource.href} title={resource.title} />
-          ))}
-        </ul>
-      </li>
-      ) : ( "" )
-    }
+    <ResourceList 
+      title="Destacados del blog"
+      resources={resources.in} route="/blog/"
+    />
+    <ResourceList
+      title="Enlaces externos"
+      resources={resources.out}
+    />
   </ul>
 
   <RandomPost />

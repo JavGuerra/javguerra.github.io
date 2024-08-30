@@ -1,0 +1,15 @@
+---
+interface Props {
+    href: string;
+    icon: Record<string, any>;
+    alt: string;
+}
+
+import { Image } from 'astro:assets';
+
+const { href, icon, alt } = Astro.props;
+---
+
+<a href={href}>
+    <Image src={icon.default} alt={alt} loading="lazy" />
+</a>

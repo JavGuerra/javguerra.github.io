@@ -1,0 +1,28 @@
+---
+interface Resource {
+  href: string;
+  title: string;
+}
+
+interface Props {
+    resources: Resource[];
+    title: string;
+    route?: string;
+}
+
+import BlogPostLink from '@/components/BlogPostLink.astro';
+
+const { title, resources, route = "" } = Astro.props;
+---
+
+{ resources.length ? (
+    <li>
+      <ul class="md:mb-4">
+        <h2 class="mt-0 md:mt-2 md:pb-2">{title}</h2>
+        {resources.map((resource: Resource) => (
+          <BlogPostLink href={route + resource.href} title={resource.title} />
+        ))}
+      </ul>
+    </li>
+    ) : ( "" )
+}

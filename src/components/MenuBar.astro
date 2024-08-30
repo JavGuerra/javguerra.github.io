@@ -1,0 +1,15 @@
+---
+import siteConfig from '@/siteConfig.json';
+import Hamburger from './Hamburger.astro';
+import Navigation from './Navigation.astro';
+---
+
+<nav class="flex flex-wrap justify-between">
+
+    <a id="brand" class="tag" href="/">{siteConfig.default.title}</a>
+
+    <Hamburger /> {/* Botón para menú móvil */}
+
+    <Navigation />
+    
+</nav>
