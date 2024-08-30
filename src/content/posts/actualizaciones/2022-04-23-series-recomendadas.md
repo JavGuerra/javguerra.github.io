@@ -70,7 +70,8 @@ Haz click en los enlaces para más información:
 - [Slow Horses](https://www.filmaffinity.com/es/film223695.html) - Apple TV
 - [Este mundo no me hará mala persona](https://www.filmaffinity.com/es/film845472.html) - Netflix
 - [Ripley](https://www.filmaffinity.com/es/film952850.html) - Netflix  
-- [The Bear](https://www.filmaffinity.com/es/film948192.html) - Disney+  
+- [The Bear](https://www.filmaffinity.com/es/film948192.html) - Disney+ 
+- [Breathtaking](https://www.filmaffinity.com/es/film547410.html) - Filmin 
 
 # Siglo XX
 
