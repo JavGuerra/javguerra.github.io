@@ -25,13 +25,20 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [El tutorial de JavaScript moderno](https://es.javascript.info/)
 * [MDN: Guía de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide)
 * [Algoritmos y Estructuras de Datos en JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.es-ES.md)
+* [Eloquent JavaScript](https://eloquent-javascript-es.vercel.app/)
+
 * [Introducción a TypeScript](https://khru.gitbooks.io/typescript/content/)
+* [TypeScript para principiantes](https://mega.nz/file/7hdwEY6b#ESsixH9wCUFhUugkRq8BEa1uZlzFXCJX6QxHdL5Yz9Q)
+* [Manual de TypeScript](https://mega.nz/#!qwcFDZ7a!ggLXIZ4c-O1Do0OEuvK0Mz8k39LvYQwdaJ2LtKKxgsE)
+* [Aprendizaje TypeScript](https://riptutorial.com/Download/typescript-es.pdf)
 * [TypeScript en profundidad](https://github.com/melissarofman/typescript-book/blob/master/SUMMARY.md)
+* [Compilación de aplicaciones JavaScript con TypeScript](https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript/)
 * [Uso avanzado de TypeScript en un ejemplo real](https://neliosoftware.com/es/blog/uso-avanzado-de-typescript-parte-1/)
 
 ## Python
 
 * [Lenguaje Python](http://aprendepython.es)
+* [Python para todos](https://launchpadlibrarian.net/18980633/Python%20para%20todos.pdf)
 * [Algoritmos con Python](https://runestone.academy/ns/books/published/pythoned/index.html)
 * [El sitio web de Python](https://docs.python.org/es/3/)
 * [Python desde cero, primeros pasos. Video](https://youtu.be/WatTqrq8kQQ)
@@ -41,6 +48,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [El manual de Python](https://www.freecodecamp.org/espanol/news/el-manual-de-python/)
 * [Curso de Python desde cero para principiantes](https://www.udemy.com/course/curso-basico-de-python-desde-cero-para-principiantes/)
 * [Python: aprender a programar](https://www.edx.org/es/course/python-aprender-a-programar)
+* [Aprende a pensar como un programador con Python](https://argentinaenpython.com/quiero-aprender-python/aprenda-a-pensar-como-un-programador-con-python.pdf)
 * [Ejercicios de programación con Python](https://aprendeconalf.es/docencia/python/ejercicios/)
 
 ## Java
@@ -49,26 +57,48 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Arquitectura Java](https://cursos.arquitecturajava.com/p/cursos-gratuitos)
 * [CodeGym](https://codegym.cc/es/)
 * [Tutorial Spring Boot](https://www.freecodecamp.org/espanol/news/tutorial-spring-boot-crear-apps-java-modernas-y-rapidas/)
+* [Fundamentos de programación en Java](https://www.tesuva.edu.co/phocadownloadpap/Fundamentos%20de%20programcion%20en%20Java.pdf)
+
+## Kotlin
+
+* [Curso Kotlin para Android](https://cursokotlin.com/curso-programacion-kotlin-android/)
 
 ## PHP
 
 * [PHP, la manera correcta](https://phpdevenezuela.github.io/php-the-right-way/)
+* [Programación PHP a través de ejemplos](https://mega.nz/file/AFIkhRpC#8muP4I2jZRiNirbQmXDMBDf8QPxw5HkbbaGk2xzDvNE)
 
 ## Ruby
 
 * [Aprende a programar con Ruby](http://rubysur.org/aprende.a.programar/)
 
+## Golang
+
+* [El pequeño libro de Go](https://raulexposito.com/estaticos/pdf/go.pdf)
+* [Go en español](https://nachopacheco.gitbooks.io/go-es/content/doc/)
+
 ## Haskell
 
+* [Piensa en Haskell](https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf)
 * [¡Aprende Haskell por el bien de todos!](http://aprendehaskell.es/main.html)
 
 ## Rust
 
-* [El Lenguaje de Programación Rust](https://goyox86.github.io/elpr/README.html)
+* [Aprendizaje Rust](https://riptutorial.com/Download/rust-es.pdf)
+* [El Lenguaje de Programación Rust (2016)](https://goyox86.github.io/elpr/README.html)
+* [El Lenguaje de Programación Rust (2024)](https://book.rustlang-es.org/)
+* [Comprehensive Rust](https://google.github.io/comprehensive-rust/es/)
+* [Rust para C#/.NET Developers](https://dotnet-book.rustlang-es.org/)
 
-## Kotlin
+# Frameworks y bibliotecas
 
-* [Curso Kotlin para Android](https://cursokotlin.com/curso-programacion-kotlin-android/)
+## React
+
+* [React: De aprendiz a maestro](https://raulexposito.com/estaticos/pdf/survivejs-react-es.pdf)
+
+## Qwik
+
+* [Qwik: Desde cero a producción](https://anartz-mugika.com/qwik-book/es/)
 
 # Desarrollo web / varios
 
@@ -114,9 +144,12 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Apuntes Marea verde - Tecnología: Programación y robótica](https://www.apuntesmareaverde.org.es/)
 * [Terminal de Linux](https://terminaldelinux.com/terminal/)
 * [Aprende SQL](http://sql-easy.com/es)
+* [Tutorial de SQL](https://desarrolloweb.com/manuales/tutorial-sql.html)
+* [Manual de Oracle SQL](https://jorgesanchez.net/manuales/sql/intro-sql-sql2016.html)
 * [Git, la guía sencilla](https://rogerdudler.github.io/git-guide/index.es.html)
 * [Aprende Git - Altasian](http://atlassian.com/es/git)
 * [Aprende Git](https://learngitbranching.js.org/?locale=es_ES)
+* [Pro Git](https://github.com/progit/progit2-es/releases/download/2.1.23/progit.pdf)
 * [Introducción a Git](https://learn.microsoft.com/es-es/training/modules/intro-to-git/)
 * [Tutorial Markdown](https://www.markdowntutorial.com/es/)
 * [MatesGG](https://intef.es/recursos-educativos/matesgg/)
