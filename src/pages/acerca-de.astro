@@ -6,17 +6,16 @@ import HeroCard from '@/components/HeroCard.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import { Image } from 'astro:assets';
 import { Code } from 'astro:components';
-import areas from "@/content/_icons.json";
 import quotes from '@/content/_quotes.json';
+import icons from "@/content/_icons.json";
 import bannerImg from '@/assets/banner.png';
 import qrCodeImg from '@/assets/img/qr-code.png';
 
 const quotesList = quotes.list;
 const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px]";
-const images = import.meta.glob("@/assets/icon/*", { eager: true });
-
-const icons = areas.icons.map(area => {
-  const image = images[`/src/assets/icon/${area.img}`] as Record<string, any>;
+const svgImages = import.meta.glob("@/assets/icon/*", { eager: true });
+const iconsList = icons.list.map(area => {
+  const image = svgImages[`/src/assets/icon/${area.img}`] as Record<string, any>;
   return { ...area, image };
 });
 ---
@@ -68,7 +67,7 @@ const icons = areas.icons.map(area => {
   </div>
 
   <ul role="list" class="link-card-grid-min">
-    {icons.map(icon =>
+    {iconsList.map(icon =>
       <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt} styles={styles}>
         {icon.text}
       </HeroCard>)}
