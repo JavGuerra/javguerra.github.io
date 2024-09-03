@@ -389,3 +389,4 @@ Si intentas visualizar los cambios de las páginas que estás creando antes de g
 * [LiveCoding Primeros pasos con Sergey un SSG minimalista](https://youtu.be/r5pfaxVCatU) - Video
 * [PostHTML Static Site Starter](https://www.telagraphic.com/posthtml) - Alternativa
 * [Mini SSG](https://minissg.vercel.app/) - Alternativa
+* [Eleventy](https://www.11ty.dev/) - Alternativa popular
