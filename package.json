@@ -25,7 +25,6 @@
     "eslint": "^9.9.1",
     "eslint-plugin-astro": "^1.2.3",
     "postcss-html": "^1.7.0",
-    "stylelint-config-astro": "^1.0.4",
     "stylelint-config-html": "^1.1.0"
   }
 }

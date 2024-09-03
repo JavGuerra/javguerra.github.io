@@ -1,6 +1,12 @@
 {
-    "extends": [
-      "stylelint-config-html/html",
-      "stylelint-config-html/astro"
+  "extends": "stylelint-config-html",
+  "rules": {
+    "no-empty-source": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
     ]
+  }
 }
