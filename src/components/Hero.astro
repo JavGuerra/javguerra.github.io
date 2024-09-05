@@ -18,8 +18,11 @@ styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
 
   <div class="md:flex md:flex-row-reverse">
     {siteConfig.default.opentowork &&
-      <div class="mt-2 md:mt-3">
-        <small>&nbsp;&nbsp;🟢&nbsp;<strong>disponible&nbsp;para&nbsp;trabajar&nbsp;&nbsp;</strong></small>
+      <div>
+        &nbsp;&nbsp;<span class="justify-center -mt-5 md:-mt-2 text-base flex items-center gap-1">&nbsp;
+          <span aria-hidden="true" class="size-2 rounded-full bg-green-500 before:absolute before:-ms-1 before:md:ms-0 before:size-2 before:animate-ping before:rounded-full before:bg-green-300"></span>
+          &nbsp;<strong>disponible&nbsp;para&nbsp;trabajar&nbsp;&nbsp;</strong>
+        </span>
       </div>
     }
 
