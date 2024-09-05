@@ -1,0 +1,32 @@
+---
+import siteConfig from '@/siteConfig.json';
+import HeroCard from '@/components/HeroCard.astro';
+import ButtonLink from '@/components/ButtonLink.astro';
+
+import javImg from '/public/assets/img/javguerra.png';
+
+const href = "/acerca-de";
+---
+
+<HeroCard href={href} img={javImg} alt="Javier Guerra"
+styles="mx-auto md:ml-auto mb-4 md:mb-0 w-[192px] border-2 rounded-full">
+<div class="text-center md:text-left">
+
+  <p class="text-2xl leading-snug md:leading-relaxed">👋🏻&nbsp;Soy&nbsp;<strong>Javier&nbsp;Guerra</strong>, técnico&nbsp;superior&nbsp;DAW.</p>
+
+  <p class="mt-2">Explora aquí la información sobre mi experiencia profesional, conocimientos técnicos y méritos.</p>
+
+  <div class="md:flex md:flex-row-reverse">
+    {siteConfig.default.opentowork &&
+      <div class="mt-2 md:mt-3">
+        <small>&nbsp;&nbsp;🟢&nbsp;<strong>disponible&nbsp;para&nbsp;trabajar&nbsp;&nbsp;</strong></small>
+      </div>
+    }
+
+    <div class="w-full mt-5 mb-2 md:mt-3 md:mb-0">
+      <ButtonLink href={href} text="Sobre&nbsp;mi&nbsp;→" />
+    </div>
+  </div>
+  
+</div>
+</HeroCard>
