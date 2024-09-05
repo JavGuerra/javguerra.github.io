@@ -33,6 +33,12 @@ function getFirstParagraph(text: string): string {
   const firstParagraph = text.split('\n\n')[0];
   return firstParagraph.replace(/\[([^\]]+)\](\([^\)]+\))/g, '$1');
 }
+
+if (page.currentPage === 1) {
+  const title = page.data[0].data.title;
+  const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;   
+  page.data[0].data.title = prefixedTitle;
+};
 ---
 
 <BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
