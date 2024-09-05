@@ -4,13 +4,12 @@ import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
 const allPosts: Record<string, any>[] = await getCollection('posts');
-const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
 ---
 
 <ul id="randomPostContainer" class="my-8 text-center md:text-left">
   <div id="blogPost">
     {allPosts.map((post, index) => (
-      <div class={`${index === initialRandomIndex ? '' : 'hidden'}`} data-post-index={index}>
+      <div class="hidden" data-post-index={index}>
         <BlogPostCard
           frontmatter={post.data}
           href={`${post.data.route || getSlugName(post.slug)}`}
@@ -20,10 +19,10 @@ const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
   </div>
 </ul>
 
-<script is:inline define:vars={{ initialRandomIndex }}>
+<script is:inline>
   document.addEventListener('astro:page-load', () => {
     const postContainers = document.querySelectorAll('[data-post-index]');
-    let currentIndex = randomIndex = initialRandomIndex;
+    let currentIndex = randomIndex = 0;
 
     function showRandomPost() {
       while (currentIndex === randomIndex) {
@@ -47,6 +46,7 @@ const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
       }, 550);
     }
 
+    showRandomPost();
     setInterval(showRandomPost, 7000);
     });
 </script>
