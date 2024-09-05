@@ -10,15 +10,20 @@ if (allPosts.length) {
   const sortedPosts = allPosts.sort(
     (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
   )
+
+  const title = sortedPosts[0].data.title;
+  const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;   
+  sortedPosts[0].data.title = prefixedTitle;
+
   post = sortedPosts[0];
 }
 ---
 
 { post && 
-    <ul class="my-8 text-center md:text-left">
-      <BlogPostCard
-        frontmatter={post.data}
-        href=`${post.data.route || getSlugName(post.slug)}`
-      />
-    </ul>
+  <ul class="my-8 text-center md:text-left">
+    <BlogPostCard
+      frontmatter={post.data}
+      href=`${post.data.route || getSlugName(post.slug)}`
+    />
+  </ul>
 }

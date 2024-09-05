@@ -4,12 +4,23 @@ import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
 const allPosts: Record<string, any>[] = await getCollection('posts');
+
+let sortedPosts;
+if (allPosts.length) {
+  sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+  )
+
+  const title = sortedPosts[0].data.title;
+  const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;   
+  sortedPosts[0].data.title = prefixedTitle;
+}
 ---
 
 <ul id="randomPostContainer" class="my-8 text-center md:text-left">
   <div id="blogPost">
-    {allPosts.map((post, index) => (
-      <div class="hidden" data-post-index={index}>
+    {sortedPosts && sortedPosts.map((post, index) => (
+      <div class={index === 0 ? '' : 'hidden'}data-post-index={index}>
         <BlogPostCard
           frontmatter={post.data}
           href={`${post.data.route || getSlugName(post.slug)}`}
@@ -52,7 +63,6 @@ const allPosts: Record<string, any>[] = await getCollection('posts');
       }, 550);
     }
 
-    showRandomPost();
     interval = setInterval(showRandomPost, 7000);
   }
 
