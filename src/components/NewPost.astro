@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import { getSlugName } from '@/scripts/urlUtils';
+import BlogPostCard from "@/components/BlogPostCard.astro";
+
+const allPosts: Record<string, any>[] = await getCollection('posts');
+
+
+let post;
+if (allPosts.length) {
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+  )
+  const lastPost = sortedPosts[0];
+  post = { ...lastPost };
+  post.data = { ...post.data };
+  const title = "Nuevo: " + post.data.title;
+  post.data.title = title;
+}
+---
+
+{ post && 
+    <ul class="my-8 text-center md:text-left">
+      <BlogPostCard
+        frontmatter={post.data}
+        href=`${post.data.route || getSlugName(post.slug)}`
+      />
+    </ul>
+}

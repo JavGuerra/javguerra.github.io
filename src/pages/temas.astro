@@ -2,14 +2,16 @@
 import '@/styles/pagefind-ui-custom.css';
 import Search from 'astro-pagefind/components/Search';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import NewPost from '@/components/NewPost.astro';
 import ResourceList from '@/components/ResourceList.astro';
-import RandomPost from '@/components/RandomPost.astro';
 import AllTags from '@/components/AllTags.astro';
 import resources from "@/content/_resources.json";
 ---
 
 <BaseLayout pageTitle="Temas" subTitle="Enlaces recomendados">
   
+  <NewPost />
+
   <h2 class="mt-2 mb-6">Buscador</h2>
 
   <Search id="search" aria-label="Buscar" className="pagefind-ui" uiOptions={{ showImages: false }} />
@@ -25,7 +27,6 @@ import resources from "@/content/_resources.json";
     />
   </ul>
 
-  <RandomPost />
 
   <div class="md:-mt-4">
     <AllTags title="Etiquetas del blog" />

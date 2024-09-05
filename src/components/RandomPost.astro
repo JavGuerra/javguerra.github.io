@@ -1,20 +1,16 @@
 ---
-interface allPosts {
-  allPosts: Record<string, any>[];
-}
 import { getCollection } from 'astro:content';
 import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const allPosts = await getCollection('posts');
+const allPosts: Record<string, any>[] = await getCollection('posts');
 const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
 ---
 
 <ul id="randomPostContainer" class="my-8 text-center md:text-left">
-  <h2>Entrada aleatoria</h2>
   <div id="blogPost">
     {allPosts.map((post, index) => (
-      <div class={`transition-shadow ${index === initialRandomIndex ? '' : 'hidden'}`} data-post-index={index}>
+      <div class={`${index === initialRandomIndex ? '' : 'hidden'}`} data-post-index={index}>
         <BlogPostCard
           frontmatter={post.data}
           href={`${post.data.route || getSlugName(post.slug)}`}
@@ -22,31 +18,47 @@ const initialRandomIndex = Math.floor(Math.random() * allPosts.length);
       </div>
     ))}
   </div>
-
-  <div class="md:text-right md:me-4 z-[9999]">
-    <button id="refreshButton" class="inline-block text-sm mt-4 md:mt-2 px-3 py-1 font-bold rounded bg-violet-500 text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 transition-colors">
-        Nuevo post aleatorio
-    </button>
-  </div>
 </ul>
 
-<script is:inline>
-    document.addEventListener('astro:page-load', () => {
+<script is:inline define:vars={{ initialRandomIndex }}>
+  document.addEventListener('astro:page-load', () => {
     const postContainers = document.querySelectorAll('[data-post-index]');
-    const refreshButton = document.getElementById('refreshButton');
+    let currentIndex = randomIndex = initialRandomIndex;
 
     function showRandomPost() {
-        const randomIndex = Math.floor(Math.random() * postContainers.length);
-        postContainers.forEach((container, index) => {
-        if (index === randomIndex) {
-            container.classList.remove('hidden');
-        } else {
-            container.classList.add('hidden');
-        }
-        });
+      while (currentIndex === randomIndex) {
+        randomIndex = Math.floor(Math.random() * postContainers.length);
+      }
+      
+      postContainers[currentIndex].classList.add('fade-out');
+      
+      setTimeout(() => {
+        postContainers[currentIndex].classList.add('hidden');
+        postContainers[currentIndex].classList.remove('fade-out');
+        
+        postContainers[randomIndex].classList.add('fade-in');
+        postContainers[randomIndex].classList.remove('hidden');
+
+        setTimeout(() => {
+          postContainers[randomIndex].classList.remove('fade-in');
+          currentIndex = randomIndex;
+        }, 550);
+              
+      }, 550);
     }
 
-    // Añadir evento al botón para obtener un nuevo post aleatorio
-    refreshButton?.addEventListener('click', showRandomPost);
+    setInterval(showRandomPost, 7000);
     });
 </script>
+
+<style>
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+</style>
