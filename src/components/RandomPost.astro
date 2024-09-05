@@ -20,21 +20,28 @@ const allPosts: Record<string, any>[] = await getCollection('posts');
 </ul>
 
 <script is:inline>
-  document.addEventListener('astro:page-load', () => {
+  let interval;
+
+  function handleContentLoaded() {
     const postContainers = document.querySelectorAll('[data-post-index]');
     let currentIndex = randomIndex = 0;
+    const maxAttempts = 5;
 
     function showRandomPost() {
-      while (currentIndex === randomIndex) {
+      if (postContainers.length <= 1) return;
+
+      let attempts = 0;
+      do {
         randomIndex = Math.floor(Math.random() * postContainers.length);
-      }
-      
+        attempts++;
+      } while (randomIndex === currentIndex && attempts < maxAttempts && postContainers.length > 1);
+
       postContainers[currentIndex].classList.add('fade-out');
-      
+
       setTimeout(() => {
         postContainers[currentIndex].classList.add('hidden');
         postContainers[currentIndex].classList.remove('fade-out');
-        
+
         postContainers[randomIndex].classList.add('fade-in');
         postContainers[randomIndex].classList.remove('hidden');
 
@@ -42,13 +49,21 @@ const allPosts: Record<string, any>[] = await getCollection('posts');
           postContainers[randomIndex].classList.remove('fade-in');
           currentIndex = randomIndex;
         }, 550);
-              
       }, 550);
     }
 
     showRandomPost();
-    setInterval(showRandomPost, 7000);
-    });
+    interval = setInterval(showRandomPost, 7000);
+  }
+
+  function cleanup() {
+    if (interval) {
+      clearInterval(interval);
+    }
+  }
+
+  document.addEventListener('astro:page-load', handleContentLoaded);
+  document.addEventListener('astro:before-preparation', cleanup);
 </script>
 
 <style>
