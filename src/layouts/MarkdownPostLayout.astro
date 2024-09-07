@@ -53,22 +53,20 @@ const {
         <slot />
     </div>
 
-    <div id="comments-section" class="mt-10">
-        <h1 id="comments-header" style="display: none;" class="text-center mb-4">Comentarios</h1>
-        <Disqus id={id} />
-    </div>
+    <h1 id="comments-header" class="mb-8" style="display: none;">Comentarios</h1>
+    <Disqus id={id} />
   
     <script>
     // Si está disponiible Disqus...
     document.addEventListener('astro:page-load', () => {
-        const header = document.getElementById('comments-header');
-        if (header && typeof (window as any).DISQUS !== 'undefined') {
-            header.style.display = 'block';
+        const $header = document.getElementById('comments-header');
+        if ($header && typeof (window as any).DISQUS !== 'undefined') {
+            $header.style.display = 'block';
         }
     });
     </script>
 
-    <div class="text-center mt-4 md:text-left">
+    <div class="text-center mt-8 md:text-left">
         <ButtonLink text="←&nbsp;Volver" />
     </div>
 </BaseLayout>
