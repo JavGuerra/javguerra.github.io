@@ -17,17 +17,15 @@ if (allPosts.length) {
 }
 ---
 
-<ul id="randomPostContainer" class="my-8 text-center md:text-left">
-  <div id="blogPost">
-    {sortedPosts && sortedPosts.map((post, index) => (
-      <div class={index === 0 ? '' : 'hidden'}data-post-index={index}>
-        <BlogPostCard
-          frontmatter={post.data}
-          href={`${post.data.route || getSlugName(post.slug)}`}
-        />
-      </div>
-    ))}
-  </div>
+<ul class="my-8 text-center md:text-left">
+  {sortedPosts && sortedPosts.map((post, index) => (
+    <div class={index === 0 ? '' : 'hidden'} data-post-index={index}>
+      <BlogPostCard
+        frontmatter={post.data}
+        href={`${post.data.route || getSlugName(post.slug)}`}
+      />
+    </div>
+  ))}
 </ul>
 
 <script is:inline>
@@ -52,21 +50,16 @@ if (allPosts.length) {
 
       $actual.classList.add('fade-out');
 
-      $actual.addEventListener('transitionend', function handler() {
+      $actual.addEventListener('transitionend', function fadeOutHandler() {
 
         $actual.classList.add('hidden');
         $actual.classList.remove('fade-out');
 
-        $next.classList.add('fade-in');
         $next.classList.remove('hidden');
-        void $next.offsetWidth; // force reflow to enable transition
         
-        setTimeout(() => {
-          $next.classList.remove('fade-in');
-          currentIndex = randomIndex;
-        }, 550);
+        currentIndex = randomIndex;
 
-        $actual.removeEventListener('transitionend', handler);
+        $actual.removeEventListener('transitionend', fadeOutHandler);
       }, { once: true });
     }
 
@@ -87,10 +80,5 @@ if (allPosts.length) {
   .fade-out {
     opacity: 0;
     transition: opacity 0.5s ease-out;
-  }
-
-  .fade-in {
-    opacity: 1;
-    transition: opacity 0.5s ease-in;
   }
 </style>
