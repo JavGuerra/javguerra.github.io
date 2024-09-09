@@ -5,7 +5,7 @@ description: Un ordenador profesional alternativo de 1984
 author: JavGuerra
 pubDate: 2023-12-35
 coverImage:
-  image: '@/assets/img/anuncio-ql.jpg'
+  image: '@/assets/img/sinclairql.png'
   alt: Anuncio Sinclair QL
 tags:
     - retro

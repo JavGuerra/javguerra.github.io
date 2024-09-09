@@ -5,7 +5,7 @@ description: Una clase en Java para lectura de datos por consola
 author: JavGuerra
 pubDate: 2023-01-31
 coverImage:
-  image: '@/assets/img/java-logo.svg'
+  image: '@/assets/img/java-logo.png'
   alt: Logo de Java
 tags:
     - Java

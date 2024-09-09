@@ -5,7 +5,7 @@ description: Cinco ejercicios de programación muy festivos
 author: JavGuerra
 pubDate: 2023-12-24
 coverImage:
-  image: '@/assets/img/reto-navidad.gif'
+  image: '@/assets/img/reto-navidad.png'
   alt: Arbolito
 tags:
     - código
