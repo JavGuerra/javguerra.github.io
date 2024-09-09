@@ -5,7 +5,7 @@ description: Recursos económicos para formarte
 author: JavGuerra
 pubDate: 2024-07-16
 coverImage:
-  image: '@/assets/img/estudios.png'
+  image: '@/assets/img/estudios.webp'
   alt: Publicaciones
 tags: 
   - formación

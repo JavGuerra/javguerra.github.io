@@ -1,7 +1,6 @@
 ---
 import '@/styles/markdown.css';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import Card from '@/components/Card.astro';
 import HeroCard from '@/components/HeroCard.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import { Image } from 'astro:assets';
@@ -9,6 +8,7 @@ import { Code } from 'astro:components';
 import quotes from '@/content/_quotes.json';
 import icons from "@/content/_icons.json";
 import bannerImg from '@/assets/banner.png';
+import proyectsImg from '@/assets/img/proyectos.svg';
 import qrCodeImg from '@/assets/img/qr-code.png';
 
 const quotesList = quotes.list;
@@ -111,13 +111,17 @@ const iconsList = icons.list.map(area => {
 
     <p class="md:text-2xl text-center"><a href="/blog/certificaciones"><button class="m-2 pt-1 pb-2">🏆&nbsp;&nbsp;Ver mis certificaciones TIC</button></a></p>
    
-    <div class="mt-12 mb-10">
-      <ul id="portfolio" class="-ms-8">
-        <Card href="/portfolio" title="Portfolio">
-          Visita mi portfolio para saber algo más sobre mis conocimientos aplicados.
-        </Card>
-      </ul>
-    </div>
+  </div>
+
+  <ul id="portfolio" class="mt-12 mb-10">
+    <HeroCard href="/portfolio" img={proyectsImg} alt="Portfolio"
+    styles="mx-auto md:ml-auto mb-4 md:mb-0">
+    <h3 class="mt-1">Portfolio&nbsp;&rarr;</h3>
+    <p>Visita <strong>mis&nbsp;desarrollos</strong> para saber algo más sobre mis conocimientos aplicados.</p>
+  </HeroCard>
+  </ul>
+
+  <div class="md-content">
 
     <h2 id="meritos">Méritos y publicaciones</h2>
 
@@ -138,7 +142,7 @@ const iconsList = icons.list.map(area => {
     <HeroCard href="https://linkedin.com/in/javguerra" img={qrCodeImg} alt="Código QR"
       styles="mx-auto md:ml-auto mb-4 md:mb-0">
       <h3 class="mt-1">Saber&nbsp;más&nbsp;&rarr;</h3>
-      <p>🔗 Visita mi <strong>perfil&nbsp;en&nbsp;Linkedin</strong> para saber más.</p>
+      <p>Visita mi <strong>perfil&nbsp;en&nbsp;Linkedin</strong> para saber más.</p>
     </HeroCard>
   </ul>
 

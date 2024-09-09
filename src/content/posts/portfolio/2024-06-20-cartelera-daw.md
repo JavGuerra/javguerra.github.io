@@ -6,7 +6,7 @@ info: Aplicación realizada en Java con Spring Boot, Spring Security, Thymeleaft
 author: JavGuerra
 pubDate: 2024-06-20
 coverImage:
-  image: '@/assets/img/cartelera-daw.svg'
+  image: '@/assets/img/cartelera-daw.jpg'
   alt: Logo cartelera daw.
 tags: 
     - portfolio
@@ -76,7 +76,8 @@ Cuenta con:
 - Aviso de cookies 
 - Ayuda en línea
 - Spinner loader
- 
+
+![Logo Cartelera-DAW](@/assets/img/cartelera-daw.svg)
 
 ## Desarrollo y despliegue
 

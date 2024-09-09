@@ -5,7 +5,7 @@ description: Limpiando el contexto de seguridad sin borrar la cookie
 author: JavGuerra
 pubDate: 2024-07-13
 coverImage:
-  image: '@/assets/img/cookies.png'
+  image: '@/assets/img/cookies.webp'
   alt: cookies
 tags: 
   - código

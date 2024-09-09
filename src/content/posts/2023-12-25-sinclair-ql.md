@@ -48,7 +48,7 @@ Poseer un QL resulta algo así como tener un pequeño pedazo de la historia de l
 
 ## Quiero saber más
 
-* [Paquete de supervivencia de QL en español](https://javguerra.github.io/QL_ES_pack/)
+* [Paquete de supervivencia de QL en español](https://javguerra.github.io/Sinclair-QL-ES-pack/)
 * [Sinclair QL en Wikipedia](https://es.wikipedia.org/wiki/Sinclair_QL)
 * [Ventajas del SuperBASIC](https://sinclairql.speccy.org/articulos/programacion/superbasic.htm)
 * [Web Sinclair QL Recursos en Castellano](https://sinclairql.es)

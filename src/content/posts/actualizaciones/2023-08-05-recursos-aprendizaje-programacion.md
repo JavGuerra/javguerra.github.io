@@ -5,7 +5,7 @@ description: Recursos formativos gratuitos y en español
 author: JavGuerra
 pubDate: 2023-08-05
 coverImage:
-  image: '@/assets/img/estudios.png'
+  image: '@/assets/img/estudios.webp'
   alt: Estudios
 tags:
     - formación
