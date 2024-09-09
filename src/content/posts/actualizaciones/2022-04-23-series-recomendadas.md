@@ -5,7 +5,7 @@ description: Mis recomendaciones de streaming
 author: JavGuerra
 pubDate: 2022-04-23
 coverImage:
-  image: '@/assets/img/tv.png'
+  image: '@/assets/img/tv.jpg'
   alt: Series de TV
 tags:
     - TV

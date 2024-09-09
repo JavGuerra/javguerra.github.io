@@ -5,7 +5,7 @@ description: Colaboraciones de software libre
 author: JavGuerra
 pubDate: 2022-08-13
 coverImage:
-  image: '@/assets/img/traducciones.svg'
+  image: '@/assets/img/traducciones.png'
   alt: TRaducciones
 tags:
     - código

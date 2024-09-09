@@ -5,7 +5,7 @@ description: Un juego de experimentación artística por ordenador
 author: JavGuerra
 pubDate: 2022-05-15
 coverImage:
-  image: '@/assets/img/lce.png'
+  image: '@/assets/img/el-cadaver-exquisito.png'
   alt: El cadáver exquisito original
 tags:
     - web
@@ -35,6 +35,8 @@ Visualmente, el resultado no está a la altura de los estándares de hoy día. T
 La mecánica del juego es sencilla. Los alumnos hicieron un total de diez (10) dibujos completos de sus personajes fantásticos imaginarios, de cabeza a pies. Estas imágenes fueron escaneadas, divididas en tres partes y almacenadas en tres carpetas distintas: «arriba», «medio» y «abajo» todas con el mismo tamaño. Cada imagen fue numerada como ```image0.jpg``` a ```image9.jpg```, y todas ellas usaban los mismos puntos de corte para la cabeza, el cuerpo y las extremidades inferiores.
 
 La página elige al azar una imagen de cada una de las tres carpetas mencionadas, mostrando una composición de ellas totalmente nueva e inesperada. ¡Ahora es el ordenador el que juega al cadáver exquisito!
+
+![Juego del cadáver exquisito](@/assets/img/lce.png)
 
 ## ¿Como funciona?
 

@@ -5,7 +5,7 @@ description: Combinando validaciones propias con las de HTML5
 author: JavGuerra
 pubDate: 2022-05-13
 coverImage:
-  image: '@/assets/img/validacion.png'
+  image: '@/assets/img/formulario.webp'
   alt: Validación de formularios
 tags:
     - código
@@ -17,6 +17,8 @@ tags:
 ¿Cómo procesar un formulario antes de enviarlo, realizando validaciones propias en sus campos y aprovechando simultáneamente la validación de restricciones implícita en HTML5?
 
 Que ambos tipos de validaciones se den al mismo tiempo es importante, ya que si esto se hiciera consecutivamente, es decir, una a continuación de la otra, llevando a cabo primero nuestra validación y luego la de HTML5, correríamos el riesgo de que los campos propios ya validados pudieran ser alterados por el usuario una vez pasada la primera validación, si en la segunda validación hay campos erróneos que obligan al usuario a editarlos, y por tanto el formulario se enviaría con errores. Veamos cómo se haría.
+
+![Validación de formularios](@/assets/img/validacion.png)
 
 [<button>Formulario de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/validacion.html)
 

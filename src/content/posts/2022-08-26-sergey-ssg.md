@@ -5,7 +5,7 @@ description: Usando como ejemplo la página de las tarjetas de emergencia de Con
 author: JavGuerra
 pubDate: 2022-08-26
 coverImage:
-  image: '@/assets/img/sergey-ssg.svg'
+  image: '@/assets/img/sergey-ssg.png'
   alt: Sergey SSG
 tags:
     - web

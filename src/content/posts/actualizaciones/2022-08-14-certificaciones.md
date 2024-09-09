@@ -5,7 +5,7 @@ description: Tecnologías de la Información y las Comunicaciones
 author: JavGuerra
 pubDate: 2022-08-14
 coverImage:
-  image: '@/assets/img/calidad.png'
+  image: '@/assets/img/certificado.webp'
   alt: Certificaciones
 tags:
     - TIC
