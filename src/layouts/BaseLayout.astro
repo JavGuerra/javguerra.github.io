@@ -16,8 +16,8 @@ const disqusShortname = 'codice-1';
 
 const { pageTitle, subTitle, coverImage } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
-const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog'; // ignora búsquedas
-
+const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog';
+const title = pageTitle.startsWith('Nuevo: ') ? pageTitle.replace('Nuevo: ', '') : pageTitle;
 const description = subTitle ? subTitle : siteConfig.default.description;
 
 let routeImage = '/assets/img/banner.png';
@@ -28,14 +28,14 @@ if (coverImage && coverImage?.image && coverImage.image !== '') {
 ---
 
 <html lang="es">
-  <BaseHead pageTitle={pageTitle} description={description} img={routeImage} />
+  <BaseHead pageTitle={title} description={description} img={routeImage} />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
 
     <MenuBar />
 
     <header transition:animate="slide">
-      {showTitle && <h1>{pageTitle}</h1>}
+      {showTitle && <h1>{title}</h1>}
       {subTitle && <p class="subtitle">{subTitle}</p>}
     </header>
 
