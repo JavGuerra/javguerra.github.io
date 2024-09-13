@@ -23,6 +23,7 @@ if (allPosts.length) {
       <BlogPostCard
         frontmatter={post.data}
         href={`${post.data.route || getSlugName(post.slug)}`}
+        ignorePrefetch = {true}
       />
     </div>
   ))}

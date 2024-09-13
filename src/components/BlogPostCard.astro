@@ -3,6 +3,7 @@ interface Props {
   frontmatter: Record<string, any>;
   href: string;
   firstParagraph?: string;
+  ignorePrefetch?: boolean;
 }
   
 import siteConfig from '@/siteConfig.json';
@@ -10,13 +11,13 @@ import { Image } from "astro:assets";
 import ButtonLink from "./ButtonLink.astro";
 import FormattedDate from '@/components/FormattedDate.astro';
 
-const { frontmatter, href, firstParagraph } = Astro.props;
+const { frontmatter, href, firstParagraph, ignorePrefetch = false } = Astro.props;
 const { coverImage, title, author, pubDate, description } = frontmatter;
 const route = `/blog/${href}`;
 ---
 
 <li transition:name={title} class="post-card">
-  <a href={route} role="button" aria-label={title} data-astro-prefetch>
+  <a href={route} role="button" aria-label={title} data-astro-prefetch={ignorePrefetch ? null : ''}>
     <article class="md:flex md:flex-row-reverse">
 
       { coverImage && 
