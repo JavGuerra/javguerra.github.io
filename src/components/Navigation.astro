@@ -1,10 +1,22 @@
 ---
 import MenuItem from "./MenuItem.astro"
+
+const currentPath = Astro.url.pathname;
+
+const menuItems = [
+  { href: "/acerca-de", label: "Sobre mi" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/blog/1", label: "Blog" },
+  { href: "/temas", label: "Temas" }
+];
 ---
 
 <ul id="menu-items" class="hidden md:block navigation">
-    <MenuItem href="/acerca-de" label="Sobre mi" />
-    <MenuItem href="/portfolio" label="Portfolio" />
-    <MenuItem href="/blog/1" label="Blog" />
-    <MenuItem href="/temas" label="Temas" />
+{menuItems.map((item) => (
+    <MenuItem
+        href={item.href}
+        label={item.label}
+        isActive={currentPath === item.href}
+    />
+))}
 </ul>
