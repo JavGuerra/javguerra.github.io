@@ -32,7 +32,7 @@ if (coverImage && coverImage?.image && coverImage.image !== '') {
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
 
-    <MenuBar />
+    <MenuBar title={title} />
 
     <header transition:animate="slide">
       {showTitle && <h1>{title}</h1>}

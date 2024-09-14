@@ -2,6 +2,12 @@
 import siteConfig from '@/siteConfig.json';
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <nav aria-label="Navegación principal" class="flex flex-wrap justify-between">
@@ -10,6 +16,6 @@ import Navigation from './Navigation.astro';
 
     <Hamburger /> {/* Botón para menú móvil */}
 
-    <Navigation />
+    <Navigation title={title} />
     
 </nav>

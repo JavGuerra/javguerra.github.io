@@ -1,7 +1,11 @@
 ---
+interface Props {
+    title: string;
+}
+
 import MenuItem from "./MenuItem.astro"
 
-const currentPath = Astro.url.pathname;
+const { title } = Astro.props;
 
 const menuItems = [
   { href: "/acerca-de", label: "Sobre mi" },
@@ -12,11 +16,11 @@ const menuItems = [
 ---
 
 <ul id="menu-items" class="hidden md:block navigation">
-{menuItems.map((item) => (
+  {menuItems.map((item) => (
     <MenuItem
-        href={item.href}
-        label={item.label}
-        isActive={currentPath === item.href}
+    href={item.href}
+    label={item.label}
+    isActive={title === item.label}
     />
-))}
+  ))}
 </ul>
