@@ -15,7 +15,7 @@ const { href, img, alt, styles } = Astro.props;
     <a href={href} role="button" aria-label="Sobre mi" data-astro-prefetch>
 
         <div class="md:flex md:items-center">
-            <Image src={img} alt={alt} loading="lazy" class={styles} />
+            <Image src={img} alt={alt} loading="lazy" class={styles} transition:name={href} />
 
             <div class="md:ms-8 md:w-full text-center md:text-left">
                 <slot />

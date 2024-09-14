@@ -16,13 +16,13 @@ const { coverImage, title, author, pubDate, description } = frontmatter;
 const route = `/blog/${href}`;
 ---
 
-<li transition:name={title} class="post-card">
+<li class="post-card">
   <a href={route} role="button" aria-label={title} data-astro-prefetch={ignorePrefetch ? null : ''}>
     <article class="md:flex md:flex-row-reverse">
 
       { coverImage && 
         <Image src={coverImage.image} alt={coverImage.alt}
-          class="mb-2 w-[192px] mx-auto" inferSize loading="lazy" />} 
+          class="mb-2 w-[192px] mx-auto" inferSize loading="lazy" transition:name={route} />} 
       
       <div class="w-full md:me-4">
         <small class="gray">

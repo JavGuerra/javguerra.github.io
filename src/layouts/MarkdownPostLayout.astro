@@ -2,8 +2,9 @@
 interface frontmatterInfo {
     title: string;
     description: string;
-    author?: string;
     pubDate: string;
+    author?: string;
+    route: string;
     coverImage?: Record<string, string>;
     tags?: Array<string>;
 }
@@ -26,14 +27,17 @@ const { frontmatter, id } = Astro.props;
 const { 
     title,
     description,
-    author = siteConfig.default.autor,
     pubDate,
+    author = siteConfig.default.autor,
+    route,
     coverImage = {image: '', alt: ''},
     tags = []
 } = frontmatter;
+
+const href = `/blog/${route}`;
 ---
 
-<BaseLayout transition:name={title} pageTitle={title} subTitle={description} coverImage={coverImage}>
+<BaseLayout pageTitle={title} subTitle={description} coverImage={coverImage}>
 
     <p class="-mt-6 mb-2 gray"><small>
         {author ? author : siteConfig.default.autor}{
@@ -41,7 +45,7 @@ const {
     </small></p>
 
     {coverImage && <Image src={coverImage.image}
-        alt={coverImage.alt} inferSize class="my-8" loading="eager" />}
+        alt={coverImage.alt} inferSize class="my-8" loading="eager" transition:name={href} />}
 
     <div data-pagefind-ignore="all">
         <div class="flex flex-wrap mt-4">

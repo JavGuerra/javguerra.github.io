@@ -43,14 +43,15 @@ const imageURL = new URL(img, Astro.site);
     
     <link rel="preload" href="/assets/fonts/Blogger_Sans-Medium.otf"
     as="font" type="font/otf" crossorigin />
-
+    
     <link rel="preload" as="image" href="/assets/img/javguerra.png">
     
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    
     <ViewTransitions />
+    <meta name="view-transition" content="same-origin" />
 
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-EQ94GWNVPC"></script>
