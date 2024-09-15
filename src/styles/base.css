@@ -31,6 +31,8 @@ h1, h2, h3, h4 {
     @apply font-normal text-transparent bg-clip-text bg-gradient-to-br from-violet-800 dark:from-violet-400 via-blue-500 dark:via-pink-200 to-green-300 dark:to-orange-300 !important;
 }
 
+footer { @apply my-10 pb-10; }
+
 footer a:hover { @apply underline; }
 
 .postLink { 
