@@ -1,0 +1,64 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Card from '@/components/Card.astro';
+
+import '@/styles/mastodon.css';
+
+const server = 'https://indieweb.social';
+const profileId = '109292343224519197';
+const limit = 10;
+const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
+---
+
+<BaseLayout pageTitle="Social" subTitle="Mi conexión con el mundo">
+  
+  <ul id="posts" class="mb-8">
+    Cargando...
+  </ul>
+
+  <Card href="https://indieweb.social/@javguerra" title="Mastodon">
+    Visita mi cuenta <strong>@javguerra</strong> en la red social para leer todas mis entradas.
+  </Card>
+  
+</BaseLayout>
+
+<script is:inline define:vars={{ route }}>
+  
+  async function getLatestPosts(route) {
+    try {
+      const response = await fetch(route);
+      if (!response.ok) throw new Error(response.statusText);
+      return await response.json();
+    } catch (error) {
+      console.error(error);
+      return [];
+    }
+  }
+
+  function displayPosts(posts) {
+    const postsElement = document.getElementById('posts');
+    if (posts && posts.length > 0) {
+
+      console.log(posts[0]);
+
+      postsElement.innerHTML = `
+          <h2 class="mb-6">Últimas publicaciones</h2>
+          ${posts.map(post => `
+            <li class="post mt-4">
+              ${ post.reblog === null ? post.content : `${post.reblog.content}<small>♻️ Republicado </small>` }
+              <a href="${post.reblog === null ? post.url : post.reblog.url }">
+                <small class="gray">📢 ${new Date(post.created_at).toLocaleString()}</small>
+              </a>
+            </li>
+          `).join('')}
+        `;
+    } else {
+      postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+    }
+  }
+
+  document.addEventListener('astro:page-load', async () => {
+    const posts = await getLatestPosts(route);     
+    posts && displayPosts(posts)
+  });
+</script>

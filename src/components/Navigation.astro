@@ -11,16 +11,17 @@ const menuItems = [
   { href: "/acerca-de", label: "Sobre mi" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/blog/1", label: "Blog" },
-  { href: "/temas", label: "Temas" }
+  { href: "/temas", label: "Temas" },
+  { href: "/social", label: "Social" }
 ];
 ---
 
 <ul id="menu-items" class="hidden md:block navigation">
   {menuItems.map((item) => (
     <MenuItem
-    href={item.href}
-    label={item.label}
-    isActive={title === item.label}
+      href={item.href}
+      label={item.label}
+      isActive={title === item.label}
     />
   ))}
 </ul>

@@ -1,0 +1,17 @@
+.post {
+    @apply w-full font-medium p-3 md:p-5 bg-white dark:bg-black rounded-lg hover:bg-gray-100 hover:dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-900 hover:border-gray-200 dark:hover:border-gray-800;
+
+    a { @apply no-underline hover:underline text-blue-600 dark:text-blue-400; }
+
+    a small { @apply no-underline hover:underline }
+}
+
+.invisible,
+.invisible img,
+.invisible svg {
+    @apply hidden w-0 h-0 p-0 m-0;
+}
+  
+.ellipsis::after {
+    content: "…";
+}
