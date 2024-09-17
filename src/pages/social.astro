@@ -16,9 +16,15 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
     Cargando...
   </ul>
 
-  <Card href="https://indieweb.social/@javguerra" title="Mastodon">
-    Visita mi cuenta <strong>@javguerra</strong> en la red social para leer todas mis publicaciones.
-  </Card>
+  <ul role="list" class="link-card-grid mt-8">
+    <Card href="https://indieweb.social/@javguerra" title="Mastodon">
+      Visita mi cuenta <strong>@javguerra</strong>.
+    </Card>
+
+    <Card href="https://x.com/javgr" title="Twitter, X">
+      Visita mi cuenta <strong>@javgr</strong>.
+    </Card>
+  </ul>
   
 </BaseLayout>
 
@@ -45,7 +51,7 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
           <h2 class="mb-6">Últimas publicaciones</h2>
           ${posts.map(post => `
             <li class="post mt-4">
-              ${ post.reblog === null ? post.content : `${post.reblog.content}<small>♻️ Republicado </small>` }
+              ${ post.reblog === null ? post.content : `${post.reblog.content}<small class="gray">♻️ Republicado </small>` }
               <a href="${post.reblog === null ? post.url : post.reblog.url }">
                 <small class="gray">📢 ${new Date(post.created_at).toLocaleString()}</small>
               </a>

@@ -25,9 +25,9 @@ const getSvgIcon = (name: string) =>
     </p>
 
     <div class="flex gap-4">
-      <FooterIcon href={getSocialUrl("github")} icon={getSvgIcon("github")} alt="GitHub" />
       <FooterIcon href={getSocialUrl("linkedin")} icon={getSvgIcon("linkedin")} alt="Linked In" />
-      <FooterIcon href={getSocialUrl("x")} icon={getSvgIcon("x")} alt="X" />
+      <FooterIcon href={getSocialUrl("github")} icon={getSvgIcon("github")} alt="GitHub" />
+      {/* <FooterIcon href={getSocialUrl("x")} icon={getSvgIcon("x")} alt="X" /> */}
       <FooterIcon href=`mailto:${siteConfig.default.email}` icon={getSvgIcon("email")} alt="Correo" />
       <FooterIcon href="/rss.xml" icon={getSvgIcon("rss")} alt="Fuente RSS" />
       <FooterIcon href={siteConfig.default.stats} icon={getSvgIcon("stats")} alt="Estadísticas" />
