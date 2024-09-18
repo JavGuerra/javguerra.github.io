@@ -9,6 +9,7 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 ### Características
 
 - Incluye RSS de contenidos
+- Enlaza con la API de Mastodon
 - Implementa sitemap para SEO
 - Incluye estadísticas del sitio
 - Integra Disqus para comentarios
@@ -22,14 +23,17 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 - Es compatible con PWA
 - Consigue una calificación de carbono «A» ([ver](https://www.websitecarbon.com/website/javguerra-github-io/))
 
-Saber más sobre la [elaboración de este sitio](https://javguerra.github.io/blog/codice/).
-
 ### Licencias
 
 - Sobre los contenidos (entradas del blog): [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0/deed.es)
 - Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE](LICENSE)
 - Iconos: [Solar Linear Icons](https://www.svgrepo.com/collection/solar-linear-icons/) en SVG Repo
 - Tipografía: [Blogger_Sans-Medium](https://www.fontsquirrel.com/fonts/blogger-sans)
+
+## Saber más
+
+- [Elaboración de este sitio](https://javguerra.github.io/blog/codice/)
+- [Acceso a la API de Mastodon](https://javguerra.github.io/blog/api-mastodon/)
 
 ## Ir a la página
 
