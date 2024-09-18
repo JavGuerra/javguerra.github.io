@@ -24,7 +24,7 @@ El lector debe conocer las funciones avanzadas de JavaScript como asincronía y 
 
 # API de Mastodon
 
-Realizaré la consulta a la [API de Mastodon](https://docs.joinmastodon.org/api/rest/timelines/) mediante la función `fetch` de JavaScript.
+Realizaré la consulta a la [API de Mastodon](https://docs.joinmastodon.org/api/) mediante la función `fetch` de JavaScript.
 
 El acceso a la API no requiere autenticación (aunque es posible), por lo que podemos acceder a ella sin ningún tipo de token. Voy a necesitar:
 
@@ -329,6 +329,6 @@ A partir de estos estilos es posible aplicar estilos propios al contenido mostra
 
 # Saber más
 
-- [Mastodon](https://es.wikipedia.org/wiki/Mastodon)
-- [Mastodon API](https://docs.joinmastodon.org/api/rest/timelines/)
+- [Mastodon](https://es.wikipedia.org/wiki/Mastodon_(red_social))
+- [Mastodon API](https://docs.joinmastodon.org/api/)
 - Ejemplo de uso: [Social](/social)
