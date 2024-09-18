@@ -33,7 +33,7 @@ Blog de **Javier Guerra** desarrollado con [Astro](https://astro.build/) y [Tail
 ## Saber más
 
 - [Elaboración de este sitio](https://javguerra.github.io/blog/codice/)
-- [Acceso a la API de Mastodon](https://javguerra.github.io/blog/api-mastodon/)
+- [Accediendo a la API de Mastodon](https://javguerra.github.io/blog/api-mastodon/)
 
 ## Ir a la página
 
