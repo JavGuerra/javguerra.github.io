@@ -83,15 +83,17 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
   function displayPosts(posts) {
     const postsElement = document.getElementById('posts');
     if (posts && posts.length > 0) {
-
-      console.log(posts[0]);
-
       postsElement.innerHTML = `
           <h2 class="mb-6">Últimas publicaciones</h2>
           ${posts.map(post => `
             <li class="post mt-4">
-              ${ post.reblog === null ? post.content : `${post.reblog.content}<small class="gray">♻️ Republicado </small>` }
-              <a href="${post.reblog === null ? post.url : post.reblog.url }">
+              ${post.reblog === null 
+                ? post.content
+                : `${post.reblog.content} <small class="gray">♻️ Republicado </small>`}
+              ${post.reblog === null && post.content === ""
+                ? `Contenido multimedia <a href="${post.url}">👁️ Ver en origen →</a><br />` : ''}
+              <a href="${post.reblog === null
+                ? post.url : post.reblog.url}">
                 <small class="gray">📢 ${new Date(post.created_at).toLocaleString()}</small>
               </a>
             </li>
