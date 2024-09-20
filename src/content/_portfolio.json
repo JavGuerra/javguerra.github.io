@@ -33,7 +33,7 @@
             "img": "conceptos-fswd.jpg",
             "alt": "Portada de la página",
             "title": "Conceptos FSWD",
-            "description": "Maquetación elaborada con <strong>HTML 5</strong>, <strong>CSS 3</strong> y <strong>JavaScript Vanilla</strong> que incluye <strong>formulario</strong> y es accesible y responsive."
+            "description": "Maquetación elaborada con <strong>HTML 5</strong>, <strong>CSS 3</strong>, <strong>Sass</strong> y <strong>JavaScript Vanilla</strong> que incluye <strong>formulario</strong> y es accesible y responsive."
         },
         { 
             "route": "galeria-carousel",
