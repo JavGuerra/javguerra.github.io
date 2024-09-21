@@ -48,7 +48,7 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
       postsElement.innerHTML = `
           <h2 class="mb-6">Últimas publicaciones</h2>
           ${posts.map(post => `
-            <li class="post mt-4">
+            <li class="intro post mt-4">
               ${post.reblog === null 
                 ? post.content
                 : `${post.reblog.content} <small class="gray">♻️ Republicado </small>`}

@@ -74,3 +74,27 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 .link-card-grid-min { @apply grid grid-cols-[repeat(auto-fit,minmax(16ch,1fr))] gap-2 p-0; }
 
 li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-400; }
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.intro {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation: show 1s ease-in-out;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
