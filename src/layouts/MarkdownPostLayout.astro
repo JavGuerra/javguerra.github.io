@@ -61,9 +61,9 @@ const href = `/blog/${route}`;
     <Disqus id={id} />
   
     <script>
-    // Si está disponiible Disqus...
     document.addEventListener('astro:page-load', () => {
         const $header = document.getElementById('comments-header');
+        // Si está disponible Disqus...
         if ($header && typeof (window as any).DISQUS !== 'undefined') {
             $header.style.display = 'block';
         }
