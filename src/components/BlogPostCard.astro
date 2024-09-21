@@ -22,7 +22,7 @@ const route = `/blog/${href}`;
 
       { coverImage && 
         <Image src={coverImage.image} alt={coverImage.alt}
-          class="mb-2 w-[192px] mx-auto" inferSize loading="lazy" transition:name={route} />} 
+          class="mb-2 w-[192px] mx-auto rounded transition-transform duration-300 transform scale-100 hover:scale-125 hover:shadow-xl ease-in-out origin-bottom md:origin-top-left" inferSize loading="lazy" transition:name={route} />} 
       
       <div class="w-full md:me-4">
         <small class="gray">

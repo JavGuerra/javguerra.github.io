@@ -4,7 +4,7 @@ import HeroCard from "@/components/HeroCard.astro";
 import Card from "@/components/Card.astro";
 import portfolio from "@/content/_portfolio.json";
 
-const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[256px]";
+const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[256px] rounded transition-transform duration-300 transform scale-100 hover:scale-125 md:hover:scale-150 hover:shadow-xl ease-in-out origin-bottom md:origin-right";
 const images = import.meta.glob("@/assets/portfolio/*", { eager: true });
 
 const projects = portfolio.projects.map(project => {
@@ -27,6 +27,7 @@ const projects = portfolio.projects.map(project => {
               img={project.image.default}
               alt={project.alt}
               styles={styles}
+              title={project.title}
             >
               <h3 class="my-0 leading-snug">{`${project.title} →`}</h3>
               <p set:html={project.description}></p>

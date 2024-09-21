@@ -12,7 +12,7 @@ import proyectsImg from '@/assets/img/proyectos.svg';
 import qrCodeImg from '@/assets/img/qr-code.png';
 
 const quotesList = quotes.list;
-const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px]";
+const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px] transition-transform duration-300 transform scale-100 hover:scale-125";
 const svgImages = import.meta.glob("@/assets/icon/*", { eager: true });
 const iconsList = icons.list.map(area => {
   const image = svgImages[`/src/assets/icon/${area.img}`] as Record<string, any>;
@@ -71,7 +71,8 @@ const iconsList = icons.list.map(area => {
 
   <ul role="list" class="link-card-grid-min">
     {iconsList.map(icon =>
-      <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt} styles={styles}>
+      <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt}
+        styles={styles} title={icon.text}>
         {icon.text}
       </HeroCard>)}
   </ul>
@@ -121,7 +122,7 @@ const iconsList = icons.list.map(area => {
 
   <ul id="portfolio" class="mt-12 mb-10">
     <HeroCard href="/portfolio" img={proyectsImg} alt="Portfolio"
-    styles="mx-auto md:ml-auto mb-4 md:mb-0">
+    styles="mx-auto md:ml-auto mb-4 md:mb-0" title="Portfolio">
     <h3 class="mt-1">Portfolio&nbsp;&rarr;</h3>
     <p>Visita <strong>mis&nbsp;desarrollos</strong> para saber algo más sobre mis conocimientos aplicados.</p>
   </HeroCard>
@@ -146,7 +147,7 @@ const iconsList = icons.list.map(area => {
   
   <ul id="sabermas" class="my-10">
     <HeroCard href="https://linkedin.com/in/javguerra" img={qrCodeImg} alt="Código QR"
-      styles="mx-auto md:ml-auto mb-4 md:mb-0">
+      styles="mx-auto md:ml-auto mb-4 md:mb-0" title="Saber más">
       <h3 class="mt-1">Saber&nbsp;más&nbsp;&rarr;</h3>
       <p>Visita mi <strong>perfil&nbsp;en&nbsp;Linkedin</strong> para saber más.</p>
     </HeroCard>

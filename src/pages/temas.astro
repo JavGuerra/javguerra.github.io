@@ -5,6 +5,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import NewPost from '@/components/NewPost.astro';
 import ResourceList from '@/components/ResourceList.astro';
 import AllTags from '@/components/AllTags.astro';
+import Card from '@/components/Card.astro';
 import resources from "@/content/_resources.json";
 ---
 
@@ -27,9 +28,12 @@ import resources from "@/content/_resources.json";
     />
   </ul>
 
-
-  <div class="md:-mt-4">
+  <div class="md:-mt-4 mb-10">
     <AllTags title="Etiquetas del blog" />
   </div>
+
+  <Card href="/social" title="Social">
+    Accede a las útimas publicaciones que comparto en mis redes sociales.
+  </Card>
 
 </BaseLayout>
