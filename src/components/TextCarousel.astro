@@ -1,0 +1,77 @@
+---
+import recommendations from '@/content/_recommendations.json';
+const slides = recommendations.list.map(slide => slide.quote);
+
+const style = "height: 150px;";
+const duration = 9; // seconds
+---
+
+<style is:global define:vars={{ animationDuration: `${duration}s` }}>
+    #slideshow-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .content-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    @keyframes slideInOut {
+        0% { transform: translateX(100%); }
+        11.11%, 88.89% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+    .animating {
+        animation: slideInOut var(--animationDuration) linear;
+    }
+</style>
+
+<div id="slideshow" class="w-full px-4">
+    <div id="slideshow-container" class="p-4 mt-0 mb-8" style={style}></div>
+</div>
+
+<script is:inline define:vars={{slides, duration}}>
+
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+
+    const shuffleSlides = shuffleArray(slides);
+    const container = document.getElementById('slideshow-container');
+    let currentIndex = 0;
+
+    function createSlide(content) {
+        const slide = document.createElement('div');
+        slide.className = 'content-slide';
+        slide.innerHTML = content;
+        return slide;
+    }
+
+    function updateSlide() {
+        const newSlide = createSlide(shuffleSlides[currentIndex]);
+        container.appendChild(newSlide);
+        
+        void newSlide.offsetWidth; // Trigger reflow
+        newSlide.classList.add('animating');
+
+        currentIndex = (currentIndex + 1) % shuffleSlides.length;
+
+        setTimeout(() => {
+            newSlide.remove();
+            updateSlide();
+        }, duration * 1000);
+    }
+
+    updateSlide();
+</script>

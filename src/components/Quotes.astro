@@ -1,0 +1,20 @@
+---
+import quotes from '@/content/_quotes.json';
+const quotesList = quotes.list;
+---
+
+<div class="text-right font-serif">
+    <p id="random-quote">
+      «<span id="quote-text" class="italic">...</span>»<br />
+      <small id="quote-source" class="gray"></small>
+    </p>
+</div>
+
+<script define:vars={{ quotesList }} is:inline>
+    document.addEventListener('astro:page-load', () => {
+      const randomIndex = Math.floor(Math.random() * quotesList.length);
+      const quote = quotesList[randomIndex];
+      document.getElementById('quote-text').innerHTML = quote.text;
+      document.getElementById('quote-source').textContent = `— ${quote.source}`;
+    });
+</script>

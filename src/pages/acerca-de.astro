@@ -2,44 +2,39 @@
 import '@/styles/markdown.css';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import HeroCard from '@/components/HeroCard.astro';
-import BlogPostLink from '@/components/BlogPostLink.astro';
+import Intro from '@/components/Intro.astro';
+import TextCarousel from '@/components/TextCarousel.astro';
+import Quotes from '@/components/Quotes.astro';
+import Technologies from '@/components/Technologies.astro';
+import OptionIcons from '@/components/OptionIcons.astro';
+import Attitudes from '@/components/Attitudes.astro';
+import FeaturedLinks from '@/components/FeaturedLinks.astro';
 import { Image } from 'astro:assets';
-import { Code } from 'astro:components';
-import quotes from '@/content/_quotes.json';
-import icons from "@/content/_icons.json";
 import bannerImg from '@/assets/banner.png';
 import proyectsImg from '@/assets/img/proyectos.svg';
 import qrCodeImg from '@/assets/img/qr-code.png';
-
-const quotesList = quotes.list;
-const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px] transition-transform duration-300 transform scale-100 hover:scale-125";
-const svgImages = import.meta.glob("@/assets/icon/*", { eager: true });
-const iconsList = icons.list.map(area => {
-  const image = svgImages[`/src/assets/icon/${area.img}`] as Record<string, any>;
-  return { ...area, image };
-});
 ---
 
 <BaseLayout pageTitle="Sobre mi" subTitle="¿Por qué querrías conocerme?">
 
-<Image src={bannerImg} alt="banner" loading="eager" />
+  <Image src={bannerImg} alt="banner" loading="eager" />
 
   <div class="md-content">
     
     <nav class="mt-2 -mb-5 text-center">
-      <a href="#experiencia">Experiencia</a> ▫️&nbsp;<a href="#actitudes">Actitudes</a> ▫️&nbsp;<a href="#conocimientos">Conocimientos</a> ▫️&nbsp;<a href="#portfolio">Portfolio</a> ▫️&nbsp;<a href="#meritos">Méritos</a> ▫️&nbsp;<a href="#sabermas">Más</a>
+      <a href="#experiencia">Experiencia</a> 
+      ▫️&nbsp;<a href="#actitudes">Actitudes</a> 
+      ▫️&nbsp;<a href="#conocimientos">Conocimientos</a> 
+      ▫️&nbsp;<a href="#portfolio">Portfolio</a> 
+      ▫️&nbsp;<a href="#meritos">Méritos</a> 
+      ▫️&nbsp;<a href="#sabermas">Más</a>
     </nav>
     
     <hr />
 
   </div>  
 
-  <div class="text-right font-serif">
-    <p id="random-quote">
-      «<span id="quote-text" class="italic"></span>»<br />
-      <small id="quote-source" class="gray"></small>
-    </p>
-  </div>  
+  <Quotes />
 
   <div class="md-content">
 
@@ -48,34 +43,31 @@ const iconsList = icons.list.map(area => {
     <p class="text-2xl text-center md:text-left">Soy <strong>Javier Guerra</strong>, Técnico Superior en Desarrollo de Aplicaciones Web.</p>
 
     <p class="md:text-2xl text-center">
-      &nbsp;<a href="/assets/doc/CV-javguerra.pdf"><button class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</button></a>&nbsp; 
-      &nbsp;<a href="mailto:javguerra(arroba)badared.com"><button class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</button></a>&nbsp;
+      <a href="/assets/doc/CV-javguerra.pdf">
+        <button class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</button></a>
+      &nbsp; &nbsp;
+      <a href="mailto:javguerra(arroba)badared.com">
+        <button class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</button></a>
     </p>
 
-    <h3>Me presento</h3>
-
-    <p>Además de programar, me apasiona aprender y compartir mis conocimientos, la Informática, la 
-    <a href="/blog/museohc-en-g-seis">retroinformática</a>, la tecnología, el diseño gráfico y las <a href="/blog/series-recomendadas">series de TV</a>.</p>
-
-    <p>Durante mi trayectoria profesional he conocido varios sectores productivos relacionados con las TIC, adquiriendo una amplia visión de conjunto en el área.</p>
-
-    <p>Como programador, me gusta el trabajo bien hecho. Pienso que el buen software debe ser intuitivo y fácil de aprender, y que los errores de diseño desmerecen el trabajo del equipo de desarrollo.</p>
-
-    <p>Estoy abierto a nuevas experiencias y a aprender para superarme. Me motiva especialmente el teletrabajo y el trabajo en equipo.</p>
+    <Intro />
 
     <h3>Trayectoria</h3>
 
-    <p>👉🏻 Estas son algunas de las areas de mi desempeño profesional:</p>
+    <p>💪🏻️ Estas son algunas de las areas de mi desempeño profesional:</p>
 
   </div>
 
-  <ul role="list" class="link-card-grid-min">
-    {iconsList.map(icon =>
-      <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt}
-        styles={styles} title={icon.text}>
-        {icon.text}
-      </HeroCard>)}
-  </ul>
+  <OptionIcons />
+
+  <div class="md-content">
+
+    <h3>Recomendaciones</h3>
+
+    <p>🫶🏻️ ¿Qué opinan de mi las personas con las que he trabajado?</p>
+  </div>
+
+  <TextCarousel />
 
   <div class="md-content">
 
@@ -83,49 +75,32 @@ const iconsList = icons.list.map(area => {
 
     <p>👍🏻 Mis actitudes destacadas son:</p>
 
-    <p class="flex flex-wrap justify-center pb-2"><span class="tag flex items-center"><small class="text-sm">🤝</small>&nbsp;&nbsp;Compañerismo</span> <span class="tag flex items-center"><small class="text-sm">🙋</small>&nbsp;&nbsp;Compromiso</span> <span class="tag flex items-center"><small class="text-sm">💯</small>&nbsp;&nbsp;Integridad</span> <span class="tag flex items-center"><small class="text-sm">🤹</small>&nbsp;&nbsp;Liderazgo</span> <span class="tag flex items-center"><small class="text-sm">🛠️</small>&nbsp;&nbsp;Iniciativa</span> <span class="tag flex items-center"><small class="text-sm">🌈</small>&nbsp;&nbsp;Creatividad</span> <span class="tag flex items-center"><small class="text-sm">🖊️</small>&nbsp;&nbsp;Comunicación&nbsp;escrita</span> <span class="tag flex items-center"><small class="text-sm">📐</small>&nbsp;&nbsp;Planificación&nbsp;y&nbsp;organización</span></p>  
+    <Attitudes />
 
     <h2 id="conocimientos">Conocimientos</h2>
 
     <p>👉🏻 Algunas de las tecnologías con las que trabajo:</p>
 
-    <Code lang="json" code={`{
-  "code": ["JavaScript", "Java", "PHP", "Python", "HTML5", "CSS3", "SQL", "Bash"],
-  "methodologies": ["Kanban", "ITIL", "OOP", "Jamstack", "PWA"],
-  "technologies": {
-    "frontend": {
-      "javascript": ["React", "AlpineJS", "AJAX", "JQuery", "ES6", "TS"],
-      "html": ["xHTML", "SVG", "JSX", "Blade", "Accessibility"],
-      "css": ["Sass", "Bootstrap", "Tailwind", "Bulma", "Responsive", "accesible"]
-    },
-    "backend": {
-      "javascript": ["Node.js", "Express", "Astro"],
-      "java": ["Spring Boot", "Thymeleaf"],
-      "php": ["Laravel", "LiveWire"]
-    },
-    "software": {
-      "tools": ["Git/GitHub", "VS Code", "IntelliJ Idea", "Brackets"],
-      "design": ["InkScape", "Illustrator", "Draw", "Gimp", "Photoshop", "Scribus"]
-    },
-    "systems": ["Linux", "OS X", "Windows", "DOS"],
-    "databases": ["MySQL/MariaDB", "SQLite", "MongoDB", "Oracle DB"],
-    "infrastructures": ["nextCloud", "Apache", "Docker", "AWS", "Firebase", "Netlify", "Heroku", "CI/CD", "Networks"]
-  }
-}`} />  
+    <Technologies />
 
     <p class="md:text-2xl text-center">
-      &nbsp;<a href="https://github.com/JavGuerra"><button class="m-2 pt-1 pb-2">💻&nbsp;&nbsp;Mi código en GitHub</button></a>&nbsp; &nbsp;
-      <a href="/blog/certificaciones"><button class="m-2 pt-1 pb-2">🏆&nbsp;&nbsp;Certificaciones TIC</button></a>&nbsp;
+      <a href="https://github.com/JavGuerra">
+        <button class="m-2 pt-1 pb-2">💻&nbsp;&nbsp;Mi código en GitHub</button></a>
+        &nbsp; &nbsp;
+      <a href="/blog/certificaciones">
+        <button class="m-2 pt-1 pb-2">🏆&nbsp;&nbsp;Certificaciones TIC</button></a>
     </p>
    
   </div>
 
   <ul id="portfolio" class="mt-12 mb-10">
     <HeroCard href="/portfolio" img={proyectsImg} alt="Portfolio"
-    styles="mx-auto md:ml-auto mb-4 md:mb-0" title="Portfolio">
-    <h3 class="mt-1">Portfolio&nbsp;&rarr;</h3>
-    <p>Visita <strong>mis&nbsp;desarrollos</strong> para saber algo más sobre mis conocimientos aplicados.</p>
-  </HeroCard>
+      styles="mx-auto md:ml-auto mb-4 md:mb-0" title="Portfolio">
+      <h3 class="mt-1">Portfolio&nbsp;&rarr;</h3>
+      <p>
+        Visita <strong>mis&nbsp;desarrollos</strong> para saber algo más sobre mis conocimientos aplicados.
+      </p>
+    </HeroCard>
   </ul>
 
   <div class="md-content">
@@ -136,14 +111,7 @@ const iconsList = icons.list.map(area => {
 
   </div>
 
-  <ul>
-    <BlogPostLink href="/blog/1" title="Escribo mi blog desde hace algunos años&nbsp;→" />
-    <BlogPostLink href="/blog/desarrollos" title="Elaboro desarrollos web para el bien&nbsp;público&nbsp;→" />
-    <BlogPostLink href="/blog/publicaciones" title="Realizo publicaciones y artículos&nbsp;→" />
-    <BlogPostLink href="/blog/traducciones" title="Hago traducciones de software&nbsp;→" />
-    <BlogPostLink href="/blog/tag/diseño" title="Comparto diseños con la comunidad&nbsp;→" />
-    <BlogPostLink href="/blog/tag/Sinclair QL" title="Promuevo la comunidad retro del Sinclair&nbsp;QL&nbsp;→" />
-  </ul>
+  <FeaturedLinks />
   
   <ul id="sabermas" class="my-10">
     <HeroCard href="https://linkedin.com/in/javguerra" img={qrCodeImg} alt="Código QR"
@@ -153,15 +121,12 @@ const iconsList = icons.list.map(area => {
     </HeroCard>
   </ul>
 
-  <p class="md:text-2xl text-center"><a href="/assets/doc/CV-javguerra.pdf" class="m-2 pt-1 pb-2">🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</a>&nbsp; &nbsp;<a href="mailto:javguerra(arroba)badared.com" class="m-2 pt-1 pb-2">💌&nbsp;&nbsp;Escríbeme</a></p>
+  <p class="md:text-2xl text-center">
+    <a href="/assets/doc/CV-javguerra.pdf" class="m-2 pt-1 pb-2">
+      🌟&nbsp;&nbsp;Descarga&nbsp;mi&nbsp;CV</a>
+    &nbsp; &nbsp;
+    <a href="mailto:javguerra(arroba)badared.com" class="m-2 pt-1 pb-2">
+      💌&nbsp;&nbsp;Escríbeme</a>
+  </p>
 
 </BaseLayout>
-
-<script define:vars={{ quotesList }} is:inline>
-  document.addEventListener('astro:page-load', () => {
-    const randomIndex = Math.floor(Math.random() * quotesList.length);
-    const quote = quotesList[randomIndex];
-    document.getElementById('quote-text').innerHTML = quote.text;
-    document.getElementById('quote-source').textContent = `— ${quote.source}`;
-  });
-</script>

@@ -1,0 +1,19 @@
+---
+import HeroCard from '@/components/HeroCard.astro';
+import icons from "@/content/_icons.json";
+
+const styles = "mx-auto md:ml-auto mb-4 md:mb-0 w-[48px] h-[48px] transition-transform duration-300 transform scale-100 hover:scale-125";
+const svgImages = import.meta.glob("@/assets/icon/*", { eager: true });
+const iconsList = icons.list.map(area => {
+  const image = svgImages[`/src/assets/icon/${area.img}`] as Record<string, any>;
+  return { ...area, image };
+});
+---
+
+<ul role="list" class="link-card-grid-min">
+    {iconsList.map(icon =>
+      <HeroCard href={icon.href} img={icon.image.default} alt={icon.alt}
+        styles={styles} title={icon.text}>
+        {icon.text}
+      </HeroCard>)}
+</ul>
