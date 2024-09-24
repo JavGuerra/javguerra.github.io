@@ -16,7 +16,7 @@
             "quote": "<div>\n\t<p>«Considero que es un buen docente<br />con grandes dotes de comunicación y empatía.»</p>\n<p class='gray'><small>— <strong>Beatriz Aldecoa</strong>, compañera de trabajo</small>\n</p>\n</div>"
         },
         {
-            "quote": "<div>\n\t<p>«Destaco su gran capacidad de comunicación<br />y los muchos conocimientos que tiene, además del compromiso,<br />la dedicación y profesionalidad al trabajar.»</p>\n<p class='gray'><small>— <strong>Jaime Arjonilla</strong>, compañero de trabajo</small>\n</p>\n</div>"
+            "quote": "<div>\n\t<p>«Destaco su gran capacidad de comunicación<br />y los muchos conocimientos que tiene, además<br />del compromiso, la dedicación y profesionalidad al trabajar.»</p>\n<p class='gray'><small>— <strong>Jaime Arjonilla</strong>, compañero de trabajo</small>\n</p>\n</div>"
         },
         {
             "quote": "<div>\n\t<p>«Javier es una persona con amplios conocimientos en<br />programación, que es capaz de desarrollar código de forma<br />muy avanzada y con buena calidad, destacando<br />por su capacidad de organización y resolución.»</p>\n<p class='gray'><small>— <strong>Alan Sastre</strong>, profesor de programación</small>\n</p>\n</div>"
@@ -40,13 +40,13 @@
             "quote": "<div>\n\t<p>«Javier es un magnífico programador y un<br />excelente compañero, siempre dispuesto a ayudar y a colaborar.»</p>\n<p class='gray'><small>— <strong>Sergio Alvariño</strong>, compañero de estudios</small>\n</p>\n</div>"
         },
         {
-            "quote": "<div>\n\t<p>«Trabajar con Javier es todo un placer. Generoso<br />en sus aportaciones, incisivo y pertinaz en la clarificación<br />de los puntos más turbios.»</p>\n<p class='gray'><small>— <strong>Francesc Adrià</strong>, compañero de estudios</small>\n</p>\n</div>"
+            "quote": "<div>\n\t<p>«Trabajar con Javier es todo un placer. Generoso<br />en sus aportaciones, incisivo y pertinaz en la<br />clarificación de los puntos más turbios.»</p>\n<p class='gray'><small>— <strong>Francesc Adrià</strong>, compañero de estudios</small>\n</p>\n</div>"
         },
         {
             "quote": "<div>\n\t<p>«Buen comunicador, capacidad de liderazgo, atento a los<br />detalles, capacidad de resolución de incidencias de manera eficiente.»</p>\n<p class='gray'><small>— <strong>Anatoly Myndresku</strong>, compañero de estudios</small>\n</p>\n</div>"
         },
         {
-            "quote": "<div>\n\t<p>«Gran persona con ambición por aprender. Muy buen<br />trabajador en grupo con mucho conocimiento y que le<br />encanta compartir conocimiento con el resto de compañeros.»</p>\n<p class='gray'><small>— <strong>Juanjo Casco</strong>, profesor de programación</small>\n</p>\n</div>"
+            "quote": "<div>\n\t<p>«Gran persona con ambición por aprender.<br />Muy buen trabajador en grupo con mucho conocimiento y<br />que le encanta compartir conocimiento con el resto de compañeros.»</p>\n<p class='gray'><small>— <strong>Juanjo Casco</strong>, profesor de programación</small>\n</p>\n</div>"
         },
         {
             "quote": "<div>\n\t<p>«Javier tiene la habilidad de llevar proyectos<br /> a cabo trabajando en equipo con una gran productividad.»</p>\n<p class='gray'><small>— <strong>Jorge Medrano</strong>, compañero de estudios</small>\n</p>\n</div>"
@@ -55,7 +55,7 @@
             "quote": "<div>\n\t<p>«Tuve el placer de realizar las prácticas de mi<br />grado con Javier y no pude quedar más satisfecho.<br />Se mostró muy atento y me sentí acogido desde el primer momento.»</p>\n<p class='gray'><small>— <strong>Manuel Megias</strong>, alumno en prácticas</small>\n</p>\n</div>"
         },
         {
-            "quote": "<div>\n\t<p>«Javier se mostró responsable y comprometido<br />en la búsqueda de soluciones respetando los plazos<br />de entrega, y proactivo al proponer soluciones adaptadas a nuestras necesidades.»</p>\n<p class='gray'><small>— <strong>Gloria Pino</strong>, directora ejecutiva</small>\n</p>\n</div>"
+            "quote": "<div>\n\t<p>«Javier se mostró responsable y comprometido<br />en la búsqueda de soluciones respetando los<br />plazos de entrega, y proactivo al proponer soluciones adaptadas a nuestras necesidades.»</p>\n<p class='gray'><small>— <strong>Gloria Pino</strong>, directora ejecutiva</small>\n</p>\n</div>"
         }
     ]
 }
