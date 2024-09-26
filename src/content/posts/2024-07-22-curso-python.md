@@ -12,6 +12,7 @@ tags:
   - programación
   - formación
   - alumnos
+  - algoritmia
 ---
 
 Durante el mes de julio del pasado año llevé a cabo una formación sobre introducción a Python orientado a la automatización para la Fundación GoodJob en el que incluí el material sobre [algoritmia](/blog/algoritmia) disponible en esta entrada, así como varios ejercicios.

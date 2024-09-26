@@ -8,10 +8,9 @@ coverImage:
   image: '@/assets/img/algoritmo.jpg'
   alt: Organigrama
 tags:
-    - programación
-    - código
     - formación
     - alumnos
+    - algoritmia
 ---
 
 Cuando tenemos que resolver problemas, ya sea en el ámbito de la programación o en el de nuestras vidas, reflexionamos sobre cómo podemos llegar a una solución ajustada a la medida del reto al que nos enfrentamos. Ese proceso requiere crear un algoritmo eficaz compuesto de una serie de pasos bien definidos. En esta entrada veremos, con algo de detalle, las bases para generar algoritmos de resolución exitosos.
