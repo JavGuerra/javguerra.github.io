@@ -278,7 +278,7 @@ public static void clearConsole() {
 
 # La clase ConsoleInput completa
 
-El código es el siguiente:
+El código es el siguiente (cambia el «package» según te interese):
 
 ```java
 package utilities;  
