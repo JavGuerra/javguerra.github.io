@@ -291,6 +291,9 @@ import java.util.Scanner;
  * @autor JavGuerra
  * @version 1.0
  * @since 2023-01-31
+ * @see <a href="https://javguerra.github.io/blog/clase-scanner-java/">
+ *         «ConsoleInput kit» Descripción en el blog del autor.
+ *     </a>
  * @see <a href="https://youtu.be/HSq3rRfBmDg">
  *         Video: Entrada de datos en Java - Clase Scanner.
  *         Mega curso Java desde 0, Aula en la nube.
