@@ -288,7 +288,7 @@ import java.util.Scanner;
   
 /**
  * Clase para leer datos por consola.
- * @autor JavGuerra
+ * @author JavGuerra
  * @version 1.0
  * @since 2023-01-31
  * @see <a href="https://javguerra.github.io/blog/clase-scanner-java/">
