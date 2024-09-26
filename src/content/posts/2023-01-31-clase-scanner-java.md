@@ -10,6 +10,7 @@ coverImage:
 tags:
     - Java
     - consola
+    - código
 ---
 Cuando se emplea la clase Scanner en Java surgen multitud de inconvenientes a la hora de solicitar datos por consola. Algunos errores están asociados a la introducción de tipos de datos no solicitados, pero hay un error especialmente incómodo, el de las pulsaciones de tecla Intro que quedan en el _buffer_ del Scanner. En esta entrada vemos cómo solucionar estos errores y algunos métodos básicos de ejemplo.
 
