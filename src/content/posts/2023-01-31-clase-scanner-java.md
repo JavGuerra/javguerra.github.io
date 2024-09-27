@@ -12,13 +12,13 @@ tags:
     - consola
     - código
 ---
-Cuando se emplea la clase Scanner en Java surgen multitud de inconvenientes a la hora de solicitar datos por consola. Algunos errores están asociados a la introducción de tipos de datos no solicitados, pero hay un error especialmente incómodo, el de las pulsaciones de tecla Intro que quedan en el _buffer_ del Scanner. En esta entrada vemos cómo solucionar estos errores y algunos métodos básicos de ejemplo.
+Cuando se emplea la clase Scanner en Java surgen multitud de inconvenientes a la hora de solicitar datos por consola. Algunos errores están asociados a la introducción de tipos de datos no solicitados, pero hay un problema especialmente incómodo, el de las pulsaciones de tecla Intro que quedan en el _buffer_ del Scanner. En esta entrada muestro cómo solucionar esto con algunos métodos básicos de ejemplo.
 
 # Lo primero: abrir y cerrar
 
-Voy a crear una clase `ConsoleInput`.
+Voy a crear una clase `ConsoleInput`. Esta clase puede ser instanciada dónde la necesitemos o podemos usar directamente sus métodos estáticos para obtener datos por consola.
 
-La clase Scanner debe ser instanciada en un objeto que será el que usaré en todos los métodos para obtener datos por consola. Este objeto (`IN`) lo crearé como una propiedad final de la clase, y también crearé un método para poder cerrar el Scanner.
+Para poder leer por consola necesitaré usar la clase `Scanner` que voy a instanciar dentro de mi clase `ConsoleInput`, y también crearé un método para poder cerrar el Scanner.
 
 ```java
 package utilities;  
