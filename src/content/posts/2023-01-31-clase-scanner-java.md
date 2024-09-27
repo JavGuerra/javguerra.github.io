@@ -16,7 +16,7 @@ Cuando se emplea la clase Scanner en Java surgen multitud de inconvenientes a la
 
 # Lo primero: abrir y cerrar
 
-Voy a crear una clase abstracta `ConsoleInput` cuyos métodos puedan ser llamados (previamente importados) desde otras clases donde sean requeridos.
+Voy a crear una clase `ConsoleInput`.
 
 La clase Scanner debe ser instanciada en un objeto que será el que usaré en todos los métodos para obtener datos por consola. Este objeto (`IN`) lo crearé como una propiedad final de la clase, y también crearé un método para poder cerrar el Scanner.
 
@@ -25,7 +25,7 @@ package utilities;
  
 import java.util.Scanner;  
   
-public abstract class ConsoleInput {  
+public class ConsoleInput {  
   
     private static final Scanner IN = new Scanner(System.in);
  
@@ -300,7 +300,7 @@ import java.util.Scanner;
  *         Mega curso Java desde 0, Aula en la nube.
  *     </a>
  */
-public abstract class ConsoleInput {  
+public class ConsoleInput {  
   
     /** 
      * Instancia de la clase Scanner.
