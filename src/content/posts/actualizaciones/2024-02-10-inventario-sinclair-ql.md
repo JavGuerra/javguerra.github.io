@@ -50,6 +50,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Accesorios
 
+- DOM disk 512Mb + cable alimentación.
 - 54 microdrives *.
 - En torno a 40 almohadillas para microdrive.
 - 3 cables conectores serie.
@@ -88,7 +89,6 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 Tetroid QL Power.
 - Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
-- DOM disk 512Mb + cable alimentación.
 - Carcasa para cartucho ROM.
 - QLUB + carcasa.
 - 2 cables de antena originales o recomendados.
