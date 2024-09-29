@@ -3,26 +3,20 @@ interface Props {
     page: Page<any>;
 }
 
+import type { Page } from 'astro';
 import Search from "astro-pagefind/components/Search";
 import '@/styles/pagefind-ui-custom.css';
 import siteConfig from '@/siteConfig.json';
-
-import type { Page } from 'astro';
-import { getCollection } from 'astro:content';
+import { getSortedPosts } from '@/scripts/posts';
 import { getSlugName } from '@/scripts/urlUtils';
-
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPostCard from "@/components/BlogPostCard.astro";
 import ButtonLink from '@/components/ButtonLink.astro';
 import Card from '@/components/Card.astro';
 
-export async function getStaticPaths({ paginate }: any) {
-    const allPosts: Record<string, any>[] = await getCollection('posts');
 
-    const sortedPosts = allPosts.sort(
-        (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-    )
-    
+export async function getStaticPaths({ paginate }: any) {
+    const sortedPosts = await getSortedPosts();
     return paginate(sortedPosts, { pageSize: siteConfig.default.pageSize });
 }
 

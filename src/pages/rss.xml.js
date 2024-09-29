@@ -1,16 +1,14 @@
 import siteConfig from '@/siteConfig.json';
-
 import rss from '@astrojs/rss';
-
-import { getCollection } from 'astro:content';
+import { getPosts } from '@/scripts/posts';
 import { getImage } from 'astro:assets';
 import { getSlugName } from '@/scripts/urlUtils';
 
 
 export async function GET(context) {
-  const posts = await getCollection('posts');
+  const allPosts = await getPosts();
 
-  const items = await Promise.all(posts.map(async (post) => {
+  const items = await Promise.all(allPosts.map(async (post) => {
     let imageUrl;
     if (post.data.coverImage) {
       const processedImage = await getImage({

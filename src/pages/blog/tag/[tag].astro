@@ -4,14 +4,14 @@ interface Props {
     tags: Array<string>;
 }
 
-import { getCollection } from 'astro:content';
+import { getPosts } from '@/scripts/posts';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
 import TagLabel from '@/components/TagLabel.astro';
 
 export async function getStaticPaths() {
-  const allPosts: Record<string, any>[] = await getCollection('posts');
+  const allPosts = await getPosts();
 
   const uniqueTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 

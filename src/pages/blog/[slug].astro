@@ -3,13 +3,13 @@ interface Props {
     post: Record<string, any>;
 }
 
-import { getCollection } from 'astro:content';
-import { getSlugName } from '@/scripts/urlUtils';
-
 import MarkdownPostLayout from '@/layouts/MarkdownPostLayout.astro';
 
+import { getPosts } from '@/scripts/posts';
+import { getSlugName } from '@/scripts/urlUtils';
+
 export async function getStaticPaths() {
-  const allPosts: Record<string, any>[] = await getCollection('posts');
+  const allPosts = await getPosts();
 
   return allPosts.map(post => ({
     params: { slug: post.data.route || getSlugName(post.slug) },

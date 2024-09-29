@@ -3,13 +3,12 @@ interface Props {
     title?: string;
 }
 
-import { getCollection } from 'astro:content';
+import { getPosts } from '@/scripts/posts';
 import TagLabel from '@/components/TagLabel.astro';
 
 const { title } = Astro.props;
 
-const allPosts: Record<string, any>[] = await getCollection('posts');
-
+const allPosts = await getPosts();
 const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
 ---
 

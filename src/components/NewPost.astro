@@ -1,22 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
+import { getSortedPosts } from '@/scripts/posts';
 import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const allPosts: Record<string, any>[] = await getCollection('posts');
-
+const sortedPosts = await getSortedPosts();
 let post;
-if (allPosts.length) {
-  const sortedPosts = allPosts.sort(
-    (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-  )
-
-  const title = sortedPosts[0].data.title;
-  const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;   
-  sortedPosts[0].data.title = prefixedTitle;
-
-  post = sortedPosts[0];
-}
+if (sortedPosts) post = sortedPosts[0];
 ---
 
 { post && 
