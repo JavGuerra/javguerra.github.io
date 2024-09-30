@@ -1,9 +1,9 @@
 ---
-import { getSortedPosts } from '@/scripts/posts';
+import { getSortedPostsPrefixed } from '@/scripts/posts';
 import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const sortedPosts = await getSortedPosts();
+const sortedPosts = await getSortedPostsPrefixed();
 ---
 
 <ul class="my-8 text-center md:text-left">

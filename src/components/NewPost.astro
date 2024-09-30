@@ -1,18 +1,16 @@
 ---
-import { getSortedPosts } from '@/scripts/posts';
+import { getNewPost } from '@/scripts/posts';
 import { getSlugName } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const sortedPosts = await getSortedPosts();
-let post;
-if (sortedPosts) post = sortedPosts[0];
+const newPost =  await getNewPost();
 ---
 
-{ post && 
+{ newPost && 
   <ul class="my-8 text-center md:text-left">
     <BlogPostCard
-      frontmatter={post.data}
-      href=`${post.data.route || getSlugName(post.slug)}`
+      frontmatter={newPost.data}
+      href=`${newPost.data.route || getSlugName(newPost.slug)}`
     />
   </ul>
 }
