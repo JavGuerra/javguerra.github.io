@@ -55,7 +55,7 @@ if (page.currentPage === 1) {
         ))}
     </ul>
 
-    <div class="mt-8 mb-14 flex justify-between items-center gap-3">
+    <section class="mt-8 mb-14 flex justify-between items-center gap-3">
       <ButtonLink href={page.url.prev ? page.url.prev : "#"} text="←&nbsp;Anterior" />
       <span class="gray text-center">
         <small>Página {page.currentPage}&nbsp;de&nbsp;{page.lastPage}</small>
@@ -63,7 +63,7 @@ if (page.currentPage === 1) {
       <span class="mt-2">
         <ButtonLink href={page.url.next ? page.url.next : "#"} text="Siguiente&nbsp;→" />
       </span>
-    </div>
+    </section>
 
   ) : <span class="inline-block w-full my-4 pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100">
     Aún no hay entradas en este blog.</span> }
