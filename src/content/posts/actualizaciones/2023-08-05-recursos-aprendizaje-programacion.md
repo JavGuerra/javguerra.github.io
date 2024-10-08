@@ -103,6 +103,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 # Desarrollo web / varios
 
 * [¿Cómo empezar en desarrollo web?](https://manz.dev/como-empezar/)
+* [Roadmap desarrollo web](https://lenguajejs.com/roadmap/)
 * [Roadmap Frontend](https://www.instagram.com/p/Cd3VLisIqAk/?img_index=1)
 * [Lenguaje HTML5](https://lenguajehtml.com/html/)
 * [Lenguaje CSS3](https://lenguajecss.com/css/)
@@ -139,6 +140,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Programación 101](https://es.khanacademy.org/computing/ap-computer-science-principles/programming-101)
 * [Algoritmos 101](https://es.khanacademy.org/computing/ap-computer-science-principles/algorithms-101)
 * [Algoritmos](https://es.khanacademy.org/computing/computer-science/algorithms)
+* [Hola Algoritmos](https://the-algorithms.com/es)
 * [Teoría de la información](https://es.khanacademy.org/computing/computer-science/informationtheory)
 * [Los apuntes de Majo](https://losapuntesdemajo.vercel.app/)
 * [Apuntes Marea verde - Tecnología: Programación y robótica](https://www.apuntesmareaverde.org.es/)
