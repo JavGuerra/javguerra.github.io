@@ -2,6 +2,7 @@
 import siteConfig from '@/siteConfig.json';
 import Hamburger from './Hamburger.astro';
 import Navigation from './Navigation.astro';
+// import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
     title: string;
@@ -17,5 +18,7 @@ const { title } = Astro.props;
     <Hamburger /> {/* Botón para menú móvil */}
 
     <Navigation title={title} />
+
+    {/* <ThemeToggle /> */}
     
 </nav>

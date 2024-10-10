@@ -133,6 +133,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 # Recursos complementarios
 
 * [97 cosas que todo programador debería saber](https://97cosas.com/programador/)
+* [Patrones de diseño](https://refactoring.guru/es/design-patterns)
 * [Retos de programación](https://retosdeprogramacion.com/)
 * [Pruebas técnicas de programación](https://pruebastecnicas.com/)
 * [Fundamentos de programación](https://lenguajejs.com/fundamentos/)
