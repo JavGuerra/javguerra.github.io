@@ -170,4 +170,4 @@ Puedes ver el código que implementa esta solución en el repositorio de la apli
 # Enlaces recomendados
 
 * Info sobre la etiqueta [`<dialog>`](https://twitter.com/Manz/status/1529836795130744834).
-* Artículo «[Cómo crear un spinner loader con CSS](https://midu.dev/como-crear-un-spinner-con-css/)
+* Artículo «[Cómo crear un spinner loader con CSS](https://midu.dev/como-crear-un-spinner-con-css/)»
