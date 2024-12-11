@@ -1,9 +1,16 @@
 {
     "projects": [
         { 
+            "route": "recursos-tic",
+            "img": "recursos-tic.png",
+            "alt": "Banner Recursos TIC",
+            "title": "Recursos TIC",
+            "description": "Aplicación con <strong>Spring Boot</strong> y <strong>Docker</strong> que incluye tests unitarios, de integración y funcionales con <strong>JUnit</strong>, <strong>Mockito</strong>, <strong>Selenium</strong> y la <strong>API</strong> con <strong>Swagger</strong>."
+        },
+        { 
             "route": "cartelera-daw",
             "img": "cartelera-daw.png",
-            "alt": "Logo Cartelera DAW",
+            "alt": "Banner Cartelera DAW",
             "title": "Cartelera",
             "description": "Aplicación realizada en <strong>Java</strong> con <strong>Spring Boot</strong>, Spring Security, <strong>Thymeleaft</strong> y Bootstrap, que fue desplegada con <strong>Docker</strong>."
         },
