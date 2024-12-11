@@ -27,7 +27,7 @@ tags:
     - Docker
     - JaCoCo
     - GitHub Actions
-    - CI/CD
+    - CI-CD
     - SonarQube
 ---
 
