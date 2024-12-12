@@ -5,7 +5,7 @@
             "img": "recursos-tic.png",
             "alt": "Banner Recursos TIC",
             "title": "Recursos TIC",
-            "description": "Aplicación con <strong>Spring Boot</strong> y <strong>Docker</strong> que incluye tests unitarios, de integración y funcionales con <strong>JUnit</strong>, <strong>Mockito</strong>, <strong>Selenium</strong> y una <strong>API</strong> con <strong>Swagger</strong>."
+            "description": "Aplicación con <strong>Spring Boot</strong> y <strong>Docker</strong> que incluye <strong>API</strong>, tests unitarios, de integración y funcionales con <strong>JUnit</strong>, <strong>Mockito</strong>, <strong>Selenium</strong> y <strong>Swagger</strong>."
         },
         { 
             "route": "cartelera-daw",
