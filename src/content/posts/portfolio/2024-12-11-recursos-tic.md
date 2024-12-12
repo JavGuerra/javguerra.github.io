@@ -45,7 +45,7 @@ Para el despliegue se utilizaron tecnologías como **Docker** y metodologías **
 
 La planificación y codificación se han llevado a cabo usando **Trello**.
 
-[<button>Ver Recursos TIC en línea</button>](https://cartelera-daw.up.railway.app/)
+[<button>Ver Recursos TIC en línea</button>](https://recursos-tic.up.railway.app)
 
 ## Destacados
 
@@ -97,7 +97,7 @@ Sobre el código fuente: GNU GENERAL PUBLIC LICENSE Version 3
 
 ![QR enlace a la Aplicación](https://raw.githubusercontent.com/JavGuerra/recursos-tic-testing/refs/heads/main/src/main/resources/static/img/qr.svg)
 
-- [Aplicación](https://cartelera-daw.up.railway.app/)  
+- [Aplicación](https://recursos-tic.up.railway.app)  
 - [API REST](https://recursos-tic.up.railway.app/swagger-ui/index.html)  
 - [Repositorio](https://github.com/JavGuerra/recursos-tic-testing)  
 - [Ver el vídeo de la presentación del proyecto](https://youtu.be/d_SeaUuKrMg)  
