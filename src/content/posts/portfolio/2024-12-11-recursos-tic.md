@@ -65,6 +65,12 @@ Además de los requisitos del MVP, se han incluido las siguientes funcionalidade
 - Desarrollada con Linux + Docker LAMP
 - Despliegue
 
+# Video
+
+El proyecto fue presentado a empresas de tecnología, y se puede ver en el vídeo de la presentación del proyecto aquí:
+
+[<button>Video de la presentación</button>](https://youtu.be/d_SeaUuKrMg)
+
 # Indicaciones de uso
 
 ## Requisitos
@@ -86,7 +92,7 @@ Para generar un informe de cobertura de testing, se puede ejecutar el comando `m
 
 # Autores
 
-Desarrollado por [Javier](https://github.com/JavGuerra), [Kevin](https://github.com/kevinzamoraa) y [Marina](https://github.com/MarinaVallejo89)
+Desarrollado por [Javier](https://github.com/JavGuerra) y [Kevin](https://github.com/kevinzamoraa)
 
 
 ## Licencia
@@ -102,3 +108,4 @@ Sobre el código fuente: GNU GENERAL PUBLIC LICENSE Version 3
 - [Repositorio](https://github.com/JavGuerra/recursos-tic-testing)  
 - [Ver el vídeo de la presentación del proyecto](https://youtu.be/d_SeaUuKrMg)  
 - [Ver el PDF de la presentación](https://recursos-tic.up.railway.app/doc/presentacion-recursos_tic.pdf)  
+- [Spinner loader en Thymeleaft](https://javguerra.github.io/blog/loader-thymeleaft/)  
