@@ -2,7 +2,7 @@
 route: recursos-tic
 title: Recursos TIC
 description: Proyecto final del curso de Java, Spring Boot y testing.
-info: Aplicación con Spring Boot y Docker que incluye tests unitarios, de integración y funcionales con JUnit, Mockito, Selenium y la API con Swagger.
+info: Aplicación con Spring Boot y Docker que incluye tests unitarios, de integración y funcionales con JUnit, Mockito, Selenium y la API con Swagger
 author: JavGuerra
 pubDate: 2024-12-11
 coverImage:

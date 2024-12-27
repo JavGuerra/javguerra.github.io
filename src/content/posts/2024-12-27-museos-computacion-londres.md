@@ -1,7 +1,7 @@
 ---
 route: museos-computacion-londres
 title: Museos de computación en Londres
-description: Un paseo por Bletchley Park, The National Museum Of Computing, y The Science Museum
+description: Un paseo por Bletchley Park, The National Museum Of Computing y The Science Museum
 author: JavGuerra
 pubDate: 2024-12-27
 coverImage:
