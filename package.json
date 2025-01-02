@@ -14,13 +14,13 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.4",
-    "@tailwindcss/typography": "^0.5.13",
     "astro": "^4.16.18",
-    "astro-pagefind": "^1.6.0",
+    "astro-pagefind": "^1.7.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^9.9.1",
     "eslint-plugin-astro": "^1.2.3",
