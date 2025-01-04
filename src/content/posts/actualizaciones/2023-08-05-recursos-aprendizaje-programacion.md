@@ -68,6 +68,14 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [PHP, la manera correcta](https://phpdevenezuela.github.io/php-the-right-way/)
 * [Programación PHP a través de ejemplos](https://mega.nz/file/AFIkhRpC#8muP4I2jZRiNirbQmXDMBDf8QPxw5HkbbaGk2xzDvNE)
 
+## Rust
+
+* [Aprendizaje Rust](https://riptutorial.com/Download/rust-es.pdf)
+* [El Lenguaje de Programación Rust (2016)](https://goyox86.github.io/elpr/README.html)
+* [El Lenguaje de Programación Rust (2024)](https://book.rustlang-es.org/)
+* [Comprehensive Rust](https://google.github.io/comprehensive-rust/es/)
+* [Rust para C#/.NET Developers](https://dotnet-book.rustlang-es.org/)
+
 ## Ruby
 
 * [Aprende a programar con Ruby](http://rubysur.org/aprende.a.programar/)
@@ -81,14 +89,6 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 
 * [Piensa en Haskell](https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf)
 * [¡Aprende Haskell por el bien de todos!](http://aprendehaskell.es/main.html)
-
-## Rust
-
-* [Aprendizaje Rust](https://riptutorial.com/Download/rust-es.pdf)
-* [El Lenguaje de Programación Rust (2016)](https://goyox86.github.io/elpr/README.html)
-* [El Lenguaje de Programación Rust (2024)](https://book.rustlang-es.org/)
-* [Comprehensive Rust](https://google.github.io/comprehensive-rust/es/)
-* [Rust para C#/.NET Developers](https://dotnet-book.rustlang-es.org/)
 
 # Frameworks y bibliotecas
 
