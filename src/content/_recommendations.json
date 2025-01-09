@@ -1,7 +1,15 @@
 {
     "list": [
 
-        {"quote": "<div>\n\t<p>«Su curiosidad innata lo lleva constantemente<br />a explorar nuevas tecnologías y perfeccionar<br />sus habilidades, manteniéndose siempre al día<br />con las mejores prácticas del sector.»</p>\n<p class='gray'><small>— <strong>Ana Cascante</strong>, compañera de estudios</small>\n</p>\n</div>"},
+        {
+            "quote": "<div>\n\t<p>«Fue un placer trabajar con él, y muy enriquecedor.»</p>\n<p class='gray'><small>— <strong>Kevin Zamora</strong>, compañero de estudios</small>\n</p>\n</div>"
+        },
+        {
+            "quote": "<div>\n\t<p>«Trabajador, constructivo, capacidad de liderazgo.»</p>\n<p class='gray'><small>— <strong>Juan Raimundo Álvaro</strong>, compañero de estudios</small>\n</p>\n</div>"
+        },
+        {
+            "quote": "<div>\n\t<p>«Su curiosidad innata lo lleva constantemente<br />a explorar nuevas tecnologías y perfeccionar<br />sus habilidades, manteniéndose siempre al día<br />con las mejores prácticas del sector.»</p>\n<p class='gray'><small>— <strong>Ana Cascante</strong>, compañera de estudios</small>\n</p>\n</div>"
+        },
         {
             "quote": "<div>\n\t<p>«Javier es un gran profesional, con una<br />fuerte vocación y dedicación en el trabajo.»</p>\n<p class='gray'><small>— <strong>Alberto Vieira</strong>, compañero de trabajo</small>\n</p>\n</div>"
         },
