@@ -12,7 +12,7 @@ tags:
   - computación
   - historia
   - Londres
-  - museos
+  - museo
   - criptografía
   - fotografía
   - Internet
@@ -72,3 +72,6 @@ Si viajáis a Londres, ya tenéis plan turístico retro.
 # Enlaces
 
 - [Galería de fotos completa](https://javguerra.badared.com/galeria/?dir=2024-12-COMPUTER-LONDON)
+- [Bletchley Park](https://bletchleypark.org.uk/)
+- [The National Museum Of Computing](https://www.tnmoc.org/)
+- [Museo de la Ciencia](https://www.sciencemuseum.org.uk/home)
