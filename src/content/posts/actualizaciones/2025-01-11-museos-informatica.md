@@ -32,7 +32,7 @@ Ver: [Museos de la computación de Londres](/blog/museos-computacion-londres)
 
 ## Bletchley Park, Bletchley, Reino Unido
 
-Conocido como «el hogar de los rompedores de códigos», es el lugar donde se realizaron las primeras operaciones de cifrado y descifrado de texto de la mao de Alan Turing y otros, y se impulsó la creación de las primeras computadoras.
+Conocido como «el hogar de los rompedores de códigos», es el lugar donde se realizaron las primeras operaciones descifrado de ls máquina Enigma de la mano de Alan Turing y otros, y se impulsó la creación de las primeras computadoras.
 
 Ver: [Museos de la computación de Londres](/blog/museos-computacion-londres)
 
