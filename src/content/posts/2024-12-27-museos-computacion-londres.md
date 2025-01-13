@@ -73,5 +73,6 @@ Si viajáis a Londres, ya tenéis plan turístico retro.
 
 - [Galería de fotos completa](https://javguerra.badared.com/galeria/?dir=2024-12-COMPUTER-LONDON)
 - [Bletchley Park](https://bletchleypark.org.uk/)
+- [Mujeres en Bletchley Park](https://en.wikipedia.org/wiki/Women_in_Bletchley_Park)
 - [The National Museum Of Computing](https://www.tnmoc.org/)
 - [Museo de la Ciencia](https://www.sciencemuseum.org.uk/home)
