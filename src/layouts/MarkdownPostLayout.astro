@@ -44,7 +44,7 @@ const href = `/blog/${route}`;
             pubDate && <>, <FormattedDate date={pubDate} /></>}
     </small></p>
 
-    {coverImage && <Image src={coverImage.image}
+    {coverImage && <Image src={coverImage.image} title={coverImage.alt}
         alt={coverImage.alt} inferSize class="my-8" loading="eager" transition:name={href} />}
 
     <div data-pagefind-ignore="all">
