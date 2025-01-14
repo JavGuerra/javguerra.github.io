@@ -20,6 +20,10 @@ Recopilo en esta entrada algunos recursos documentales sobre la historia de la c
 
 # Recursos documentales
 
+El término «Paleoinformática» se refiere a la rama de la informática que combina historia, tecnología y ciencias de la computación para estudiar el origen y evolución temprana de los sistemas informáticos. Esto ayuda a entender el contexto en el que fueron desarrolladas ciertas tecnologías, su uso, y puede aportar ideas de cómo podemos aprovechar ese conocimiento en el presente.
+
+Los siguientes documentos son, para mi, de gran interés, y de los que disfruto cuando puedo releer algunos de ellos.
+
 ## Hardware
 
 - [Historia de un viejo informático](https://eltamiz.com/elcedazo/series/historia-de-un-viejo-informatico/), por Macluskey, en El Cedazo.
