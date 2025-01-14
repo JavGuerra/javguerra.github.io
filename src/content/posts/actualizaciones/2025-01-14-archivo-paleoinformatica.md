@@ -1,7 +1,7 @@
 ---
-route: paleoinformatica
+route: archivo-paleoinformatica
 title: Paleoinformática
-description: Compilación de recursos de la historia de la computación
+description: Archivo de recursos documentales sobre la historia de la computación
 author: JavGuerra
 pubDate: 2025-01-14
 coverImage:
@@ -14,11 +14,11 @@ tags:
   - TIC
 ---
 
-Recopilo en esta entrada algunos recursos que tienen que ver con la historia de la computación y son fuente de aprendizaje y testimonio de los avances en un mundo que la Informática ha ayudado a conformar.
+Recopilo en esta entrada algunos recursos documentales sobre la historia de la computación y son, para mi, fuente de aprendizaje y testimonio de los avances de un mundo que la Informática ha conformado.
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
-# Recursos
+# Recursos documentales
 
 ## Hardware
 
