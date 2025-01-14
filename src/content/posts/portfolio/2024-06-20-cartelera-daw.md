@@ -7,7 +7,7 @@ author: JavGuerra
 pubDate: 2024-06-20
 coverImage:
   image: '@/assets/img/cartelera-daw.jpg'
-  alt: Logo cartelera daw.
+  alt: Logo cartelera DAW
 tags: 
     - portfolio
     - web

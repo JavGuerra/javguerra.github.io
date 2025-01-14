@@ -7,7 +7,7 @@ author: JavGuerra
 pubDate: 2024-12-11
 coverImage:
   image: '@/assets/img/recursos-tic.png'
-  alt: Banner Recursos TIC.
+  alt: Banner Recursos TIC
 tags: 
     - portfolio
     - web

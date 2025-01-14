@@ -7,7 +7,7 @@ author: JavGuerra
 pubDate: 2022-11-18
 coverImage:
   image: '@/assets/portfolio/tienda-8-bits.png'
-  alt: Banner
+  alt: Banner tienda 8 bits
 tags:
     - portfolio
     - web
