@@ -32,4 +32,6 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Olivetti Programma 101 La máquina que cambió el mundo](https://youtu.be/gm_XuJS7tZY?si=p2ZC-tkwG5LlDngx). documental.
 
+- [Graphical User Interface Gallery](https://guidebookgallery.org/screenshots)
+
 Entrada en proceso...
