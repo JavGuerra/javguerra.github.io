@@ -30,4 +30,6 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [The Mother of All Demos - Douglas Engelbart 1968](https://www.youtube.com/playlist?list=PLCGFadV4FqU193yw84Q_5u35aCl25f6ru), video, presentación del ratón y los primeros usos de la interfaz gráfica.
 
+- [Olivetti Programma 101 La máquina que cambió el mundo](https://youtu.be/gm_XuJS7tZY?si=p2ZC-tkwG5LlDngx). documental.
+
 Entrada en proceso...
