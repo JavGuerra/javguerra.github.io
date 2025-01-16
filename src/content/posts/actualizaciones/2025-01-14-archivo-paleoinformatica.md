@@ -20,7 +20,7 @@ Recopilo en esta entrada algunos recursos documentales sobre la historia de la c
 
 # Recursos documentales
 
-El término «Paleoinformática» se refiere a la rama de la informática que combina historia, tecnología y ciencias de la computación para estudiar el origen y evolución temprana de los sistemas informáticos. Esto ayuda a entender el contexto en el que fueron desarrolladas ciertas tecnologías, cuál fue su uso, y las ideas que este conocimiento puede aportar para aprovecharlas en el presente.
+El término «Paleoinformática» se refiere a la rama de la informática que combina historia, tecnología y ciencias de la computación para estudiar el origen y evolución temprana de los sistemas informáticos. Esto ayuda a entender el contexto en el que fueron desarrolladas ciertas tecnologías, cuál fue su uso, y aporta ideas para que este conocimiento se pueda aprovechar en el presente.
 
 Los siguientes documentos son, para mi, de gran interés, y de los que disfruto cuando puedo releer algunos de ellos o consultar información.
 
@@ -28,13 +28,17 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Historia de un viejo informático](https://eltamiz.com/elcedazo/series/historia-de-un-viejo-informatico/), por Macluskey, en El Cedazo.
 
-- [The Mother of All Demos - Douglas Engelbart 1968](https://www.youtube.com/playlist?list=PLCGFadV4FqU193yw84Q_5u35aCl25f6ru), video, presentación del ratón y los primeros usos de la interfaz gráfica.
-
-- [Olivetti Programma 101 La máquina que cambió el mundo](https://youtu.be/gm_XuJS7tZY?si=p2ZC-tkwG5LlDngx). documental.
+- [Olivetti Programma 101 La máquina que cambió el mundo](https://youtu.be/gm_XuJS7tZY?si=p2ZC-tkwG5LlDngx). video, documental.
 
 - [Computer Pioneers by J. A. N. Lee](https://history.computer.org/pioneers/index.html)
 
 - [Home of the first website](https://info.cern.ch/), Cern.
+
+- [A History of the GUI](https://arstechnica.com/features/2005/05/gui/)
+
+- [The Mother of All Demos - Douglas Engelbart 1968](https://www.youtube.com/playlist?list=PLCGFadV4FqU193yw84Q_5u35aCl25f6ru), video, presentación del ratón y los primeros usos de la interfaz gráfica.
+
+- [Alto System Project: Dan Ingalls demonstrates Smalltalk](https://www.youtube.com/watch?v=uknEhXyZgsg), video, demostración.
 
 ## Hardware
 
@@ -43,6 +47,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 ## Software y sistemas operativos
 
 - [Graphical User Interface Gallery](https://guidebookgallery.org/screenshots)
+
+- [Graphical User Interface Gallery](http://toastytech.com/guis/), otro sitio. (sólo en http)
 
 - [WinWorld](https://winworldpc.com/library/operating-systems), Sistemas operativos.
 
