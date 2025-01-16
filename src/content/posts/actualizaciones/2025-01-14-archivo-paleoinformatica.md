@@ -34,4 +34,16 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Graphical User Interface Gallery](https://guidebookgallery.org/screenshots)
 
-Entrada en proceso...
+- [Computer Pioneers by J. A. N. Lee](https://history.computer.org/pioneers/index.html)
+
+- [WinWorld](https://winworldpc.com/library/operating-systems), Sistemas operativos.
+
+- [Vetusware.com](https://vetusware.com/), the biggest free abandonware downloads collection in the universe.
+
+- [Home of the first website](https://info.cern.ch/), Cern.
+
+- [Old-Computers Museum](https://www.old-computers.com/), actualmente en reconstrucción, puede verse en Archive.org.
+
+- [Virtual x86](https://copy.sh/v86/), virtualización de sistemas.
+
+- [Chiken chiken chiken](https://youtu.be/yL_-1d9OSdk?si=NhS9jltk8CwSH1Ln), #humor, lenguaje esotérico, memorable.
