@@ -14,7 +14,7 @@ tags:
   - TIC
 ---
 
-Recopilo en esta entrada algunos recursos documentales sobre la historia de la computación y son, para mi, fuente de aprendizaje y testimonio de los avances de un mundo que la Informática ha conformado.
+Recopilo en esta entrada algunos recursos documentales sobre la historia de la computación que son, para mi, fuente de aprendizaje y testimonio de los avances de un mundo que la Informática ha conformado.
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
