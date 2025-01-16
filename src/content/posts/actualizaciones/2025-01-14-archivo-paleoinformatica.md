@@ -32,6 +32,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Computer Pioneers by J. A. N. Lee](https://history.computer.org/pioneers/index.html)
 
+- [Programmers at work](https://archive.org/details/programmersatwor00lamm_0), libro, entrevistas. Fue traducido al español.
+
 - [Home of the first website](https://info.cern.ch/), Cern.
 
 - [A History of the GUI](https://arstechnica.com/features/2005/05/gui/)
