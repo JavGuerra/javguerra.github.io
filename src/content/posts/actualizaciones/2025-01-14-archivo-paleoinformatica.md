@@ -46,7 +46,7 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 ## Software y sistemas operativos
 
-- [Classic HCI Demos](https://jackrusher.com/classic-ux/), videos sobre sofrtware y dispositivos.
+- [Classic HCI Demos](https://jackrusher.com/classic-ux/), videos demostrativos de software y hardware vintage.
 
 - [Graphical User Interface Gallery](https://guidebookgallery.org/screenshots)
 
