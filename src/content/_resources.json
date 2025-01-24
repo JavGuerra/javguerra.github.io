@@ -109,6 +109,10 @@
         {
             "title": "Pixabay",
             "href": "https://pixabay.com/"
+        },
+        {
+            "title": "DevDocs",
+            "href": "https://devdocs.io/"
         }
     ]
 }
