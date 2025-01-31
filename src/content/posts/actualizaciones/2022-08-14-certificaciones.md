@@ -52,7 +52,7 @@ Estar actualizado es importante, tanto para aprender conocimientos nuevos como p
 * [Firebase](https://badgr.com/public/assertions/jay8ViRwQJmJahFrIz3RRw) - The Bridge  
 
 
-# TODO
+# TODO 
 
 * [Cloud Computing](https://learndigital.withgoogle.com/activate/course/cloud-computing) - Google Activate
 * [Desarrollo de aplicaciones móviles](https://learndigital.withgoogle.com/activate/course/apps) - Google Activate
