@@ -40,7 +40,7 @@ Ver: [Museos de la computación de Londres](/blog/museos-computacion-londres)
 
 El pequeño museo que estaba ubicado en Cáceres fue trasladado a esta pequeña población, y cuenta ahora con una amplia nave industrial reconvertida, donde se muestra una extensa colección de ordenadores y mainframes. A destacar, una Programma 101 o una detallada colección de ordenadores Apple.
 
-Ver: Entrada y galería de fotos muy pronto.
+Ver: [Museo HC](/blog/mhc)
 
 ## Kennedy Space Center, Florida, Estados Unidos
 
