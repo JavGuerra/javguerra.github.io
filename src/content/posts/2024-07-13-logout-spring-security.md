@@ -12,7 +12,7 @@ tags:
   - Java
   - Spring Boot
   - Spring Security
-  - seguridad
+  - ciberseguridad
 ---
 
 En un [artículo anterior](/blog/notificaciones-thymeleaft) he usado variables de sesión para guardar información de la aplicación: mensajes para el usuario, aviso de cookies... Puede que, cuando el usuario salga de su sesión, queramos conservar estos datos que seguirán siendo útiles aunque no esté autenticado. En esta entrada muestro mi solución usando Spring Security.
