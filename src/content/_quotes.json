@@ -2,7 +2,7 @@
     "list": [
         {
             "text": "Todo manejo técnico del hombre es un arte.",
-            "source": "SPENGLER (1880-1936), filósofo alemán"
+            "source": "SPENGLER"
         },
         {
             "text": "Las melodías que pueden escucharse son dulces,<br />pero aquellas que no pueden escucharse lo son más.",
@@ -26,47 +26,47 @@
         },
         {
             "text": "Hay una clase de autómatas que ofrecen el mayor interés:<br />los que imitan, no los gestos, sino las acciones del hombre.",
-            "source": "LEONARDO TORRES QUEVEDO (1852-1936), científico e inventor español"
+            "source": "LEONARDO TORRES QUEVEDO"
         },
         {
             "text": "Oficio que no da de comer a su dueño, no vale dos habas.",
-            "source": "MIGUEL DE CERVANTES (1547-1616)"
+            "source": "MIGUEL DE CERVANTES"
         },
         {
             "text": "El tiempo es el mejor autor: siempre encuentra un final perfecto.",
-            "source": "CHARLES CHAPLIN (1889-1977), director y actor de cine británico"
+            "source": "CHARLES CHAPLIN"
         },
         {
             "text": "Todas las cosas adquieren importancia para nosotros<br />en cuanto nos damos cuenta de que existen.",
-            "source": "ANDRÉ GIDÉ (1869-1951), escritor francés"
+            "source": "ANDRÉ GIDÉ"
         },
         {
             "text": "Descubrir con precisión lo que no ha sucedido ni va a suceder<br />es el privilegio inapreciable de todo hombre culto y de talento.",
-            "source": "OSCAR WILDE (1854-1900), escritor irlandés"
+            "source": "OSCAR WILDE"
         },
         {
             "text": "Creo que si miramos siempre al cielo acabaremos por tener alas.",
-            "source": "GUSTAV FLAUBERT (1821-1880), novelista francés"
+            "source": "GUSTAV FLAUBERT"
         },
         {
             "text": "El mayor espectáculo del mundo es<br />un hombre esforzado luchando contra la adversidad.",
-            "source": "OLIVER GOLDSMITH (1728-1774), escritor británico"
+            "source": "OLIVER GOLDSMITH"
         },
         {
             "text": "Con audacia se puede intentar todo; mas no se puede conseguir todo.",
-            "source": "NAPOLEON BONAPARTE (1769-1821)"
+            "source": "NAPOLEON BONAPARTE"
         },
         {
             "text": "Luchar para vivir la vida, para sufrirla y para gozarla...<br />La vida es maravillosa si no se la tiene miedo.",
-            "source": "CHARLES CHAPLIN (1899-1977), actor y director británico"
+            "source": "CHARLES CHAPLIN"
         },
         {
             "text": "Siempre la mala paz es mejor que la mejor guerra.",
-            "source": "CICERON (106 a.C.-46 a.C.), filósofo latino"
+            "source": "CICERON"
         },
         {
             "text": "La constancia es la virtud por la que todas las demás virtudes dan su fruto.",
-            "source": "ARTURO GRAF (1848-1913), escritor italiano"
+            "source": "ARTURO GRAF"
         },
         {
             "text": "Llegará un tiempo en que los hombres serán capaces de ampliar su mirada...<br />y podrán ver los planetas como su propia Tierra.",
@@ -106,11 +106,15 @@
         },
         {
             "text": "La frase más peligrosa en cualquier idioma es:<br />'Siempre lo hemos hecho de esta manera.'",
-            "source": "GRACE HOPPER, pionera de la Informática"
+            "source": "GRACE HOPPER"
         },
         {
             "text": "Sólo triunfaremos si no nos olvidamos de aprender.",
-            "source": "ROSA LUXEMBURGO, Filósofa, activista, economista"
+            "source": "ROSA LUXEMBURGO"
+        },
+        {
+            "text": "La simplicidad es la máxima sofisticación.",
+            "source": "LEONARDO DA VINCI"
         }
     ] 
 }
