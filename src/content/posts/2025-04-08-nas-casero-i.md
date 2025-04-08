@@ -53,11 +53,11 @@ Elegí un [Intel XEON E5-2650L v4](https://www.intel.la/content/www/xl/es/produc
 
 ## Placa base
 
-![AsRock X99M Extreme4](@/assets/img/nas_placa.jpg)
+![ASRock X99M Extreme4](@/assets/img/nas_placa.jpg)
 
-Dado que la caja soporta placas base en formato micro ATX, y necesitaba una placa para el procesador mencionado, lo lógico era buscar una específica para NAS, pero estas son caras, incluso de segunda mano. La alternativa era una placa de una marca de calidad, a un precio ajustado. Entre las opciones de segunda mano de Aliexpress encontré la [AsRock X99M Extreme4](https://www.asrock.com/mb/intel/X99M%20Extreme4/index.la.asp) que se ve en la imagen. Esta es una placa para el bus LGA2011-3, compatible con el procesador elegido, y con un precio asequible de 121,39€.
+Dado que la caja soporta placas base en formato micro ATX, y necesitaba una placa para el procesador mencionado, lo lógico era buscar una específica para NAS, pero estas son caras, incluso de segunda mano. La alternativa era una placa de una marca de calidad, a un precio ajustado. Entre las opciones de segunda mano de Aliexpress encontré la [ASRock X99M Extreme4](https://www.asrock.com/mb/intel/X99M%20Extreme4/index.la.asp) que se ve en la imagen. Esta es una placa para el bus LGA2011-3, compatible con el procesador elegido, y con un precio asequible de 121,39€.
 
-AsRock es una marca de calidad, y la placa tiene todo lo que busco, aunando así fiabilidad y potencia.
+ASRock es una marca de calidad, y la placa tiene todo lo que busco, aunando así fiabilidad y potencia.
 
 ## Memoria RAM
 
@@ -105,6 +105,6 @@ El precio del ordenador completo este año será de 1.250€ aprox. Más adelant
 
 Se ha conseguido un precio ajustado sin renunciar a capacidad, potencia, calidad y posibilidades de ampliación, eligiendo cuidadosamente los componentes y el diseño del equipo.
 
-Para la obtención de información y sugerencias, además de sugerencias de amigos, me he basado en la información proporcionada por la IA [deepseek](https://www.deepseek.com/zh) tan famosa estos días, y otras IAs como [Mistral](https://chat.mistral.ai/chat) o [Phind](https://phind.com/).
+Para la obtención de información, además de sugerencias de amigos, me he basado en la información proporcionada por la IA [deepseek](https://www.deepseek.com/zh) tan famosa estos días, y otras IAs como [Mistral](https://chat.mistral.ai/chat) o [Phind](https://phind.com/).
 
 Los siguientes pasos son el montaje, la configuración y la instalación del sistema operativo.
