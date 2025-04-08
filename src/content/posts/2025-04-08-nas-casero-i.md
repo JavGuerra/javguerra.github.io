@@ -11,15 +11,15 @@ tags:
   - hardware
 ---
 
-Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tengo en mente hace tiempo, pero por falta de tiempo y de recursos, no me he puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo.
+Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tengo en mente hace años, pero por falta de tiempo y de recursos, no me he puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo.
 
 # NAS
 
-Para los que no conozcan, un NAS (Network Attached Storage) es un sistema de almacenamiento que, principalmente, permite a los usuarios acceder a sus archivos desde cualquier dispositivo de la red, y volcar sus datos en él. Permite además generar snapshots de los datos, para poder restaurar los archivos a cualquier momento.
+Para los que no conozcan, un [NAS](https://es.wikipedia.org/wiki/Almacenamiento_conectado_en_red) (Network Attached Storage) es un sistema de almacenamiento que, principalmente, permite a los usuarios acceder a sus archivos desde cualquier dispositivo de la red, y volcar sus datos en él para salvaguardarlos o compartirlos. Permite además generar snapshots de los datos, para poder restaurar versiones anteriores delos archivos a cualquier momento.
 
-Con distribuciones Linux como [TrueNAS](https://www.truenas.com/truenas-community-edition/) u [Open Media Vault](https://www.openmediavault.org/) se puede montar un dispositivo de almacenamiento en red versátil, pero es un reto armar el rompecabezas de software y hardware necesario si uno deja atrás los sistemas todo en uno de marcas como Synology, QNAP, etc, y se decide a montarse su propio dispositivo. 
+Con distribuciones Linux como [TrueNAS](https://www.truenas.com/truenas-community-edition/) u [Open Media Vault](https://www.openmediavault.org/) se puede montar un dispositivo de almacenamiento en red versátil, pero es un reto armar el rompecabezas de software y hardware necesario si uno deja atrás los sistemas todo en uno de marcas como Synology, QNAP, etc, y se decide a montar su propio dispositivo. 
 
-Un NAS casero tiene otras ventajas. Ya que el dispositivo es un ordenador completo, este puede albergar otros servicios, como servidores, máquinas virtuales y/o contenedores que den servicio a los usuarios de la red. El NAS se convierte entonces en un servidor casero.
+Un NAS casero tiene otras ventajas. Ya que el dispositivo es un ordenador completo, este puede albergar otros servicios, como servidores, máquinas virtuales y/o contenedores que estarán disponibles para los usuarios de la red. El NAS se convierte entonces en un servidor casero.
 
 Hablaremos del software y su configuración en una siguiente entrega de esta serie.
 
