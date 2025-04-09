@@ -11,15 +11,17 @@ tags:
   - hardware
 ---
 
-Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tengo en mente hace años, pero por falta de tiempo y de recursos, no me he puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo.
+Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tenía en mente desde hace años, pero, por falta de tiempo y de recursos, no me he puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo.
+
+Al terminar de leer tendrás una idea general de lo que necesitarás si tú también te animas a construir tu propio NAS casero para evitar que tus datos se pierdan por accidente por no tenerlos a salvo.
 
 # NAS
 
-Para los que no conozcan, un [NAS](https://es.wikipedia.org/wiki/Almacenamiento_conectado_en_red) (Network Attached Storage) es un sistema de almacenamiento que, principalmente, permite a los usuarios acceder a sus archivos desde cualquier dispositivo de la red, y volcar sus datos en él para salvaguardarlos o compartirlos. Permite además generar snapshots de los datos, para poder restaurar versiones anteriores delos archivos a cualquier momento.
+Para los que no conozcan, un [NAS](https://es.wikipedia.org/wiki/Almacenamiento_conectado_en_red) (Network Attached Storage) es un sistema de almacenamiento que, principalmente, permite a los usuarios acceder a sus archivos desde cualquier dispositivo de la red, y almacenar sus datos de forma segura o compartirlos. Permite además generar snapshots de los datos, para poder restaurar versiones anteriores delos archivos a cualquier momento.
 
 Con distribuciones Linux como [TrueNAS](https://www.truenas.com/truenas-community-edition/) u [Open Media Vault](https://www.openmediavault.org/) se puede montar un dispositivo de almacenamiento en red versátil, pero es un reto armar el rompecabezas de software y hardware necesario si uno deja atrás los sistemas todo en uno de marcas como Synology, QNAP, etc, y se decide a montar su propio dispositivo. 
 
-Un NAS casero tiene otras ventajas. Ya que el dispositivo es un ordenador completo, este puede albergar otros servicios, como servidores, máquinas virtuales y/o contenedores que estarán disponibles para los usuarios de la red. El NAS se convierte entonces en un servidor casero.
+Un NAS casero tiene otras ventajas. Ya que el dispositivo es un ordenador completo, puede albergar otros servicios, por ejemplo servidores, máquinas virtuales y/o contenedores que estarán disponibles para los usuarios de la red. El NAS se convierte entonces en un servidor casero de posibilidades ilimitadas.
 
 Hablaremos del software y su configuración en una siguiente entrega de esta serie.
 
@@ -93,6 +95,8 @@ La otra opción de bajo ruido es la fuente de alimentación. En este caso, atend
 
 La fuente mencionada es SFX L, que tiene medidas mayores, pero en en este caso apenas supera en 5mm de profundidad las medidas de SFX, por lo que cabe en la caja perfectamente.
 
+Este modelo concreto, y que sea 80 Plus Gold marcan la diferencia de calidad, potencia y bajo ruido que busco. Posiblemente con 500W hubiera sido suficiente, pero considero que será necesaria más potencia para futuras ampliaciones, y una potencia mayor en esta fuente hará que el ventilador, que también es de 120mm, se encienda menos. 
+
 ## Cableado
 
 El cableado viene incorporado en la caja y la fuente de alimentación. Seguramente esto encarecerá el coste final, pero en mi caso voy a usar cables de los que ya dispongo o de amigos al os que le sobre, por lo que no contabilizo este gasto.
@@ -102,6 +106,8 @@ El cableado viene incorporado en la caja y la fuente de alimentación. Seguramen
 El coste final del equipo es de 591,77€, justo en el límite de los 600€ estimados, no obstante, el gasto en hardware no está completo. Véase que no he incluido en la lista los discos duros HDD y los SSD para los servicios. Estos se comprarán en el futuro, y echando cálculos, tres discos duros de 8TB y un disco SSD pueden estar en torno a los 650€. Este es un coste mayor que el propio ordenador.
 
 El precio del ordenador completo este año será de 1.250€ aprox. Más adelante, con la incorporación de nuevos discos (tres HDD más y 1 SSD más), el equipo puede llegar a los 1.900€.
+
+Ciertamente, si se requiere comprar tarjeta gráfica y disco NVME el precio también se incrementará, por lo que el coste inicial puede rondar los 750€ perfectamente. Eso sí, siempre se puede montar un NAS más barato, usando componentes menos exclusivos si tu prioridad no es el bajo ruido, o si tienes espacio suficiente para comprar una caja y componentes comunes que son más baratos. Incluso puedes montar un NAS casero reaprovechando un viejo ordenador o usando una Raspberry Pi. Lo interesante aquí es encontrar la solución adecuada tanto a las necesidades de almacenamiento como a las de tu bolsillo.
 
 # Conclusiones
 
