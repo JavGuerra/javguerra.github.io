@@ -67,6 +67,8 @@ Javier, un amigo, me recomendó la marca Kllisre. Su precio es algo menos de la 
 
 Adquirí 4 módulos de 16GB DDR4 2400 ECC de esta marca por unos 92,99€. En total son 64GB de RAM para servidor, con control de errores.
 
+La memoria RAM ECC (Error Correcting Code) incluye circuitos especiales para comprobar la exactitud de los datos que se leen y escriben en ella. Las correcciones necesarias se realizan simultáneamente, sobre la marcha, lo que aporta integridad y fiabilidad al sistema, siendo muy adecuada para NAS, estaciones de trabajo y servidores en general, como en este caso.
+
 ## Disco duro
 
 El disco de sistema irá instalado en placa, y es un NVMe de 500GB de tercera generación que he rescatado de un portátil al que he ampliado la capacidad de disco duro. su coste ha sido cero euros en este caso.
