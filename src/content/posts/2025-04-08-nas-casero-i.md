@@ -107,7 +107,7 @@ El coste final del equipo es de 591,77€, justo en el límite de los 600€ est
 
 El precio del ordenador completo este año será de 1.250€ aprox. Más adelante, con la incorporación de nuevos discos (tres HDD más y 1 SSD más), el equipo puede llegar a los 1.900€.
 
-Ciertamente, si se requiere comprar tarjeta gráfica, disco NVME y cables, el precio se incrementará, por lo que el coste inicial puede rondar los 750€ perfectamente. Eso sí, siempre se puede montar un NAS más barato, usando componentes menos exclusivos si tu prioridad no es el bajo ruido o el bajo consumo energético, o si tienes espacio suficiente para comprar una caja y componentes comunes que son más baratos. Incluso puedes montar un NAS casero aprovechando un viejo ordenador o usando una Raspberry Pi. Lo interesante aquí es encontrar la solución adecuada tanto a las necesidades de almacenamiento como a la de la holgura de tu bolsillo.
+Ciertamente, si se requiere comprar tarjeta gráfica, disco NVMe y cables, el precio se incrementará, por lo que el coste inicial puede rondar los 750€ perfectamente. Eso sí, siempre se puede montar un NAS más barato, usando componentes menos exclusivos si tu prioridad no es el bajo ruido o el bajo consumo energético, o si tienes espacio suficiente para comprar una caja y componentes comunes que son más baratos. Incluso puedes montar un NAS casero aprovechando un viejo ordenador o usando una Raspberry Pi. Lo interesante aquí es encontrar la solución adecuada tanto a las necesidades de almacenamiento como a la de la holgura de tu bolsillo.
 
 # Objetivo logrado
 
