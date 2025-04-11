@@ -51,13 +51,13 @@ El equipo va a requerir la ejecución de varios procesos en paralelo. un procesa
 
 En mi caso, buscaba además un procesador que no consumiese mucho, ya que el equipo va a estar encendido todo el tiempo, y a mayor consumo más calor a disipar, lo que se traduce en mayor ruido del ventilador para refrescarlo.
 
-Elegí un [Intel XEON E5-2650L v4](https://www.intel.la/content/www/xl/es/products/sku/91752/intel-xeon-processor-e52650l-v4-35m-cache-1-70-ghz/specifications.html) de 14 núcleos y 28 subprocesos, con un consumo de 65W y una frecuencia básica del procesador de 1,70 GHz. Lo compré en Aliexpress por 52,99€. Su frecuencia de reloj quizá no impresione, pero su consumo y número de núcleos es imbatible en su gama, y para un NAS es más que adecuado.
+Elegí un [Intel XEON E5-2650L v4](https://www.intel.la/content/www/xl/es/products/sku/91752/intel-xeon-processor-e52650l-v4-35m-cache-1-70-ghz/specifications.html) de 14 núcleos y 28 subprocesos, con un consumo de 65W y una frecuencia básica del procesador de 1,70 GHz. Lo compré en Aliexpress por 54,39€. Su frecuencia de reloj quizá no impresione, pero su consumo y número de núcleos es imbatible en su gama, y para un NAS es más que adecuado.
 
 ## Placa base
 
 ![ASRock X99M Extreme4](@/assets/img/nas_placa.jpg)
 
-Dado que la caja soporta placas base en formato micro ATX, y necesitaba una placa para el procesador mencionado, lo lógico era buscar una específica para NAS, pero estas son caras, incluso de segunda mano. La alternativa era una placa de una marca de calidad, a un precio ajustado. Entre las opciones de segunda mano de Aliexpress encontré la [ASRock X99M Extreme4](https://www.asrock.com/mb/intel/X99M%20Extreme4/index.la.asp) que se ve en la imagen (no confundir con la ASRock X99 Extreme4, sin M). Esta es una placa para el bus LGA2011-3, compatible con el procesador elegido, y con un precio de 121,39€.
+Dado que la caja soporta placas base en formato micro ATX, y necesitaba una placa para el procesador mencionado, lo lógico era buscar una específica para NAS, pero estas son caras, incluso de segunda mano. La alternativa era una placa de una marca de calidad, a un precio ajustado. Entre las opciones de segunda mano de Aliexpress encontré la [ASRock X99M Extreme4](https://www.asrock.com/mb/intel/X99M%20Extreme4/index.la.asp) que se ve en la imagen (no confundir con la ASRock X99 Extreme4, sin M). Esta es una placa para el bus LGA2011-3, compatible con el procesador elegido, y con un precio de 124,29€.
 
 ASRock es una marca de calidad, y la placa tiene todo lo que busco, incluidos dos puertos Ethernet, aunando así fiabilidad y potencia.
 
@@ -67,7 +67,7 @@ Un equipo que va a lanzar contenedores, máquinas virtuales, servidores y atende
 
 Javier, un amigo, me recomendó la marca Kllisre. Su precio es algo menos de la mitad que las marcas conocidas, pero esto me permite comprar más memoria por menos dinero, y al tener la referencia de alguien que las ha probado, me quedo tranquilo.
 
-Adquirí 4 módulos de 16GB DDR4 2400 ECC por unos 92,99€. En total son 64GB de RAM para servidor, con control de errores.
+Adquirí 4 módulos de 16GB DDR4 2400 ECC por unos 91,50€. En total son 64GB de RAM para servidor, con control de errores.
 
 La memoria RAM ECC (Error Correcting Code) incluye circuitos especiales para comprobar la exactitud de los datos que se leen y escriben en ella. Las correcciones necesarias ante fallos se realizan simultáneamente, sobre la marcha, lo que aporta integridad y fiabilidad al sistema, siendo muy adecuada para NAS, estaciones de trabajo y servidores en general, como en este caso.
 
@@ -103,7 +103,7 @@ El cableado viene incorporado en la caja y la fuente de alimentación. Seguramen
 
 # El precio final
 
-El coste final del equipo es de 591,77€, justo en el límite de los 600€ estimados, no obstante, el gasto en hardware no está completo. Véase que no he incluido en la lista los discos duros HDD y los SSD para los servicios. Estos se comprarán en el futuro, y echando cálculos, tres discos duros de 8TB para montar un RAID, y un disco SSD pueden estar por encima de los 650€. Este es un coste mayor que el del propio ordenador.
+Todos los precios incluyen IVA. El coste final del equipo es de 591,77€, justo en el límite de los 600€ estimados, no obstante, el gasto en hardware no está completo. Véase que no he incluido en la lista los discos duros HDD y los SSD para los servicios. Estos se comprarán en el futuro, y echando cálculos, tres discos duros de 8TB para montar un RAID, y un disco SSD pueden estar por encima de los 650€. Este es un coste mayor que el del propio ordenador.
 
 El precio del ordenador completo este año será de 1.250€ aprox. Más adelante, con la incorporación de nuevos discos (tres HDD más y 1 SSD más), el equipo puede llegar a los 1.900€.
 
