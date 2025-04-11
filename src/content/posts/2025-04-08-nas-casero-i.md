@@ -19,7 +19,7 @@ Al terminar de leer tendrás una idea general del equipamiento que necesitarás 
 
 Para los que lo desconozcan, un [NAS](https://es.wikipedia.org/wiki/Almacenamiento_conectado_en_red) (Network Attached Storage) es un sistema de almacenamiento que, principalmente, permite a los usuarios almacenar y acceder a sus archivos desde cualquier dispositivo de la red de forma segura. Si se configura adecuadamente, permite además generar snapshots de los datos, y así poder restaurar versiones anteriores de los archivos en cualquier momento.
 
-Con distribuciones Linux como [TrueNAS](https://www.truenas.com/truenas-community-edition/) u [Open Media Vault](https://www.openmediavault.org/) se puede montar un dispositivo de almacenamiento en red versátil, libre y gratuito, pero es un reto interesante armar el rompecabezas de software y hardware necesario si se decide montar un dispositivo propio dejando atrás los sistemas NAS de marcas con soluciones integradas como Synology, QNAP, etc. 
+Con distribuciones Linux como [TrueNAS Scale](https://www.truenas.com/truenas-scale/) u [Open Media Vault](https://www.openmediavault.org/) se puede montar un dispositivo de almacenamiento en red versátil, libre y gratuito, pero es un reto interesante armar el rompecabezas de software y hardware necesario si se decide montar un dispositivo propio dejando atrás los sistemas NAS de marcas con soluciones integradas como Synology, QNAP, etc. 
 
 Un NAS casero tiene otras ventajas. Como se trata de un sistema bajo nuestro completo control, este puede albergar otros servicios como servidores, máquinas virtuales y/o contenedores que estarán disponibles para los usuarios de la red, convirtiéndose así en un completo servidor de posibilidades ilimitadas.
 
