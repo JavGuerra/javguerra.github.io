@@ -11,9 +11,7 @@ tags:
   - hardware
 ---
 
-Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tenía en mente desde hace años, pero, por falta de tiempo y de recursos, no me había puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo.
-
-Al terminar de leer tendrás una idea general del equipamiento que necesitarás si tú también te animas a construir tu propio NAS casero para evitar que tus datos se pierdan por accidente por no tenerlos a salvo.
+Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tenía en mente desde hace años, pero, por falta de tiempo y de recursos, no me había puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo. Al terminar de leer tendrás una idea general del equipamiento que necesitarás si tú también te animas a construir tu propio NAS casero.
 
 # NAS
 
@@ -23,7 +21,7 @@ Con distribuciones Linux como [TrueNAS Scale](https://www.truenas.com/truenas-sc
 
 Un NAS casero tiene otras ventajas. Como se trata de un sistema bajo nuestro completo control, este puede albergar otros servicios como servidores, máquinas virtuales y/o contenedores que estarán disponibles para los usuarios de la red, convirtiéndose así en un completo servidor de posibilidades ilimitadas.
 
-Hablaré del software y su configuración en una siguiente entrega de esta serie.
+Hablaré del software y su configuración en una siguiente entrega de esta serie, pero es importante señalar que un NAS no es un sistema de copias de seguridad, sino un dispositivo de almacenamiento de datos, como una nube o un disco duro externo, por lo que si quieres tener tus datos seguros, debes considerar otros medios de almacenamiento.
 
 # Requisitos
 
