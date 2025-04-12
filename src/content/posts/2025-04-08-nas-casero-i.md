@@ -89,6 +89,8 @@ El disipador de la CPU elegido es el [Noctua NH-L12S](https://noctua.at/es/nh-l1
 
 Este disipador es muy reputado, y es más que suficiente para trabajar con el procesador elegido.
 
+Atención: Para poder usar este disipador, es necesario pedir al fabricante un adaptador para la placa, modelo [NM-i20xx](https://noctua.at/en/nm-i20xx-mounting-kit). El fabricante lo envía de forma gratuíta, y se solicita a través de un formulario en su web.
+
 ## Fuente de alimentación
 
 La otra opción de bajo ruido es la fuente de alimentación. En este caso, atendiendo a que la caja soporta fuentes de tamaño SFX, he optado por la [Be Quiet! SFX L Power 600W 80 Plus Gold Modular](https://www.bequiet.com/es/powersupply/1554). La he adquirido nueva en Xtremmedia por 123,49€.
