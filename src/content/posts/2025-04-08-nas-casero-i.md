@@ -105,7 +105,7 @@ El cableado viene incorporado en la caja y la fuente de alimentación. Seguramen
 
 # El precio final
 
-Todos los precios incluyen IVA. El coste final del equipo es de 591,77€, justo en el límite de los 600€ estimados, no obstante, el gasto en hardware no está completo. Véase que no he incluido en la lista los discos duros HDD y los SSD para los servicios. Estos se comprarán en el futuro, y echando cálculos, tres discos duros de 8TB para montar un RAID, y un disco SSD pueden estar por encima de los 650€. Este es un coste mayor que el del propio ordenador.
+Todos los precios incluyen IVA. El coste final del equipo es de 591,77€, justo en el límite de los 600€ estimados, no obstante, el gasto en hardware no está completo. Véase que no he incluido en la lista los discos duros HDD y los SSD para los servicios. Estos se comprarán en el futuro, y echando cálculos, tres discos duros de 8TB para montar al menos un RAID Z1, y un disco SSD pueden estar por encima de los 650€. Este es un coste mayor que el del propio ordenador.
 
 El precio del ordenador completo este año será de 1.250€ aprox. Más adelante, con la incorporación de nuevos discos (tres HDD más y 1 SSD más), el equipo puede llegar a los 1.900€.
 
