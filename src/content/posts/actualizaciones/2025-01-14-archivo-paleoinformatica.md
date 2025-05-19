@@ -62,4 +62,6 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 ## Otros
 
+- [Internet Artifacts](https://neal.fun/internet-artifacts/) Hitos de la red.
+
 - [Chiken chiken chiken](https://youtu.be/yL_-1d9OSdk?si=NhS9jltk8CwSH1Ln), #humor, lenguaje esotérico, memorable.
