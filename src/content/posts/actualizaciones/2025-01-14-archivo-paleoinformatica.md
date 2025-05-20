@@ -64,4 +64,6 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Internet Artifacts](https://neal.fun/internet-artifacts/) Hitos de la red.
 
+- [La edad dorada de los videojuegos](https://youtu.be/5-5t11Qb3Uw?si=YELimIJHaX3hYpPj) video.
+
 - [Chiken chiken chiken](https://youtu.be/yL_-1d9OSdk?si=NhS9jltk8CwSH1Ln), #humor, lenguaje esotérico, memorable.
