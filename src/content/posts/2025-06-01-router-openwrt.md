@@ -18,25 +18,25 @@ El primer paso consiste en instalar el firmware. Esto es algo que puede hacerse 
 
 # El proyecto
 
-El router [Comtrend AR-5387un](https://wiki.bandaancha.st/Comtrend_AR-5387un) es versátil, pero de reducidas prestaciones, por ejemplo dispone de poca memoria para instalar software, sus puertos ethernet son 10/100 Base-T Ethernet, su única banda es de 2.4 GHz y sólo dispone de un SSID para la red WIFI, por lo que únicamente podremos tener una red a la vez, o la de casa, o la de invitados...
+El router [Comtrend AR-5387un](https://wiki.bandaancha.st/Comtrend_AR-5387un) es versátil, pero de reducidas prestaciones, por ejemplo, dispone de poca memoria para instalar software, sus puertos son 10/100 Base-T Ethernet, su única banda es de 2.4 GHz y sólo dispone de un SSID para la red WIFI, por lo que únicamente podremos tener una red a la vez, o la de casa, o la de invitados...
 
 El proyecto OpenWRT ayuda a sacar partido a los routers facilitando el acceso a características que el firmaware de los routers de las compañias limitaron y en algunos casos aporta nuevas características no implementadas en el firmaware original. Puedes conocer más sobre el Sistema Operativo OpenWRT basado en Linux en [la Wikipedia](https://es.wikipedia.org/wiki/OpenWrt) o en la [página oficial del proyecto](https://openwrt.org/) que también es un Wiki.
 
-En mi caso, he descargado la versión 24.10.0 del firmware. Con ella pretendo que mi router reviva para poder conectarlo al router de mi proveedor de Internet por la parte [WAN](https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_amplia), y conectar a él algunos dispositivos tanto por los puertos Ethernet vcomo por el Wifi a través de la parte [LAN](https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_local), y que los dispositivos conecten a ella mediate el protocolo de identificación [DHCP](https://es.wikipedia.org/wiki/Protocolo_de_configuraci%C3%B3n_din%C3%A1mica_de_host).
+En mi caso, he descargado la versión 24.10.0 del firmware. Con ella pretendo que mi router reviva para poder conectarlo al router de mi proveedor de Internet por la parte [WAN](https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_amplia), y conectar a él algunos dispositivos tanto por los puertos Ethernet como por el Wifi a través de la parte [LAN](https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_local), y que los dispositivos conecten a ella mediate el protocolo de identificación [DHCP](https://es.wikipedia.org/wiki/Protocolo_de_configuraci%C3%B3n_din%C3%A1mica_de_host).
 
 ## Accediendo
 
-Por defecto, el router con el nuevo firmware se va a comportar como un swich administrado. Para ello conecté un cable de red entre mi PC y el router y accedí a la dirección http://192.168.1.1,  La interfaz no soporta el protocolo HTTPS en ese momento, por lo que uso la opción de navegación de incógnito para poder acceder sin que el navegador me cambie HTTP por HTTPS.
+Por defecto, el router con el nuevo firmware se va a comportar como un swich administrado. Para acceder a él, conectando un cable de red entre mi PC y el router y puse la dirección http://192.168.1.1 en mi navegador web. La interfaz que se mostrará no soporta el protocolo HTTPS en ese momento (luego lo cambiaremos), por lo que uso la opción de navegación de incógnito para poder acceder sin que el navegador me cambie HTTP por HTTPS.
 
 El usuario por defecto es `root`, y la contraseña es `admin`.
 
-Una vez dentro, lo primero es cambiar la contraseña. para ello hay que hacer click en franja amarilla superior que nos avisa de ello, y en el formulario al que nos llevará, deberemos poner dos veces la nueva contraseña.
+Una vez dentro, lo primero es cambiar la contraseña. Para ello hay que hacer clic en la franja amarilla superior que nos avisa de la necesidad de cambio de contraseña, y en el formulario al que nos llevará, pondrás dos veces la nueva contraseña.
 
-Luego, en `System > Administration > HTTP(S) Access`, podrás marcar la opción `Redirect to HTTPS`para que, cuando queramos acceder las sigfuientes veces al panel de administración, ya podamos hacerlo mediante el protoclo seguro HTTPS. Tardará un poco en aplicar los cambios y te pedirá si seguir con ellos o revertirlos. dale a `Apply unchecked`.
+Luego, en `System > Administration > HTTP(S) Access`, podrás marcar la opción `Redirect to HTTPS` para que, cuando queramos acceder las siguientes veces al panel de administración, ya podamos hacerlo mediante el protoclo seguro HTTPS. Tardará un poco en aplicar los cambios y te pedirá si seguir con ellos o revertirlos. Dale a `Apply unchecked`.
 
-Como mencioné, por defecto, el router viene configurado para funcionar como un swich. En `Network > Interfaces` encontrarás el interface `lan` configurado como dispositivo `swich.1`.
+Como mencioné, por defecto, el router viene configurado para funcionar como un swich. En `Network > Interfaces` encontrarás el interface `lan` como dispositivo `swich.1`.
 
-Podemos configurar aquí su dirección `IPv4` entrando en `Edit`, y de esta forma darás una nueva dirección IP al router OpenWRT para poder funcionar en el rango de las direcciones DHCP que sirve el router de tu proveedor, o asignarle una IP estática.
+Podemos configurar aquí su dirección `IPv4` mediante `Edit`, y de esta forma darás una nueva dirección IP al router OpenWRT para poder funcionar en el rango de las direcciones DHCP que sirve el router de tu proveedor, o asignarle una IP estática.
 
 Despues de guardar, debes darle al botón `Save and apply` para que los cambios se apliquen. Ahora tu router estará integrado en tu red y los dispositivos conectados a él tendrán acceso a Internet, pues esta Interfaz tiene configurado el servicio DHCP. Así de fácil.
 
