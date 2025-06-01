@@ -9,6 +9,7 @@ coverImage:
   alt: Caja Jonsbo N4 con discos duros
 tags:
   - hardware
+  - nas
 ---
 
 Necesitaba un NAS casero para almacenar con seguridad mis ficheros. De hecho es un proyecto que tenía en mente desde hace años, pero, por falta de tiempo y de recursos, no me había puesto a ello. Bien, el momento ha llegado, y en esta entrada te cuento cómo lo estoy haciendo. Al terminar de leer tendrás una idea general del equipamiento que necesitarás si tú también te animas a construir tu propio NAS casero.
