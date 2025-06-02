@@ -193,9 +193,9 @@ A través de la página de OpenWRT y en Internet puedes conocer otras posibilida
 
 # Enlaces
 
-[OpenWRT en Wikipedia](https://es.wikipedia.org/wiki/OpenWrt)
-[Página oficial de OpenWRT]()
-[Instalar OpenWRT](https://tombatossals.github.io/instalar-openwrt/)
-[Comtrend AR-5387un](https://wiki.bandaancha.st/Comtrend_AR-5387un)
-[Comtrend AR-5387un en OpenWRT](https://openwrt.org/toh/comtrend/ar-5387un)
-[Comtrend AR-5387un Manual](https://es.scribd.com/document/596792298/AR-5387un-Manual-de-Usuario-AR-5387-UN-Router)
+- [OpenWRT en Wikipedia](https://es.wikipedia.org/wiki/OpenWrt)
+- [Página oficial de OpenWRT]()
+- [Instalar OpenWRT](https://tombatossals.github.io/instalar-openwrt/)
+- [Comtrend AR-5387un](https://wiki.bandaancha.st/Comtrend_AR-5387un)
+- [Comtrend AR-5387un en OpenWRT](https://openwrt.org/toh/comtrend/ar-5387un)
+- [Comtrend AR-5387un Manual](https://es.scribd.com/document/596792298/AR-5387un-Manual-de-Usuario-AR-5387-UN-Router)
