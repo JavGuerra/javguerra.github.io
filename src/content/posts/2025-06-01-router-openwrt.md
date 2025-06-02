@@ -1,6 +1,6 @@
 ---
 route: router-openwrt
-title: Configurando un router con OpenWRT
+title: Configurando un viejo router con OpenWRT
 description: la segunda vida de un Comtrend AR5387un como punto de acceso
 author: JavGuerra
 pubDate: 2025-06-01
@@ -12,7 +12,7 @@ tags:
   - redes
 ---
 
-Tenía este viejo router por casa y ya había trasteado con él y OpenWRT, un sistema operativo libre para routers que ofrece muchas posibilidades tanto de configuración como de servicios. En esta entrada verás cómo lo puse a funcionar paso a paso como un punto de acceso de mi red local.
+Tenía este router de más de 15 años por casa y ya había trasteado con él y OpenWRT, un sistema operativo libre para routers que ofrece muchas posibilidades tanto de configuración como de servicios. En esta entrada verás cómo lo puse a funcionar paso a paso como un punto de acceso de mi red local.
 
 El primer paso consiste en instalar el firmware. Esto es algo que puede hacerse siguiendo las indicaciones de multitud de páginas como [esta](https://tombatossals.github.io/instalar-openwrt/).
 
