@@ -1,7 +1,7 @@
 ---
 route: router-openwrt
 title: Configurando un viejo router con OpenWRT
-description: la segunda vida de un Comtrend AR5387un como punto de acceso
+description: La segunda vida de un Comtrend AR5387un como punto de acceso
 author: JavGuerra
 pubDate: 2025-06-01
 coverImage:
@@ -75,7 +75,9 @@ Si la primera wan no sale así automáticamente, habría que crear la ruta desde
 En `Network DHCP and DNS`, en `General`, asegúrate de tener marcado `Authoritative`, para que el servidor DHCP que tengan en cuenta los dispositivos de la red conectados al router OpenWRT sea el de la red propia y no el del router del proveedor, en este caso la del rango `192.168.2.x`.
 
 En `Network > Firewall` asegúrate de que en `Zones` aparece `lan -> wan -> REJECT all others` con `Input: accept`, `Oputput accept` e `Intra zone: accept` con `Masquerading: desmarcado`.
+
 Asegurarse también que aparece `wan -> REJECT` con `Input: reject`, `Output: accept`, `Intra zone: reject` y `Masquerading: marcado`.
+
 Mediante `Edit`, en cada red, en `Covered network`, debe aparecer `lan` en la zona lan y `wan` en la zona wan.
 
 Llega el momento de apagar el router, conectar el cable de red hacia el router de casa en el puerto `lan1`, y el cable de red de tu ordenador en cualquiera de los otros puertos lan. Tras ello, enciende el router.
@@ -194,7 +196,7 @@ A través de la página de OpenWRT y en Internet puedes conocer otras posibilida
 # Enlaces
 
 - [OpenWRT en Wikipedia](https://es.wikipedia.org/wiki/OpenWrt)
-- [Página oficial de OpenWRT]()
+- [Página oficial de OpenWRT](https://openwrt.org/)
 - [Instalar OpenWRT](https://tombatossals.github.io/instalar-openwrt/)
 - [Comtrend AR-5387un](https://wiki.bandaancha.st/Comtrend_AR-5387un)
 - [Comtrend AR-5387un en OpenWRT](https://openwrt.org/toh/comtrend/ar-5387un)
