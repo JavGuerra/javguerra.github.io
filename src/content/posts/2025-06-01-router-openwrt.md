@@ -120,13 +120,13 @@ Hay una serie de paquetes que van a requerir actualización. Desde `Sistema > So
 También puedes hacerlo desde el terminal accediendo al router con SSH. Seamos atrevidos. Tras entrar en el router mediante este protocolo:
 
 Listar todos los paquetes actualizables.
-`opkg list-upgradable`
+```opkg list-upgradable```
 
 Actualizarlos:
-`opkg upgrade $(opkg list-upgradable | cut -f 1 -d ' ')`
+```opkg upgrade $(opkg list-upgradable | cut -f 1 -d ' ')```
 
 Para actualizar sólo paquetes específicos:
-`opkg upgrade nombre-del-paquete`
+```opkg upgrade nombre-del-paquete```
 
 Los paquetes descargados se guardan en `/var/opkg-lists/` y `/tmp/`. Para recuperar espacio, puedes borrarlos con:
 
@@ -136,13 +136,13 @@ rm -rf /tmp/opkg-*        # Archivos temporales de opkg
 ```
 
 Para encontrar paquetes instalados que ya no son necesarios:
-`opkg list-installed | awk '{print $1}' | xargs opkg depends | grep "not installed"`
+```opkg list-installed | awk '{print $1}' | xargs opkg depends | grep "not installed"```
 
 Si encuentras paquetes que ya no usas, elimínalos:
-`opkg remove nombre-del-paquete-innecesario`
+```opkg remove nombre-del-paquete-innecesario```
 
 Para ver el espacio de almacenamiento usado, emplea:
-`df -h /`
+```df -h /```
 
 Es conveniente revisar las actualizaciones cada cierto tiempo, ya que OpenWRT no te avisará de las nuevas versiones de paquetes disponibles.
 
@@ -155,27 +155,27 @@ Mi intención era instalar un servidor Samba, pero dado el reducido tamaño de l
 AL servidor NFS sólo podré acceder desde Linux, no desde Windows, al menos no sin hacer instalaciones complementarias en Windows. Por su parte, el servidor FTP requiere el uso de software específico para acceder al contenido, así que me he quedado con la opción del servidor WEB. Esto se consigue instalando el servicio `uHTTPd`.
 
 Para ello he usado este comando para cargar la lista de paquetes:
-`opkg update`
+```opkg update```
 
 para instalar los paquetes necesarios:
-`opkg install uhttpd block-mount kmod-usb-storage kmod-fs-vfat`
+```opkg install uhttpd block-mount kmod-usb-storage kmod-fs-vfat```
 
 Para montar el USB:
-`mkdir -p /mnt/usb`
+```mkdir -p /mnt/usb```
 
 para crear la carpeta donde se compartirá el usb y montar el dispositivo:
-`mount /dev/sda1 /mnt/usb`
+```mount /dev/sda1 /mnt/usb```
 
 Se entiende que el USB está en la ruta `/deb/sda1`, de no ser así, esto debe cambiarse adecuadamente.
 
 A continuación hay que crear un enlace simbólico para acceder via web:
-`ln -sf /mnt/usb /www/usb`
+```ln -sf /mnt/usb /www/usb```
 
 esto creará la ruta usb en el servidor web.
 
 Y ya será posible acceder desde cualquier dispositivo a través de su dirección IP y ruta:
 
-`http://192.168.2.1/usb`
+```http://192.168.2.1/usb```
 
 La IP, por supuesto, será aquella que hayas configurado en la interfaz lan.
 
