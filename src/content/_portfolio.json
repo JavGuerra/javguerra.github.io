@@ -29,6 +29,13 @@
             "description": "Juego <strong>SPA</strong> de preguntas y respuestas realizado en <strong>JavaScript Vanilla</strong>, que obtiene datos de una <strong>API</strong> y guarda resultados en <strong>Local Storage</strong>."
         },
         { 
+            "route": "batman-ql",
+            "img": "batman-ql.png",
+            "alt": "Banner Batman QL",
+            "title": "Batman para QL",
+            "description": "<strong>Landing page</strong> multi-idioma, accesible y responsive elaborada con <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> Vanilla."
+        },
+        { 
             "route": "buscaminas",
             "img": "buscaminas.png",
             "alt": "Captura del buscaminas",
