@@ -77,11 +77,10 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## (*) Para reparar
 
-- Microdrives inoperativos por almohadilla.
+- +40 microdrives inoperativos por almohadilla.
 - Ratón StarMouse inoperativo.
-- 1 cable del DIN QL a convertidor QL-VGA sin señal.
+- 2 Disqueteras MicroPeriferals no operativas.
 - Carcasa de conector de cable DIN QL a Euroconector.
-- Disqueteras MicroPeriferals no operativas.
 
 ## Buscado
 
