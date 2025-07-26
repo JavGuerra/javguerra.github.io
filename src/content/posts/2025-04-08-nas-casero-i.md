@@ -84,7 +84,7 @@ Es una tarjeta gráfica muy superada hoy día, pero es lo mínimo necesario para
 
 ## Cooler
 
-A parte de la caja, el cooler o disipador de la CPU ha sido adquirido pensando en su máximo rendimiento y bajo ruido, y en es un producto a estrenar.
+A parte de la caja, el cooler o disipador de la CPU ha sido adquirido pensando en su máximo rendimiento y bajo ruido, y es un producto a estrenar.
 
 El disipador de la CPU elegido es el [Noctua NH-L12S](https://noctua.at/es/nh-l12s), de bajo perfil, que no supera los 70mm de altura, con un ventilador de 120mm de bajo ruido. Lo he adquirido en Amazon por 69,90€.
 
