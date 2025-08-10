@@ -20,10 +20,11 @@ const sortedPosts = await getSortedPostsPrefixed();
 
 <script is:inline>
   let interval;
+  let currentIndex = 0;
 
   function handleContentLoaded() {
     const $postContainers = document.querySelectorAll('[data-post-index]');
-    let currentIndex = randomIndex = 0;
+    let randomIndex = 0;
     const maxAttempts = 5;
 
     function showRandomPost() {
@@ -41,7 +42,6 @@ const sortedPosts = await getSortedPostsPrefixed();
       $actual.classList.add('fade-out');
 
       $actual.addEventListener('transitionend', function fadeOutHandler() {
-
         $actual.classList.add('hidden');
         $actual.classList.remove('fade-out');
 
@@ -60,6 +60,15 @@ const sortedPosts = await getSortedPostsPrefixed();
     if (interval) {
       clearInterval(interval);
     }
+
+    const $postContainers = document.querySelectorAll('[data-post-index]');
+    $postContainers.forEach(($post, index) => {
+      if (index === currentIndex) {
+        $post.classList.remove('hidden');
+      } else {
+        $post.classList.add('hidden');
+      }
+    });
   }
 
   document.addEventListener('astro:page-load', handleContentLoaded);
