@@ -28,6 +28,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Historia de un viejo informático](https://eltamiz.com/elcedazo/series/historia-de-un-viejo-informatico/), por Macluskey, en El Cedazo.
 
+- [The early days of Linux](https://lwn.net/Articles/928581/) - Artículo sobre cómo se gestó Linux.
+
 - [Olivetti Programma 101 La máquina que cambió el mundo](https://youtu.be/gm_XuJS7tZY?si=p2ZC-tkwG5LlDngx). video, documental.
 
 - [Computer Pioneers by J. A. N. Lee](https://history.computer.org/pioneers/index.html)
