@@ -47,6 +47,7 @@ Haz click en los enlaces para más información:
 - [This is us](https://www.filmaffinity.com/es/film247198.html) - Prime Video
 - [Show me a hero](https://www.filmaffinity.com/es/film803687.html) - HBO Max
 - [La ciudad es nuestra](https://www.filmaffinity.com/es/film791111.html) - HBO Max
+- [Generation Kill](https://www.filmaffinity.com/es/film287835.html) - HBO Max
 - [El espía](https://www.filmaffinity.com/es/film394025.html) - Netflix
 - [Years and years](https://www.filmaffinity.com/es/film247862.html) - HBO Max
 - [Chernobyl](https://www.filmaffinity.com/es/film624827.html) - HBO Max
