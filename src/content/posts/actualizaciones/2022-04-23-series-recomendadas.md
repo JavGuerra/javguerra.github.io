@@ -73,6 +73,7 @@ Haz click en los enlaces para más información:
 - [Ripley](https://www.filmaffinity.com/es/film952850.html) - Netflix  
 - [The Bear](https://www.filmaffinity.com/es/film948192.html) - Disney+ 
 - [Breathtaking](https://www.filmaffinity.com/es/film547410.html) - Filmin 
+- [Get Millie Black](https://www.filmaffinity.com/es/film932123.html) - HBO Max
 
 # Siglo XX
 
@@ -86,7 +87,8 @@ Haz click en los enlaces para más información:
 
 Espero que las disfrutes ;)
 
-# Buscar series
+# Buscar series / obtener info
 
+- [FilmAffinity](https://www.filmaffinity.com/es)
 - [Just Watch](https://www.justwatch.com/es)
 - [A good movie to watch](https://agoodmovietowatch.com/shows/) (_inglés_)
