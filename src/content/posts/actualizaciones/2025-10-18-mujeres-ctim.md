@@ -9,7 +9,7 @@ coverImage:
   alt: Poster Scientist Women del Museu de les Ciències, Valencia.
 ---
 
-Cuando pensé en escribir esta entrada, quería destacar la contribución de renombradas mujeres en el ámbito de la tecnología, pero no tenía gran cosa que aportar a otros artículos y documentales ya existentes que pueden consultarse en línea. Tras varios meses de tener este proyecto en pausa, pensé hablar de las mujeres que hacen ciencia hoy, y que sigo en las redes, dando de esa forma un poco más de visibilidad a su trabajo. Esta publicación es, pues, un reconocimiento a su aporte a la sociedad desde su labor de divulgación científica.
+Cuando pensé en escribir esta entrada, quería destacar la contribución de renombradas mujeres en el ámbito de la ciencia, pero no tenía gran cosa que aportar a otros artículos y documentales ya existentes que pueden consultarse en línea. Tras varios meses de tener este proyecto en pausa, pensé hablar de las mujeres que hacen ciencia hoy, y que sigo en las redes, dando de esa forma un poco más de visibilidad a su trabajo. Esta publicación es, pues, un reconocimiento a su aporte a la sociedad desde su labor de divulgación científica.
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
@@ -20,14 +20,14 @@ Cuando pensé en escribir esta entrada, quería destacar la contribución de ren
 - «Code: Descifrando la brecha de género», 2015 · 1h 19min https://www.filmin.es/pelicula/code-descifrando-la-brecha-de-genero
 - «Sisters with Transistors», 2020 · 1h 26min https://www.filmin.es/pelicula/sisters-with-transistors
 
-Sin duda, y por suerte, hoy hay material para ver, leer y profundizar en ello, y un movimiento creciente de sinergias en torno al empoderamiento de las mujeres en estos campos para intentar superar el [efecto Matilda](https://es.wikipedia.org/wiki/Efecto_Matilda). Por poner algún ejemplo, en informática:
+Por suerte, hoy hay material para ver, leer y profundizar en el tema de la mujer en la Ciencia, y un movimiento creciente de sinergias en torno al empoderamiento de las mujeres en estos campos para intentar superar el [efecto Matilda](https://es.wikipedia.org/wiki/Efecto_Matilda). Por poner algún ejemplo, en informática:
 
 - «Girls Who Code» [https://www.girlswhocode.com/](https://www.girlswhocode.com/)
 - «Debian Women» [https://www.debian.org/women/](https://www.debian.org/women/)
 
 Pero queda mucho camino aún por recorrer. Recuerdo una escena del capitulo 6 de la primera temporada de la serie [Mad Men (2007)](https://www.filmaffinity.com/es/film596790.html) que me abrió los ojos sobre cómo (aún) vemos a las mujeres en el trabajo en muchas ocasiones. En una prueba de producto, un pintalabios, Peggy (Elisabeth Moss) entrega  al responsable de la prueba una papelera con los pañuelos con los que las probadoras se han limpiado los labios de carmín llamándolo «La cesta besos». Esto le sorprendió mucho, Tal fue la sorpresa por haber descrito de esa manera tan publicitaria una simple papelera, que, hablando con su jefe, llegó a decir que era como ver a «un perro tocar el piano». Puedes ver esta escena, en versión original, en YouTube: [Mad Men || S1 EP6 || Basket of Kisses](https://youtu.be/VBaVRVzdP9M?si=UsMY-E-1q7yBMv8Q).
 
-La forma ofensiva, pero clara de mostrar a la mujer condiciona sus logros, como también lo hace su sexualización o el uso de términos diminutivos para referirse a ellas con condescendencia, como a niñas que necesitan supervisión.
+Esta forma ofensiva, pero clara de mostrar a la mujer, y los casos en la vida real análogos, condicionan sus logros, como también lo hacen su sexualización o el uso de términos diminutivos para referirse a ellas con condescendencia, como a niñas que necesitan supervisión o explicaciones (_mansplaining_). Son cosas que están comúnmente aceptadas.
 
 Superar esa fase no es sencillo, y no es objeto de esta entrada ahondar en esto más allá de lanzar la reflexión al aire, para que podamos ver, e introducir adecuadamente, a las científicas, técnicas, ingenieras o matemáticas que a continuación menciono.
 
@@ -68,7 +68,6 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 - [**Sara García Alonso**](https://es.wikipedia.org/wiki/Sara_Garc%C3%ADa_Alonso), es bióloga molecular y candidata a astronauta española. Ver en: [astro_sarag](https://www.instagram.com/astro_sarag/?hl=es).
 
 - [**Rocío Vidal Menacho**](https://ca.wikipedia.org/wiki/Roc%C3%ADo_Vidal_i_Menacho), es periodista, publicista y máster en Comunicación Científica por la Universidad de Barcelona. Ver en: [La gata de Schrödinger](https://www.youtube.com/@lagatadeschrodinger).
-
 
 Sin duda hay muchas otras divulgadoras que merecen estar en esta lista. A medida que las descubra y siga, las iré añadiendo. ¿Conoces a alguna que merezca estar en
 
