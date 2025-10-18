@@ -6,7 +6,13 @@ author: JavGuerra
 pubDate: 2025-10-18
 coverImage:
   image: '@/assets/img/scientist_women.png'
-  alt: Poster Scientist Women del Museu de les Ciències, Valencia.
+  alt: Poster Scientist Women del Museu de les Ciències de Valencia
+tags: 
+  - ciencia
+  - tecnología
+  - ingeniería
+  - matemáticas
+  - mujer
 ---
 
 Cuando pensé en escribir esta entrada, quería destacar la contribución de renombradas mujeres en el ámbito de la ciencia, pero no tenía gran cosa que aportar a otros artículos y documentales ya existentes que pueden consultarse en línea. Tras varios meses de tener este proyecto en pausa, pensé hablar de las mujeres que hacen ciencia hoy, y que sigo en las redes, dando de esa forma un poco más de visibilidad a su trabajo. Esta publicación es, pues, un reconocimiento a su aporte a la sociedad desde su labor de divulgación científica.
