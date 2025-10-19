@@ -53,7 +53,7 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 
 - **Ester**,  es Youtuber, Arquitecta, creadora de Focusarte, hija de Internet. Ver en: [Ter](https://www.youtube.com/@Ter). 
 
-- [**Esther Samper**](https://www.linkedin.com/in/esthersamper/?originalSubdomain=es), conocida como Shora, es Licenciada en Medicina, Máster en Biotecnología Biomédica y Doctora en Ingeniería Tisular Cardiovascular (Medicina Regenerativa). Ver en: [Medstempus](http://medtempus.com/).
+- [**Esther Samper**](https://www.linkedin.com/in/esthersamper/?originalSubdomain=es), conocida como Shora, es Licenciada en Medicina, Máster en Biotecnología Biomédica y Doctora en Ingeniería Tisular Cardiovascular (Medicina Regenerativa). Ver en: [Medtempus](http://medtempus.com/).
 
 - [**Gloria Pino Ramírez**](https://linktr.ee/bienestar_psic), es Psicóloga, con Maestría en Psicología Clínica y Doctorado en Psicología. Máster en Coaching. Ver en: [Bienestar Psicológico](https://www.instagram.com/bienestar_psic/?hl=es).
 
@@ -75,7 +75,7 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 
 - [**Rocío Vidal Menacho**](https://ca.wikipedia.org/wiki/Roc%C3%ADo_Vidal_i_Menacho), es periodista, publicista y máster en Comunicación Científica por la Universidad de Barcelona. Ver en: [La gata de Schrödinger](https://www.youtube.com/@lagatadeschrodinger).
 
-Sin duda hay muchas otras divulgadoras que merecen estar en esta lista. A medida que las descubra y siga, las iré añadiendo. ¿Conoces a alguna que merezca estar en
+Sin duda hay muchas otras divulgadoras que merecen estar en esta lista. A medida que las descubra y siga, las iré añadiendo. ¿Conoces a alguna que merezca estar aquí?
 
 # Enlaces recomendados
 
