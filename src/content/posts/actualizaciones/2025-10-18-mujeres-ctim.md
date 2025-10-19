@@ -43,6 +43,10 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 
 - **Alexia**, es administradora de Sistemas Linux/Unix y Desarrolladora. Ver en [La chica de Sistemas](https://www.youtube.com/@lachicadesistemas).
 
+- [**Andrea Peralta Somoza**](https://linktr.ee/andreaespinorbita), es Doctora en Física. Divulgo sobre Física, sobre todo Nanofísica. Ver en: [Andrea spín-órbita](https://www.youtube.com/@andreaespin-orbita3221).
+
+- **Anna Morales Melgares**, es Dra. en Ciencia de (nano)materiales. Ver en: [Size Matters](https://www.youtube.com/@SizeMatters).
+
 - [**América Jimena Valenzuela**](https://es.wikipedia.org/wiki/Am%C3%A9rica_Valenzuela), es una periodista y divulgadora científica española y licenciada en Ciencias Químicas. Ver en: [Instagram](https://www.instagram.com/a_valenzuelainsta/).
 
 - [**Clara Isabel Grima Ruiz**](https://es.wikipedia.org/wiki/Clara_Grima), es profesora universitaria y divulgadora de matemáticas española. Posee el doctorado en Matemáticas por la Universidad de Sevilla. Ver en: [Instagram](https://www.instagram.com/claragrima/).
