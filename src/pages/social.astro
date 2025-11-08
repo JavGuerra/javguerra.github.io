@@ -1,13 +1,16 @@
 ---
+import siteConfig from '@/siteConfig.json';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Loading from '@/components/Loading.astro';
 import Card from '@/components/Card.astro';
 
 import '@/styles/mastodon.css';
 
+const social = siteConfig.default.social;
+
 const server = 'https://indieweb.social';
 const profileId = '109292343224519197';
-const limit = 10;
+const limit = siteConfig.default.socialPosts;
 const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
 ---
 
@@ -18,11 +21,11 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
   </ul>
 
   <ul role="list" class="link-card-grid mt-10">
-    <Card href="https://indieweb.social/@javguerra" title="Mastodon">
+    <Card href={social.mastodon} title="Mastodon">
       Visita mi cuenta en <strong>Mastodon</strong>.
     </Card>
 
-    <Card href="https://bsky.app/profile/javguerra.bsky.social" title="Bluesky">
+    <Card href={social.bluesky} title="Bluesky">
       Visita mi cuenta en <strong>Bluesky</strong>.
     </Card>
   </ul>

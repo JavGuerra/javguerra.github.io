@@ -8,13 +8,14 @@
         "email": "javguerra(arroba)badared.com",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.es",
         "social": {
-            "github": "JavGuerra",
-            "linkedin": "in/javguerra",
-            "mastodon": "@javguerra@indieweb.social",
-            "bluesky": "@javguerra.bsky.social"
+            "github": "https://github.com/JavGuerra",
+            "linkedin": "https://www.linkedin.com/in/javguerra",
+            "mastodon": "https://indieweb.social/@javguerra",
+            "bluesky": "https://bsky.app/profile/javguerra.bsky.social"
         },
         "stats": "https://codice.goatcounter.com/",
         "opentowork": false,
-        "pageSize": 5
+        "pageSize": 5,
+        "socialPosts": 10
     }
 }
