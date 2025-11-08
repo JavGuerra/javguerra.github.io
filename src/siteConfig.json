@@ -10,10 +10,11 @@
         "social": {
             "github": "JavGuerra",
             "linkedin": "in/javguerra",
-            "x": "javgr"
+            "mastodon": "@javguerra@indieweb.social",
+            "bluesky": "@javguerra.bsky.social"
         },
         "stats": "https://codice.goatcounter.com/",
-        "opentowork": true,
+        "opentowork": false,
         "pageSize": 5
     }
 }
