@@ -27,7 +27,7 @@ Me puse en contacto con Diego Gómez Deck, quien en su momento trabajó en el pr
 
 Así, me puse manos a la obra y, a través de Linked In, fui contactando con la mayoría de ellos: Carlos Castro, director general de Telecomunicaciones y Sociedad de la Información, Luis Casas Luengo, director de Fundecyt, José Luís Redrejo, programador de LinEx, Dario Rapisardi, programador de LinEx... y a través de ellos: Antonio Ullán, programador de LinEx, Sergio Gallego Soto, administrador del servidor de LinEx y la atención al usuario, y César Gómez, analista en Fundecyt.
 
-Carlos Izquierdo, el director del [Museo de Historia de la Computación](/blog/mhc), contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el expresidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
+Carlos Izquierdo, el director del [Museo de Historia de la Computación](/blog/mhc), contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el ex-presidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
 
 Los participantes finalmente fueron los que se aprecian en la foto de portada. De izquierda a derecha:
 
@@ -40,11 +40,11 @@ Los participantes finalmente fueron los que se aprecian en la foto de portada. D
 - Javier Guerra, quien escribe.
 - Carlos Castro.
 
-En medio, un PDP 11. El ordenador donde se escribió UNIX, el antecedente de Linux, y luego de LinEx.
+En medio, un PDP 11, el ordenador donde se escribió UNIX, el antecedente de Linux, y luego de LinEx.
 
 Darío Rapisardi nos acompaño a través de un vídeo que pudimos ver los assistentes al finalizar le coloquio.
 
-Tuvimos varios asistentes destacables: Félix de la Paz López y José Ramón Álvarez Sánchez. Profesores de la UNED Dpto. de IA José Luis Gónzalez Sánchez, Director General del Centro de Supercomputación de Extremadura (Computaex). Ismael Ali Gago, Tutor de Proyectos de Investigación Scientix Ambassador (Distro Max, Madrid), pero el número de asistentes fue limitado.
+Tuvimos varios asistentes destacables: Félix de la Paz López y José Ramón Álvarez Sánchez, profesores de la UNED, dpto. de IA. José Luis Gónzalez Sánchez, Director General del Centro de Supercomputación de Extremadura (Computaex). Ismael Ali Gago, componente del grupo de desarrollo de la distro MAX... pero el número total de asistentes fue limitado, quizá unas 40 personas.
 
 # El evento
 
@@ -54,7 +54,7 @@ El programa fue el siguiente:
 
 ```txt
 10:00 Apertura
-10:30 Visita al Museo de Historia de la Computación (mediante solicitud)
+10:30 Visita al Museo de Historia de la Computación
 11:15 Exposición de materiales relacionados con gnuLinEx
 12:00 Debate sobre gnuLinEx
 15:00 Almuerzo
@@ -64,7 +64,7 @@ Tras recibir a los asistentes, dio comienzo una visita guiada por el Museo a car
 
 Antes del coloquio, Fran (Amigos del Museo) y yo, mostramos varias versiones del S.O. extremeño a los asistentes. Contamos con los comentarios de los participantes y también con la experiencia de Pedro (Amigos del Museo), que en su momento se ocupó de afinar las distros de guadaLinEx y otras para los ordenadores de las distintas marcas que optaban a los concursos públicos.
 
-![Video sobre versiones de gnuLinEx](@/assets/img/video_coloquio_gnulinex.png)
+![Video sobre versiones de gnuLinEx](@/assets/img/video_versiones_gnulinex.png)
 
 __Video sobre versiones de gnuLinEx__
 
@@ -72,13 +72,13 @@ __Video sobre versiones de gnuLinEx__
 
 Aunque lamentablemente no pudimos registrar las palabras iniciales de Don Juan Carlos Rodríguez Ibarra al comienzo, el coloquio, de una duración de casi dos horas, fue muy interesante y recomiendo su visionado pese a la calidad del audio.
 
-![Video del coloquio con los participantes](@/assets/img/video_versiones_gnulinex.png)
+![Video del coloquio con los participantes](@/assets/img/video_coloquio_gnulinex.png)
 
 __Video del coloquio sobre gnuLinEx__
 
 [<button>Ver vídeo del coloquio sobre gnuLinEx</button>](https://youtu.be/InoxVEr7JyM?si=t_AdOEO0TgHJYrfH)
 
-Pudimos conocer el origen de todo, por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y también por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
+Pudimos conocer el origen de todo, por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
 
 Tras el evento, el alcalde de Majadas de Tiétar nos dedicó unas palabras, y fuimos a comer al Toril, un pueblo cercano, un rico cocido extremeño, teniendo ocasión de seguir departiendo entre plato y plato, con los asistentes.
 
@@ -92,7 +92,7 @@ Con esta frase, dicha por Darío Rapisardi en su video, cerramos el coloquio. No
 
 __Juan Carlos Rodríguez Ibarra__
 
-En la foto, ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodríguez Ibarra, posa junto a un ordenador Dragón 32 fabricado por la empresa Eurohard en Casar de Cáceres entre 1984 y 1987. Esta fábrica y el S.O. gnuLinEx fueron apuestas de su administración para poner a Extremadura en la senda de la sociedad de la información.
+En la foto, el ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodríguez Ibarra, posa junto a un ordenador Dragón 32 fabricado por la empresa Eurohard en Casar de Cáceres entre 1984 y 1987. Esta fábrica y el S.O. gnuLinEx fueron apuestas de su administración para poner a Extremadura en la senda de la sociedad de la información.
 
 En la parte inferior del ordenador dejó su firma y fecha de la visita para el recuerdo.
 
@@ -100,6 +100,6 @@ Los participantes en el coloquio nos hicieron saber, pocos días después, que h
 
 # Enlaces
 
-[gnuLinEx](https://es.wikipedia.org/wiki/GnuLinEx)
-[Presentación de varias versiones de gnuLinEx](https://youtu.be/N9xfZEAr-00?si=iglRHL3AYoyzrm-a)
-[Coloquio sobre el Legado de gnuLinEx](https://youtu.be/InoxVEr7JyM?si=n32jfBztFeDdDVbL)
+- [gnuLinEx](https://es.wikipedia.org/wiki/GnuLinEx)
+- [Presentación de varias versiones de gnuLinEx](https://youtu.be/N9xfZEAr-00?si=iglRHL3AYoyzrm-a)
+- [Coloquio sobre el Legado de gnuLinEx](https://youtu.be/InoxVEr7JyM?si=n32jfBztFeDdDVbL)
