@@ -66,7 +66,7 @@ Antes del coloquio, Fran (Amigos del Museo) y yo, mostramos varias versiones del
 
 ![Video sobre versiones de gnuLinEx](@/assets/img/video_versiones_gnulinex.png)
 
-__Video sobre versiones de gnuLinEx__
+_Video sobre versiones de gnuLinEx_
 
 [<button>Ver vídeo sobre versiones de gnuLinEx</button>](https://youtu.be/N9xfZEAr-00?si=8uGdlFmLF8GcY5qc)
 
@@ -74,13 +74,15 @@ Aunque lamentablemente no pudimos registrar las palabras iniciales de Don Juan C
 
 ![Video del coloquio con los participantes](@/assets/img/video_coloquio_gnulinex.png)
 
-__Video del coloquio sobre gnuLinEx__
+_Video del coloquio sobre gnuLinEx_
 
 [<button>Ver vídeo del coloquio sobre gnuLinEx</button>](https://youtu.be/InoxVEr7JyM?si=t_AdOEO0TgHJYrfH)
 
 Pudimos conocer el origen de todo, por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
 
 Tras el evento, el alcalde de Majadas de Tiétar nos dedicó unas palabras, y fuimos a comer al Toril, un pueblo cercano, un rico cocido extremeño, teniendo ocasión de seguir departiendo entre plato y plato, con los asistentes.
+
+Puedes ver [aquí la galería de fotos del evento](https://javguerra.badared.com/galeria/?dir=2025-GNULINEX).
 
 Creo que este evento ha dado visibilidad al museohc, si bien faltó algo de preparación y coordinación para contar con más público asistente y con la presencia de los medios de prensa.
 
@@ -103,3 +105,4 @@ Los participantes en el coloquio nos hicieron saber, pocos días después, que h
 - [gnuLinEx](https://es.wikipedia.org/wiki/GnuLinEx)
 - [Presentación de varias versiones de gnuLinEx](https://youtu.be/N9xfZEAr-00?si=iglRHL3AYoyzrm-a)
 - [Coloquio sobre el Legado de gnuLinEx](https://youtu.be/InoxVEr7JyM?si=n32jfBztFeDdDVbL)
+- [Galería de fotos del evento de gnuLinEx](https://javguerra.badared.com/galeria/?dir=2025-GNULINEX)
