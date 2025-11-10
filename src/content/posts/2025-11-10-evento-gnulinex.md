@@ -92,7 +92,7 @@ Con esta frase, dicha por Darío Rapisardi en su video, cerramos el coloquio. No
 
 ![Juan Carlos Rodríguez Ibarra](@/assets/img/ibarra.png)
 
-__Juan Carlos Rodríguez Ibarra__
+_Juan Carlos Rodríguez Ibarra_
 
 En la foto, el ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodríguez Ibarra, posa junto a un ordenador Dragón 32 fabricado por la empresa Eurohard en Casar de Cáceres entre 1984 y 1987. Esta fábrica y el S.O. gnuLinEx fueron apuestas de su administración para poner a Extremadura en la senda de la sociedad de la información.
 
