@@ -17,17 +17,17 @@ tags:
   - museohc
 ---
 
-LinEx, o gnuLinEx, -usaré ambos términos indistintamente-, fue la distro Linux desarrollada por le gobierno de la comunidad autónoma de Extremadura a principios de los 2000. Su nacimiento fue el germen también de otras distros de varias comunidades autónomas que buscaban independencia tecnológica y abaratamiento de costes frente a Microsoft, aprovechando los recursos de la comunidad de software libre para sus programas en colegios, administración, sanidad, negocios... En esta entrada podrás conocer cómo fue el evento llevado a cabo en el museohc donde conseguinos traer a los creadoeres y gestores de esta distribución 15 años después.
+LinEx, o gnuLinEx, -usaré ambos términos indistintamente-, fue la distribución de Linux desarrollada por el gobierno de la comunidad autónoma de Extremadura a principios de los 2000. Su nacimiento llegó a ser también el germen de otras distros de varias comunidades autónomas que buscaban independencia tecnológica y abaratamiento de costes frente a Microsoft, aprovechando los recursos de la comunidad de software libre para sus programas en colegios, administración, sanidad, negocios... En esta entrada podrás conocer cómo fue el evento llevado a cabo en el [Museo de Historia de la Computación](/blog/mhc), a donde conseguimos traer a los creadores y gestores de esta distribución 15 años después de us desaparición.
 
-Hacía tiempo que teníamos en mente, desde los amigos del Museo de Historia de la Computación, la realización de un evento que pusiera de relieve el legado de LinEx en la región, pero no avanzábamos.
+Hacía tiempo que teníamos en mente, desde los Amigos del Museo de Historia de la Computación, la realización de un evento que pusiera de relieve el legado de LinEx en la región, pero no avanzábamos.
 
-Me puse en contacto con Diego Gómez Deck, quien en su momento trabajó en el proyecyo en la parte de [Squeak](https://es.wikipedia.org/wiki/Squeak) y [SmallTalk](https://es.wikipedia.org/wiki/Smalltalk) y en la conversación fueron saliendo nombres imprescindibles a los que contactar y temas que debíamos signidficar.
+Me puse en contacto con Diego Gómez Deck, quien en su momento trabajó en el proyecto, en la parte de [Squeak](https://es.wikipedia.org/wiki/Squeak) y [SmallTalk](https://es.wikipedia.org/wiki/Smalltalk), y durante la conversación fueron saliendo nombres imprescindibles a los que contactar y temas que debíamos significar.
 
 # Los participantes
 
-Así, me puse manos a la obra y, a través de Linked In, fui contactando con la mayoría de ellos: Carlos Castro, director general de Telecomunicaciones y Sociedad de la Información, Luis Casas Luengo, director de Fundecyt, José Luís Redrejo, programador de LinEx, Dario Rapisardi, programador de LinEx... y a través de ellos: Antonio Ullán, programador de LinEx, Sergio Gallego Soto, administrador del servidor de LinEx y la atención al usuario, y César Gómez, analista en Fundecyt.
+Así, manos a la obra y, a través de Linked In, fui contactando con la mayoría de ellos: Carlos Castro, director general de Telecomunicaciones y Sociedad de la Información, Luis Casas Luengo, director de Fundecyt, José Luís Redrejo, programador de LinEx, Dario Rapisardi, programador de LinEx... y a través de ellos: Antonio Ullán, programador de LinEx, Sergio Gallego Soto, administrador del servidor de LinEx y la atención al usuario, y César Gómez, analista en Fundecyt.
 
-Carlos Izquierdo, el director del [Museo de Historia de la Computación](/blog/mhc), contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el ex-presidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
+Carlos Izquierdo, el director del museohc, contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el ex-presidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
 
 Los participantes finalmente fueron los que se aprecian en la foto de portada. De izquierda a derecha:
 
@@ -40,15 +40,15 @@ Los participantes finalmente fueron los que se aprecian en la foto de portada. D
 - Javier Guerra, quien escribe.
 - Carlos Castro.
 
-En medio, un PDP 11, el ordenador donde se escribió UNIX, el antecedente de Linux, y luego de LinEx.
+En medio de la foto está un PDP 11, el ordenador donde se escribió UNIX, el antecedente de Linux, y luego de LinEx.
 
-Darío Rapisardi nos acompaño a través de un vídeo que pudimos ver los assistentes al finalizar le coloquio.
+Darío Rapisardi nos acompañó a través de un vídeo que pudimos ver allí los asistentes al finalizar el coloquio. Puedes verlo en el video del coloquio sobre gnuLinEx más abajo.
 
-Tuvimos varios asistentes destacables: Félix de la Paz López y José Ramón Álvarez Sánchez, profesores de la UNED, dpto. de IA. José Luis Gónzalez Sánchez, Director General del Centro de Supercomputación de Extremadura (Computaex). Ismael Ali Gago, componente del grupo de desarrollo de la distro MAX... pero el número total de asistentes fue limitado, quizá unas 40 personas.
+Tuvimos varios asistentes destacables: Félix de la Paz López y José Ramón Álvarez Sánchez, profesores de la UNED, dpto. de IA. José Luis González Sánchez, Director General del Centro de Supercomputación de Extremadura (Computaex). Ismael Ali Gago, componente del grupo de desarrollo de la distro MAX... pero el número total de asistentes fue limitado, quizá unas 40 personas.
 
 # El evento
 
-La idea era realizar un acto formal donde cada participante tuviera su tiempo de exposición y, para concluir, se llevara a cabo un coloquio a modo de puesta en común. Se pensó en varios emplazamientos cercanos, pero el formato finalmente elegido fue el de un coloquio en las instalaciones del museohc en Majadas de Tíetar (Cáceres) que se llevó a cabo el 11 de octubre de 2025.
+La idea inicial era realizar un acto formal donde cada participante tuviera su tiempo de exposición y, para concluir, se llevara a cabo un coloquio a modo de puesta en común. Se pensó en varios emplazamientos cercanos, pero el formato finalmente elegido fue el de un coloquio en las instalaciones del museohc en Majadas de Tíetar (Cáceres) que se llevó a cabo el 11 de octubre de 2025.
 
 El programa fue el siguiente:
 
@@ -66,19 +66,21 @@ Antes del coloquio, Fran (Amigos del Museo) y yo, mostramos varias versiones del
 
 ![Video sobre versiones de gnuLinEx](@/assets/img/video_versiones_gnulinex.png)
 
-_Video sobre versiones de gnuLinEx_
+_Foto del video sobre versiones de gnuLinEx._
 
 [<button>Ver vídeo sobre versiones de gnuLinEx</button>](https://youtu.be/N9xfZEAr-00?si=8uGdlFmLF8GcY5qc)
 
-Aunque lamentablemente no pudimos registrar las palabras iniciales de Don Juan Carlos Rodríguez Ibarra al comienzo, el coloquio, de una duración de casi dos horas, fue muy interesante y recomiendo su visionado pese a la calidad del audio.
+Aunque lamentablemente no pudimos registrar las palabras de Don Juan Carlos Rodríguez Ibarra al comienzo, el coloquio, de una duración de casi dos horas, fue muy interesante y recomiendo su visionado pese a la calidad del audio.
 
 ![Video del coloquio con los participantes](@/assets/img/video_coloquio_gnulinex.png)
 
-_Video del coloquio sobre gnuLinEx_
+_Foto del video del coloquio sobre gnuLinEx._
 
 [<button>Ver vídeo del coloquio sobre gnuLinEx</button>](https://youtu.be/InoxVEr7JyM?si=t_AdOEO0TgHJYrfH)
 
-Pudimos conocer el origen de todo, por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
+Pudimos conocer el origen de todo: por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
+
+Los asistentes al evento también pudieron participar dando su opinión y haciendo preguntas.
 
 Tras el evento, el alcalde de Majadas de Tiétar nos dedicó unas palabras, y fuimos a comer al Toril, un pueblo cercano, un rico cocido extremeño, teniendo ocasión de seguir departiendo entre plato y plato, con los asistentes.
 
@@ -90,15 +92,15 @@ Creo que este evento ha dado visibilidad al museohc, si bien faltó algo de prep
 
 Con esta frase, dicha por Darío Rapisardi en su video, cerramos el coloquio. Nos supo a poco, y ciertamente la influencia de LinEx sigue presente en nosotros, pues es la herencia del software libre en si misma.
 
-![Juan Carlos Rodríguez Ibarra](@/assets/img/ibarra.png)
+![Juan Carlos Rodríguez Ibarra sostiene un ordenador Dragón 32](@/assets/img/ibarra.png)
 
-_Juan Carlos Rodríguez Ibarra_
+_Foto de Juan Carlos Rodríguez Ibarra con un Dargón 32._
 
-En la foto, el ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodríguez Ibarra, posa junto a un ordenador Dragón 32 fabricado por la empresa Eurohard en Casar de Cáceres entre 1984 y 1987. Esta fábrica y el S.O. gnuLinEx fueron apuestas de su administración para poner a Extremadura en la senda de la sociedad de la información.
+En la foto, el ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodríguez Ibarra, posa junto a un ordenador Dragón 32 fabricado por la empresa Eurohard en Casar de Cáceres entre los años 1984 y 1987. Esta fábrica y el S.O. gnuLinEx fueron apuestas de su administración para poner a Extremadura en la senda de la sociedad de la información.
 
 En la parte inferior del ordenador dejó su firma y fecha de la visita para el recuerdo.
 
-Los participantes en el coloquio nos hicieron saber, pocos días después, que han restablecido contacto entre ellos para preservar todo lo posible de esta historia de nuestra región. Sólo por ello ya ha merecido la pena.
+Los participantes en el coloquio nos hicieron saber, pocos días después, que han restablecido contacto entre ellos para preservar todo lo posible de esta historia de nuestra región. Sólo por ello ya ha merecido la pena organizar este evento.
 
 # Enlaces
 
@@ -106,3 +108,5 @@ Los participantes en el coloquio nos hicieron saber, pocos días después, que h
 - [Presentación de varias versiones de gnuLinEx](https://youtu.be/N9xfZEAr-00?si=iglRHL3AYoyzrm-a)
 - [Coloquio sobre el Legado de gnuLinEx](https://youtu.be/InoxVEr7JyM?si=n32jfBztFeDdDVbL)
 - [Galería de fotos del evento de gnuLinEx](https://javguerra.badared.com/galeria/?dir=2025-GNULINEX)
+- [Entrada sobre el Museo de Historia de la Computación](/blog/mhc)
+- [Web del Museo de Historia de la Computación](https://museohc.com/)
