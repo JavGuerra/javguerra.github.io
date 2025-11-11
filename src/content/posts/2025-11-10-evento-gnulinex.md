@@ -78,7 +78,7 @@ _Foto del video del coloquio sobre gnuLinEx._
 
 [<button>Ver vídeo del coloquio sobre gnuLinEx</button>](https://youtu.be/InoxVEr7JyM?si=t_AdOEO0TgHJYrfH)
 
-Pudimos conocer el origen de todo: por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como guadaLinEx entre otras, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las maniobras que emprendió Microsoft para reducir el impacto de este proyecto.
+Pudimos conocer el origen de todo: por qué fue un éxito que traspasó comunidades autónomas dando origen a otras distros como, por ejemplo, guadaLinEx, La visita de Stallman, de Mark Shuttleworth, de Alan Kay... la resistencia al cambio de los maestros, lo que supuso para la ciudadanía este proyecto, lo que implicó personalmente a los que participaron en él y por qué fue tan importante para la comunidad autónoma de Extremadura. También pudimos conocer las limitaciones de no ser empresa, sino una administración pública a la hora de obtener fondos, y las maniobras que emprendió Microsoft para reducir el impacto de esta iniciativa.
 
 Los asistentes al evento también pudieron participar dando su opinión y haciendo preguntas.
 
@@ -101,6 +101,8 @@ En la foto, el ex-presidente de la Junta de Extremadura, D. Juan Carlos Rodrígu
 En la parte inferior del ordenador dejó su firma y fecha de la visita para el recuerdo.
 
 Los participantes en el coloquio nos hicieron saber, pocos días después, que han restablecido contacto entre ellos para preservar todo lo posible de esta historia de nuestra región. Sólo por ello ya ha merecido la pena organizar este evento.
+
+Para finalizar, una pregunta al aire: ¿Qué hemos aprendido de aquella aventura los hijos de LinEx?
 
 # Enlaces
 
