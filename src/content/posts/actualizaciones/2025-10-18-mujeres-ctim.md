@@ -73,6 +73,8 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 
 - [**Patri Tezanos**](https://www.linkedin.com/in/patriciatezanos), es doctoranda en Neurociencia. Ver en: [Antroporama](https://www.youtube.com/@AntroporamaDivulgacion).
 
+- [**Rebeca Atencia**](https://www.linkedin.com/in/rebeca-atencia-06572714b/), es veterinaria y primatóloga que dirige el Instituto Jane Goodall y el Centro de Rehabilitación de Chimpancés de Tchimpounga en la República del Congo. Ver en:  [Página en Instituto Jane Goodall](https://janegoodall.es/rebeca-atencia/)
+
 - [**Sandra Ortonobes Lara**](https://www.linkedin.com/in/sandra-ortonobes), es graduada en Ciencias Biomédicas y Máster en Comunicación Científica, Médica y Ambiental. Ver en: [La Hiperactina](https://www.youtube.com/Lahiperactina).
 
 - [**Sara García Alonso**](https://es.wikipedia.org/wiki/Sara_Garc%C3%ADa_Alonso), es bióloga molecular y candidata a astronauta española. Ver en: [astro_sarag](https://www.instagram.com/astro_sarag/?hl=es).
