@@ -51,19 +51,21 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Accesorios
 
+- QLUB.
 - DOM disk 512Mb + cable alimentación.
 - 54 microdrives *.
 - En torno a 40 almohadillas para microdrive.
+- 2 cables de red de QL.
 - 3 cables conectores serie.
 - 2 adaptadores serie.
 - 2 convertidores serie-paralelo.
-- 2 cables de red de QL.
 - 2 cables de antena de TV.
 - 1 Cable adaptador de video DIN QL a Euroconector *.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
 - 2 disipadores con reguladores 7805 sustituidos.
 - 2 convertidores RECOM R-78B5.0-1.5.
 - 2 disqueteras de MicroPeripherals *.
+- 2 cables de red originales o recomendados.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 12 patas de goma de repuesto.
 - 12 patas de plástico. Tres por cada QL.
@@ -90,9 +92,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
 - Carcasa para cartucho ROM.
-- QLUB + carcasa.
+- Carcasa para QLUB.
 - 2 cables de antena originales o recomendados.
-- 2 cables de red originales o recomendados.
 - Ratón serie dos botones.
 
 Y tal vez...
