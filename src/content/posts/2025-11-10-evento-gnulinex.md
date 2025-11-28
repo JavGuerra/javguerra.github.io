@@ -27,7 +27,7 @@ Me puse en contacto con Diego Gómez Deck, quien en su momento trabajó en el pr
 
 Así, manos a la obra y, a través de Linked In, fui contactando con la mayoría de ellos: Carlos Castro, director general de Telecomunicaciones y Sociedad de la Información, Luis Casas Luengo, director de Fundecyt, José Luís Redrejo, programador de LinEx, Dario Rapisardi, programador de LinEx... y a través de ellos: Antonio Ullán, programador de LinEx, Sergio Gallego Soto, administrador del servidor de LinEx y la atención al usuario, y César Gómez, analista en Fundecyt.
 
-Carlos Izquierdo, el director del museohc, contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el ex-presidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
+Carlos Izquierdo, el director del museohc, contactó con Jesús Rubio Palacio, jefe de servicio de la Dirección General de la Sociedad de la Información, que tuvo la idea de usar LinEx como alternativa a Windows y puso todo a rodar, y JuanMa (Amigos del Museo) consiguió lo impensable, contactar con Juan Carlos Rodríguez Ibarra, el ex-presidente de la Junta de Extremadura que dio forma al proyecto político detrás de gnuLinEx.
 
 Los participantes finalmente fueron los que se aprecian en la foto de portada. De izquierda a derecha:
 
