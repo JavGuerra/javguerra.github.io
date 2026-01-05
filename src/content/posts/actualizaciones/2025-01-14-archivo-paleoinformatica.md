@@ -16,7 +16,7 @@ tags:
 
 Recopilo en esta entrada algunos recursos documentales sobre la historia de la computación que son, para mi, fuente de aprendizaje y testimonio de los avances de un mundo que la Informática ha conformado.
 
-<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.<br/>Fecha de última actualización: 2025-11-30</span>
+<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.<br/>Fecha de última actualización: 2026-01-05</span>
 
 # Recursos documentales
 
@@ -63,6 +63,10 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 - [Virtual x86](https://copy.sh/v86/), virtualización de sistemas.
 
 - [Vetusware.com](https://vetusware.com/), the biggest free abandonware downloads collection in the universe.
+
+- [Structure and Interpretation of Computer Programs](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html), libro de programación por Abelson, Sussman, and Sussman en 1984.
+
+- [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf), PDF.
 
 ## Otros
 
