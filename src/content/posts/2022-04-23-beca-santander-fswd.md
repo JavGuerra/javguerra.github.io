@@ -9,7 +9,8 @@ coverImage:
   alt: Beca
 tags:
     - formación
-    - becas
+    - JavaScript
+    - programación
 ---
 
 El pasado 9 de marzo fui informado de que había sido seleccionado para cursar el Bootcamp de Desarrollo Web Full Stack que [Becas Santander](https://www.becas-santander.com/es/index.html) lleva a cabo en colaboración con [Fundación Universia](https://jobs.universia.net/), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
