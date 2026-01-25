@@ -16,7 +16,7 @@ tags:
 
 Recopilo en esta entrada algunos recursos documentales sobre la historia de la computación que son, para mi, fuente de aprendizaje y testimonio de los avances de un mundo que la Informática ha conformado.
 
-<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.<br/>Fecha de última actualización: 2026-01-05</span>
+<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.<br/>Fecha de última actualización: 2026-01-25</span>
 
 # Recursos documentales
 
@@ -61,6 +61,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 - [WinWorld](https://winworldpc.com/library/operating-systems), Sistemas operativos.
 
 - [Virtual x86](https://copy.sh/v86/), virtualización de sistemas.
+
+- [InfiniteMac](https://infinitemac.org/), virtualización de sistemas Mac.
 
 - [Vetusware.com](https://vetusware.com/), the biggest free abandonware downloads collection in the universe.
 
