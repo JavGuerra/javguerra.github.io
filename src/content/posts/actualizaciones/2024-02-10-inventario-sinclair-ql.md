@@ -24,38 +24,46 @@ En esta entrada iré actualizando el material de que dispongo relacionado con el
 
 ## Hardware
 
+### Ordenadores
+
 ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
 
 - QL teclado inglés, ROM AH, ISS 5, D09-014922. IPC2 8749 sustituido por FP1162 para teclados Schön.
 - QL teclado español, ROM MGE, ISS 6, D14-078592.
 - QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes. Reparado 2024-02.
 - QL teclado inglés Schön serie 700929, ISS 6, D14-081581 con ROM Minerva 1.98 e IPC Hermes, serie 3878. Reparado 2024-02.
-- Cartucho ROM "TK2 and RAMdisk installed".
-- Cartucho ROM diseñado por Zerover, clónico del anterior.
-- QIMSI + tarjeta micro-SD 16Gb, "QIMSI Logic 0.98 Driver 1.10".
-- Carcasa para QIMSI.
-- Ratón para QIMSI marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
+
+### Extensiones
+
+- QIMSI GOLD USB.
+- QIMSI, "QIMSI Logic 0.98 Driver 1.10".
 - Qubide 1,52.
 - Qubide de José Leandro, con ampliación de memoria de 512 Mb. y swich ROM REBEL/QUBATA, 582656 bytes libres.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres.
-- QSound
+- QSound.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Monitor Vision QL, 12 pulgadas.
-- 4 x fuente de alimentación (una con conector inglés).
 - Kempston joystick quickshot II + adaptador de Joystick.
+- Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
 - Ratón StarMouse, serie 200763 *.
 - Ratón serie Genius tres botones.
-- 2 convertidores QL-VGA con carcasa impresa *.
+- Cartucho ROM "TK2 and RAMdisk installed".
+- Cartucho ROM diseñado por Zerover, clónico del anterior.
 
-## Accesorios
+### Accesorios
 
 - QLUB.
+- Carcasa para QIMSI.
+- Tarjeta micro-SD 32Gb para QIMSI GOLD.
+- Tarjeta micro-SD 16Gb para QIMSI.
 - DOM disk 512Mb + cable alimentación.
 - 54 microdrives *.
 - En torno a 40 almohadillas para microdrive.
+- 2 convertidores QL-VGA con carcasa impresa *.
 - 2 cables de red de QL.
+- 3 cables de red de QL nuevos, por probar.
 - 3 cables conectores serie.
 - 2 adaptadores serie.
 - 2 convertidores serie-paralelo.
@@ -65,16 +73,18 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 disipadores con reguladores 7805 sustituidos.
 - 2 convertidores RECOM R-78B5.0-1.5.
 - 2 disqueteras de MicroPeripherals *.
-- 2 cables de red originales o recomendados.
+- 2 cables de red originales.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 12 patas de goma de repuesto.
 - 12 patas de plástico. Tres por cada QL.
+- 4 x fuente de alimentación (una con conector inglés).
 - 4 tapas de puerto de expansión. Una por QL.
 - 4 tapas de expansión de microdrive. Una por QL.
 - 4 tapas de ROM. Una por QL.
 - 3 tornillos exteriores largos de repuesto.
 - 4 tornillos exteriores medianos de repuesto.
 - Adaptador IDE-USB para DOM.
+- Adaptador microSD para QIMSI GOLD.
 - Adaptador microSD para QIMSI.
 
 ## (*) Para reparar
@@ -91,10 +101,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 Tetroid QL Power.
 - Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
-- Carcasa para cartucho ROM.
+- 2 carcasas para cartuchos ROM.
 - Carcasa para QLUB.
-- 2 cables de antena originales o recomendados.
-- Ratón serie dos botones.
 
 Y tal vez...
 - Caja "Transform box" para microdrives.
