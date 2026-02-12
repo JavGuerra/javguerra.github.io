@@ -21,21 +21,38 @@ Voy a crear una clase `ConsoleInput`. Esta clase puede ser instanciada dónde la
 Para poder leer por consola necesitaré usar la clase `Scanner` que voy a instanciar dentro de mi clase `ConsoleInput`, y también crearé un método para poder cerrar el Scanner.
 
 ```java
-package utilities;  
- 
-import java.util.Scanner;  
-  
-public class ConsoleInput {  
-  
-    private static final Scanner IN = new Scanner(System.in);
- 
-    public static void closeScanner() {  
-        IN.close();  
-    }  
+public final class ConsoleInput {
+
+    ...
+
+    private static Scanner IN = new Scanner(System.in);
+
+    public static void closeScanner() {
+        if (IN != null && !IN.isClosed()) {
+            IN.close();
+        }
+    }
+
+    private static void ensureScannerOpen() {
+        if (IN == null || IN.isClosed()) {
+            IN = new Scanner(System.in);
+        }
+    }
+
+    public static void resetScanner() {
+        closeScanner();
+        IN = new Scanner(System.in);
+    }
+
+    ...
 }
 ```
 
-Como se aprecia, dentro de un paquete llamado `utilities` creo la clase `ConsoleInput`, el objeto final `IN` de tipo `Scanner` que debe importarse de `java.util.Scanner` y creo un método que, cuando sea llamado, cerrará el Scanner `IN` con el método `.close()`. 
+Como se aprecia, dentro de un paquete llamado `utilities` creo la clase `ConsoleInput`, el objeto final `IN` de tipo `Scanner` que debe importarse de `java.util.Scanner` y creo un método que, cuando sea llamado, cerrará el Scanner `IN` con el método `.close()`.
+
+También he añadido dos métodos más relacionados con cerrar el scanner: `ensureScannerOpen()` para cerciorarme de que el scanner esté abierto y `resetScanner()` para cerrarlo y abrir uno nuevo si fuera necesario en nuestra aplicación.
+
+El método `ensureScannerOpen()` se incluye en cada método que espera datos por consola para evitar problemas si el scanner no está abierto. Si no lo está, lo abre de forma transparente al usuario.
 
 # Introducir datos por consola
 
@@ -103,11 +120,11 @@ Como puede que el dato introducido no sea un número largo, envolveré estas sen
 ```java
 try {  
     num = IN.nextLong();  
-    IN.nextLine();  
+    IN.nextLine();
+    ...  
 } catch (InputMismatchException e) {  
     System.out.println("Tipo de dato no reconocido.");  
     IN.nextLine();  
-    continue;  
 } 
 ```
 
@@ -120,21 +137,20 @@ Si no se incluye esta línea en el `catch` y estamos solicitando el dato por con
 Aquí el código completo del método `.getLongIntPos()`:
 
 ```java
-public static Long getLongIntPos(String message) {  
-    long num;  
-    while(true) {  
-        System.out.print(message);  
-        try {  
-            num = IN.nextLong();  
-            IN.nextLine();  
-        } catch (InputMismatchException e) {  
-            System.out.println("Tipo de dato no reconocido.");  
-            IN.nextLine();  
-            continue;  
-        }  
-        if (num >= 0) return num;  
-        System.out.println("Valor fuera de rango.");  
-    }  
+public static Long getLongIntPos(String message) {
+    ensureScannerOpen(); 
+    while(true) {
+        System.out.print(message);
+        try {
+            long num = IN.nextLong();
+            IN.nextLine();
+            if (num >= 0) return num;
+            System.out.println("Valor fuera de rango.");
+        } catch (InputMismatchException e) {
+            System.out.println("Tipo de dato no reconocido. Ingrese un número entero.");
+            IN.nextLine();
+        }
+    }
 }
 ```
 
@@ -152,21 +168,24 @@ System.out.println(numero);
 Dado el método anterior, es fácil hacer cambios para que el valor recibido se encuentre entre un rango determinado.
 
 ```java
-public static Long getLongIntPosByRange(String message, Long min, Long max) {  
-    long num;  
-    if (min > max) { num = min; min = max; max = num; }  
+public static Long getLongIntPosByRange(String message, Long min, Long max) {
+    ensureScannerOpen();   
+    if (min > max) {
+        Long temp = min;
+        min = max;
+        max = temp;
+    }  
     while(true) {  
         System.out.print(message);  
         try {  
-            num = IN.nextLong();  
-            IN.nextLine();  
+            long num = IN.nextLong();  
+            IN.nextLine();
+            if (num >= min && num <= max) return num;  
+            System.out.println("Valor fuera de rango.");  
         } catch (InputMismatchException e) {  
             System.out.println("Tipo de dato no reconocido.");  
             IN.nextLine();  
-            continue;  
         }  
-        if (num >= min && num <= max) return num;  
-        System.out.println("Valor fuera de rango.");  
     }  
 }
 ```
@@ -183,20 +202,19 @@ El código del método `.getWord()` obtiene una palabra.
 
 ```java
 public static String getWord(String message) {  
-    String str;  
+    ensureScannerOpen(); 
     while(true) {  
         System.out.print(message);  
         try {  
-            str = IN.next();  
+            String str = IN.next();  
             IN.nextLine();  
+            str = str.trim();  
+            if (str.length() >= 3) return str;  
+            System.out.println("Cadena no válida.");  
         } catch (InputMismatchException e) {  
             System.out.println("Tipo de dato no reconocido.");  
             IN.nextLine();  
-            continue;  
         }  
-        str = str.trim();  
-        if (str.length() >= 3) return str;  
-        System.out.println("Cadena no válida.");  
     }  
 }
 ```
@@ -211,19 +229,18 @@ En la línea de los casos anteriores, el código del método `.getString()` obti
 
 ```java
 public static String getString(String message) {  
-    String str;  
+    ensureScannerOpen(); 
     while(true) {  
         System.out.print(message);  
         try {  
-            str = IN.nextLine();  
+            String str = IN.nextLine();  
+            str = str.trim();
+            if (str.length() >= 3) return str;  
+            System.out.println("Cadena no válida.");  
         } catch (InputMismatchException e) {  
             System.out.println("Tipo de dato no reconocido.");  
             IN.nextLine();  
-            continue;  
         }  
-        str = str.trim();
-        if (str.length() >= 3) return str;  
-        System.out.println("Cadena no válida.");  
     }  
 }
 ```
@@ -238,20 +255,19 @@ Con el método `getYesNo()` obtengo un `true` para 'sí' o un `false` para 'no'.
 
 ```java
 public static Boolean getYesNo(String message) {  
-    char chr;  
+    ensureScannerOpen(); 
     while(true) {  
         System.out.print(message);  
         try {  
-            chr = IN.next(".").trim().charAt(0);  
+            char chr = IN.next(".").trim().charAt(0);  
             IN.nextLine();  
+            if (chr == 'S' || chr == 's') return true;  
+            if (chr == 'N' || chr == 'n') return false;  
+            System.out.println("Carácter no válido.");  
         } catch (InputMismatchException e) {  
             System.out.println("Tipo de dato no reconocido.");  
-            IN.nextLine();  
-            continue;  
+            IN.nextLine();   
         }  
-        if (chr == 'S' || chr == 's') return true;  
-        if (chr == 'N' || chr == 'n') return false;  
-        System.out.println("Carácter no válido.");  
     }  
 }
 ```
@@ -266,16 +282,32 @@ Que permite que, de los datos introducidos, sólo se almacene un carácter.
 
 En este método vuelve a ser necesario el uso de `IN.nextLine()`.
 
+En muy raras ocasiones, si un usuario presiona `Ctrl+D` (EOF) en lugar de escribir algo o si se produce corrupción del stream de entrada, se puede recibir un `null` en `chr`. Por si acaso, para hacer la clase más robusta, podemos hacer una comprobación para evitarlo:
+
+```java
+    String input = IN.next(".");  // ← SEPARADO
+    IN.nextLine();  
+    
+    if (input == null || input.trim().isEmpty()) {  // ← PROTECCIÓN
+        System.out.println("Entrada vacía no válida.");
+        continue;
+    }
+    
+    char chr = input.trim().charAt(0);
+```
+
 ## Bonus: limpiar la consola
 
 Buscando por Internet, encontré este sencillo código para limpiar la consola:
 
 ```java
-public static void clearConsole() {  
-    System.out.print("\033[H\033[2J");  
-    System.out.flush();  
+public static void clearConsole() {
+    for (int i = 0; i < 50; i++) {
+        System.out.println();
+    }
 }
 ```
+Realmente `clearConsole()` no limpia la consola. Sólo empuja las líneas hacia arriba. Concretamente, 50 líneas hacia arriba. Esto permite que este simple método funcione en cualquier IDE o sistema operativo, y a efectos prácticos, despeja la consola, que es lo que se persigue.
 
 # La clase ConsoleInput completa
 
@@ -290,8 +322,9 @@ import java.util.Scanner;
 /**
  * Clase para leer datos por consola.
  * @author JavGuerra
- * @version 1.0
+ * @version 1.1 - 2026-02-13
  * @since 2023-01-31
+ * @requires Java 5.0 (1.5) or higher
  * @see <a href="https://javguerra.github.io/blog/clase-scanner-java/">
  *         «ConsoleInput kit» Descripción en el blog del autor.
  *     </a>
@@ -300,34 +333,74 @@ import java.util.Scanner;
  *         Mega curso Java desde 0, Aula en la nube.
  *     </a>
  */
-public class ConsoleInput {  
+public final class ConsoleInput {
+
+    /**
+     * Constructor privado que evita la instanciación de la clase. 
+     */
+    private ConsoleInput() {
+        throw new AssertionError("No se puede instanciar ConsoleInput");
+    }
   
     /** 
      * Instancia de la clase Scanner.
      */
-    private static final Scanner IN = new Scanner(System.in);  
+    private static Scanner IN = new Scanner(System.in);  
+
+    /**
+     * Cierra el Scanner.
+     */
+    public static void closeScanner() {
+        if (IN != null && !IN.isClosed()) {
+            IN.close();
+        }
+    }
+
+    /**
+     * Verifica que el Scanner esté abierto y funcionando.
+     * Si está cerrado, lo reabre automáticamente.
+     */
+    private static void ensureScannerOpen() {
+        if (IN == null || IN.isClosed()) {
+            IN = new Scanner(System.in);
+        }
+    }
+
+    /**
+     * Reinicia el Scanner (cierra y abre uno nuevo).
+     */
+    public static void resetScanner() {
+        closeScanner();
+        IN = new Scanner(System.in);
+    }
+
+    /**
+     * Espera la pulsación de la tecla Intro.
+     */
+    public static void getEnter() { 
+        ensureScannerOpen(); 
+        IN.nextLine();  
+    }  
   
     /**
      * Solicita con un mensaje por consola, y comprueba que se introduzca,
      * un número largo, entero, positivo (>=0).
      * @param message String Pregunta del usuario.
      * @return Long Número introducido.
-     * @throws InputMismatchException Si el tipo de dato introducido fue erróneo.
      */
-    public static Long getLongIntPos(String message) {  
-        long num;  
+    public static Long getLongIntPos(String message) {
+        ensureScannerOpen();  
         while(true) {  
             System.out.print(message);  
             try {  
-                num = IN.nextLong();  
+                long num = IN.nextLong();  
                 IN.nextLine();  
+                if (num >= 0) return num;  
+                System.out.println("Valor fuera de rango.");  
             } catch (InputMismatchException e) {  
                 System.out.println("Tipo de dato no reconocido.");  
-                IN.nextLine();  
-                continue;  
+                IN.nextLine();    
             }  
-            if (num >= 0) return num;  
-            System.out.println("Valor fuera de rango.");  
         }  
     }  
   
@@ -339,23 +412,25 @@ public class ConsoleInput {
      * @param min Long Valor mínimo.
      * @param max Long Valor máximo.
      * @return Long Número introducido.
-     * @throws InputMismatchException Si el tipo de dato introducido fue erróneo.
      */
-    public static Long getLongIntPosByRange(String message, Long min, Long max) {  
-        long num;  
-        if (min > max) { num = min; min = max; max = num; }  
+    public static Long getLongIntPosByRange(String message, Long min, Long max) {
+        ensureScannerOpen();  
+        if (min > max) {
+            Long temp = min;
+            min = max;
+            max = temp;
+        } 
         while(true) {  
             System.out.print(message);  
             try {  
-                num = IN.nextLong();  
+                long num = IN.nextLong();  
                 IN.nextLine();  
+                if (num >= min && num <= max) return num;  
+                System.out.println("Valor fuera de rango.");  
             } catch (InputMismatchException e) {  
                 System.out.println("Tipo de dato no reconocido.");  
                 IN.nextLine();  
-                continue;  
             }  
-            if (num >= min && num <= max) return num;  
-            System.out.println("Valor fuera de rango.");  
         }  
     }  
 
@@ -364,23 +439,21 @@ public class ConsoleInput {
      * una palabra de, al menos, 3 caracteres.
      * @param message String Pregunta del usuario.
      * @return String Palabra introducida.
-     * @throws InputMismatchException Si el tipo de dato introducido fue erróneo.
      */
-    public static String getWord(String message) {  
-        String str;  
+    public static String getWord(String message) { 
+        ensureScannerOpen(); 
         while(true) {  
             System.out.print(message);  
             try {  
-                str = IN.next();  
+                String str = IN.next();  
                 IN.nextLine();  
+                str = str.trim();  
+                if (str.length() >= 3) return str;  
+                System.out.println("Cadena no válida."); 
             } catch (InputMismatchException e) {  
                 System.out.println("Tipo de dato no reconocido.");  
-                IN.nextLine();  
-                continue;  
-            }  
-            str = str.trim();  
-            if (str.length() >= 3) return str;  
-            System.out.println("Cadena no válida.");  
+                IN.nextLine();   
+            }   
         }  
     }
 
@@ -389,22 +462,20 @@ public class ConsoleInput {
      * una cadena de texto de, al menos, 3 caracteres.
      * @param message String Pregunta del usuario.
      * @return String Cadena de texto introducida.
-     * @throws InputMismatchException Si el tipo de dato introducido fue erróneo.
      */
-    public static String getString(String message) {  
-        String str;  
+    public static String getString(String message) {
+        ensureScannerOpen();  
         while(true) {  
             System.out.print(message);  
             try {  
-                str = IN.nextLine();  
+                String str = IN.nextLine();  
+                str = str.trim();  
+                if (str.length() >= 3) return str;  
+                System.out.println("Cadena no válida.");  
             } catch (InputMismatchException e) {  
                 System.out.println("Tipo de dato no reconocido.");  
-                IN.nextLine();  
-                continue;  
+                IN.nextLine();   
             }  
-            str = str.trim();  
-            if (str.length() >= 3) return str;  
-            System.out.println("Cadena no válida.");  
         }  
     }  
   
@@ -413,49 +484,53 @@ public class ConsoleInput {
      * un carácter para confirmar ('S', 's') o ('N', 'n').
      * @param message String Pregunta del usuario.
      * @return Boolean true/Sí o false/No.
-     * @throws InputMismatchException Si el tipo de dato introducido fue erróneo.
      */
-    public static Boolean getYesNo(String message) {  
-        char chr;  
+    public static Boolean getYesNo(String message) {
+        ensureScannerOpen();  
         while(true) {  
             System.out.print(message);  
             try {  
-                chr = IN.next(".").trim().charAt(0);  
+                String input = IN.next(".");
+                if (input == null || input.trim().isEmpty()) {
+                    System.out.println("Entrada vacía no válida.");
+                    continue;
+                }
                 IN.nextLine();  
+                char chr = input.trim().charAt(0); 
+                if (chr == 'S' || chr == 's') return true;  
+                if (chr == 'N' || chr == 'n') return false;  
+                System.out.println("Carácter no válido."); 
             } catch (InputMismatchException e) {  
                 System.out.println("Tipo de dato no reconocido.");  
-                IN.nextLine();  
-                continue;  
-            }  
-            if (chr == 'S' || chr == 's') return true;  
-            if (chr == 'N' || chr == 'n') return false;  
-            System.out.println("Carácter no válido.");  
+                IN.nextLine();   
+            }   
         }  
     }  
   
     /**
-     * Espera la pulsación de la tecla Intro.
+     * Limpia la consola (desplaza el contenido hacia arriba).
+     * Funciona en TODOS los sistemas e IDEs.
      */
-    public static void getEnter() {  
-        IN.nextLine();  
-    }  
+    public static void clearConsole() {
+        for (int i = 0; i < 50; i++) {
+            System.out.println();
+        }
+    } 
   
-    /**
-     * Limpia la consola.
-     */
-    public static void clearConsole() {  
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
-    }  
-  
-    /**
-     * Cierra el Scanner.
-     */
-    public static void closeScanner() {  
-        IN.close();  
-    }  
 }
 ````
+
+Esta clase puede crecer con nuevos métodos para otros tipos numericos como int o double... que tú mismo puedes hacer.
+
+# Puntos fuertes de esta clase
+
+- No instanciable - Constructor privado + final class.
+- Auto-reparable - Scanner se reabre solo.
+- Robusta - Maneja entradas incorrectas sin caer.
+- Null-safe - `getYesNo()` protegido.
+- Consistente - Todos los métodos usan `ensureScannerOpen()`.
+- Compatible - Funciona desde Java 1.5.
+- Documentada - JavaDoc completo.
 
 # Enlaces
 - [Video: Entrada de datos en Java - Clase Scanner](https://youtu.be/HSq3rRfBmDg) - Mega curso Java desde 0, Aula en la nube  
