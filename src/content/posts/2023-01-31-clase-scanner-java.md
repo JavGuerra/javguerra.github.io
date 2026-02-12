@@ -16,9 +16,9 @@ Cuando se emplea la clase Scanner en Java surgen multitud de inconvenientes a la
 
 # Lo primero: abrir y cerrar
 
-Voy a crear una clase `ConsoleInput`. Esta clase puede ser instanciada dónde la necesitemos o podemos usar directamente sus métodos estáticos para obtener datos por consola.
+Voy a crear una clase de utilidad `ConsoleInput` que no permite ser instanciada.
 
-Para poder leer por consola necesitaré usar la clase `Scanner` que voy a instanciar dentro de mi clase `ConsoleInput`, y también crearé un método para poder cerrar el Scanner.
+Para poder leer por consola, necesitaré usar la clase `Scanner` dentro de mi clase `ConsoleInput`, y también crearé un método para poder cerrar el Scanner.
 
 ```java
 public final class ConsoleInput {
@@ -48,7 +48,7 @@ public final class ConsoleInput {
 }
 ```
 
-Como se aprecia, dentro de un paquete llamado `utilities` creo la clase `ConsoleInput`, el objeto final `IN` de tipo `Scanner` que debe importarse de `java.util.Scanner` y creo un método que, cuando sea llamado, cerrará el Scanner `IN` con el método `.close()`.
+Como se aprecia, dentro de un paquete llamado `utilities` creo la clase `ConsoleInput`, el objeto `IN` de tipo `Scanner` que debe importarse de `java.util.Scanner` y creo un método que, cuando sea llamado, cerrará el Scanner `IN` con el método `.close()`.
 
 También he añadido dos métodos más relacionados con cerrar el scanner: `ensureScannerOpen()` para cerciorarme de que el scanner esté abierto y `resetScanner()` para cerrarlo y abrir uno nuevo si fuera necesario en nuestra aplicación.
 
@@ -100,6 +100,7 @@ La primera aplicación práctica de esto puede ser el método siguiente:
 
 ```java
  public static void getEnter() {  
+    ensureScannerOpen(); 
     IN.nextLine();  
 }
 ```
