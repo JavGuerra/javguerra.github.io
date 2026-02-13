@@ -44,6 +44,10 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Alto System Project: Dan Ingalls demonstrates Smalltalk](https://www.youtube.com/watch?v=uknEhXyZgsg), video, demostración.
 
+- [The Apple Timeline](https://computerhistory.org/apple-timeline/)- 50 años de Apple.
+
+- [Celebratin 50 years of Microsoft](https://www.gatesnotes.com/microsoft-original-source-code) - Gates Notes.
+
 ## Hardware
 
 - [Old-Computers Museum](https://www.old-computers.com/), actualmente en reconstrucción, puede verse en Archive.org.
