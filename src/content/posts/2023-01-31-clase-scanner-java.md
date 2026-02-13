@@ -533,5 +533,52 @@ Esta clase puede crecer con nuevos métodos para otros tipos numericos como int 
 - Compatible - Funciona desde Java 1.5.
 - Documentada - JavaDoc completo.
 
+# Un ejemplo de uso
+
+Para finalizar, veamos un caso práctico para la gestión de clientes.
+
+```java
+    private static void selectOptions() {
+        long totalOpts = 6L;
+        String optMsg = "Seleccione una opción (0-6): ";
+        String menuList = """
+        -------------------
+           CRUD Customer
+        -------------------
+        1. Listar clientes
+        2. Mostrar un cliente
+        3. Crear un nuevo cliente
+        4. Actualizar un cliente
+        5. Eliminar un cliente
+        6. Eliminar los clientes
+        0. Salir
+        """;
+        byte opt;
+
+        while (true) {
+            clearConsole();
+
+            System.out.println(menuList);
+            opt = getLongIntPosByRange(optMsg, 0L, totalOpts).byteValue();
+
+            if (opt == 0) break;
+
+            switch (opt) {
+                case 1 -> controller.listCustomers();
+                case 2 -> controller.listCustomerById();
+                case 3 -> controller.newCustomer();
+                case 4 -> controller.updateCustomerById();
+                case 5 -> controller.deleteCustomerById();
+                case 6 -> controller.deleteAllCustomers();
+            }
+
+            System.out.println("Pulse <Intro> para continuar.");
+            getEnter();
+        }
+
+        closeScanner();
+    }
+```
+
 # Enlaces
 - [Video: Entrada de datos en Java - Clase Scanner](https://youtu.be/HSq3rRfBmDg) - Mega curso Java desde 0, Aula en la nube  
