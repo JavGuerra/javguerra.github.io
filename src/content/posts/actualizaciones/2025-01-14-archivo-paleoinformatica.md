@@ -46,7 +46,7 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [The Apple Timeline](https://computerhistory.org/apple-timeline/)- 50 años de Apple.
 
-- [Celebratin 50 years of Microsoft](https://www.gatesnotes.com/microsoft-original-source-code) - Gates Notes.
+- [Celebrating 50 years of Microsoft](https://www.gatesnotes.com/microsoft-original-source-code) - Gates Notes.
 
 ## Hardware
 
