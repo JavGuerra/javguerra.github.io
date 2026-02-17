@@ -188,9 +188,9 @@ postsElement.innerHTML = `
   `;
 ```
 
-Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de postElement. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
+Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de `postElement`. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
 
-## Formateando la publicación de post
+## Formateando las publicaciones
 
 Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` por cada publicación, como dije, y un elemento `<a>` para enlazar a la publicación original. Lo que quiero conseguir se parece a esto:
 
@@ -203,7 +203,7 @@ Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` 
 </li>
 ```
 
-De cada post obtengo el contenido de la publicación, y el enlace a la publicación. Con esta información defino una serie de variables:
+De cada publicación obtengo el contenido de la publicación, y el enlace a la publicación. Con esta información defino una serie de variables:
 
 
 ```js
@@ -220,11 +220,11 @@ Si es una republicación, obtengo su contenido, sino, obtengo el contenido de la
 
 Compruebo si el texto de la publicación está verdaderamente vacío, es decir, si no contiene, por ejemplo, alguna etiqueta HTML.
 
-Compruebo también si el post tiene contenido multimedia.
+Compruebo también si la publicación tiene contenido multimedia.
 
-Por último, si el post tiene contenido multimedia, preparo el enlace a la publicación original, y si no lo tiene, dejo el aviso vacío.
+Por último, si la publicación tiene contenido multimedia, preparo el enlace a la publicación original, y si no lo tiene, dejo el aviso vacío.
 
-Seguidamente, formateo el texto del post mediante el siguiente código:
+Seguidamente, formateo el texto de la publicación mediante el siguiente código:
 
 ```js
   <li class="post">
@@ -242,13 +242,13 @@ Seguidamente, formateo el texto del post mediante el siguiente código:
   </li>
 ```
 
-¿Se trata de una republicación?, entonces publico el texto del post con el aviso de `♻️ Republicado`.
+¿Se trata de una republicación?, entonces publico el texto de la republicación con el aviso de `♻️ Republicado`.
 
-En caso contrario, compruebo si el texto del post está vacío y si tiene contenido multimedia.
+En caso contrario, compruebo si el texto de la publicación está vacío y si tiene contenido multimedia.
 
-Si ambas condiciones se cumplen, entonces publico el aviso de ver `👁️ Ver en origen →` con su enlace, ya que será un post sin texto pero con video o imagen...
+Si ambas condiciones se cumplen, entonces publico el aviso de ver `👁️ Ver en origen →` con su enlace, ya que será una publicación sin texto pero con video o imagen...
 
-Si no se cumple alguna o ambas condiciones, entonces publico el contenido del post y el aviso de ver `👁️ Ver en origen →` con su enlace, pues o bien el post tendrá contenido, tendrá texto y contenido multimedia o sólo texto.
+Si no se cumple alguna o ambas condiciones, entonces publico el contenido de la publicación y el aviso de ver `👁️ Ver en origen →` con su enlace, pues o bien la publicación tiene contenido, tiene texto y contenido multimedia o sólo texto.
 
 Para mostrar la fecha, uso la función `toLocaleString` de JavaScript, que me permite obtener la fecha en formato local.
 
@@ -262,7 +262,7 @@ Siendo `posts` el objeto de publicaciones en json obtenido de la API de Mastodon
 
 ## Una advertencia
 
-Si bien Mastodon se encarga de limpiar la publicaciones de entradas, no estaría de más implementar una función que se ocupe de limpiar el post antes de hacer uso de `originalPost.content` para evitar sorpresas por la inclusión de etiquetas o atributos peligrosos.
+Si bien las instancias de Mastodon se encargan de limpiar las publicaciones de los usuarios ante potenciales peligros, no estaría de más implementar una función propia que se ocupe de limpiar el contenido de las publicaciones antes de hacer uso de `originalPost.content` para evitar sorpresas por la inclusión de etiquetas o atributos dañinos que pudieran llegar de publicaciones de instancias de Mastodon poco confiables.
 
 # El código completo
 
@@ -352,7 +352,7 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
 </html>
 ```
 
-Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)` y se muestran los post con `displayPosts(posts)`.
+Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)` y se muestran las publicaciones con `displayPosts(posts)`.
 
 No olvides sustituir los valores de `server`, `profileId` y `limit` con los que correspondan a tu propio perfil de Mastodon o el del perfil que desees consultar.
 
@@ -381,11 +381,11 @@ Para que el contenido se vea correctamente, es necesario definir algunos estilos
   content: "…";
 }
 ```
-Los estilos aquí mostrados son los que usa el propio Mastodon para presentar los post.
+Los estilos aquí mostrados son los que usa el propio Mastodon para presentar las entradas en su página.
 
 La clase `.invisible` se aplica a los elementos que quiero que no se vean. Esto es necesario para evitar saltos de línea y espacios en blanco en el contenido de las publicaciones debido a su formateo original.
 
-Se incluye también la clase `.invisible` para imágenes y vectores SVG. Si bien no se usan en este ejemplo, pueden ser de utilidad si decides mostrar el contenido multimedia de las publicaciones.
+Se incluye también la clase `.invisible` para imágenes y vectores SVG. Si bien no se usa en este ejemplo, pueden ser de utilidad si decides mostrar el contenido multimedia de las publicaciones.
 
 Por su parte, la clase `.ellipsis` se usa para mostrar puntos suspensivos `…` al final de los enlaces acortados.
 
