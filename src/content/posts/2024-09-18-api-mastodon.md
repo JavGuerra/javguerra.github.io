@@ -105,41 +105,58 @@ Con `await`, se espera a que la función `getLatestPosts` termine de ejecutarse,
 
 ## Mostrando las publicaciones
 
-Allí donde vamos a mostrar las publicaciones, voy a usar un elemento `<ul>` con el `id="posts"` para definir una lista de publicaciones, y un elemento `<li>` para cada publicación.
+Allí donde vamos a mostrar las publicaciones, voy a usar un elemento `<div>` con el `id="posts"` para definir una lista de publicaciones, un `ul`, y un elemento `<li>` para cada publicación.
 
 Incluyo el siguiente código HTML en la página:
 
 ```html
-<ul id="posts">
+<div id="posts">
   Cargando...
-</ul>
+</div>
 ```
 
-Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento `<ul>` con las publicaciones obtenidas y formateadas:
+Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento `<div>` con las publicaciones obtenidas y formateadas:
 
 ```js
-function displayPosts(posts) {
-  const postsElement = document.getElementById('posts');
-  if (posts && posts.length > 0) {
+  function displayPosts(posts) {
+    const postsElement = document.getElementById('posts');
+
+    if (!posts || posts.length === 0) {
+      postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+      return;
+    }
+
     postsElement.innerHTML = `
-        <h2>Últimas publicaciones</h2>
-        ${posts.map(post => `
-          <li class="post">
-            ${post.reblog === null 
-              ? post.content
-              : `${post.reblog.content} <small>♻️ Republicado </small>`}
-            ${post.reblog === null && post.content === ""
-              ? `Contenido multimedia <a href="${post.url}">👁️ Ver en origen →</a><br />` : ''}
-            <a href="${post.reblog === null ? post.url : post.reblog.url}">
-              <small>📢 ${new Date(post.created_at).toLocaleString()}</small>              
+      <h2 class="mb-6">Últimas publicaciones</h2>
+      <ul>
+
+      ${posts.map(post => {
+        const isReblog = post.reblog != null;
+        const originalPost = isReblog ? post.reblog : post;
+        const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+        const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+
+        return `
+          <li class="intro post mt-4">
+            ${isReblog 
+              ? `${originalPost.content} <small class="gray">♻️ Republicado </small>`
+              : contentIsEmpty
+                ? hasMedia
+                  ? `Contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a><br />`
+                  : originalPost.content
+                : originalPost.content}
+
+            <a href="${originalPost.url}">
+              <small class="gray">
+                📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+              </small>
             </a>
           </li>
-        `).join('')}
-      `;
-  } else {
-    postsElement.innerHTML = '<p>No se encontraron posts.</p>';
-  }  
-}
+          `
+        }).join('')}
+      </ul>
+    `;
+  }
 ```
 
 Vamos por partes:
@@ -161,51 +178,79 @@ Si hemos obtenidos publicaciones, hago uso de la siguiente estructura:
 ```js
 postsElement.innerHTML = `
     <h2>Últimas publicaciones</h2>
+    <ul>
     ${posts.map(post => `
 
         // código para mostrar cada publicación
 
     `).join('')}
-`;
+    </ul>
+  `;
 ```
 
-Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego junto todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<ul>` con el id `posts` mediante el método `innerHTML` de postElement. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
+Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego junto todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de postElement. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
 
 ## Formatear la publicación
 
-Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` para cada publicación, como dije, y un elemento `<a>` para enlazar a la publicación original. Lo que quiero conseguir se parece a esto:
+Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` por cada publicación, como dije, y un elemento `<a>` para enlazar a la publicación original. Lo que quiero conseguir se parece a esto:
 
 ```html
 <li class="post">
   Este es un ejemplo de una publicación en Mastodon.
   <a href="https://mastodon.social/@usuario/109292343224519197">
-    <small>18/9/2024, 1:23:45</small>
+    <small>18 sep 2024, 1:23:45</small>
   </a>
 </li>
 ```
 
-De cada post obtengo el contenido de la publicación, y el enlace a la publicación, y luego lo formateo para que se vea como se muestra arriba, mediante el siguiente código:
+De cada post obtengo el contenido de la publicación, y el enlace a la publicación. Con esta información defino una serie de variables:
+
 
 ```js
-<li class="post">
-    ${post.reblog === null 
-        ? post.content
-        : `${post.reblog.content} <small>♻️ Republicado </small>`}
-    ${post.reblog === null && post.content === ""
-        ? `Contenido multimedia <a href="${post.url}">👁️ Ver en origen →</a><br />` : ''}
-    <a href="${post.reblog === null ? post.url : post.reblog.url}">
-        <small>📢 ${new Date(post.created_at).toLocaleString()}</small>              
-    </a>
-</li>
+  const isReblog = post.reblog != null;
+  const originalPost = isReblog ? post.reblog : post;
+  const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+  const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+  const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
 ```
 
-Como las publicaciones pueden ser republicaciones, es decir, publicaciones compartidas de otros, compruebo si este es el caso con `post.reblog === null` Si no hay republicación, osea, si es null, incluyo el contenido del post con `post.content`, y si hay republicación, incluyo el contenido de la republicación con `post.reblog.content`.
+Como las publicaciones pueden ser republicaciones, es decir, publicaciones compartidas de otros, compruebo si este es el caso.
 
-Luego compruebo si el contenido es multimedia y no incluye texto, mediante `post.reblog === null && post.content === "`, y si es así, incluyo un enlace a la versión original de la publicación con `post.url`. Si no es el caso, no incluyo nada `''`.
+Si hay republicación, obtengo su contenido, sino, obtengo el contenido de la publicación original.
 
-Por último, para enlazar a la publicación en Mastodon, también debo determinar si estoy ante una publicación original o republicada. En el primer caso uso el enlace a la publicación, y en el segundo caso uso el enlace a la republicación con `post.reblog === null ? post.url : post.reblog.url`.
+Compruebo si el texto de la publicación está verdaderamente vacío, es decir, si no contiene, por ejemplo, alguna etiqueta HTML.
 
-Para mostrar la fecha, uso la función `toLocaleString` de JavaScript, que me permite obtener la fecha en formato local con `new Date(post.created_at).toLocaleString()`.
+Compruebo también si el post tiene contenido multimedia.
+
+Por último, si el post tiene contenido multimedia, preparo el enlace a la publicación original, y si no lo tiene, dejo el aviso vacío.
+
+Seguidamente, formateo el texto del post mediante el siguiente código:
+
+```js
+  <li class="post">
+    ${isReblog 
+      ? `${originalPost.content} <small>♻️ Republicado </small>`
+      : contentIsEmpty && hasMedia
+        ? multimediaLink
+        : originalPost.content + multimediaLink}
+
+    <a href="${originalPost.url}">
+      <small>
+        📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+      </small>
+    </a>
+  </li>
+```
+
+¿Se trata de una republicación?, entonces publico el texto del post con el aviso de `♻️ Republicado`.
+
+En caso contrario, compruebo si el texto del post está vacío y si tiene contenido multimedia.
+
+Si ambas condiciones se cumplen, entonces publico el aviso de ver `👁️ Ver en origen →` con su enlace, ya que será un post sin texto pero con video o imagen...
+
+Si no se cumple alguna o ambas condiciones, entonces publico el contenido del post y el aviso de ver `👁️ Ver en origen →` con su enlace, pues o bien el post tendrá contenido, tendrá texto y contenido multimedia o sólo texto.
+
+Para mostrar la fecha, uso la función `toLocaleString` de JavaScript, que me permite obtener la fecha en formato local.
 
 Es posible llamar a la función `displayPosts` mediante:
 
@@ -214,6 +259,10 @@ displayPosts(posts);
 ```
 
 Siendo `posts` el objeto de publicaciones en json obtenido de la API de Mastodon.
+
+## Una advertencia
+
+Si bien Mastodon limpia las publicaciones, no estaría de más contemplar, antes de la inclusión de `originalPost.content` una función que se ocupe de limpiar el post para evitar sorpresas por la inclusión de etiquetas o atributos peligrosos.
 
 # El código completo
 
@@ -232,9 +281,9 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
     
     <h1>Mastodon</h1>
 
-    <ul id="posts">
+    <div id="posts">
         Cargando...
-    </ul>
+    </div>
 
 <script>
     // Sustituye los valores siguientes para adaptarlo a tu propio uso
@@ -256,26 +305,41 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
     }
 
     function displayPosts(posts) {
-        const postsElement = document.getElementById('posts');
-        if (posts && posts.length > 0) {
-            postsElement.innerHTML = `
-                <h2>Últimas publicaciones</h2>
-                ${posts.map(post => `
-                <li class="post">
-                    ${post.reblog === null 
-                    ? post.content
-                    : `${post.reblog.content} <small>♻️ Republicado </small>`}
-                    ${post.reblog === null && post.content === ""
-                    ? `Contenido multimedia <a href="${post.url}">👁️ Ver en origen →</a><br />` : ''}
-                    <a href="${post.reblog === null ? post.url : post.reblog.url}">
-                    <small>📢 ${new Date(post.created_at).toLocaleString()}</small>              
-                    </a>
-                </li>
-                `).join('')}
-            `;
-        } else {
-            postsElement.innerHTML = '<p>No se encontraron posts.</p>';
-        }  
+      const postsElement = document.getElementById('posts');
+
+      if (!posts || posts.length === 0) {
+        postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+        return;
+      }
+
+      postsElement.innerHTML = `
+        <h2>Últimas publicaciones</h2>
+        <ul>
+        ${posts.map(post => {
+          const isReblog = post.reblog != null;
+          const originalPost = isReblog ? post.reblog : post;
+          const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+          const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+          const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
+
+          return `
+            <li class="post">
+              ${isReblog 
+                ? `${originalPost.content} <small>♻️ Republicado </small>`
+                : contentIsEmpty && hasMedia
+                  ? multimediaLink
+                  : originalPost.content + multimediaLink}
+
+              <a href="${originalPost.url}">
+                <small>
+                  📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+                </small>
+              </a>
+            </li>
+            `
+          }).join('')}
+        </ul>
+      `;
     }
 
     document.addEventListener("DOMContentLoaded", async () => {

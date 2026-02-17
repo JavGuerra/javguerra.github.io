@@ -61,16 +61,15 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
         const originalPost = isReblog ? post.reblog : post;
         const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
         const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+        const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
 
         return `
           <li class="intro post mt-4">
             ${isReblog 
-              ? `${originalPost.content} <small class="gray">♻️ Republicado </small>`
-              : contentIsEmpty
-                ? hasMedia
-                  ? `Contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a><br />`
-                  : originalPost.content
-                : originalPost.content}
+              ? `${originalPost.content} <small>♻️ Republicado </small>`
+              : contentIsEmpty && hasMedia
+                ? multimediaLink
+                : originalPost.content + multimediaLink}
 
             <a href="${originalPost.url}">
               <small class="gray">
