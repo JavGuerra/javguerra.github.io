@@ -119,13 +119,12 @@ Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento
 
 ```js
   function displayPosts(posts) {
-    const postsElement = document.getElementById('posts');
-
     if (!posts || posts.length === 0) {
       postsElement.innerHTML = '<p>No se encontraron posts.</p>';
       return;
     }
 
+    const postsElement = document.getElementById('posts');
     postsElement.innerHTML = `
       <h2 class="mb-6">Últimas publicaciones</h2>
       <ul>
@@ -305,13 +304,12 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
     }
 
     function displayPosts(posts) {
-      const postsElement = document.getElementById('posts');
-
       if (!posts || posts.length === 0) {
         postsElement.innerHTML = '<p>No se encontraron posts.</p>';
         return;
       }
 
+      const postsElement = document.getElementById('posts');
       postsElement.innerHTML = `
         <h2>Últimas publicaciones</h2>
         <ul>
@@ -352,11 +350,11 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
 </html>
 ```
 
-Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API.
+Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)`y se muestran los post con `displayPosts(posts)`.
 
 No olvides sustituir los valores de `server`, `profileId` y `limit` con los que correspondan a tu propio perfil de Mastodon o el del perfil que desees consultar.
 
-## Estilos
+# Estilos
 
 Para que el contenido se vea correctamente, es necesario definir algunos estilos en el archivo `style.css`.
 

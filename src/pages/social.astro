@@ -46,13 +46,12 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
   }
 
   function displayPosts(posts) {
-    const postsElement = document.getElementById('posts');
-
     if (!posts || posts.length === 0) {
       postsElement.innerHTML = '<p>No se encontraron posts.</p>';
       return;
     }
 
+    const postsElement = document.getElementById('posts');
     postsElement.innerHTML = `
       <h2 class="mb-6">Últimas publicaciones</h2>
       <ul>
