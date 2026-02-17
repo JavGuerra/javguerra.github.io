@@ -157,9 +157,9 @@ function displayPosts(posts) {
 }   
 ```
 
-Vamos por partes:
+Vamos por partes.
 
-Primero obtengo el elemento `<ul>` con el id `posts` del DOM, y lo guardo en una variable `postsElement` para poder referirme a él en el script.
+Primero obtengo el elemento `<div>` con el id `posts` del DOM, y lo guardo en una variable `postsElement` para poder referirme a él en el script.
 
 ```js
 const postsElement = document.getElementById('posts');
@@ -186,7 +186,7 @@ postsElement.innerHTML = `
   `;
 ```
 
-Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de `postElement`. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
+Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de `postElement`. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<div>`; las publicaciones.
 
 ## Formateando las publicaciones
 
