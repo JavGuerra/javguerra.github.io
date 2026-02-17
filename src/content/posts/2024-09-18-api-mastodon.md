@@ -14,7 +14,7 @@ tags:
   - servidor
 ---
 
-En este artículo vamos a ver cómo se puede acceder a la API de Mastodon, un servicio que nos permite, entre otras cosas, obtener las publicaciones más recientes de un usuario concreto.
+En este artículo vamos a ver cómo se puede acceder a la API de Mastodon, un servicio que nos permite, entre otras cosas, obtener las últimas publicaciones de un usuario concreto.
 
 Recientemente la he usado para mostrar, en el apartado [social](/social) de esta página, las publicaciones que escribo en la red social, empleando JavaScript del lado del cliente en Astro, es decir, que en una página .astro he incluido un script que lee y muestra las publicaciones actualizadas de mi cuenta de Mastodon.
 
@@ -26,11 +26,11 @@ El lector debe conocer las funciones avanzadas de JavaScript como asincronía y 
 
 Realizaré la consulta a la [API de Mastodon](https://docs.joinmastodon.org/api/) mediante la función `fetch` de JavaScript.
 
-El acceso a la API no requiere autenticación (aunque es posible), por lo que podemos acceder a ella sin ningún tipo de token. Voy a necesitar:
+Las consultas a la API no requieren autenticación (aunque es posible), por lo que podemos acceder a ella sin ningún tipo de token, pero voy a necesitar:
 
 - La url de la instancia de Mastodon, es decir el servidor.
 - El id de la cuenta de usuario que quiero consultar.
-- El número de publicaciones que quiero obtener.
+- El número que indique la cantidad de publicaciones que quiero obtener.
 
 Cuando tengamos estos datos, podremos construir el `endpoint` o url de la API de Mastodon, que será la siguiente:
 
@@ -44,7 +44,7 @@ Donde:
 - `<accountId>` es el id de la cuenta que queremos consultar, por ejemplo `1234567890`. Este id se obtendría de la url de la cuenta, ej.: `https://mastodon.social/@usuario`, como se verá enseguida.
 - `<limit>` es el número de publicaciones que queremos consultar, por ejemplo `10`.
 
-Para obtener el id de la cuenta, uso la siguiente url:
+Para obtener el id de la cuenta, debo usar la siguiente url:
 
 ```
 https://<server>/api/v1/accounts/lookup?acct=<username>
@@ -72,7 +72,7 @@ https://mastodon.social/api/v1/accounts/1234567890/statuses?limit=10
 
 ## Fetch
 
-Ya tenemos formado el endpoint de la API de Mastodon, y para llevar a cabo la consulta necesito usar la función `fetch` de JavaScript, que permite realizar peticiones HTTP, y obtener el resultado como un objeto json.
+Ya tenemos formado el endpoint de la API de Mastodon, y, para llevar a cabo la consulta, usaré la función `fetch` de JavaScript, que permite realizar peticiones HTTP, y obtener el resultado como un objeto json.
 
 ```js
 const server = 'https://mastodon.social';
@@ -93,7 +93,7 @@ async function getLatestPosts(route) {
 }
 ```
 
-Como se aprecia, se trata de una función asíncrona con una estructura de los más común, que se ejecutará de manera independiente, y cuando se haya terminado de ejecutar, me permitirá seguir con la ejecución del código.
+Como se aprecia, se trata de una función asíncrona con una estructura de lo más común, que se ejecutará de manera independiente, y cuando se haya terminado de ejecutar, me permitirá seguir con la ejecución del código.
 
 Para llamar a la función, uso:
 
@@ -105,7 +105,7 @@ Con `await`, se espera a que la función `getLatestPosts` termine de ejecutarse,
 
 ## Mostrando las publicaciones
 
-Allí donde vamos a mostrar las publicaciones, voy a usar un elemento `<div>` con el `id="posts"` para definir una lista de publicaciones, un `ul`, y un elemento `<li>` para cada publicación.
+Allí donde vamos a mostrar las publicaciones, voy a usar un elemento `<div>` con el `id="posts"` para definir una lista de publicaciones, un `<ul>`, y un elemento `<li>` para cada publicación.
 
 Incluyo el siguiente código HTML en la página:
 
@@ -119,12 +119,13 @@ Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento
 
 ```js
   function displayPosts(posts) {
+    const postsElement = document.getElementById('posts');
+
     if (!posts || posts.length === 0) {
       postsElement.innerHTML = '<p>No se encontraron posts.</p>';
       return;
     }
 
-    const postsElement = document.getElementById('posts');
     postsElement.innerHTML = `
       <h2 class="mb-6">Últimas publicaciones</h2>
       <ul>
@@ -166,7 +167,7 @@ Primero obtengo el elemento `<ul>` con el id `posts` del DOM, y lo guardo en una
 const postsElement = document.getElementById('posts');
 ```
 
-Compruebo que hay publicaciones y que el array `posts` no esté vacío. Si no es así, defino el contenido del elemento `<ul>` con el siguiente código: 
+Compruebo que hay publicaciones y que el array `posts` no esté vacío. Si no es así, defino el contenido del elemento `<div>` con el siguiente código: 
 
 ```js    
 postsElement.innerHTML = '<p>No se encontraron posts.</p>';
@@ -187,9 +188,9 @@ postsElement.innerHTML = `
   `;
 ```
 
-Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego junto todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de postElement. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
+Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de postElement. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<ul>`; las publicaciones.
 
-## Formatear la publicación
+## Formateando la publicación de post
 
 Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` por cada publicación, como dije, y un elemento `<a>` para enlazar a la publicación original. Lo que quiero conseguir se parece a esto:
 
@@ -206,16 +207,16 @@ De cada post obtengo el contenido de la publicación, y el enlace a la publicaci
 
 
 ```js
-  const isReblog = post.reblog != null;
-  const originalPost = isReblog ? post.reblog : post;
-  const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
-  const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
-  const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
+const isReblog = post.reblog != null;
+const originalPost = isReblog ? post.reblog : post;
+const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
 ```
 
-Como las publicaciones pueden ser republicaciones, es decir, publicaciones compartidas de otros, compruebo si este es el caso.
+Como las publicaciones pueden ser republicaciones, es decir, publicaciones compartidas de otros usuarios o propias, compruebo si este es el caso.
 
-Si hay republicación, obtengo su contenido, sino, obtengo el contenido de la publicación original.
+Si es una republicación, obtengo su contenido, sino, obtengo el contenido de la publicación original.
 
 Compruebo si el texto de la publicación está verdaderamente vacío, es decir, si no contiene, por ejemplo, alguna etiqueta HTML.
 
@@ -261,7 +262,7 @@ Siendo `posts` el objeto de publicaciones en json obtenido de la API de Mastodon
 
 ## Una advertencia
 
-Si bien Mastodon limpia las publicaciones, no estaría de más contemplar, antes de la inclusión de `originalPost.content` una función que se ocupe de limpiar el post para evitar sorpresas por la inclusión de etiquetas o atributos peligrosos.
+Si bien Mastodon se encarga de limpiar la publicaciones de entradas, no estaría de más implementar una función que se ocupe de limpiar el post antes de hacer uso de `originalPost.content` para evitar sorpresas por la inclusión de etiquetas o atributos peligrosos.
 
 # El código completo
 
@@ -304,12 +305,13 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
     }
 
     function displayPosts(posts) {
+      const postsElement = document.getElementById('posts');
+
       if (!posts || posts.length === 0) {
         postsElement.innerHTML = '<p>No se encontraron posts.</p>';
         return;
       }
 
-      const postsElement = document.getElementById('posts');
       postsElement.innerHTML = `
         <h2>Últimas publicaciones</h2>
         <ul>
@@ -350,7 +352,7 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
 </html>
 ```
 
-Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)`y se muestran los post con `displayPosts(posts)`.
+Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)` y se muestran los post con `displayPosts(posts)`.
 
 No olvides sustituir los valores de `server`, `profileId` y `limit` con los que correspondan a tu propio perfil de Mastodon o el del perfil que desees consultar.
 
@@ -379,7 +381,7 @@ Para que el contenido se vea correctamente, es necesario definir algunos estilos
   content: "…";
 }
 ```
-Estos estilos son los que usa el propio Mastodon para mostrar las publicaciones.
+Los estilos aquí mostrados son los que usa el propio Mastodon para presentar los post.
 
 La clase `.invisible` se aplica a los elementos que quiero que no se vean. Esto es necesario para evitar saltos de línea y espacios en blanco en el contenido de las publicaciones debido a su formateo original.
 
