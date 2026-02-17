@@ -381,7 +381,7 @@ Para que el contenido se vea correctamente, es necesario definir algunos estilos
   content: "…";
 }
 ```
-Los estilos aquí mostrados son los que usa el propio Mastodon para presentar las entradas en su página.
+Los estilos aquí mostrados son los que usa el propio Mastodon para presentar las publicaciones en su página.
 
 La clase `.invisible` se aplica a los elementos que quiero que no se vean. Esto es necesario para evitar saltos de línea y espacios en blanco en el contenido de las publicaciones debido a su formateo original.
 
