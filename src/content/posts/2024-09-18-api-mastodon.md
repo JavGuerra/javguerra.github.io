@@ -139,12 +139,10 @@ Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento
         return `
           <li class="intro post mt-4">
             ${isReblog 
-              ? `${originalPost.content} <small class="gray">♻️ Republicado </small>`
-              : contentIsEmpty
-                ? hasMedia
-                  ? `Contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a><br />`
-                  : originalPost.content
-                : originalPost.content}
+              ? `${originalPost.content} <small>♻️ Republicado </small>`
+              : contentIsEmpty && hasMedia
+                ? multimediaLink
+                : originalPost.content + multimediaLink}
 
             <a href="${originalPost.url}">
               <small class="gray">
