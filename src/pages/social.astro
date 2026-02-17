@@ -16,9 +16,9 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
 
 <BaseLayout pageTitle="Social" subTitle="Mi conexión con el mundo">
 
-  <ul id="posts" class="mb-8">
+  <div id="posts" class="mb-8">
     Cargando <Loading />
-  </ul>
+  </div>
 
   <ul role="list" class="link-card-grid mt-10">
     <Card href={social.mastodon} title="Mastodon">
@@ -47,30 +47,44 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
 
   function displayPosts(posts) {
     const postsElement = document.getElementById('posts');
-    if (posts && posts.length > 0) {
-      postsElement.innerHTML = `
-          <h2 class="mb-6">Últimas publicaciones</h2>
-          ${posts.map(post => `
-            <li class="intro post mt-4">
-              ${post.reblog === null 
-                ? post.content
-                : `${post.reblog.content} <small class="gray">♻️ Republicado </small>`}
-              ${post.reblog === null && post.content === ""
-                ? `Contenido multimedia <a href="${post.url}">👁️ Ver en origen →</a><br />` : ''}
-              <a href="${post.reblog === null
-                ? post.url : post.reblog.url}">
-                <small class="gray">📢 ${new Date(post.created_at).toLocaleString()}</small>
-              </a>
-            </li>
-          `).join('')}
-        `;
-    } else {
+
+    if (!posts || posts.length === 0) {
       postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+      return;
     }
+
+    postsElement.innerHTML = `
+      <h2 class="mb-6">Últimas publicaciones</h2>
+      <ul>
+      ${posts.map(post => {
+        const isReblog = post.reblog != null;
+        const originalPost = isReblog ? post.reblog : post;
+        const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+        const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+
+        return `
+          <li class="intro post mt-4">
+            ${isReblog 
+              ? `${originalPost.content} <small class="gray">♻️ Republicado </small>`
+              : contentIsEmpty
+                ? hasMedia
+                  ? `Contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a><br />`
+                  : originalPost.content
+                : originalPost.content}
+
+            <a href="${originalPost.url}">
+              <small class="gray">
+                📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+              </small>
+            </a>
+          </li>
+          `
+        }).join('')}
+      </ul>
+    `;
   }
 
-  document.addEventListener('astro:page-load', async () => {
-    const posts = await getLatestPosts(route);     
-    posts && displayPosts(posts)
+  document.addEventListener('astro:page-load', async () => {  
+    displayPosts(await getLatestPosts(route));
   });
 </script>
