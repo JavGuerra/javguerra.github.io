@@ -118,43 +118,43 @@ Incluyo el siguiente código HTML en la página:
 Y luego, mediante el script de JavaScript, sustituiré el contenido del elemento `<div>` con las publicaciones obtenidas y formateadas:
 
 ```js
-  function displayPosts(posts) {
-    const postsElement = document.getElementById('posts');
+function displayPosts(posts) {
+  const postsElement = document.getElementById('posts');
 
-    if (!posts || posts.length === 0) {
-      postsElement.innerHTML = '<p>No se encontraron posts.</p>';
-      return;
-    }
-
-    postsElement.innerHTML = `
-      <h2 class="mb-6">Últimas publicaciones</h2>
-      <ul>
-
-      ${posts.map(post => {
-        const isReblog = post.reblog != null;
-        const originalPost = isReblog ? post.reblog : post;
-        const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
-        const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
-
-        return `
-          <li class="intro post mt-4">
-            ${isReblog 
-              ? `${originalPost.content} <small>♻️ Republicado </small>`
-              : contentIsEmpty && hasMedia
-                ? multimediaLink
-                : originalPost.content + multimediaLink}
-
-            <a href="${originalPost.url}">
-              <small class="gray">
-                📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
-              </small>
-            </a>
-          </li>
-          `
-        }).join('')}
-      </ul>
-    `;
+  if (!posts || posts.length === 0) {
+    postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+    return;
   }
+
+  postsElement.innerHTML = `
+    <h2>Últimas publicaciones</h2>
+    <ul>
+    ${posts.map(post => {
+      const isReblog = post.reblog != null;
+      const originalPost = isReblog ? post.reblog : post;
+      const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+      const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+      const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
+
+      return `
+        <li class="post">
+          ${isReblog 
+            ? `${originalPost.content} <small>♻️ Republicado </small>`
+            : contentIsEmpty && hasMedia
+              ? multimediaLink
+              : originalPost.content + multimediaLink}
+
+          <a href="${originalPost.url}">
+            <small>
+              📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+            </small>
+          </a>
+        </li>
+        `
+      }).join('')}
+    </ul>
+  `;
+}   
 ```
 
 Vamos por partes:
