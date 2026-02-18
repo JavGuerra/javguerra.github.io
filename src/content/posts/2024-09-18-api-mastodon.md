@@ -1,7 +1,7 @@
 ---
 route: api-mastodon
 title: Accediendo a la API de Mastodon
-description: Obtener y mostrar las publicaciones de la red social
+description: Cómo obtener y mostrar las publicaciones de esta red social
 author: JavGuerra
 pubDate: 2024-09-18
 coverImage:
@@ -18,7 +18,7 @@ En este artículo vamos a ver cómo se puede acceder a la API de Mastodon, un se
 
 Recientemente la he usado para mostrar, en el apartado [social](/social) de esta página, las publicaciones que escribo en la red social, empleando JavaScript del lado del cliente en Astro, es decir, que en una página .astro he incluido un script que lee y muestra las publicaciones actualizadas de mi cuenta de Mastodon.
 
-En este artículo me centro en la parte de javaScript y no tanto en la integración con Astro, ya que, de esta forma, será posible aprovechar la información para que pueda ser usada en otros frameworks o aplicaciones propias.
+Me centraré en la parte de JavaScript y no tanto en la integración con Astro, ya que, de esta forma, será posible aprovechar la información para que pueda ser usada en otros frameworks o aplicaciones propias.
 
 El lector debe conocer las funciones avanzadas de JavaScript como asincronía y llamadas a APIs para seguir correctamente esta entrada.
 
@@ -40,7 +40,7 @@ https://<server>/api/v1/accounts/<accountId>/statuses?limit=<limit>
 
 Donde:
 
-- `<server>` es la url de la instancia de Mastodon, por ejemplo `mastodon.social` o la de tu propia instancia.
+- `<server>` es el nombre de dominio de la instancia de Mastodon, por ejemplo `mastodon.social` o la de tu propia instancia.
 - `<accountId>` es el id de la cuenta que queremos consultar, por ejemplo `1234567890`. Este id se obtendría de la url de la cuenta, ej.: `https://mastodon.social/@usuario`, como se verá enseguida.
 - `<limit>` es el número de publicaciones que queremos consultar, por ejemplo `10`.
 
@@ -50,7 +50,7 @@ Para obtener el id de la cuenta, debo usar la siguiente url:
 https://<server>/api/v1/accounts/lookup?acct=<username>
 ```
 
-Donde hay que sustituir `<server>` por la url de la instancia de Mastodon y `<username>` por el nombre de usuario de la cuenta que queremos consultar.
+Donde hay que sustituir `<server>` por el nombre de la instancia de Mastodon y `<username>` por el nombre de usuario de la cuenta que queremos consultar.
 
 Obtengo un json con el id de la cuenta, entre otros datos, como por ejemplo:
 
@@ -64,7 +64,7 @@ Obtengo un json con el id de la cuenta, entre otros datos, como por ejemplo:
 }
 ```
 
-Si queremos consultar las 10 últimas publicaciones de la cuenta ficticia `@usuario`, que tiene el id ficticio: `1234567890`, en la instancia de Mastodon `https://mastodon.social`, tendríamos que usar la siguiente url:
+Si queremos consultar las 10 últimas publicaciones de la cuenta ficticia `@usuario`, que tiene el id ficticio: `1234567890`, en la instancia de Mastodon `mastodon.social`, tendríamos que usar la siguiente url:
 
 ```
 https://mastodon.social/api/v1/accounts/1234567890/statuses?limit=10
@@ -72,7 +72,7 @@ https://mastodon.social/api/v1/accounts/1234567890/statuses?limit=10
 
 ## Fetch
 
-Ya tenemos formado el endpoint de la API de Mastodon, y, para llevar a cabo la consulta, usaré la función `fetch` de JavaScript, que permite realizar peticiones HTTP, y obtener el resultado como un objeto json.
+Ya tenemos formado el endpoint de la API de Mastodon, y, para llevar a cabo la consulta, usaré la función `fetch` de JavaScript, que permite realizar peticiones HTTP, y obtener el resultado como un objeto `json`.
 
 ```js
 const server = 'https://mastodon.social';
@@ -188,7 +188,7 @@ postsElement.innerHTML = `
 
 Con la función `map` puedo iterar sobre cada elemento del objeto `posts` y acceder a cada una de las publicaciones, y luego puedo juntar todos los elementos formateados en una cadena de texto mediante la función `join`. El resultado se incluirá en el elemento `<div>` con el id `posts` mediante el método `innerHTML` de `postElement`. Es decir, obtengo cada publicación, esta se formatea, y se concatena o añade a la cadena de texto que conforma el contenido del elemento `<div>`; las publicaciones.
 
-## Formateando las publicaciones
+## Pintando...
 
 Para formatear las publicaciones, voy a usar una estructura de elementos `<li>` por cada publicación, como dije, y un elemento `<a>` para enlazar a la publicación original. Lo que quiero conseguir se parece a esto:
 
@@ -349,14 +349,15 @@ El código siguiente incluye el contenido mostrado hasta ahora en el artículo:
 </body>
 </html>
 ```
-
-Mediante el evento asociado a la carga de la página `DOMContentLoaded`, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)` y se muestran las publicaciones con `displayPosts(posts)`.
-
 No olvides sustituir los valores de `server`, `profileId` y `limit` con los que correspondan a tu propio perfil de Mastodon o el del perfil que desees consultar.
+
+# Cargando las publicaciones
+
+Aquí confluye todo. Mediante el evento asociado a la carga de la página `DOMContentLoaded`, que se incluye al final del script, se inicia la petición asíncrona a la API de Mastodon con `getLatestPosts(route)` y se muestran las publicaciones con `displayPosts(posts)`.
 
 # Estilos
 
-Para que el contenido se vea correctamente, es necesario definir algunos estilos en el archivo `style.css`.
+Para que el contenido se vea correctamente, es recomendable definir algunos estilos en el archivo `style.css`. Un ejemplo:
 
 ```css
 .invisible {
@@ -388,6 +389,12 @@ Se incluye también la clase `.invisible` para imágenes y vectores SVG. Si bien
 Por su parte, la clase `.ellipsis` se usa para mostrar puntos suspensivos `…` al final de los enlaces acortados.
 
 A partir de estos estilos es posible aplicar estilos propios al contenido mostrado.
+
+# Experimenta por tu cuenta
+
+Como has podido comprobar a lo largo de este artículo, acceder a la API de Mastodon es un proceso sencillo que nos permite integrar el contenido de una cuenta en nuestros propios proyectos mediante código JavaScript. Desde la construcción del endpoint y la gestión de la respuesta asíncrona con fetch, hasta el formateo final de los datos considerando casos como las republicaciones o el contenido multimedia, has visto los fundamentos para crear tu propio visor de publicaciones.
+
+Te animo a que tomes el código completo, lo adaptes con tus propios datos y experimentes modificando la lógica de displayPosts y el css para personalizar aún más la presentación. Y si te surgen dudas o mejoras, no dudes en explorar la documentación oficial de la API, donde encontrarás muchas más posibilidades.
 
 # Saber más
 
