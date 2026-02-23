@@ -11,11 +11,12 @@ tags:
     - retro
     - Sinclair QL
 ---
-En esta entrada iré actualizando el material de que dispongo relacionado con el ordenador Sinclair QL.
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
 # Sinclair QL
+
+Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
 
 ## Configuraciones habituales
 
@@ -39,15 +40,15 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QIMSI, "QIMSI Logic 0.98 Driver 1.10".
 - QIMSI GOLD USB.
 - Qubide 1,52.
-- Qubide de José Leandro, con ampliación de memoria de 512 Mb. y swich ROM REBEL/QUBATA, 582656 bytes libres.
+- Qubide de José Leandro, con ampliación de memoria de 512 Mb., sin through port y con swich ROM REBEL/QUBATA, 582656 bytes libres.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres.
 - QLUB, adaptador de red QL-PC USB.
 - 2 convertidores QL-VGA.
 - QSound.
-- Ampliación 512Kb.
-- Ampliación RAM 256 de Álvaro Alea.
+- 512Kb expanderam de Miracle System con through port.
+- Ampliación RAM 256 de Álvaro Alea con through port.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Monitor Vision QL, 12 pulgadas.
 - Kempston joystick quickshot II + adaptador de Joystick.
@@ -120,10 +121,14 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 # Inves Spectrum+
 
-## Hardware
+La otra máquina Sinclair de que dispongo.
 
-- Inves Spectrum+.
-- Fuente alimentación.
-- Cable antena.
-- Joystick.
+El equipo consta de:
+
+- Ordenador Inves Spectrum+.
+- Fuente de alimentación.
+- Cable de antena.
+
+## Expansiones
 - Dandanator Mini 1.0 sin conector de joystick, con carcasa.
+- Joystick para conectar al puerto del ordenador.
