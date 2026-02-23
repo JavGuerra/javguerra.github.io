@@ -34,7 +34,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes. Reparado 2024-02.
 - QL teclado inglés Schön serie 700929, ISS 6, D14-081581 con ROM Minerva 1.98 e IPC Hermes, serie 3878. Reparado 2024-02.
 
-### Extensiones
+### Expansiones
 
 - QIMSI, "QIMSI Logic 0.98 Driver 1.10".
 - QIMSI GOLD USB.
@@ -43,6 +43,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres.
+- QLUB, adaptador de red QL-PC USB.
+- 2 convertidores QL-VGA.
 - QSound.
 - Ampliación 512Kb.
 - Ampliación RAM 256 de Álvaro Alea.
@@ -60,15 +62,14 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Carcasa para QLUB.
 - Carcasa para QIMSI.
 - Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
+- 2 carcasas para convcertidor QL-VGA.
 - Tarjeta micro-SD 16Gb para QIMSI.
 - Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
 - 54 microdrives *.
 - En torno a 40 almohadillas para microdrive.
-- Adaptador de red QLUB.
-- 2 convertidores QL-VGA con carcasa impresa *.
-- 2 cables de red de QL.
-- 3 cables de red de QL nuevos, por probar.
+- 2 cables de red de QL originales.
+- 2 cables de red de QL nuevos para QLUB, por probar.
 - 3 cables conectores serie.
 - 2 adaptadores serie.
 - 2 convertidores serie-paralelo.
@@ -79,12 +80,10 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 Reguladores de corriente RECOM R-78B5.0-1.5.
 - 1 Placa reguladora de corriente similar a Teotroid (Aliexpress).
 - 2 disqueteras de MicroPeripherals *.
-- 2 cables de red originales.
-- 2 cables de red nuevos para la QLUB.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 12 patas de goma de repuesto.
 - 12 patas de plástico. Tres por cada QL.
-- 4 x fuente de alimentación (una con conector inglés).
+- 4 x fuente de alimentación (una con enchufe inglés).
 - 4 tapas de puerto de expansión. Una por QL.
 - 4 tapas de expansión de microdrive. Una por QL.
 - 4 tapas de ROM. Una por QL.
@@ -92,8 +91,9 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 3 tornillos exteriores largos de repuesto.
 - 4 tornillos exteriores medianos de repuesto.
 - Adaptador IDE-USB para DOM.
-- Adaptador microSD para QIMSI.
-- Adaptador microSD para QIMSI GOLD.
+- Adaptador microSD para QIMSI y QIMSI GOLD.
+- 9 tarjetas micro SD para QIMSI y QIMSI GOLD de distintos tamaños.
+- Estuche de tarjetas micro SD.
 
 ## (*) Para reparar
 
@@ -110,9 +110,11 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tetroid Gold Card battery suply.
 - 2 carcasas para cartuchos ROM a medida.
 
-Y tal vez...
+**Y tal vez...**
 - Caja original de QL y corchos.
 - QL Alemán + teclado español.
+- Teclado mecánico bajo perfil español para QL versión AH.
+- Aurora.
 - RomDisq.
 - QL-SD.
 
