@@ -19,8 +19,9 @@ En esta entrada iré actualizando el material de que dispongo relacionado con el
 
 ## Configuraciones habituales
 
-- QL con teclado Schön inglés con: Gold Card, Minerva, Hermes, QIMSI, ratón, y doble unidad de disqueteras externas.
-- QL con teclado español con: Qubide con ampliación de 512Kb, Hermes, ROM TK2 + RAMdisk.
+- QL con teclado Schön inglés con: Gold Card, Minerva, Hermes, QIMSI, micro SD, ratón, y doble unidad de disqueteras externas.
+- QL con teclado español con: Qubide de José Leandro con ampliación de 512Kb incorporada, Hermes, ROM TK2 + RAMdisk.
+- QL con teclado inglés (ver. AH) con: QIMSI GOLD USB.
 
 ## Hardware
 
@@ -35,14 +36,16 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ### Extensiones
 
-- QIMSI GOLD USB.
 - QIMSI, "QIMSI Logic 0.98 Driver 1.10".
+- QIMSI GOLD USB.
 - Qubide 1,52.
 - Qubide de José Leandro, con ampliación de memoria de 512 Mb. y swich ROM REBEL/QUBATA, 582656 bytes libres.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres.
 - QSound.
+- Ampliación 512Kb.
+- Ampliación RAM 256 de Álvaro Alea.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Monitor Vision QL, 12 pulgadas.
 - Kempston joystick quickshot II + adaptador de Joystick.
@@ -54,13 +57,15 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ### Accesorios
 
-- QLUB.
+- Carcasa para QLUB.
 - Carcasa para QIMSI.
-- Tarjeta micro-SD 32Gb para QIMSI GOLD.
+- Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
 - Tarjeta micro-SD 16Gb para QIMSI.
+- Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
 - 54 microdrives *.
 - En torno a 40 almohadillas para microdrive.
+- Adaptador de red QLUB.
 - 2 convertidores QL-VGA con carcasa impresa *.
 - 2 cables de red de QL.
 - 3 cables de red de QL nuevos, por probar.
@@ -70,10 +75,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 cables de antena de TV.
 - 1 Cable adaptador de video DIN QL a Euroconector *.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
-- 2 disipadores con reguladores 7805 sustituidos.
-- 2 convertidores RECOM R-78B5.0-1.5.
+- 2 Disipadores con reguladores 7805 sustituidos.
+- 2 Reguladores de corriente RECOM R-78B5.0-1.5.
+- 1 Placa reguladora de corriente similar a Teotroid (Aliexpress).
 - 2 disqueteras de MicroPeripherals *.
 - 2 cables de red originales.
+- 2 cables de red nuevos para la QLUB.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 12 patas de goma de repuesto.
 - 12 patas de plástico. Tres por cada QL.
@@ -81,11 +88,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 4 tapas de puerto de expansión. Una por QL.
 - 4 tapas de expansión de microdrive. Una por QL.
 - 4 tapas de ROM. Una por QL.
+- Caja similar a "Transform box" para microdrives de Álvaro Alea.
 - 3 tornillos exteriores largos de repuesto.
 - 4 tornillos exteriores medianos de repuesto.
 - Adaptador IDE-USB para DOM.
-- Adaptador microSD para QIMSI GOLD.
 - Adaptador microSD para QIMSI.
+- Adaptador microSD para QIMSI GOLD.
 
 ## (*) Para reparar
 
@@ -96,16 +104,13 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Buscado
 
-- Ampliación RAM 256 de Álvaro Alea, para combinar con Qubide de José Leandro.
 - Minerva RTC MK2 + multi ROM de Álvaro Alea.
 - 2 Tetroid QL Power.
 - Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
-- 2 carcasas para cartuchos ROM.
-- Carcasa para QLUB.
+- 2 carcasas para cartuchos ROM a medida.
 
 Y tal vez...
-- Caja "Transform box" para microdrives.
 - Caja original de QL y corchos.
 - QL Alemán + teclado español.
 - RomDisq.
