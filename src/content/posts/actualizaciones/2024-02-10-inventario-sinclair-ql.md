@@ -105,10 +105,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Buscado
 
-- Minerva RTC MK2 + multi ROM de Álvaro Alea.
-- 2 Tetroid QL Power.
-- Tetroid ROM swicher.
+- QuintupLer 512Kb de Chr$.
+- Minerva ROM with Toolkit 2 de Chr$.
+- o bien Minerva RTC MK2 + multi ROM de Álvaro Alea.
+- o bien Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
+- 2 Tetroid QL Power.
 - 2 carcasas para cartuchos ROM a medida.
 
 **Y tal vez...**
