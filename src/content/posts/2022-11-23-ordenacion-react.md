@@ -170,11 +170,11 @@ Los iconos mostrados en la captura de este ejemplo corresponden a la librería [
 
 # En resumen
 
-De forma interactiva hemos establecido un criterio de ordenación, modificado el aspecto de los botones según este nuevo criterio y, como consecuencia, obtenido un nuevo listado de productos ordenados a través de la API preparada para ello, gracias al `useEffect` que se ejecuta cuando cambia la ordenación o la página.
+A partir de la interacción del usuario, y gracias al `useEffect` que se ejecuta cuando se detecta el cambio, se ha establecido un criterio de ordenación diferente, modificado el aspecto de los botones según este nuevo criterio y, como consecuencia, se ha obtenido un listado actualizado de productos ordenados a través de la API preparada para ello.
 
-Para lograrlo, se han creado dos estados (`sortData` y `currentPage`) y un componente `Sort` que recibe `sortData`, `setSortData` y `setCurrentPage`. Este componente detecta los clics, cambia el estado de la ordenación en `sortData` mediante la función `handleIcon` (activando solo un filtro cada vez y alternando entre ascendente y descendente), vuelve a la página 1 con `setCurrentPage(1)` y muestra el icono apropiado para cada filtro usando el componente `SortIcon`.
+Para lograrlo, se han creado dos estados (`sortData` y `currentPage`) y un componente `Sort` que recibe `sortData`, `setSortData` y `setCurrentPage`. Este componente detecta los clics, cambia el estado de la ordenación en `sortData` mediante la función `handleIcon` (activando solo un filtro cada vez y alternando entre ascendente y descendente), luego vuelve a la página 1 con `setCurrentPage(1)` y muestra el icono apropiado para cada filtro usando el componente `SortIcon`.
 
-Tomando esto como referencia, ya puedes hacer tus propios filtros de ordenación para tu nueva aplicación React.
+Tomando todo esto como referencia, ya puedes hacer tus propios filtros de ordenación para tu nueva aplicación React.
 
 # Enlaces
 
