@@ -76,6 +76,7 @@ Haz click en los enlaces para más información:
 - [Get Millie Black](https://www.filmaffinity.com/es/film932123.html) - HBO Max
 - [Mad Men](https://www.filmaffinity.com/es/film596790.html) - ¿? 
 - [Patrick Melrouse](https://www.filmaffinity.com/es/film254511.html) - ¿?
+- [Then Newsreader](https://www.filmaffinity.com/es/film670356.html) - Netflix
 
 # Siglo XX
 
