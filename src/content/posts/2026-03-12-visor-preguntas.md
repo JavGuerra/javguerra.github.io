@@ -15,7 +15,7 @@ tags:
     - herramienta
 ---
 
-Recientemente me presenté a una certificación en mi trabajo, y contábamos con un banco de preguntas y respuestas para repasar. Es frecuente también que, en nuevos exámenes se incluyan preguntas de exámenes anteriores, por lo que decidi prepararme una aplicación para repasar y aprender las respuestas a las preguntas. En esta entrada verás cómo funciona y podrás acceder al código para descargarlo.
+Recientemente me presenté a una certificación en mi trabajo, y contábamos con un banco de preguntas y respuestas para repasar. Es frecuente también que, en nuevos exámenes se incluyan preguntas de exámenes anteriores, por lo que decidi prepararme una aplicación para estudiar y aprender las respuestas a las preguntas. En esta entrada verás cómo funciona y podrás acceder al código para descargarlo.
 
 ## El programa visor
 
@@ -40,7 +40,7 @@ Al abrir la aplicación, esta importa un fichero llamado `bancoDePreguntas.js` q
 
 - Cada una de las preguntas del banco de preguntas
 - Las respuestas posibles asociadas a cada pregunta
-. El número de respuesta correcta de entre las respuestas
+- El número de respuesta correcta de entre las respuestas
 - El número de examen al que corresponde la pregunta (opcional)
 
 La estructura de los datos es la siguiente:
