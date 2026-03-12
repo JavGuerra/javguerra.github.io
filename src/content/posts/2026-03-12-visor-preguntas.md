@@ -1,7 +1,7 @@
 ---
 route: visor-preguntas
 title: Visor para banco de preguntas
-description: Programa para recorrer y estudiar exámenes a través de sus preguntas y respuestas.
+description: Aplicación web para recorrer y estudiar exámenes a través de sus preguntas y respuestas.
 author: JavGuerra
 pubDate: 2026-03-12
 coverImage:
@@ -9,9 +9,9 @@ coverImage:
   alt: Screenshot
 tags:
     - JavaScript
-    - código
     - HTML
     - CSS
+    - código
     - herramienta
 ---
 
