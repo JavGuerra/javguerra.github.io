@@ -20,8 +20,8 @@ Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
 
 ## Configuraciones habituales
 
-- QL con teclado Schön inglés con: Gold Card, Minerva, Hermes, QIMSI, micro SD, ratón, y doble unidad de disqueteras externas.
-- QL con teclado español con: Qubide de José Leandro con ampliación de 512Kb incorporada, Hermes, ROM TK2 + RAMdisk.
+- QL con teclado Schön inglés con: Gold Card, Minerva, Hermes, QIMSI, ratón, y doble unidad de disqueteras externas.
+- QL con teclado español con: Qubide de José Leandro con ampliación de 512Kb incorporada, Hermes, Disco DOM 512Mb, ROM TK2 + RAMdisk.
 - QL con teclado inglés (ver. AH) con: QIMSI GOLD USB.
 
 ## Hardware
@@ -51,7 +51,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Ampliación RAM 256 de Álvaro Alea con through port.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Monitor Vision QL, 12 pulgadas.
-- Kempston joystick quickshot II + adaptador de Joystick.
+- Kempston joystick quickshot II.
 - Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
 - Ratón StarMouse, serie 200763 *.
 - Ratón serie Genius tres botones.
@@ -63,7 +63,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Carcasa para QLUB.
 - Carcasa para QIMSI.
 - Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
-- 2 carcasas para convcertidor QL-VGA.
+- 2 carcasas para convertidor QL-VGA.
 - Tarjeta micro-SD 16Gb para QIMSI.
 - Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
@@ -74,6 +74,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 3 cables conectores serie.
 - 2 adaptadores serie.
 - 2 convertidores serie-paralelo.
+- 1 adaptador de Joystick.
 - 2 cables de antena de TV.
 - 1 Cable adaptador de video DIN QL a Euroconector *.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
@@ -120,6 +121,10 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Aurora.
 - RomDisq.
 - QL-SD.
+
+## Otros
+
+- Manuales, libros, revistas y folletos por catalogar.
 
 # Inves Spectrum+
 
