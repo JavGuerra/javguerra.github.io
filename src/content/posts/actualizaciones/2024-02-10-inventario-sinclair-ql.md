@@ -106,11 +106,13 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Buscado
 
-- QuintupLer 512Kb de Chr$.
+- Tetroid TDI2 interface.
+- Sinclair QL FLEX (External) Memory Expansion.
 - Minerva ROM with Toolkit 2 de Chr$.
 - o bien Minerva RTC MK2 + multi ROM de Álvaro Alea.
 - o bien Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
+- QL Power Converter.
 - 2 Tetroid QL Power.
 - 2 carcasas para cartuchos ROM a medida.
 
