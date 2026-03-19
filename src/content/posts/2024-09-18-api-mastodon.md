@@ -22,6 +22,8 @@ Me centraré en la parte de JavaScript y no tanto en la integración con Astro, 
 
 El lector debe conocer las funciones avanzadas de JavaScript como asincronía y llamadas a APIs para seguir correctamente esta entrada.
 
+<span class="note">**Nota**: Este artículo ha sido publicado también en [IfGeekThen](https://ifgeekthen.nttdata.com/s/post/accediendo-a-la-api-de-mastodon-MCKLT5EQTUINBVBMVGH7W6S2MYXM), el blog de NTT Data, el 18 de marzo de 2026.</span>
+
 # API de Mastodon
 
 Realizaré la consulta a la [API de Mastodon](https://docs.joinmastodon.org/api/) mediante la función `fetch` de JavaScript.
@@ -401,3 +403,4 @@ Te animo a que tomes el código completo, lo adaptes con tus propios datos y exp
 - [Mastodon](https://es.wikipedia.org/wiki/Mastodon_(red_social))
 - [Mastodon API](https://docs.joinmastodon.org/api/)
 - Ejemplo de uso: [Social](/social)
+
