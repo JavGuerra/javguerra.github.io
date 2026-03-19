@@ -113,13 +113,15 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - o bien Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
 - QL Power Converter.
-- 2 Tetroid QL Power.
+- 2 Tetroid QL Power (fuente de alimentación).
 - 2 carcasas para cartuchos ROM a medida.
+- Membrana para teclado.
+- Cable miniUSB a USB.
 
 **Y tal vez...**
 - Caja original de QL y corchos.
 - QL Alemán + teclado español.
-- Teclado mecánico bajo perfil español para QL versión AH.
+- Teclado mecánico bajo perfil español para QL.
 - Aurora.
 - RomDisq.
 - QL-SD.
