@@ -101,26 +101,26 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 - +40 microdrives inoperativos por almohadilla.
 - Ratón StarMouse inoperativo.
-- 2 Disqueteras MicroPeriferals no operativas.
+- 2 Disqueteras MicroPeriferals no operativas (sustituidas).
 - Carcasa de conector de cable DIN QL a Euroconector.
 
 ## Buscado
 
-- Tetroid TDI2 interface.
 - Sinclair QL FLEX (External) Memory Expansion.
 - Minerva ROM with Toolkit 2 de Chr$.
 - o bien Minerva RTC MK2 + multi ROM de Álvaro Alea.
 - o bien Tetroid ROM swicher.
 - Tetroid Gold Card battery suply.
-- QL Power Converter.
-- 2 Tetroid QL Power (fuente de alimentación).
-- 2 carcasas para cartuchos ROM a medida.
+- 2 Tetroid QL Power.
+- Tetroid TDI2 interface.
+- QL Power Converter (fuente de alimentación).
 - Membrana para teclado.
 - Cable miniUSB a USB.
+- QL Alemán + teclado inglés o español.
 
 **Y tal vez...**
 - Caja original de QL y corchos.
-- QL Alemán + teclado español.
+- 2 carcasas para cartuchos ROM a medida.
 - Teclado mecánico bajo perfil español para QL.
 - Aurora.
 - RomDisq.
