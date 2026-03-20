@@ -48,7 +48,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 convertidores QL-VGA.
 - QSound.
 - 512Kb expanderam de Miracle System con through port.
-- Ampliación RAM 256 de Álvaro Alea con through port.
+- Ampliación RAM 256 de Álvaro Alea con through port *.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Monitor Vision QL, 12 pulgadas.
 - Kempston joystick quickshot II.
@@ -99,9 +99,10 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## (*) Para reparar
 
-- +40 microdrives inoperativos por almohadilla.
+- +40 microdrives inoperativos por problemas con la almohadilla.
 - Ratón StarMouse inoperativo.
 - 2 Disqueteras MicroPeriferals no operativas (sustituidas).
+- Ampliación de memoria de Álvaro Alea.
 - Carcasa de conector de cable DIN QL a Euroconector.
 
 ## Buscado
