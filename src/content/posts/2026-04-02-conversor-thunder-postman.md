@@ -33,7 +33,30 @@ Thunder Client exporta las colecciones en un formato JSON propio. Postman y Brun
 
 Puedes descargar el script desde el: [<button>Repositorio del conversor</button>](https://github.com/JavGuerra/conversor-thunder-postman)
 
-## el script paso a paso
+## Dificultades de la conversión
+
+**Estructura inconsistente del JSON de Thunder Client**  
+Las exportaciones no siguen un formato fijo: las peticiones pueden estar en `requests`, en `items`, en `tests` o en arrays con nombres personalizados como `requests_carpeta_auth`. El script tuvo que aprender a buscar en cualquier lugar.
+
+**Carpetas anidadas sin un identificador claro**  
+Thunder Client a veces usa `parentId`, otras veces `_parentId`, o simplemente anida objetos. Reconstruir la jerarquía a cualquier nivel requirió una función recursiva robusta.
+
+**Variables en URLs**  
+Thunder Client permite `{{variables}}` en las URLs. Si intentas parsear la URL con `new URL()`, el script falla. Hubo que detectar y proteger estos casos.
+
+**Autenticación dispersa**  
+La autenticación puede venir en un bloque `auth` o directamente en los headers. Además, hay que soportar Bearer, Basic y API Key (que puede ir en header o en query param).
+
+**Archivos en formdata**  
+Los archivos no se representan como strings simples, sino como objetos con ruta o strings especiales (`@/ruta`). Hay que identificarlos y convertirlos al formato que espera Postman.
+
+**Headers con espacios**  
+Algunos headers exportados tenían espacios al inicio o final del nombre, lo que provocaba errores en Bruno. Hubo que limpiarlos con `trim()`.
+
+**BOM en archivos Windows**  
+Los archivos exportados desde Windows incluyen una marca de orden de bytes (BOM) invisible que rompe el parseo JSON. Hubo que detectarla y eliminarla.
+
+## El script paso a paso
 
 ### 1. Lee el archivo de entrada
 El script recibe como parámetro el archivo JSON exportado desde Thunder Client. Verifica que el archivo existe y que es un JSON válido. Si el archivo tiene BOM (marca de orden de bytes típica de Windows), lo elimina automáticamente para evitar errores.
@@ -61,7 +84,7 @@ Escribe el archivo JSON en el formato estándar de Postman Collection v2.1.0, li
 ### 7. Muestra estadísticas
 Al finalizar, informa sobre cuántas peticiones y carpetas se han convertido.
 
-## Características principales destacadas
+## El resultado: características principales destacadas
 
 | Característica | Qué hace |
 |----------------|----------|
@@ -96,5 +119,5 @@ node convertir-thunder-a-postman.js prueba-thunder.json coleccion-postman.json
 
 ## Enlaces
 
-- [Repositorio para descargar el conversor](https://github.com/JavGuerra/conversor-thunder-postman)
+- [Repositorio desde donde descargar el conversor](https://github.com/JavGuerra/conversor-thunder-postman)
 - [Cliente Bruno](https://www.usebruno.com/)
