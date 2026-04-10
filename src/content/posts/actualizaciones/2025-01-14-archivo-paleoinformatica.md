@@ -74,6 +74,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf), PDF.
 
+- [Dan Bricklin's Web Site](http://www.bricklin.com/default.htm) historia de Visical, web de la primera hoja de cálculo, mantenido por su autor.
+
 ## Otros
 
 - [Internet Artifacts](https://neal.fun/internet-artifacts/) Hitos de la red.
