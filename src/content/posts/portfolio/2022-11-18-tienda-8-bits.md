@@ -97,7 +97,7 @@ Material usado sin ánimo de lucro bajo criterios didácticos y formativos.
 - [Video de la presentación en YouTube](https://youtu.be/XlswjqhxJZ8)  
 - [Presentación en PDF](https://github.com/JavGuerra/tienda-8-bits/blob/main/presentacion.pdf)  
 
-__Artículos informativos elaborados por el autor relacionados con esta práctica:__:  
+__Artículos informativos elaborados por el autor relacionados con esta práctica__:  
 
 - [Usando populate con paginate y filtrando los resultados](/blog/populate-paginate-fitrado)  
 - [Generar enlaces dinámicos de imágenes almacenadas en MongoDB](/blog/rutas-dinamicas-imagenes-mongodb)  
