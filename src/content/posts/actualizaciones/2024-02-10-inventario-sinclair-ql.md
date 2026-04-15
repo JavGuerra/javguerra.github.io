@@ -37,7 +37,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ### Expansiones
 
-- QIMSI, "QIMSI Logic 0.98 Driver 1.10".
+- QIMSI, Actualizada a "QIMSI Logic 1.21 Driver 1.10", antes: "QIMSI Logic 0.98 Driver 1.10".
 - QIMSI GOLD USB.
 - Qubide 1,52.
 - Qubide de José Leandro, con ampliación de memoria de 512 Mb., sin through port y con swich ROM REBEL/QUBATA, 582656 bytes libres.
