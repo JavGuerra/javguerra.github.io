@@ -81,9 +81,10 @@ Se pueden incorporar nuevas preguntas al banco de preguntas o también intercamb
 Como todo programa, puede ser mejorado. Aquí algunas propuestas:
 
 - Desordenar las respuestas.
-- Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
 - Opción para mantener o no la solución a las preguntas al cambiar de pregunta.
 - Añadir notas no obligatorias a las preguntas. 
+- Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
+- Seleccionar uno o varios exámenes para mostrar, excluyendo el resto, o bien seleccionar exámenes a excluir, mostrando el resto.
 - Incluir un fichero de configuración para personalizar el visor.
 
 ## Consideración
