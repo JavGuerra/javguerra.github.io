@@ -81,6 +81,7 @@ Se pueden incorporar nuevas preguntas al banco de preguntas o también intercamb
 Como todo programa, puede ser mejorado. Aquí algunas propuestas:
 
 - Desordenar las respuestas.
+- Añadir un selector interactivo de examen.
 - Opción para mantener o no la solución a las preguntas al cambiar de pregunta.
 - Añadir notas no obligatorias a las preguntas. 
 - Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
