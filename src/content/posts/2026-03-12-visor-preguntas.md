@@ -80,7 +80,8 @@ Se pueden incorporar nuevas preguntas al banco de preguntas o también intercamb
 
 Como todo programa, puede ser mejorado. Aquí algunas propuestas:
 
-- Desordenar las respuestas.
+- Añadir un título, no obligatorio, al banco de preguntas en bancoDePreguntas.js. 
+- Desordenar las posibles respuestas.
 - Añadir un selector interactivo de examen.
 - Opción para mantener o no la solución a las preguntas al cambiar de pregunta.
 - Opción para mostrar el resultado tras un tiempo determinado.
