@@ -76,7 +76,17 @@ Se pueden incorporar nuevas preguntas al banco de preguntas o también intercamb
 - El nuevo banco de preguntas debe tener el nombre `bancoDePreguntas.js`, por lo que se deberá renombar el fichero del banco de preguntas actual.
 - El banco de preguntas debe tener al menos una pregunta con sus correspondientes opciones, e indicar la respuesta correcta.
 
-## Características destacables
+## ToDo
+
+Como todo programa, puede ser mejorado. Aquí algunas propuestas:
+
+- Desordenar las respuestas.
+- Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
+- Opción para mantener o no la solución a las preguntas al cambiar de pregunta.
+- Añadir notas no obligatorias a las preguntas. 
+- Incluir un fichero de configuración para personalizar el visor.
+
+## Consideración
 
 Para su desarrollo básico se ha empleado la IA Copilot, y posteriormente ha sido modificado manualmente para añadir nuevas funcionalidades, para que sea accesible y para que se adapte a la ventana del dispositivo donde es abierto.
 
