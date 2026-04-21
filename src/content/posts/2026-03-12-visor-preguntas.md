@@ -83,6 +83,7 @@ Como todo programa, puede ser mejorado. Aquí algunas propuestas:
 - Desordenar las respuestas.
 - Añadir un selector interactivo de examen.
 - Opción para mantener o no la solución a las preguntas al cambiar de pregunta.
+- Opción para mostrar el resultado tras un tiempo determinado.
 - Añadir notas no obligatorias a las preguntas. 
 - Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
 - Seleccionar uno o varios exámenes para mostrar, excluyendo el resto, o bien seleccionar exámenes a excluir, mostrando el resto.
