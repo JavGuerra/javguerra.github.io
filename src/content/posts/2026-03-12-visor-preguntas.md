@@ -89,6 +89,7 @@ Como todo programa, puede ser mejorado. Aquí algunas propuestas:
 - Opción para indicar que una pregunta no debe ser mostrada, aunque esté en el banco de preguntas.
 - Seleccionar uno o varios exámenes para mostrar, excluyendo el resto, o bien seleccionar exámenes a excluir, mostrando el resto.
 - Incluir un fichero de configuración para personalizar el visor.
+- Hoja de estilos externa para posibilitar el cambio de diseño del visor.
 
 ## Consideración
 
