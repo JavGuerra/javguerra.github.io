@@ -29,7 +29,7 @@ Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
 ### Ordenadores
 
 ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
-- QL teclado español (antes alemán/Samsung), Tetroid ROM switcher, ISS _, Sin numeración, e IPC Hermes.
+- QL teclado español (antes alemán), Samsung, Tetroid ROM switcher, sin numeración (SGxx), e IPC Hermes.
 - QL teclado español, ROM MGE, ISS 7, D14-090906 e IPC Hermes.
 - QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes. Reparado 2024-02.
 - QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878. Reparado 2024-02.
