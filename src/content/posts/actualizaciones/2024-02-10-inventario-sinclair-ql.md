@@ -50,7 +50,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tetroid TDI2 interface. *
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres. En reparación por Álvaro Alea.
-- QLUB, adaptador de red QL-PC USB.
+- QLUB, adaptador de red QL-PC USB. *
 - 2 convertidores QL-VGA.
 - QSound.
 - 512Kb expanderam de Miracle System con through port.
@@ -116,6 +116,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QL antes alemán necesita revisión.
 - Puerto de expansión de QL JM (en reparación).
 - Tetroid TDI2 interface.
+- QLUB, adaptador de red QL-PC USB.
 - Convertidor QL-VGA.
 
 ## Buscado
