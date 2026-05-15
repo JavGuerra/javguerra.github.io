@@ -29,7 +29,7 @@ Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
 ### Ordenadores
 
 ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
-- QL teclado español (antes alemán), Samsung, Tetroid ROM switcher, sin numeración (SGxx), e IPC Hermes.
+- QL teclado español (antes alemán), Samsung, Tetroid ROM switcher, sin numeración (SGxx), e IPC Hermes. *
 - QL teclado español, ROM MGE, ISS 7, D14-090906 e IPC Hermes.
 - QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes. Reparado 2024-02.
 - QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878. Reparado 2024-02.
@@ -47,7 +47,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Qubide 1,52.
 - Qubide de José Leandro, con ampliación de memoria de 512 Mb., sin through port y con swich ROM REBEL/QUBATA, 582656 bytes libres.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
-- Tetroid TDI2 interface.
+- Tetroid TDI2 interface. *
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres. En reparación por Álvaro Alea.
 - QLUB, adaptador de red QL-PC USB.
@@ -55,7 +55,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QSound.
 - 512Kb expanderam de Miracle System con through port.
 - Ampliación RAM variable de Álvaro Alea con through port.
-- Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
+- Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas. *
 - Monitor Vision QL, 12 pulgadas.
 - Kempston joystick quickshot II.
 - Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
@@ -110,15 +110,21 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 ## (*) Para reparar
 
 - +40 microdrives inoperativos por problemas con la almohadilla.
+- Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - 2 Disqueteras MicroPeriferals no operativas (sustituidas).
 - Ratón StarMouse inoperativo.
-- Puerto de expansión de QL.
+- QL antes alemán necesita revisión.
+- Puerto de expansión de QL JM (en reparación).
+- Tetroid TDI2 interface.
+- Convertidor QL-VGA.
 
 ## Buscado
 
 - 2 Placas reguladoras de corriente adaptada por Álvaro Alea.
 - 2 Carcasas ROM por Álvaro Alea.
-- 1 Cartucho ROM ICE diseñado por Zerover
+- 1 Cartucho ROM ICE diseñado por Zerover.
+- 1 Tapa superior de QL, sin teclas.
+- 4 teclas de teclado español: 3, 7, 9 y +/=.
 
 
 **Y tal vez...**
