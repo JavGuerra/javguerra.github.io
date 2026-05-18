@@ -35,11 +35,6 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878. Reparado 2024-02.
 - QL teclado inglés, ROM JM, ISS 6, D14-078592. En reparación por Álvaro Alea. *
 
-### Sustituidos, intercambiados o sin uso
-
-- QL teclado inglés, ROM AH, ISS 5, D09-014922. IPC2 8749 sustituido por FP1162 para teclados Schön.
-- 2 Reguladores de corriente RECOM R-78B5.0-1.5.
-
 ### Expansiones
 
 - QIMSI, Actualizada a "QIMSI Logic 1.21 Driver 1.10", con conexión USB, antes: "QIMSI Logic 0.98 Driver 1.10", con conexión de teclado.
@@ -103,9 +98,14 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Estuche de tarjetas micro SD.
 - 1 membrana para teclado.
 
-## Otros materiales.
+### Otros materiales.
 
 - Manuales, libros, revistas y folletos por catalogar.
+
+## Sustituidos, intercambiados o sin uso
+
+- QL teclado inglés, ROM AH, ISS 5, D09-014922. IPC2 8749 sustituido por FP1162 para teclados Schön. Equipo intercambiado por el D14-090906 a Álvaro Alea en mayo de 2026.
+- 2 Reguladores de corriente RECOM R-78B5.0-1.5 no aptos para QL.
 
 ## (*) Para reparar
 
@@ -122,6 +122,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 ## Buscado
 
 - 2 Placas reguladoras de corriente adaptada por Álvaro Alea.
+- 1 sustituto de batería para Gold Card.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
 - 1 Tapa superior de QL, sin teclas.
