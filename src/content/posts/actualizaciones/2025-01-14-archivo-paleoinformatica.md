@@ -62,9 +62,13 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Graphical User Interface Gallery](http://toastytech.com/guis/), otro sitio. (sólo en http)
 
-- [WinWorld](https://winworldpc.com/library/operating-systems), Sistemas operativos.
+- [WinWorld](https://winworldpc.com/library/operating-systems), Sistemas Operativos.
 
-- [Virtual x86](https://copy.sh/v86/), virtualización de sistemas.
+- [Virtual x86](https://copy.sh/v86/), virtualización de Sistemas Operativos vintage.
+
+- [The Virtual OS Museum](https://virtualosmuseum.org/), virtualización de Sistemas Operativos vintage.
+
+- [PCjs Machines](https://www.pcjs.org/), emulación de software y Sistremas Operativos vintage.
 
 - [InfiniteMac](https://infinitemac.org/), virtualización de sistemas Mac.
 
@@ -75,8 +79,6 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 - [The History of the ALGOL Effort](https://heerdebeer.org/ALGOL/The_History_of_ALGOL.pdf), PDF.
 
 - [Dan Bricklin's Web Site](http://www.bricklin.com/default.htm) historia de Visical, web de la primera hoja de cálculo, mantenido por su autor.
-
-- [The Virtual OS Museum](https://virtualosmuseum.org/), virtualización de sistemas vintage.
 
 ## Otros
 
