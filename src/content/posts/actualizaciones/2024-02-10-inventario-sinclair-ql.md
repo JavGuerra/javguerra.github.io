@@ -55,19 +55,19 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 - Monitor Vision QL, 12 pulgadas.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
-- QIMSI, "QIMSI Logic 1.21 Driver 1.10", con conexión USB.
-- QIMSI GOLD USB.
-- Qubide 1,52.
-- Qubide de José Leandro, con ampliación de memoria de 512 Mb., sin through port y con swich ROM REBEL/QUBATA, 582656 bytes libres.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - Tetroid TDI2 interface.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres. En reparación por Álvaro Alea.
-- QLUB, adaptador de red QL-PC USB.
-- 2 convertidores QL-VGA elaborados por TitoxUnix.
-- QSound elaborada por TitoxUnix.
 - 512Kb expanderam de Miracle System con through port.
 - Ampliación RAM variable de Álvaro Alea con through port.
+- QLUB, adaptador de red QL-PC USB.
+- QIMSI, "QIMSI Logic 1.21 Driver 1.10", con conexión USB.
+- QIMSI GOLD USB.
+- Qubide 1,52.
+- Qubide de José Leandro, con ampliación de memoria de 512 Mb., sin through port y con swich ROM REBEL/QUBATA, 582656 bytes libres.
+- QSound elaborada por TitoxUnix.
+- 2 convertidores QL-VGA elaborados por TitoxUnix.
 - Kempston joystick quickshot II.
 - Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
 - Ratón StarMouse, serie 200763.
@@ -84,7 +84,6 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tarjeta micro-SD 16Gb para QIMSI.
 - Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
-- 4 Hermes 2.20 por Álvaro Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
 - 54 microdrives.
 - En torno a 40 almohadillas restantes para microdrive.
 - 2 cables de red de QL originales.
@@ -95,9 +94,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 adaptador de Joystick.
 - 2 cables de antena de TV.
 - 1 Cable adaptador de video DIN QL a Euroconector.
+- 1 ROM Minerva v.1.98 n.3878 instalada.
+- 1 ROM swich de Tetroid ver.2 (2018) instalada.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
+- 4 Hermes 2.20 por Álvaro Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
 - 1 Disipador con regulador 7805, con condensador sustituido en el QL alemán.
-- 1 Placa reguladora de corriente adaptada por Álvaro Alea incluida en QL alemán.
+- 1 Placa reguladora de corriente adaptada por Álvaro Alea instalda en QL alemán.
 - 2 disqueteras de MicroPeripherals sustituidas.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 11 patas de goma de repuesto.
@@ -117,18 +119,19 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Sustituidos, intercambiados o sin uso
 
-- 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
+- 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con IC FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
 - 2024 - 2 Reguladores de corriente RECOM R-78B5.0-1.5. Dan problemas con Gold Card.
 
 ## Actualizados, reparados o en reparación
 
 - 2026-06 - QLUB, en reparación por Chr$, alemania.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
+- 2025-05 - Reemplazo en QL alemán de teclas alemanas distintas al teclado español donadas por José Leandro (17 teclas, faltan 4).
 - 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
 - 2026-05 - Intercambio de teclados y ROMs entre equipos propios:
   - D14-078592 cede teclado español y ROM MGE a D14-090906.
   - D14-090906 cede ROM switch a QL alemán y teclado inglés a D14-078592.
-  - QL alemán que cede ROM JM a D14-078592.
+  - QL alemán cede ROM JM a D14-078592.
 - 2026-04 - QIMSI actualizada a "QIMSI Logic 1.21 Driver 1.10", con conexión USB, antes: "QIMSI Logic 0.98 Driver 1.10", con conexión de teclado, por Maskenlos, alemania.
 - 2025-11 - D14-081581 reparado por Juanjo Ruiz. Sustitución del cableado del teclado Schön.
 - 2025 - Sustitución del IPC 8749 por Hermes de Álvaro Alea en varios equipos. 
@@ -153,11 +156,11 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 sustituto de batería para Gold Card.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
-- 1 Tapa superior de QL, sin teclas.
-- 4 teclas de teclado español: 3, 7, 9 y +/=.
+- 4 teclas de teclado español para QL alemán: 3, 7, 9 y +/=.
 
 **Y tal vez...**
 - Teclado mecánico bajo perfil español para QL.
+- Tapa superior de QL, sin teclas.
 - RomDisq.
 - Aurora.
 - Caja original de QL y corchos.
