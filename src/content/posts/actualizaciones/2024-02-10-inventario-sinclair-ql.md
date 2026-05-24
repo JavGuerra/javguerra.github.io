@@ -54,6 +54,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 ### Expansiones
 
 - Monitor Vision QL, 12 pulgadas.
+- Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - QIMSI, "QIMSI Logic 1.21 Driver 1.10", con conexión USB.
 - QIMSI GOLD USB.
 - Qubide 1,52.
@@ -67,7 +68,6 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QSound elaborada por TitoxUnix.
 - 512Kb expanderam de Miracle System con through port.
 - Ampliación RAM variable de Álvaro Alea con through port.
-- Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - Kempston joystick quickshot II.
 - Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
 - Ratón StarMouse, serie 200763.
@@ -84,9 +84,9 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tarjeta micro-SD 16Gb para QIMSI.
 - Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
-- 4 Hermes 2.20 por Álvario Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
+- 4 Hermes 2.20 por Álvaro Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
 - 54 microdrives.
-- En torno a 40 almohadillas para microdrive.
+- En torno a 40 almohadillas restantes para microdrive.
 - 2 cables de red de QL originales.
 - 2 cables de red de QL nuevos para QLUB.
 - 3 cables conectores serie.
@@ -96,16 +96,16 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2 cables de antena de TV.
 - 1 Cable adaptador de video DIN QL a Euroconector.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
-- 1 Disipador con regulador 7805 sustituido.
-- 1 Placa reguladora de corriente adaptada por Álvaro Alea.
-- 2 disqueteras de MicroPeripherals.
+- 1 Disipador con regulador 7805, con condensador sustituido en el QL alemán.
+- 1 Placa reguladora de corriente adaptada por Álvaro Alea incluida en QL alemán.
+- 2 disqueteras de MicroPeripherals sustituidas.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
-- 12 patas de goma de repuesto.
-- 12 patas de plástico. Tres por cada QL.
-- 4 x fuente de alimentación (una con enchufe inglés).
-- 4 tapas de puerto de expansión. Una por QL.
-- 4 tapas de expansión de microdrive. Una por QL.
-- 4 tapas de ROM. Una por QL.
+- 11 patas de goma de repuesto.
+- 15 patas de plástico. Tres por cada QL.
+- 5 x fuente de alimentación, 3 UE, 2 UK (una con enchufe inglés).
+- 5 tapas de puerto de expansión. Una por QL.
+- 5 tapas de expansión de microdrive. Una por QL.
+- 5 tapas de ROM. Una por QL. La del QL alemán apantallada.
 - 1 Caja similar a "Transform box" para microdrives de Álvaro Alea.
 - 3 tornillos exteriores largos de repuesto.
 - 4 tornillos exteriores medianos de repuesto.
@@ -113,12 +113,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Adaptador microSD para QIMSI y QIMSI GOLD.
 - 9 tarjetas micro SD para QIMSI y QIMSI GOLD de distintos tamaños.
 - Estuche de tarjetas micro SD.
-- 1 membrana para teclado.
+- 1 membrana de repuesto para teclado.
 
 ## Sustituidos, intercambiados o sin uso
 
 - 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
-- 2024 - 2 Reguladores de corriente RECOM R-78B5.0-1.5 que dan problemas con la Gold Card.
+- 2024 - 2 Reguladores de corriente RECOM R-78B5.0-1.5. Dan problemas con Gold Card.
 
 ## Actualizados, reparados o en reparación
 
@@ -133,8 +133,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2025-11 - D14-081581 reparado por Juanjo Ruiz. Sustitución del cableado del teclado Schön.
 - 2025 - Sustitución del IPC 8749 por Hermes de Álvaro Alea en varios equipos. 
 - 2024-02 - Reparaciones por José Leandro:
-  - D14-081581 - Reparación de toma de corriente.
-  - D14-085687 - Reparación del bus de expansión, soldadura.
+  - D14-085687 - Reparación de toma de corriente, soldadura.
+  - D14-081581 - Reparación del bus de expansión, soldadura.
 - Sustituidas todas las membranas por membranas nuevas de la tirada de RWAP.
 
 ## Para reparar
