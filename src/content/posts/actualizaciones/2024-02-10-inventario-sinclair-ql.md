@@ -152,7 +152,9 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Buscado
 
-- 2 Placas reguladoras de corriente adaptada por Álvaro Alea.
+- 2 Tetroid QL power module,
+  - o bien 2 Placas reguladoras de corriente adaptada por Álvaro Alea,
+  - o bien dos TRACO TSR 2-2450 de 2A.
 - 1 sustituto de batería para Gold Card.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
