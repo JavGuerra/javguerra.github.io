@@ -21,17 +21,17 @@ Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
 
 **Índice de contenidos**
 
-- Configuraciones habituales.
-- Hardware.
-- Ordenadores.
-- Expansiones.
-- Accesorios.
-- Sustituidos, intercambiados o sin uso.
-- Actualizados, reparados o en reparación.
-- Para reparar.
-- Buscado, Y tal vez...
-- Otros materiales.
-- Inves Spectrum+ y expansiones.
+- [Configuraciones habituales](#configuraciones-habituales).
+- [Hardware](#hardware).
+- [Ordenadores](#ordenadores).
+- [Expansiones](#expansiones).
+- [Accesorios](#accesorios).
+- [Sustituidos, intercambiados o sin uso](#sustituidos-intercambiados-o-sin-uso).
+- [Actualizados, reparados o en reparación](#actualizados-reparados-o-en-reparacion).
+- [Para reparar](#para-reparar).
+- [Buscado, Y tal vez...](#buscado).
+- [Otros materiales](#otros-materiales).
+- [Inves Spectrum+ y expansiones](#inves-spectrum).
 
 ## Configuraciones habituales
 
@@ -115,7 +115,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ## Sustituidos, intercambiados o sin uso
 
-- 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 a Álvaro Alea.
+- 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
 - 2024 - 2 Reguladores de corriente RECOM R-78B5.0-1.5 que dan problemas con la Gold Card.
 
 ## Actualizados, reparados o en reparación
@@ -123,6 +123,10 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2026-06 - QLUB, en reparación por Chr$, alemania.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
 - 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
+- 2026-05 - Intercambios de teclados y ROMs:
+  - D14-078592 cede teclado español y ROM MGE a D14-090906.
+  - D14-090906 cede ROM switch a QL alemán y teclado inglés a D14-078592.
+  - QL alemán que cede ROM JM a D14-078592.
 - 2026-04 - QIMSI actualizada a "QIMSI Logic 1.21 Driver 1.10", con conexión USB, antes: "QIMSI Logic 0.98 Driver 1.10", con conexión de teclado, por Maskenlos, alemania.
 - 2025-11 - D14-081581 reparado por Juanjo Ruiz. Sustitución del cableado del teclado Schön.
 - 2025 - Sustitución del IPC 8749 por Hermes en varios equipos. 
