@@ -13,11 +13,11 @@ tags:
     - Sinclair Spectrum
 ---
 
-<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
-
 # Sinclair QL
 
 Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
+
+<span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
 **Índice de contenidos**
 
@@ -35,23 +35,25 @@ Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 
 ## Configuraciones habituales
 
-- QL (Samsung) teclado español con: TDI2, ROM switcher, Hermes, QIMSI Gold USB, ratón, y acceso a doble unidad de disqueteras externas.
-- QL teclado inglés Schön con: Gold Card, Minerva, Hermes, QIMSI USB, ratón, y acceso a doble unidad de disqueteras externas.
-- QL teclado español con: Qubide con ampliación de 512Kb, Hermes, ROM externa, Disco DOM 512Mb.
+- El que será el QL de batalla: QL (Samsung) con teclado español, TDI2, ROM switcher, Hermes, QIMSI Gold USB, ratón, y acceso a doble unidad de disqueteras externas.
+- El QL para exposición, con equipamiento antiguo: QL con teclado inglés Schön, Gold Card, Minerva, Hermes, QIMSI USB, ratón, y acceso a doble unidad de disqueteras externas.
+- El QL con genuino sabor español: QL con teclado español, Qubide y con ampliación de 512Kb de José Leandro, Hermes, ROM externa, Disco DOM 512Mb.
+- Dos QL en reserva, uno inglés y otro español.
 
 ## Hardware
 
 ### Ordenadores
 
 ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
-- QL teclado español (antes alemán), Samsung, Tetroid ROM switcher, sin numeración (SGxx), e IPC Hermes.
-- QL teclado español, ROM MGE, ISS 7, D14-090906 e IPC Hermes.
-- QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes. Reparado 2024-02.
-- QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878.
-- QL teclado inglés, ROM JM, ISS 6, D14-078592.
+1. QL teclado español (antes alemán), Samsung, Tetroid ROM switcher, sin numeración (SGxx), e IPC Hermes.
+2. QL teclado español, ROM MGE, ISS 7, D14-090906 e IPC Hermes.
+3. QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes.
+4. QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878.
+5. QL teclado inglés, ROM JM, ISS 6, D14-078592.
 
 ### Expansiones
 
+- Monitor Vision QL, 12 pulgadas.
 - QIMSI, "QIMSI Logic 1.21 Driver 1.10", con conexión USB.
 - QIMSI GOLD USB.
 - Qubide 1,52.
@@ -61,12 +63,11 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres. En reparación por Álvaro Alea.
 - QLUB, adaptador de red QL-PC USB.
-- 2 convertidores QL-VGA.
-- QSound.
+- 2 convertidores QL-VGA elaborados por TitoxUnix.
+- QSound elaborada por TitoxUnix.
 - 512Kb expanderam de Miracle System con through port.
 - Ampliación RAM variable de Álvaro Alea con through port.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
-- Monitor Vision QL, 12 pulgadas.
 - Kempston joystick quickshot II.
 - Ratón para QIMSI/GOLD marca CHERRY, 2 botones + rueda (sin uso), con adaptador USB / MicroUSB.
 - Ratón StarMouse, serie 200763.
@@ -83,6 +84,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Tarjeta micro-SD 16Gb para QIMSI.
 - Tarjeta micro-SD 16Gb para QIMSI GOLD.
 - DOM disk 512Mb + cable alimentación.
+- 4 Hermes 2.20 por Álvario Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
 - 54 microdrives.
 - En torno a 40 almohadillas para microdrive.
 - 2 cables de red de QL originales.
@@ -104,7 +106,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 4 tapas de puerto de expansión. Una por QL.
 - 4 tapas de expansión de microdrive. Una por QL.
 - 4 tapas de ROM. Una por QL.
-- Caja similar a "Transform box" para microdrives de Álvaro Alea.
+- 1 Caja similar a "Transform box" para microdrives de Álvaro Alea.
 - 3 tornillos exteriores largos de repuesto.
 - 4 tornillos exteriores medianos de repuesto.
 - Adaptador IDE-USB para DOM.
@@ -123,14 +125,17 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2026-06 - QLUB, en reparación por Chr$, alemania.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
 - 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
-- 2026-05 - Intercambios de teclados y ROMs:
+- 2026-05 - Intercambio de teclados y ROMs entre equipos propios:
   - D14-078592 cede teclado español y ROM MGE a D14-090906.
   - D14-090906 cede ROM switch a QL alemán y teclado inglés a D14-078592.
   - QL alemán que cede ROM JM a D14-078592.
 - 2026-04 - QIMSI actualizada a "QIMSI Logic 1.21 Driver 1.10", con conexión USB, antes: "QIMSI Logic 0.98 Driver 1.10", con conexión de teclado, por Maskenlos, alemania.
 - 2025-11 - D14-081581 reparado por Juanjo Ruiz. Sustitución del cableado del teclado Schön.
-- 2025 - Sustitución del IPC 8749 por Hermes en varios equipos. 
-- 2024-02 - D14-081581 reparado por José Leandro. Reparación de toma de corriente.
+- 2025 - Sustitución del IPC 8749 por Hermes de Álvaro Alea en varios equipos. 
+- 2024-02 - Reparaciones por José Leandro:
+  - D14-081581 - Reparación de toma de corriente.
+  - D14-085687 - Reparación del bus de expansión, soldadura.
+- Sustituidas todas las membranas por membranas nuevas de la tirada de RWAP.
 
 ## Para reparar
 
