@@ -17,21 +17,21 @@ tags:
 
 # Sinclair QL
 
-Listado de recursos de que dispongo relacionado con el ordenador Sinclair QL.
+Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 
 **Índice de contenidos**
 
-- [Configuraciones habituales](#configuraciones-habituales).
-- [Hardware](#hardware).
-- [Ordenadores](#ordenadores).
-- [Expansiones](#expansiones).
-- [Accesorios](#accesorios).
-- [Sustituidos, intercambiados o sin uso](#sustituidos-intercambiados-o-sin-uso).
-- [Actualizados, reparados o en reparación](#actualizados-reparados-o-en-reparacion).
-- [Para reparar](#para-reparar).
-- [Buscado, Y tal vez...](#buscado).
-- [Otros materiales](#otros-materiales).
-- [Inves Spectrum+ y expansiones](#inves-spectrum).
+- [Configuraciones habituales](#configuraciones-habituales)
+- [Hardware](#hardware)
+- [Ordenadores](#ordenadores)
+- [Expansiones](#expansiones)
+- [Accesorios](#accesorios)
+- [Sustituidos, intercambiados o sin uso](#sustituidos-intercambiados-o-sin-uso)
+- [Actualizados, reparados o en reparación](#actualizados-reparados-o-en-reparación)
+- [Para reparar](#para-reparar)
+- [Buscado, Y tal vez...](#buscado)
+- [Otros materiales](#otros-materiales)
+- [Inves Spectrum+ y expansiones](#inves-spectrum)
 
 ## Configuraciones habituales
 
