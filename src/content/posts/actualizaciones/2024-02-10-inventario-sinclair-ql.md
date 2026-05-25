@@ -126,7 +126,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 - 2026-06 - QLUB, en reparación por Chr$, alemania.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
-- 2025-05 - Reemplazo en QL alemán de teclas alemanas distintas al teclado español donadas por José Leandro (17 teclas, faltan 4).
+- 2026-05 - 4 teclas de teclado español para QL alemán: 3, 7, 9 y +/= y carcasa superior donadas por TitoxUnix.
+- 2026-05 - Reemplazo en QL alemán de teclas alemanas distintas al teclado español donadas por José Leandro (17 teclas, faltan 4).
 - 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
 - 2026-05 - Intercambio de teclados y ROMs entre equipos propios:
   - D14-078592 cede teclado español y ROM MGE a D14-090906.
@@ -158,11 +159,9 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 sustituto de batería para Gold Card.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
-- 4 teclas de teclado español para QL alemán: 3, 7, 9 y +/=.
 
 **Y tal vez...**
 - Teclado mecánico bajo perfil español para QL.
-- Tapa superior de QL, sin teclas.
 - RomDisq.
 - Aurora.
 - Caja original de QL y corchos.
