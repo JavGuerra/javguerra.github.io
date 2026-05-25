@@ -18,6 +18,8 @@ El lector deberá conocer el funcionamiento básico de React y JavaScript para p
 
 Esta entrada está basada en el proyecto [«Tienda 8 bits»](/blog/tienda-8-bits), y puedes ver su funcionamiento en la [página del proyecto](https://javguerra.badared.com/proyecto/tienda8bits/).
 
+<span class="note">**Nota**: Este artículo ha sido publicado también en [IfGeekThen](https://ifgeekthen.nttdata.com/s/post/ordenando-resultados-en-react-MCYT76DWYR2JEVBLOOQWIOAIXD7Q), el blog de NTT Data, el 15 de abril de 2026.</span>
+
 # El ejemplo
 
 En nuestra web, queremos listar una serie de fichas de productos por tres criterios, **modelo de producto**, **precio** y **año de fabricación**, y queremos hacerlo alternativamente, es decir, por uno de entre esos tres criterios de ordenación cada vez.
