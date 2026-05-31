@@ -77,6 +77,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ### Accesorios
 
+- 2 Reguladores de corriente RECOM R-78B5.0-1.5. (Dan problemas con Gold Card.)
 - Carcasa para QLUB.
 - Carcasa para QIMSI.
 - Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
@@ -120,12 +121,15 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 ## Sustituidos, intercambiados o sin uso
 
 - 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con IC FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
-- 2024 - 2 Reguladores de corriente RECOM R-78B5.0-1.5. Dan problemas con Gold Card.
+- 2reguladores de corriente TRACO TSR 2-2450N para sustituir a los RECOM.
+
 
 ## Actualizados, reparados o en reparación
 
 - 2026-06 - QLUB, en reparación por Chr$, alemania.
+- 2026-06 - Soldar patillaje a los TRACO para enchufar en el conector, por Chr$.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
+- 2026-05 - Soldadura de la toma de corriente del QL alemán por Zerover.
 - 2026-05 - 4 teclas de teclado español para QL alemán: 3, 7, 9 y +/= y carcasa superior donadas por TitoxUnix.
 - 2026-05 - Reemplazo en QL alemán de teclas alemanas distintas al teclado español donadas por José Leandro (17 teclas, faltan 4).
 - 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
@@ -140,6 +144,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
   - D14-085687 - Reparación de toma de corriente, soldadura.
   - D14-081581 - Reparación del bus de expansión, soldadura.
 - Sustituidas todas las membranas por membranas nuevas de la tirada de RWAP.
+- Sustituidos chips de la QUBIDE por Zerover.
 
 ## Para reparar
 
@@ -176,10 +181,10 @@ La otra máquina Sinclair de que dispongo.
 
 El equipo consta de:
 
-- Ordenador Inves Spectrum+.
+- Ordenador Inves Spectrum+ serie 211539.
 - Fuente de alimentación.
 - Cable de antena.
 
 ## Expansiones
 - Dandanator Mini 1.0 sin conector de joystick, con carcasa.
-- Joystick para conectar al puerto del ordenador.
+- Kempston joystick quickshot II.
