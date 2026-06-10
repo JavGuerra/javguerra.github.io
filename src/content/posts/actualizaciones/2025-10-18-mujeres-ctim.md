@@ -61,6 +61,8 @@ Sin poner etiquetas, por orden alfabético, te propongo seguir a las CTIM divulg
 
 - [**Gloria Pino Ramírez**](https://linktr.ee/bienestar_psic), es Psicóloga, con Maestría en Psicología Clínica y Doctorado en Psicología. Máster en Coaching. Ver en: [Bienestar Psicológico](https://www.instagram.com/bienestar_psic/?hl=es).
 
+- [**Inés Moreno Sánchez**](https://www.traumatologageek.es/) Ingeniera reconvertida. 10+ años arreglando huesos. Historia de la medicina. Datos que no quieres ignorar. Ver en: [La traumatóloga geek](https://www.youtube.com/@traumatologageek)
+
 - **Laura Morán**, es Licenciada en Psicología por la Universidad de Deusto, está especializada en terapia familiar y de pareja, destacando, sobre todo, en el campo de la sexología. Ver en: [Instagram](https://www.instagram.com/lauramoranfdez/reels/).
 
 - [**Laura Morrón Ruiz de Gordejuela**](https://www.linkedin.com/in/laura-morr%C3%B3n-ruiz-de-gordejuela-38926b8a/), es Licenciada en Física por la Universidad de Barcelona y máster en Ingeniería y Gestión de las energías renovables por IL3. Ver en: [Los Mundos de Brana](https://losmundosdebrana.com/).
