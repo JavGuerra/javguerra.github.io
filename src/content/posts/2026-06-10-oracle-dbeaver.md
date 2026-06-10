@@ -5,7 +5,7 @@ description: Configuración de la aplicación con los drivers originales.
 author: JavGuerra
 pubDate: 2026-06-10
 coverImage:
-  image: '@/assets/img/oracle-dbeaver.png'
+  image: '@/assets/img/oracle-dbeaver.jpg'
   alt: Pantalla de ordenador con DBeaver conectado a BBDD Oracle
 tags:
     - herramienta
