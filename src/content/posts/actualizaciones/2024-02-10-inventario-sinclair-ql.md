@@ -35,9 +35,9 @@ Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 
 ## Configuraciones habituales
 
-- El que será el QL de batalla: QL (Samsung) con teclado español, TDI2, ROM switcher, Hermes, QIMSI Gold USB, ratón, y acceso a doble unidad de disqueteras externas.
-- El QL para exposición, con equipamiento antiguo: QL con teclado inglés Schön, Gold Card, Minerva, Hermes, QIMSI USB, ratón, y acceso a doble unidad de disqueteras externas.
-- El QL con genuino sabor español: QL con teclado español, Qubide y con ampliación de 512Kb de José Leandro, Hermes, ROM externa, Disco DOM 512Mb.
+- El que será el QL de batalla: QL (Samsung) con teclado español, ROM switcher, Hermes. ampliación hasta 896Kb RAM de Álvaro Alea, QIMSI Gold USB, ratón.
+- El QL para exposición, con el máximo equipamiento _vintage_: QL con teclado profesional inglés Schön, Gold Card, Minerva, Hermes, QIMSI USB, ratón, y acceso a doble unidad de disqueteras externas.
+- El QL con genuino sabor español: QL con teclado español, Qubide con ampliación de 512Kb de José Leandro, Hermes, Disco DOM 512Mb.
 - Dos QL en reserva, uno inglés y otro español.
 
 ## Hardware
@@ -117,11 +117,12 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 9 tarjetas micro SD para QIMSI y QIMSI GOLD de distintos tamaños.
 - Estuche de tarjetas micro SD.
 - 1 membrana de repuesto para teclado.
+- 1 carcasa superior de teclado.
 
 ## Sustituidos, intercambiados o sin uso
 
 - 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con IC FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
-- 2reguladores de corriente TRACO TSR 2-2450N para sustituir a los RECOM.
+- 2 reguladores de corriente TRACO TSR 2-2450N para sustituir a los RECOM.
 
 
 ## Actualizados, reparados o en reparación
@@ -155,6 +156,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - QL antes alemán tiene cuelgues aleatorios.
 - Batería de Tetroid TDI2 interface y revisar.
 - Revisar convertidor QL-VGA.
+- Carcasa superior de teclado con agujeros.
 
 ## Buscado
 
