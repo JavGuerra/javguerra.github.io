@@ -19,6 +19,7 @@ Este post es un compendio de algunas publicaciones y artículos propios en torno
 # Publicaciones especializadas
 
 ## «Sobrevivencias»
+
 Autopublicación · 15 dic. 2013
 
 ![Sobrevivencias](https://covers.openlibrary.org/b/id/7276858-L.jpg)  
@@ -27,6 +28,7 @@ Autopublicación · 15 dic. 2013
 **Resumen**: Libro de vivencias sobre el síndrome de Marfan publicadas en el blog Mundo Marfan Latino http://mundomarfan.org, que brinda un espejo en el que afectados y familiares puede mirarse, y aprender de la experiencia de los otros. Está divido en tres secciones: vivencias cotidianas, vivencias quirúrgicas y vivencias de los padres. El Marfan es una enfermedad rara y degenerativa del tejido conectivo relacionado con distintas partes del cuerpo. Afecta a 1 de cada 5.000 personas. Se caracteriza por un aumento inusual de la estatura y de la longitud de las extremidades. Algunas de sus consecuencias pueden ser: discapacidad visual, problemas musculo-esqueléticos crónicos severos, problemas respiratorios, y problemas en el corazón y la aorta potencialmente peligrosos para la vida de la persona afectada. El libro es una sinfonía tocada por muchas manos y dirigida desde el corazón por este reto que nos ha tocado vivir. Son historias de personas comunes cuyas vidas les han impuesto el desafío de sacar lo mejor de sí.
 
 ## Uso de la Web 2.0 en las enfermedades poco frecuentes: Caso Mundo Marfan Latino
+
 Revista 'Interacción y Perspectiva' Trabajo social vol. 3 n.º 1. Universidad del Zulia-Venezuela · 28 feb. 2013  
 
 [<button>Mostrar publicación</button>](https://dialnet.unirioja.es/servlet/articulo?codigo=5154935)
@@ -38,13 +40,16 @@ Estos servicios hacen de la web 2.0 el escenario perfecto para el encuentro de a
 Palabras clave: Web 2.0, redes sociales, Red Social de Pacientes, enfermedades raras, síndrome de Marfan.
 
 ## Revista conmemorativa «20 años del Sinclair QL en España»
-SinclairQL.es · 9 mar. 2005  
+
+**SinclairQL.es** · 9 mar. 2005  
+
 ![20 años del QL en España](https://badaman.badared.com/ql/revista20/portada.jpg)
 [<button>Mostrar publicación</button>](https://badaman.badared.com/ql/revista20/index.htm)  
 
 Esta revista conmemorativa del 20 aniversario del QL versión MGE es el resultado de la mirada crítica, comprometida y también ilusionada hacia el mundo del ordenador QL en nuestro país. Un repaso de lo más significativo de los últimos 20 años y un paseo hacia el conocimiento del ordenador más controvertido de Sinclair de la mano de quienes mejor lo conocen, sus usuarios.
 
 ##  Teleeducación a través de Internet
+
 Revista 'Campo Abierto' no. 16 del ICE (Instituto de Ciencias de la Educación de la Universidad de Extremadura) · 1 mar. 1999
 
 [<button>Mostrar publicación</button>](https://redined.educacion.gob.es/xmlui/handle/11162/28165)  
@@ -53,7 +58,7 @@ Revista 'Campo Abierto' no. 16 del ICE (Instituto de Ciencias de la Educación d
 
 Este artículo pretende aportar una metodología efectiva sobre la que poner en práctica los conocimientos tecnológicos y la preparación e impartición de contenidos a través de una concepción más participativa de la labor del alumno que implique el uso de los medios de telecomunicación y persiga el aprovechamiento de estos recursos para la formación a distancia a otros grupos con necesidades formativa.  
 
-# Artículos en revistas genéricas
+# Artículos en revistas
 
 ##  El ordenador como herramienta en el arte
 Revista poética «Almacén» · 1 oct. 2003  
@@ -63,21 +68,28 @@ Revista poética «Almacén» · 1 oct. 2003
 Artículo publicado en dos partes que hace una breve introducción sobre el arte por ordenador y sus orígenes, para continuar con la descripción de los casos de uso y la implicación del ordenador en el proceso creativo en un momento histórico en el que estas herramientas se estaban popularizando.
 
 ## Artículos sobre informática
-Revista local «El Trastero», 1995- 1996.
 
-Escaneo: [Presentación Asociación Bip!](https://javguerra.badared.com/docs/t51_bip.jpg) - Jul. 1995 - n.51 - 228Kb.  
-Escaneo: [Ya llegó Windows 95](https://javguerra.badared.com/docs/t53_win.jpg) - Sept. 1995 - n.53 - 254Kb.  
-Escaneo: [FISEX 95](https://javguerra.badared.com/docs/t56_fisex.jpg) - Oct. 1995 - n.56 - 269Kb.  
-Escaneo: [El ordenador de tus sueños](https://javguerra.badared.com/docs/t58_hw.jpg) - Nov. 1995 - n.58 - 390Kb.  
-Escaneo: [Shareware, Freeware y Dominio Público](https://javguerra.badared.com/docs/t60_sw.jpg) - Dic. 1995 - n.60 - 338Kb.  
-Escaneo: [La máquina informática](https://javguerra.badared.com/docs/t62_inf.jpg) - Ene. 1996 - n.62 - 360Kb.  
-Escaneo: [NC Computadoras conectadas](https://javguerra.badared.com/docs/t66_nc.jpg) - Mar. 1996 - n.66 - 228Kb.  
+**Revista local «El Trastero»**, 1995- 1996.
+
+- Escaneo: [Presentación Asociación Bip!](https://javguerra.badared.com/docs/t51_bip.jpg) - Jul. 1995 - n.51 - 228Kb.  
+- Escaneo: [Ya llegó Windows 95](https://javguerra.badared.com/docs/t53_win.jpg) - Sept. 1995 - n.53 - 254Kb.  
+- Escaneo: [FISEX 95](https://javguerra.badared.com/docs/t56_fisex.jpg) - Oct. 1995 - n.56 - 269Kb.  
+- Escaneo: [El ordenador de tus sueños](https://javguerra.badared.com/docs/t58_hw.jpg) - Nov. 1995 - n.58 - 390Kb.  
+- Escaneo: [Shareware, Freeware y Dominio Público](https://javguerra.badared.com/docs/t60_sw.jpg) - Dic. 1995 - n.60 - 338Kb.  
+- Escaneo: [La máquina informática](https://javguerra.badared.com/docs/t62_inf.jpg) - Ene. 1996 - n.62 - 360Kb.  
+- Escaneo: [NC Computadoras conectadas](https://javguerra.badared.com/docs/t66_nc.jpg) - Mar. 1996 - n.66 - 228Kb.  
+
+**Revista on-line IfGeekThen de NTT DATA**
+
+- [Accediendo a la API de Mastodon](https://ifgeekthen.nttdata.com/s/post/accediendo-a-la-api-de-mastodon-MCKLT5EQTUINBVBMVGH7W6S2MYXM) - 2026-03-18
+- [Ordenando resultados en React](https://ifgeekthen.nttdata.com/s/post/ordenando-resultados-en-react-MCYT76DWYR2JEVBLOOQWIOAIXD7Q) - 2026-04.15
+- [Kit básico para manejo del DOM](https://ifgeekthen.nttdata.com/s/post/kit-basico-para-manejo-del-dom-MC33VANXA4HFFARH6TCP3P7DTPZY) - 2026-04-24
 
 # Programas temáticos interactivos
 
 ## Proyecto PI - InfoClic
 
-Año 2001.
+**Año 2001:**
 
 Basado en tecnologías IrDA y/o Bluetooth, pretendía crear una serie de recursos, accesibles desde teléfonos móviles y otros medios electrónicos, que dotasen de información al instante a visitantes a grandes exposiciones, áreas comerciales, etc, así como asistencia a personas discapacitadas.
 
@@ -87,7 +99,7 @@ Fue un antecedente de los códigos QR o los chips RFID que son tan comunes hoy e
 
 ## Programa Interactivo "Badajoz Tu Ciudad"
 
-Año 1997.
+**Año 1997:**
 
 ![Badajoz tu ciudad](https://javguerra.badared.com/contenidos/btc/titulba.gif)  
 
@@ -97,13 +109,13 @@ Programa interactivo con información completa y amplia acerca de la ciudad de B
 
 ## Catálogo Oficial Interactivo «Fisex 95»
 
-Año 1995.
+**Año 1995:**
 
 Elaboración del Catálogo Oficial Interactivo de la feria FISEX 95. Badajoz. Creado con el software NeoBook.
 
 ## Proyecto Mediateca
 
-Año 1995.
+**Año 1995:**
 
 ![Proyecto Mediateca](https://javguerra.badared.com/proyecto/mediateca/logo.gif)  
 
