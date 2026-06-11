@@ -38,9 +38,9 @@ footer a:hover { @apply underline; }
 .postLink { 
     @apply ms-6 list-disc leading-snug my-3; 
 
-    a { @apply no-underline px-3 border rounded-full border-gray-50 dark:border-gray-950; }
+    a { @apply text-violet-900 dark:text-violet-300 no-underline px-3 border rounded-full border-gray-50 dark:border-gray-950; }
 
-    a:hover { @apply text-violet-900 dark:text-violet-300 bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700; } 
+    a:hover { @apply text-gray-900 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700; } 
 }
 
 article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
