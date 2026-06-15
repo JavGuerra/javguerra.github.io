@@ -5,7 +5,7 @@ interface Props {
     img: string;
 }
 
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from "astro:transitions";
 
 const { pageTitle, description, img } = Astro.props;
 
@@ -50,8 +50,9 @@ const imageURL = new URL(img, Astro.site);
     <link rel="manifest" href="/manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
-    <ViewTransitions />
+   <ClientRouter />
     <meta name="view-transition" content="same-origin" />
 
-    <script is:inline data-goatcounter="https://codice.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script is:inline data-goatcounter="https://codice-javguerra.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   </head>
