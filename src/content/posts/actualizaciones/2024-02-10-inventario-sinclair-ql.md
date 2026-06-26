@@ -77,7 +77,8 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 ### Accesorios
 
-- 2 Reguladores de corriente RECOM R-78B5.0-1.5. (Dan problemas con Gold Card.)
+- 1 membrana de repuesto para teclado.
+- 1 carcasa superior de teclado.
 - Carcasa para QLUB.
 - Carcasa para QIMSI.
 - Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
@@ -99,8 +100,9 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 ROM swich de Tetroid ver.2 (2018) instalada.
 - 2 chips de ROM JM, que fueron sustituidos por Minerva.
 - 4 Hermes 2.20 por Álvaro Alea en distintos equipos y un Hermes 2.20 por TitoxUnix.
-- 1 Disipador con regulador 7805, con condensador sustituido en el QL alemán.
-- 1 Placa reguladora de corriente adaptada por Álvaro Alea instalda en QL alemán.
+- 2 reguladores de corriente TRACO TSR 2-2450N.
+- 1 Disipador con regulador 7805 con disipador y condensador sustituido en el QL alemán por un TRACO.
+- 1 disipador con regulador 7805 con disipador sustituido en el QL español por un TRACO.
 - 2 disqueteras de MicroPeripherals sustituidas.
 - 1 adaptador de ratón USB-PS2 (venía con ratón USB para QIMSI).
 - 11 patas de goma de repuesto.
@@ -116,24 +118,22 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Adaptador microSD para QIMSI y QIMSI GOLD.
 - 9 tarjetas micro SD para QIMSI y QIMSI GOLD de distintos tamaños.
 - Estuche de tarjetas micro SD.
-- 1 membrana de repuesto para teclado.
-- 1 carcasa superior de teclado.
 
 ## Sustituidos, intercambiados o sin uso
 
 - 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con IC FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
-- 2 reguladores de corriente TRACO TSR 2-2450N para sustituir a los RECOM.
-
+- 2 Reguladores de corriente RECOM R-78B5.0-1.5 sustituidos por TRACO TSR 2-2450N.
+- 1 Placa reguladora de corriente adaptada por Álvaro Alea.
 
 ## Actualizados, reparados o en reparación
 
-- 2026-06 - QLUB, en reparación por Chr$, alemania.
-- 2026-06 - Soldar patillaje a los TRACO para enchufar en el conector, por Chr$.
+- 2026-06 - QLUB, reparado por Chr$, alemania.
+- 2026-06 - Patillaje soldado a los TRACO para enchufar en el conector del 7805 del QL, por Chr$.
 - 2026-05 - D14-078592 en reparación por Álvaro Alea. Sustitución del puerto de expansión.
 - 2026-05 - Soldadura de la toma de corriente del QL alemán por Zerover.
-- 2026-05 - 4 teclas de teclado español para QL alemán: 3, 7, 9 y +/= y carcasa superior donadas por TitoxUnix.
-- 2026-05 - Reemplazo en QL alemán de teclas alemanas distintas al teclado español donadas por José Leandro (17 teclas, faltan 4).
-- 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes, del regulador y disipador por placa de Álvaro Alea, y sustitución de las teclas por las del teclado español.
+- 2026-05 - Carcasa superior y 4 teclas de teclado español para QL alemán: [3], [7], [9] y [+/=] donadas por TitoxUnix.
+- 2026-05 - Reemplazo en QL alemán de las teclas distintas al teclado español por las teclas donadas por José Leandro (17 teclas, faltaban 4).
+- 2026-05 - En el QL alemán, sustitución de la ROM JM por ROM Switch, del IPC 8749 por Hermes.
 - 2026-05 - Intercambio de teclados y ROMs entre equipos propios:
   - D14-078592 cede teclado español y ROM MGE a D14-090906.
   - D14-090906 cede ROM switch a QL alemán y teclado inglés a D14-078592.
@@ -166,6 +166,7 @@ ver [Fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 sustituto de batería para Gold Card.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
+- Diag ROM de Stephen Usher.
 
 **Y tal vez...**
 - Teclado mecánico bajo perfil español para QL.
