@@ -19,7 +19,7 @@ Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
-## **Índice de contenidos**
+## Índice de contenidos
 
 - [Configuraciones habituales](#configuraciones-habituales)
 - [Hardware](#hardware)
@@ -41,21 +41,22 @@ Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 - El QL con genuino sabor español: QL con teclado español, Qubide con ampliación de 512Kb de José Leandro, Hermes, Disco DOM 512Mb.
 - Dos QL en reserva, uno inglés y otro español.
 
-Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
-
 ## Hardware
+
+Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=coleccion)
 
 ### Ordenadores
 
-1. QL teclado español Samsung (antes alemán), Tetroid ROM switcher, ISS US3, sin numeración (SGxx), IPC Hermes y TRACO.
-2. QL teclado español, ROM MGE, ISS 7, D14-090906, IPC Hermes y TRACO.
-3. QL teclado español, ROM MGE, ISS 6, D14-085687 e IPC Hermes.
-4. QL teclado inglés Schön serie 700929, ROM Minerva 1.98, ISS 6, D14-081581 e IPC Hermes, serie 3878.
-5. QL teclado inglés, ROM JM, ISS 6, D14-078592.
+1. QL teclado español Samsung (antes alemán), ISS US3, sin numeración (SGxx), Tetroid ROM switcher, IPC Hermes y TRACO.
+2. QL teclado español, ISS 7, D14-090906, ROM MGE, IPC Hermes y TRACO.
+3. QL teclado español, ISS 6, D14-085687, ROM MGE e IPC Hermes.
+4. QL teclado inglés Schön, ISS 6, D14-081581, ROM Minerva e IPC Hermes.
+5. QL teclado inglés, ISS 6, D14-078592, ROM JM.
 
 ### Expansiones
 
 - Monitor Vision QL, 12 pulgadas.
+- Teclado inglés Schön serie 700929.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
 - Tetroid TDI2 interface.
@@ -155,7 +156,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 2026-04 - QIMSI actualizada a "QIMSI Logic 1.21 Driver 1.10", con conexión USB, antes: "QIMSI Logic 0.98 Driver 1.10", con conexión de teclado, por Maskenlos.
 
 - 2025-11 - D14-081581 reparado por Zerover. Sustitución del cableado del teclado Schön.
-- 2025 - Sustitución del IPC 8749 por Hermes de Álvaro Alea en varios equipos. 
+- 2025 - Sustitución del IPC 8749 por Hermes de Álvaro Alea en varios equipos.
 
 - 2024-02 - Sustitución de las disqueteras de MicroPeripherals por TitoxUnix.
 - 2024-02 - Reparaciones por José Leandro:
@@ -183,7 +184,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 Cartucho ROM ICE diseñado por Zerover.
 - Diag ROM de Stephen Usher.
 
-**Y tal vez...**
+### Y tal vez...
 
 - Teclado mecánico bajo perfil español para QL.
 - RomDisq.
