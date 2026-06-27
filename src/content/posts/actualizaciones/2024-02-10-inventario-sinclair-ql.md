@@ -27,6 +27,7 @@ Listado de recursos de que dispongo relacionados con el ordenador Sinclair QL.
 - [Expansiones](#expansiones)
 - [Accesorios](#accesorios)
 - [Sustituidos, intercambiados o sin uso](#sustituidos-intercambiados-o-sin-uso)
+- [Prestados](#prestados)
 - [Actualizados, reparados o en reparación](#actualizados-reparados-o-en-reparación)
 - [Para reparar](#para-reparar)
 - [Buscado, Y tal vez...](#buscado)
@@ -120,7 +121,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 9 tarjetas micro SD para QIMSI y QIMSI GOLD de distintos tamaños.
 - Estuche de tarjetas micro SD.
 
-## Sustituidos, intercambiados o sin uso actualmente
+## Sustituidos, intercambiados o sin uso
 
 - 2026-05 - QL teclado inglés, ROM AH, ISS 5, D09-014922, con IC FP1162 (sustituto de IPC 8749 para teclados Schön). Equipo intercambiado por el D14-090906 con ROM Switch de Álvaro Alea. Me quedo con el teclado inglés del D09-014922 y él con el teclado español del D14-090906.
 - 2 disqueteras Microperiferals sustituidas que no funcionan.
