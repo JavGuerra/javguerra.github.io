@@ -97,6 +97,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - 1 adaptador de Joystick.
 - 2 cables de antena de TV.
 - 2 cables DIN QL a QL-VGA.
+- 2 cables VGA macho-macho.
 - 1 cable adaptador de video DIN QL a Euroconector.
 - 1 ROM Minerva v.1.98 n.3878 instalada.
 - 1 ROM swich de Tetroid ver.2 (2018) instalada.
