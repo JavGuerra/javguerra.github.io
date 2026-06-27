@@ -59,7 +59,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 - Teclado inglés Schön serie 700929.
 - Doble unidad de disqueteras externas 1,44 MicroPeripherals con unidades sustituidas.
 - GoldCard v3, "GoldCard v2.49", 1879552 bytes libres.
-- Tetroid TDI2 interface.
+- Tetroid TDI2 interface 024003.
 - TrumpCard v1 "QubbeSoft P/D v2.00, 896K, Care/QJump 2.26", 857088 bytes libres.
 - MicroPeripherals Disk Interface DD50, serie 550959. "QFLP for Micro P Disc v1.15", 85504 bytes libres.
 - 512Kb expanderam de Miracle System con through port.
@@ -81,8 +81,8 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 ### Accesorios
 
 - 1 membrana de repuesto para teclado.
-- 1 carcasa superior de teclado.
-- Tapa en impresión 3D para carcasa superior de carcasa de teclado con agujeros.
+- 1 carcasa superior de QL con espacio de teclado vaciado (con agujeros).
+- Tapa de diseño en impresión 3D para ocultar agujeros de carcasa superior.
 - Carcasa para QLUB.
 - Carcasa para QIMSI.
 - Carcasa para QIMSI GOLD de Álvaro Alea con logo Sans Serif.
@@ -180,7 +180,7 @@ Ver [fotos de mi colección](https://badaman.badared.com/ql/galeria/?dir=colecci
 
 - 2 Tetroid QL power module,
   - o bien 2 Placas reguladoras de corriente adaptada por Álvaro Alea,
-- 1 sustituto de batería para Gold Card.
+- 1 sustituto de batería para Gold Card original.
 - 2 Carcasas ROM por Álvaro Alea.
 - 1 Cartucho ROM ICE diseñado por Zerover.
 - Diag ROM de Stephen Usher.
