@@ -48,6 +48,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Celebrating 50 years of Microsoft](https://www.gatesnotes.com/microsoft-original-source-code) - Gates Notes.
 
+- [Lanzamiento Amiga 1000 en 1985](https://youtu.be/rgRn44377No?si=QjQhTeHzlhFWRHLF) - Ordenador Amiga 1000.
+
 ## Hardware
 
 - [Old-Computers Museum](https://www.old-computers.com/), actualmente en reconstrucción, puede verse en Archive.org.
