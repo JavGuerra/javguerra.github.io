@@ -67,9 +67,7 @@ Pero probablemente la innovación histórica más importante fue otra: **la rees
 
 ### El legado
 
-Linux no es un descendiente directo de UNIX, sino un sistema **tipo Unix** desarrollado de forma independiente. Android, por su parte, utiliza el kernel Linux. macOS e iOS pertenecen a otra rama de la genealogía: derivan de la tecnología de NeXT, Mach y BSD.
-
-Aun así, todos ellos forman parte de una tradición informática profundamente influida por UNIX.
+Linux no es un descendiente directo de UNIX, sino un sistema **tipo Unix** desarrollado de forma independiente. Android, por su parte, utiliza el kernel Linux. macOS e iOS pertenecen a otra rama de la genealogía: derivan de la tecnología de NeXT, Mach y BSD. Aun así, todos ellos forman parte de una tradición informática profundamente influida por UNIX.
 
 Su mayor victoria quizá sea cultural: la combinación de procesos, archivos, tuberías, shells y herramientas pequeñas se convirtió en uno de los modelos de computación más duraderos de la historia.
 
@@ -87,9 +85,7 @@ No fue la primera interfaz gráfica de la historia —existían importantes ante
 
 ### La revolución técnica
 
-El Alto demostró que un ordenador podía diseñarse alrededor de la interacción humana y no alrededor de las limitaciones de los terminales de texto.
-
-El sistema permitió experimentar con documentos gráficos, edición [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG), tipografías, redes y entornos de programación visual.
+El Alto demostró que un ordenador podía diseñarse alrededor de la interacción humana y no alrededor de las limitaciones de los terminales de texto. El sistema permitió experimentar con documentos gráficos, edición [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG), tipografías, redes y entornos de programación visual.
 
 ### Innovación clave
 
@@ -101,9 +97,7 @@ La visión de Kay al combinar Alto y Smalltalk transformó el ordenador en un me
 
 ### El legado
 
-La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la informática gráfica de consumo.
-
-El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
+La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la informática gráfica de consumo. El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
 
 ---
 
@@ -117,9 +111,7 @@ Su importancia no estaba en tener una arquitectura tan sofisticada como Multics,
 
 CP/M separaba una parte relativamente independiente del hardware de otra encargada de las particularidades de cada máquina.
 
-Su componente **BIOS (Basic Input/Output System)** permitía adaptar el sistema a distintos equipos, mientras que el resto del sistema podía mantenerse en gran medida común.
-
-El resultado fue revolucionario: un mismo programa podía funcionar en diferentes ordenadores compatibles con CP/M.
+Su componente **BIOS (Basic Input/Output System)** permitía adaptar el sistema a distintos equipos, mientras que el resto del sistema podía mantenerse en gran medida común. El resultado fue revolucionario: un mismo programa podía funcionar en diferentes ordenadores compatibles con CP/M.
 
 ### Innovación clave
 
@@ -129,9 +121,7 @@ MS-DOS no fue simplemente una copia de CP/M. Microsoft obtuvo 86-DOS, desarrolla
 
 ### El legado
 
-CP/M ayudó a crear una idea fundamental para la informática personal: **el sistema operativo podía convertirse en una capa relativamente independiente de la máquina física**.
-
-Esa separación entre software y hardware acabaría siendo uno de los pilares de la industria del PC.
+CP/M ayudó a crear una idea fundamental para la informática personal: **el sistema operativo podía convertirse en una capa relativamente independiente de la máquina física**. Esa separación entre software y hardware acabaría siendo uno de los pilares de la industria del PC.
 
 ---
 
@@ -149,17 +139,13 @@ Uno de sus rasgos más conocidos fue el sistema de archivos Files-11, que incorp
 
 ### Innovación clave
 
-VMS también fue pionero en soluciones de **clustering y alta disponibilidad**, permitiendo conectar varios sistemas para compartir determinados recursos y servicios de forma coordinada.
-
-Pero su legado más famoso está relacionado con una persona.
+VMS también fue pionero en soluciones de **clustering y alta disponibilidad**, permitiendo conectar varios sistemas para compartir determinados recursos y servicios de forma coordinada. Pero su legado más famoso está relacionado con una persona.
 
 ### El legado
 
 **Dave Cutler**, uno de los principales arquitectos de VMS, pasó posteriormente a Microsoft y desempeñó un papel fundamental en el diseño de **Windows NT**.
 
-NT no fue simplemente «VMS para PC»: fue un sistema nuevo con su propia arquitectura. Pero la experiencia acumulada por Cutler y otros ingenieros de DEC tuvo una influencia enorme en su diseño.
-
-La familia moderna de Windows procede de aquella línea tecnológica de NT.
+NT no fue simplemente «VMS para PC»: fue un sistema nuevo con su propia arquitectura. Pero la experiencia acumulada por Cutler y otros ingenieros de DEC tuvo una influencia enorme en su diseño. La familia moderna de Windows procede de aquella línea tecnológica de NT.
 
 ---
 
@@ -177,41 +163,31 @@ En generaciones posteriores, especialmente **QNX Neutrino**, esta idea se llevó
 
 ### Innovación clave
 
-Uno de sus grandes puntos fuertes es el **aislamiento de fallos**.
-
-Los procesos y controladores pueden ejecutarse en espacios de memoria separados. Un fallo en un controlador no tiene por qué corromper la memoria del núcleo ni la de los demás procesos.
-
-Esto resulta especialmente valioso en sistemas de tiempo real, donde la previsibilidad y la recuperación ante errores pueden ser más importantes que la compatibilidad con aplicaciones de escritorio.
+Uno de sus grandes puntos fuertes es el **aislamiento de fallos**. Los procesos y controladores pueden ejecutarse en espacios de memoria separados. Un fallo en un controlador no tiene por qué corromper la memoria del núcleo ni la de los demás procesos. Esto resulta especialmente valioso en sistemas de tiempo real, donde la previsibilidad y la recuperación ante errores pueden ser más importantes que la compatibilidad con aplicaciones de escritorio.
 
 ### El legado
 
 QNX terminó encontrando su territorio natural en **automoción, sistemas industriales, telecomunicaciones, dispositivos médicos y otros sistemas embebidos y críticos**.
 
-No es correcto afirmar que sea el sistema operativo de «todos» los frenos ABS o centrales nucleares, pero sí es uno de los ejemplos más importantes de cómo una arquitectura de microkernel puede resultar extraordinariamente útil cuando la fiabilidad es prioritaria.
+No es el sistema operativo de «todos» los frenos ABS o centrales nucleares, pero sí es uno de los ejemplos más importantes de cómo una arquitectura de microkernel puede resultar extraordinariamente útil cuando la fiabilidad es prioritaria.
 
 ---
 
 ## 7. AmigaOS (Commodore, 1985) — Una revolución multimedia antes de tiempo
 
-En 1985, el Amiga parecía pertenecer a otra generación tecnológica respecto a muchos ordenadores domésticos de la época.
-
-Su sistema operativo, [AmigaOS](https://es.wikipedia.org/wiki/AmigaOS), fue diseñado alrededor de una máquina con hardware multimedia extraordinariamente avanzado para su precio.
+En 1985, el Amiga parecía pertenecer a otra generación tecnológica respecto a muchos ordenadores domésticos de la época. Su sistema operativo, [AmigaOS](https://es.wikipedia.org/wiki/AmigaOS), fue diseñado alrededor de una máquina con hardware multimedia extraordinariamente avanzado para su precio.
 
 ![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original)
 
 ### La revolución técnica
 
-La arquitectura del Amiga descargaba determinadas tareas gráficas, de memoria y de audio en sus chips personalizados, entre ellos **Agnus, Denise y Paula**.
-
-Esto permitía conseguir efectos gráficos y sonoros que habrían sido muy costosos para la CPU de un ordenador convencional.
+La arquitectura del Amiga descargaba determinadas tareas gráficas, de memoria y de audio en sus chips personalizados, entre ellos **Agnus, Denise y Paula**. Esto permitía conseguir efectos gráficos y sonoros que habrían sido muy costosos para la CPU de un ordenador convencional.
 
 ### Innovación clave
 
 El núcleo **Exec** proporcionaba multitarea preventiva y un sistema de comunicación entre tareas muy eficiente.
 
-AmigaOS era, sin embargo, diferente de los sistemas modernos en un aspecto fundamental: originalmente ofrecía **muy poca protección entre aplicaciones**. Una aplicación podía corromper memoria perteneciente a otra parte del sistema.
-
-Por eso, aunque la multitarea era muy avanzada, la robustez frente a programas defectuosos era considerablemente menor que en sistemas modernos con protección de memoria.
+AmigaOS era, sin embargo, diferente de los sistemas modernos en un aspecto fundamental: originalmente ofrecía **muy poca protección entre aplicaciones**. Una aplicación podía corromper memoria perteneciente a otra parte del sistema, por eso, aunque la multitarea era muy avanzada, la robustez frente a programas defectuosos era considerablemente menor que en sistemas modernos con protección de memoria.
 
 ### El legado
 
@@ -223,25 +199,17 @@ AmigaOS demostró que un ordenador doméstico podía ofrecer multitarea, gráfic
 
 ## 8. NeXTSTEP (NeXT, 1989) — El sistema que conectó UNIX con el futuro de Apple
 
-[NeXTSTEP](https://es.wikipedia.org/wiki/NeXTSTEP) fue desarrollado por la empresa fundada por **Steve Jobs** después de su salida de Apple.
-
-La máquina NeXT no consiguió conquistar el mercado de consumo, pero su software acabaría teniendo una influencia gigantesca.
+[NeXTSTEP](https://es.wikipedia.org/wiki/NeXTSTEP) fue desarrollado por la empresa fundada por **Steve Jobs** después de su salida de Apple. La máquina NeXT no consiguió conquistar el mercado de consumo, pero su software acabaría teniendo una influencia gigantesca.
 
 ### La revolución técnica
 
-NeXTSTEP combinaba tecnologías derivadas de **Mach y BSD** con un entorno de programación orientado a objetos basado en **Objective-C**.
-
-Su núcleo, basado en **Mach 2.5**, no seguía el modelo de micronúcleo puro: integraba componentes de BSD y otros servicios dentro del espacio privilegiado del sistema.
+NeXTSTEP combinaba tecnologías derivadas de **Mach y BSD** con un entorno de programación orientado a objetos basado en **Objective-C**. Su núcleo, basado en **Mach 2.5**, no seguía el modelo de micronúcleo puro: integraba componentes de BSD y otros servicios dentro del espacio privilegiado del sistema.
 
 ### Innovación clave
 
 La verdadera revolución estaba en las herramientas.
 
-**Interface Builder**, Objective-C y los frameworks de NeXT permitían construir interfaces gráficas mediante objetos reutilizables y conexiones visuales.
-
-En lugar de programar cada elemento de una interfaz desde cero, el desarrollador podía ensamblar componentes y definir sus relaciones.
-
-Esto anticipó muchas de las herramientas modernas de desarrollo visual.
+**Interface Builder**, Objective-C y los frameworks de NeXT permitían construir interfaces gráficas mediante objetos reutilizables y conexiones visuales. En lugar de programar cada elemento de una interfaz desde cero, el desarrollador podía ensamblar componentes y definir sus relaciones. Esto anticipó muchas de las herramientas modernas de desarrollo visual.
 
 ### El legado
 
@@ -273,15 +241,11 @@ La unión de la visión filosófica del software libre de GNU con el modelo de d
 
 Los **módulos cargables del kernel** permitieron ampliar el núcleo sin tener que recompilarlo completamente para cada cambio.
 
-Sin embargo, el cambio de paradigma fundamental fue doble: la invención de la **licencia GPL (copyleft)** por parte de Stallman —que garantiza legalmente que el código siga siendo libre para siempre— y el modelo organizativo iniciado por Torvalds, demostrando que un sistema de escala masiva podía evolucionar de manera abierta y colaborativa.
+El cambio de paradigma fundamental fue doble: la invención de la **licencia GPL (copyleft)** por parte de Stallman —que garantiza legalmente que el código siga siendo libre para siempre— y el modelo organizativo iniciado por Torvalds, demostrando que un sistema de escala masiva podía evolucionar de manera abierta y colaborativa.
 
 ### El legado
 
-GNU/Linux terminó dominando áreas que durante décadas habían estado reservadas a sistemas propietarios.
-
-Es la base de la mayor parte de la infraestructura de Internet, servidores, supercomputación, dispositivos embebidos y el pilar sobre el que se apoya el kernel de Android.
-
-En junio de 2026, la [estadística de familias de sistemas operativos de TOP500](https://www.top500.org/statistics/details/osfam/1) clasifica los **500 sistemas de la lista dentro de la familia de sistemas operativos Linux**. Sin embargo, esta categoría no significa que los 500 aparezcan identificados literalmente como «Linux»: la propia base de TOP500 muestra sistemas con nombres como TOSS, HPE Cray OS, RHEL o Kylin OS. El número 1 de esa edición, LineShine, utiliza Kylin OS.
+GNU/Linux terminó dominando áreas que durante décadas habían estado reservadas a sistemas propietarios, y es la base de la mayor parte de la infraestructura de Internet, servidores, supercomputación, dispositivos embebidos y el pilar sobre el que se apoya el kernel de Android.
 
 Su mayor legado, no obstante, va más allá de la técnica: demostró que la filosofía del software libre de Stallman y la metodología abierta de Torvalds podían crear la infraestructura tecnológica más importante del planeta.
 
@@ -293,17 +257,13 @@ Su mayor legado, no obstante, va más allá de la técnica: demostró que la fil
 
 ### La revolución técnica
 
-Plan 9 llevó mucho más lejos la idea de que los recursos del ordenador podían representarse mediante una interfaz uniforme.
-
-Su arquitectura utilizaba el protocolo **9P** para acceder a recursos locales o remotos, mientras que cada proceso podía tener su propio *namespace*, es decir, su propia visión de los recursos disponibles.
+Plan 9 llevó mucho más lejos la idea de que los recursos del ordenador podían representarse mediante una interfaz uniforme. Su arquitectura utilizaba el protocolo **9P** para acceder a recursos locales o remotos, mientras que cada proceso podía tener su propio *namespace*, es decir, su propia visión de los recursos disponibles.
 
 ### Innovación clave
 
 La red no era un añadido externo: formaba parte del modelo fundamental del sistema.
 
-Una instalación de Plan 9 podía estar compuesta por **servidores de archivos, servidores de CPU y terminales**, conectados mediante una infraestructura de red coherente.
-
-Esto no significaba que una máquina pudiera utilizar arbitrariamente la RAM física de otra como si fuera memoria local. La genialidad estaba en algo diferente: **los recursos remotos podían incorporarse al espacio de nombres del proceso y utilizarse mediante interfaces uniformes**.
+Una instalación de Plan 9 podía estar compuesta por **servidores de archivos, servidores de CPU y terminales**, conectados mediante una infraestructura de red coherente. Esto no significaba que una máquina pudiera utilizar arbitrariamente la RAM física de otra como si fuera memoria local. La genialidad estaba en algo diferente: **los recursos remotos podían incorporarse al espacio de nombres del proceso y utilizarse mediante interfaces uniformes**.
 
 ### El legado
 
@@ -315,29 +275,19 @@ Su influencia sobre los sistemas contemporáneos es indirecta pero profunda, esp
 
 ## 11. BeOS (Be Inc., 1995) — El sistema operativo diseñado alrededor del multimedia
 
-Tras su paso por Apple —donde llegó a liderar la división Macintosh tras la salida de Steve Jobs—, **Jean-Louis Gassée** fundó Be Inc. junto a Steve Sakoman con una misión muy concreta: construir una plataforma extremadamente rápida, libre de legados técnicos y totalmente orientada al **multimedia y el procesamiento paralelo** que se llamó [BeOS](https://es.wikipedia.org/wiki/BeOS).
-
-En una época en la que muchos sistemas de escritorio arrastraban décadas de compatibilidad hacia atrás, la apuesta fue empezar prácticamente de cero.
+Tras su paso por Apple —donde llegó a liderar la división Macintosh tras la salida de Steve Jobs—, **Jean-Louis Gassée** fundó Be Inc. junto a Steve Sakoman con una misión muy concreta: construir una plataforma extremadamente rápida, libre de legados técnicos y totalmente orientada al **multimedia y el procesamiento paralelo** que se llamó [BeOS](https://es.wikipedia.org/wiki/BeOS). En una época en la que muchos sistemas de escritorio arrastraban décadas de compatibilidad hacia atrás, la apuesta fue empezar prácticamente de cero.
 
 ### La revolución técnica
 
-Su característica más famosa era el **multihilo generalizado** (*pervasive multithreading*).
-
-Los componentes del sistema y las aplicaciones podían utilizar múltiples hilos de ejecución de forma intensiva, aprovechando mejor los sistemas multiprocesador y permitiendo que distintas tareas progresaran de forma independiente.
-
-Esto contribuía a una sensación de respuesta excepcionalmente buena para la época.
+Su característica más famosa era el **multihilo generalizado** (*pervasive multithreading*). Los componentes del sistema y las aplicaciones podían utilizar múltiples hilos de ejecución de forma intensiva, aprovechando mejor los sistemas multiprocesador y permitiendo que distintas tareas progresaran de forma independiente. Esto contribuía a una sensación de respuesta excepcionalmente buena para la época.
 
 ### Innovación clave
 
-Otro de sus grandes avances fue **BFS (Be File System)**, desarrollado por Benoît Schillings.
-
-BFS no trataba los archivos únicamente como bloques de datos, sino que permitía asociarles **atributos y metadatos indexables**. El sistema podía mantener índices sobre esos atributos y realizar búsquedas de forma mucho más integrada que los sistemas de archivos de escritorio tradicionales.
+Otro de sus grandes avances fue **BFS (Be File System)**, desarrollado por Benoît Schillings. BFS no trataba los archivos únicamente como bloques de datos, sino que permitía asociarles **atributos y metadatos indexables**. El sistema podía mantener índices sobre esos atributos y realizar búsquedas de forma mucho más integrada que los sistemas de archivos de escritorio tradicionales.
 
 ### El legado
 
-Aunque BeOS no logró imponerse en el mercado comercial —incluso después de que Apple barajara su compra en 1996 antes de decantarse por NeXT—, su elegante arquitectura dejó una huella imborrable en el mundo del software.
-
-Su espíritu continúa vivo hoy en **Haiku**, un sistema operativo de código abierto que busca preservar y evolucionar las ambiciosas ideas de BeOS.
+Aunque BeOS no logró imponerse en el mercado comercial —incluso después de que Apple barajara su compra en 1996 antes de decantarse por NeXT—, su elegante arquitectura dejó huella en el mundo del software, y su espíritu continúa vivo hoy en **Haiku**, un sistema operativo de código abierto que busca preservar y evolucionar las ambiciosas ideas de BeOS.
 
 ---
 
@@ -359,17 +309,13 @@ El sistema estaba pensado para que las aplicaciones utilizaran la memoria de man
 
 Una de sus ideas más importantes fue el modelo de **Active Objects**, que permitía gestionar operaciones asíncronas de forma eficiente sin depender de un hilo separado para cada tarea.
 
-La filosofía general era sencilla: en un teléfono móvil, cada byte de memoria, cada ciclo de CPU y cada operación de E/S importaban.
-
-No se trataba de liberar cada byte de RAM «en cada microsegundo», sino de diseñar todo el sistema alrededor de la escasez de recursos.
+La filosofía general era sencilla: en un teléfono móvil, cada byte de memoria, cada ciclo de CPU y cada operación de E/S importaban. No se trataba de liberar cada byte de RAM «en cada microsegundo», sino de diseñar todo el sistema alrededor de la escasez de recursos.
 
 ### El legado
 
 Symbian fue durante años la plataforma dominante de los smartphones y demostró que un teléfono podía ofrecer **multitarea, conectividad de datos, aplicaciones complejas y una arquitectura de software relativamente sofisticada** sin disponer de los recursos de un ordenador de escritorio.
 
-Su caída tras la llegada del iPhone y Android no invalida su importancia histórica.
-
-Al contrario: Symbian representa una de las grandes demostraciones de que el diseño de un sistema operativo debe adaptarse radicalmente al hardware y al modelo de uso para el que ha sido creado.
+Su caída tras la llegada del iPhone y Android no invalida su importancia histórica. Al contrario: Symbian representa una de las grandes demostraciones de que el diseño de un sistema operativo debe adaptarse radicalmente al hardware y al modelo de uso para el que ha sido creado.
 
 ---
 
@@ -401,15 +347,15 @@ Y precisamente esa es la razón por la que este ranking debe entenderse como una
 
 A veces, el sistema operativo más influyente no es el que más ordenadores vende, sino el que introduce una idea que otros tardan décadas en aprovechar.
 
-# ¿Qué tienen todos estos sistemas en común?
+## ¿Qué tienen todos estos sistemas en común?
 
 Lo más interesante de esta historia es que muchos de los sistemas que más influyeron en la informática **no fueron los que terminaron dominando el mercado**.
 
-Multics anticipó conceptos de protección y seguridad que hoy consideramos fundamentales. UNIX convirtió la simplicidad, la composición de herramientas y la portabilidad en principios de diseño. Xerox Alto y Smalltalk ayudaron a convertir la interfaz gráfica y la programación orientada a objetos en paradigmas prácticos. CP/M contribuyó a separar el software del hardware. VMS demostró cómo construir sistemas empresariales robustos y dejó una huella directa en Windows NT. QNX llevó el microkernel y el tiempo real a aplicaciones donde la tolerancia a fallos resulta esencial. AmigaOS demostró lo que podía conseguir un ordenador doméstico cuando hardware y software se diseñaban conjuntamente. NeXTSTEP convirtió el desarrollo orientado a objetos y las herramientas visuales en una plataforma de producción. Linux transformó no solo el software, sino también la manera de desarrollarlo. Plan 9 llevó la computación distribuida a sus últimas consecuencias conceptuales. BeOS mostró lo que podía conseguir un sistema operativo diseñado desde cero alrededor del multihilo y el multimedia. Y Symbian demostró que la informática móvil exigía reglas completamente diferentes a las de un PC. La historia de los sistemas operativos, en definitiva, no es únicamente la historia de los productos que ganaron. Es también la historia de **las ideas que sobrevivieron a sus creadores**.
+Multics anticipó conceptos de protección y seguridad que hoy consideramos fundamentales. UNIX convirtió la simplicidad, la composición de herramientas y la portabilidad en principios de diseño. Xerox Alto y Smalltalk ayudaron a convertir la interfaz gráfica y la programación orientada a objetos en paradigmas prácticos. CP/M contribuyó a separar el software del hardware. VMS demostró cómo construir sistemas empresariales robustos y dejó una huella directa en Windows NT. QNX llevó el microkernel y el tiempo real a aplicaciones donde la tolerancia a fallos resulta esencial. AmigaOS demostró lo que podía conseguir un ordenador doméstico cuando hardware y software se diseñaban conjuntamente. NeXTSTEP convirtió el desarrollo orientado a objetos y las herramientas visuales en una plataforma de producción. GNU/Linux transformó no solo el software, sino también la manera de desarrollarlo. Plan 9 llevó la computación distribuida a sus últimas consecuencias conceptuales. BeOS mostró lo que podía conseguir un sistema operativo diseñado desde cero alrededor del multihilo y el multimedia. Y Symbian demostró que la informática móvil exigía reglas completamente diferentes a las de un PC. La historia de los sistemas operativos, en definitiva, no es únicamente la historia de los productos que ganaron. Es también la historia de **las ideas que sobrevivieron a sus creadores**.
 
 Muchas de las tecnologías que hoy parecen obvias fueron consideradas radicales cuando aparecieron por primera vez. Algunas triunfaron inmediatamente. Otras tardaron décadas. Y algunas todavía esperan el momento en que el hardware y las necesidades del mercado permitan descubrir todo su potencial.
 
-# Saber más
+## Saber más
 
 * [Multics — Wikipedia en español](https://es.wikipedia.org/wiki/Multics)
 * [UNIX — Wikipedia en español](https://es.wikipedia.org/wiki/Unix)
@@ -420,10 +366,9 @@ Muchas de las tecnologías que hoy parecen obvias fueron consideradas radicales 
 * [QNX — documentación oficial](https://qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.sys_arch/topic/kernel.html)
 * [AmigaOS — Wikipedia en español](https://es.wikipedia.org/wiki/AmigaOS)
 * [NeXTSTEP — Wikipedia en español](https://es.wikipedia.org/wiki/NeXTSTEP)
-* [GNU/Linux - Wikipedia en español](https://es.wikipedia.org/wiki/GNU/Linux)
-* [Linux — estadística de familias de sistemas operativos de TOP500](https://www.top500.org/statistics/details/osfam/1)
+* [GNU/Linux — Wikipedia en español](https://es.wikipedia.org/wiki/GNU/Linux)
 * [Plan 9 — documentación del proyecto](https://9p.io/plan9/about.html)
 * [BeOS — Wikipedia en español](https://es.wikipedia.org/wiki/BeOS)
 * [Symbian — Wikipedia en español](https://es.wikipedia.org/wiki/Symbian)
 
-*Para la planificación, estructura y optimización de este texto se utilizaron herramientas de Inteligencia Artificial. La redacción final, los argumentos y la verificación de datos corrieron a cargo del autor.*
+**Nota**: *Para la planificación, estructura y optimización de este texto se utilizaron herramientas de Inteligencia Artificial. La redacción final, los argumentos y la verificación de datos corrieron a cargo del autor.*
