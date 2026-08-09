@@ -345,7 +345,7 @@ Symbian fue una de las respuestas más sofisticadas a ese problema.
 
 ### La revolución técnica
 
-Symbian fue diseñado específicamente para dispositivos móviles y utilizaba **multitarea preventiva, protección de memoria y mecanismos orientados a reducir el consumo de recursos**.
+Symbian fue diseñado específicamente para dispositivos móviles y utilizaba **multitarea preventiva, protección de memoria y mecanismos orientados a reducir el consumo de recursos**. Esta genialidad arquitectónica fue heredada directamente de EPOC32, un sistema operativo creado por la firma británica PSION para sus computadoras de bolsillo.
 
 El sistema estaba pensado para que las aplicaciones utilizaran la memoria de manera disciplinada y para que muchas operaciones se realizaran mediante modelos asíncronos y eficientes.
 
