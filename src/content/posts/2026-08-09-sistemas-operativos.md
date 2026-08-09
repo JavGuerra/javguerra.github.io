@@ -27,7 +27,7 @@ Este es un ranking -en orden cronológico- <u>necesariamente subjetivo</u> de 12
 
 ## 1. Multics (MIT / Bell Labs, 1965) — El gigante que anticipó la seguridad moderna
 
-Multics, el proyecto liderado por **Fernando J. Corbató**, fue uno de los S.O. más ambiciosos de la informática de los años sesenta. Su objetivo era convertir el ordenador en una especie de **«servicio informático» compartido**, al que numerosos usuarios pudieran acceder simultáneamente mediante *time-sharing*. No era computación en la nube en el sentido moderno, pero sí anticipaba la idea de utilizar la capacidad informática como un recurso compartido.
+[Multics](https://es.wikipedia.org/wiki/Multics), el proyecto liderado por **Fernando J. Corbató**, fue uno de los S.O. más ambiciosos de la informática de los años sesenta. Su objetivo era convertir el ordenador en una especie de **«servicio informático» compartido**, al que numerosos usuarios pudieran acceder simultáneamente mediante *time-sharing*. No era computación en la nube en el sentido moderno, pero sí anticipaba la idea de utilizar la capacidad informática como un recurso compartido.
 
 ### La revolución técnica
 
@@ -51,7 +51,7 @@ Incluso su influencia sobre UNIX es paradójica: UNIX nació en Bell Labs en par
 
 ## 2. UNIX (Bell Labs, 1969) — El diseño que se convirtió en una tradición informática
 
-UNIX nació en Bell Labs a finales de los años sesenta de la mano de **Ken Thompson, Dennis Ritchie y otros investigadores**. Su importancia no reside únicamente en sus características técnicas concretas, sino en haber creado un modelo de sistema operativo y de herramientas que acabaría influyendo profundamente en décadas posteriores.
+[UNIX](https://es.wikipedia.org/wiki/Unix) nació en Bell Labs a finales de los años sesenta de la mano de **Ken Thompson, Dennis Ritchie y otros investigadores**. Su importancia no reside únicamente en sus características técnicas concretas, sino en haber creado un modelo de sistema operativo y de herramientas que acabaría influyendo profundamente en décadas posteriores.
 
 ### La revolución técnica
 
@@ -79,9 +79,11 @@ Su mayor victoria quizá sea cultural: la combinación de procesos, archivos, tu
 
 Antes de que Apple lanzara Macintosh o Microsoft popularizara Windows, los investigadores de Xerox PARC ya estaban experimentando con una forma completamente distinta de utilizar los ordenadores.
 
-El **Xerox Alto**, diseñado en 1973, combinaba una pantalla bitmap, ratón, redes, almacenamiento y una interfaz gráfica basada en ventanas, menús e interacción directa.
+El [Xerox Alto](https://computerhistory.org/blog/xerox-alto-source-code), diseñado en 1973, combinaba una pantalla bitmap, ratón, redes, almacenamiento y una interfaz gráfica basada en ventanas, menús e interacción directa.
 
 No fue la primera interfaz gráfica de la historia —existían importantes antecedentes, como Sketchpad (1963), el programa de Ivan Sutherland que permitía dibujar con un lápiz óptico sobre la pantalla, o el trabajo de Douglas Engelbart, que en 1968 demostró el uso del ratón, el hipertexto y la edición colaborativa—, pero sí fue uno de los primeros sistemas en integrar de manera coherente ventanas, iconos y manipulación directa en un ordenador de propósito general.
+
+![SmallTalk 76](https://upload.wikimedia.org/wikipedia/commons/8/8d/Smalltalk-76.popup.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
 
 ### La revolución técnica
 
@@ -93,7 +95,7 @@ El sistema permitió experimentar con documentos gráficos, edición [WYSIWYG](h
 
 Aquí conviene distinguir entre **Alto** y **Smalltalk**.
 
-Smalltalk fue concebido bajo la visión de **Alan Kay** y su equipo en PARC, funcionando simultáneamente como lenguaje de programación, entorno de desarrollo y sistema interactivo. Su entorno gráfico fue especialmente influyente en la evolución de las **ventanas, los menús y la programación orientada a objetos**.
+[Smalltalk](https://computerhistory.org/blog/introducing-the-smalltalk-zoo-48-years-of-smalltalk-history-at-chm) fue concebido bajo la visión de **Alan Kay** y su equipo en PARC, funcionando simultáneamente como lenguaje de programación, entorno de desarrollo y sistema interactivo. Su entorno gráfico fue especialmente influyente en la evolución de las **ventanas, los menús y la programación orientada a objetos**.
 
 La visión de Kay al combinar Alto y Smalltalk transformó el ordenador en un medio dinámico e interactivo, alejándolo definitivamente del concepto de simple calculadora electrónica.
 
@@ -103,13 +105,11 @@ La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la 
 
 El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
 
-![SmallTalk 76](https://upload.wikimedia.org/wikipedia/commons/8/8d/Smalltalk-76.popup.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
-
 ---
 
 ## 4. CP/M (Digital Research, 1974) — El sistema que ayudó a separar el software del hardware
 
-Creado por **Gary Kildall**, CP/M fue el primer sistema operativo para microcomputadores que alcanzó una implantación comercial realmente importante.
+Creado por **Gary Kildall**, [CP/M](https://www.computerhistory.org/timeline/1976) fue el primer sistema operativo para microcomputadores que alcanzó una implantación comercial realmente importante.
 
 Su importancia no estaba en tener una arquitectura tan sofisticada como Multics, sino en resolver un problema fundamental de la primera informática personal: **cómo conseguir que un programa pudiera utilizarse en máquinas diferentes**.
 
@@ -139,7 +139,7 @@ Esa separación entre software y hardware acabaría siendo uno de los pilares de
 
 VMS fue diseñado para los sistemas VAX de Digital Equipment Corporation con una prioridad muy clara: construir una plataforma robusta para computación empresarial, multiusuario y de larga duración.
 
-Conviene llamarlo **VMS** al hablar de sus orígenes; el nombre OpenVMS apareció posteriormente.
+Conviene llamarlo **VMS** al hablar de sus orígenes; el nombre [OpenVMS](https://es.wikipedia.org/wiki/OpenVMS) apareció posteriormente.
 
 ### La revolución técnica
 
@@ -165,7 +165,7 @@ La familia moderna de Windows procede de aquella línea tecnológica de NT.
 
 ## 6. QNX (Quantum Software Systems, 1981) — El triunfo del microkernel en tiempo real
 
-QNX es una de esas tecnologías que millones de personas pueden haber utilizado sin saberlo.
+[QNX](https://qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.sys_arch/topic/kernel.html) es una de esas tecnologías que millones de personas pueden haber utilizado sin saberlo.
 
 La primera versión de QNX se distribuyó en **1981**, y desde el principio destacó por una arquitectura basada en un núcleo pequeño y mecanismos de comunicación entre procesos.
 
@@ -195,7 +195,9 @@ No es correcto afirmar que sea el sistema operativo de «todos» los frenos ABS 
 
 En 1985, el Amiga parecía pertenecer a otra generación tecnológica respecto a muchos ordenadores domésticos de la época.
 
-Su sistema operativo, **AmigaOS**, fue diseñado alrededor de una máquina con hardware multimedia extraordinariamente avanzado para su precio.
+Su sistema operativo, [AmigaOS](https://es.wikipedia.org/wiki/AmigaOS), fue diseñado alrededor de una máquina con hardware multimedia extraordinariamente avanzado para su precio.
+
+![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original)
 
 ### La revolución técnica
 
@@ -217,13 +219,11 @@ Cuando un error grave ocurría, podía aparecer la famosa **«Guru Meditation»*
 
 AmigaOS demostró que un ordenador doméstico podía ofrecer multitarea, gráficos, sonido y una interfaz sofisticada años antes de que esas capacidades fueran normales en los PCs.
 
-![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original)
-
 ---
 
 ## 8. NeXTSTEP (NeXT, 1989) — El sistema que conectó UNIX con el futuro de Apple
 
-NeXTSTEP fue desarrollado por la empresa fundada por **Steve Jobs** después de su salida de Apple.
+[NeXTSTEP](https://es.wikipedia.org/wiki/NeXTSTEP) fue desarrollado por la empresa fundada por **Steve Jobs** después de su salida de Apple.
 
 La máquina NeXT no consiguió conquistar el mercado de consumo, pero su software acabaría teniendo una influencia gigantesca.
 
@@ -257,39 +257,45 @@ Pocas plataformas desaparecidas pueden presumir de haber contribuido tanto a la 
 
 ---
 
-## 9. Linux (Linus Torvalds, 1991) — La revolución del desarrollo colaborativo
+## 9. GNU/Linux (Richard Stallman, 1983 / Linus Torvalds, 1991) — La revolución del software libre y el desarrollo colaborativo
 
-Desde el punto de vista de la arquitectura clásica de sistemas operativos, Linux no nació como una ruptura radical. Su núcleo seguía el modelo monolítico de los sistemas tipo Unix, aunque con módulos cargables y numerosas técnicas modernas.
+Antes de que Linux hiciera su aparición, **Richard Stallman** lanzó en 1983 el **Proyecto GNU** con la misión de construir un sistema operativo completamente libre compatible con Unix. Para finales de la década, el movimiento de Stallman había desarrollado las bibliotecas, compiladores (GCC) y utilidades fundamentales, pero aún carecía de un núcleo (*kernel*) maduro.
 
-Su verdadera revolución fue, en buena medida, **cómo se construyó**.
+Fue en 1991 cuando **Linus Torvalds** comenzó a desarrollar Linux como un proyecto personal. Al liberar este núcleo bajo la licencia **GNU GPL**, creada por Stallman, Torvalds completó la última pieza que faltaba, dando origen al sistema operativo que hoy conocemos como [GNU/Linux](https://es.wikipedia.org/wiki/GNU/Linux).
+
+---
+
+<Image src="image_agent_tag_8351238207509410809" alt="Richard Stallman hablando sobre software libre y el proyecto GNU" caption="Richard Stallman, fundador del Proyecto GNU y del movimiento del software libre" />
+
+---
 
 ### La revolución técnica
 
-**Linus Torvalds** comenzó Linux en 1991 como un proyecto personal y lo publicó con licencia GPL. Con el tiempo, miles de desarrolladores y empresas comenzaron a contribuir a su desarrollo.
+Desde el punto de vista de la arquitectura, Linux siguió el modelo monolítico de los sistemas tipo Unix, aunque enriquecido con módulos cargables y técnicas modernas. Sin embargo, su verdadera transformación radicó en **cómo se construyó**.
 
-La combinación de **software libre, control de versiones, listas de correo, desarrollo distribuido y revisión pública del código** terminó demostrando que un proyecto de enorme complejidad podía evolucionar mediante una comunidad global.
+La unión de la visión filosófica del software libre de GNU con el modelo de desarrollo distribuido de Torvalds demostró que una comunidad global interconectada mediante **listas de correo, control de versiones y revisión pública del código** podía superar los modelos de desarrollo propietarios tradicionales.
 
 ### Innovación clave
 
 Los **módulos cargables del kernel** permitieron ampliar el núcleo sin tener que recompilarlo completamente para cada cambio.
 
-Pero el auténtico cambio de paradigma fue organizativo: Linux demostró que un núcleo de enorme complejidad podía desarrollarse y mantenerse mediante una comunidad global, combinando colaboración distribuida, revisión pública y posteriormente una infraestructura profesional de desarrollo.
+Sin embargo, el cambio de paradigma fundamental fue doble: la invención de la **licencia GPL (copyleft)** por parte de Stallman —que garantiza legalmente que el código siga siendo libre para siempre— y el modelo organizativo iniciado por Torvalds, demostrando que un sistema de escala masiva podía evolucionar de manera abierta y colaborativa.
 
 ### El legado
 
-Linux terminó dominando áreas que durante décadas habían estado reservadas a sistemas propietarios.
+GNU/Linux terminó dominando áreas que durante décadas habían estado reservadas a sistemas propietarios.
 
-Es la base de una enorme parte de la infraestructura de Internet, servidores, supercomputación, dispositivos embebidos y del kernel utilizado por Android.
+Es la base de la mayor parte de la infraestructura de Internet, servidores, supercomputación, dispositivos embebidos y el pilar sobre el que se apoya el kernel de Android.
 
-En junio de 2026, la estadística oficial de TOP500 clasifica los **500 sistemas de la lista dentro de la familia de sistemas operativos Linux**. Sin embargo, esta categoría no significa que los 500 aparezcan identificados literalmente como «Linux»: la propia base de TOP500 muestra sistemas con nombres como TOSS, HPE Cray OS, RHEL o Kylin OS. El número 1 de esa edición, LineShine, utiliza Kylin OS.
+En junio de 2026, la [estadística de familias de sistemas operativos de TOP500](https://www.top500.org/statistics/details/osfam/1) clasifica los **500 sistemas de la lista dentro de la familia de sistemas operativos Linux**. Sin embargo, esta categoría no significa que los 500 aparezcan identificados literalmente como «Linux»: la propia base de TOP500 muestra sistemas con nombres como TOSS, HPE Cray OS, RHEL o Kylin OS. El número 1 de esa edición, LineShine, utiliza Kylin OS.
 
-Su mayor legado, sin embargo, quizá no sea técnico sino cultural: demostró que el software de infraestructura más importante del planeta podía desarrollarse de forma abierta y colaborativa.
+Su mayor legado, no obstante, va más allá de la técnica: demostró que la filosofía del software libre de Stallman y la metodología abierta de Torvalds podían crear la infraestructura tecnológica más importante del planeta.
 
 ---
 
 ## 10. Plan 9 (Bell Labs, finales de los 80 / 1992) — El UNIX que convirtió la red en parte del sistema operativo
 
-Plan 9 nació en Bell Labs de la mano de investigadores como **Ken Thompson, Rob Pike, Dave Presotto y Phil Winterbottom**, continuando la tradición experimental que había dado origen a UNIX. El desarrollo comenzó a finales de los años ochenta y la primera edición pública apareció posteriormente.
+[Plan 9](https://9p.io/plan9/about.html) nació en Bell Labs de la mano de investigadores como **Ken Thompson, Rob Pike, Dave Presotto y Phil Winterbottom**, continuando la tradición experimental que había dado origen a UNIX. El desarrollo comenzó a finales de los años ochenta y la primera edición pública apareció posteriormente.
 
 ### La revolución técnica
 
@@ -315,7 +321,7 @@ Su influencia sobre los sistemas contemporáneos es indirecta pero profunda, esp
 
 ## 11. BeOS (Be Inc., 1995) — El sistema operativo diseñado alrededor del multimedia
 
-Tras su paso por Apple —donde llegó a liderar la división Macintosh tras la salida de Steve Jobs—, **Jean-Louis Gassée** fundó Be Inc. junto a Steve Sakoman con una misión muy concreta: construir una plataforma extremadamente rápida, libre de legados técnicos y totalmente orientada al **multimedia y el procesamiento paralelo** que se llamó BeOS.
+Tras su paso por Apple —donde llegó a liderar la división Macintosh tras la salida de Steve Jobs—, **Jean-Louis Gassée** fundó Be Inc. junto a Steve Sakoman con una misión muy concreta: construir una plataforma extremadamente rápida, libre de legados técnicos y totalmente orientada al **multimedia y el procesamiento paralelo** que se llamó [BeOS](https://es.wikipedia.org/wiki/BeOS).
 
 En una época en la que muchos sistemas de escritorio arrastraban décadas de compatibilidad hacia atrás, la apuesta fue empezar prácticamente de cero.
 
@@ -347,7 +353,7 @@ Antes del iPhone y Android, los teléfonos inteligentes eran un problema de inge
 
 Había poca memoria, procesadores lentos, baterías pequeñas, almacenamiento limitado y conexiones de red muy restringidas.
 
-Symbian fue una de las respuestas más sofisticadas a ese problema.
+[Symbian](https://es.wikipedia.org/wiki/Symbian) fue una de las respuestas más sofisticadas a ese problema.
 
 ### La revolución técnica
 
@@ -411,18 +417,19 @@ Muchas de las tecnologías que hoy parecen obvias fueron consideradas radicales 
 
 # Saber más
 
-* [Multics — Wikipedia en español](https://es.wikipedia.org/wiki/Multics?utm_source=chatgpt.com)
-* [UNIX — Wikipedia en español](https://es.wikipedia.org/wiki/Unix?utm_source=chatgpt.com)
-* [Xerox Alto — Computer History Museum](https://computerhistory.org/blog/xerox-alto-source-code/?utm_source=chatgpt.com)
-* [Smalltalk — Computer History Museum](https://computerhistory.org/blog/introducing-the-smalltalk-zoo-48-years-of-smalltalk-history-at-chm/?utm_source=chatgpt.com)
-* [CP/M — Computer History Museum](https://www.computerhistory.org/timeline/1976/?utm_source=chatgpt.com)
-* [OpenVMS — Wikipedia en español](https://es.wikipedia.org/wiki/OpenVMS?utm_source=chatgpt.com)
-* [QNX — documentación oficial](https://qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.sys_arch/topic/kernel.html?utm_source=chatgpt.com)
-* [AmigaOS — Wikipedia en español](https://es.wikipedia.org/wiki/AmigaOS?utm_source=chatgpt.com)
-* [NeXTSTEP — Wikipedia en español](https://es.wikipedia.org/wiki/NeXTSTEP?utm_source=chatgpt.com)
-* [Linux — estadística de familias de sistemas operativos de TOP500](https://www.top500.org/statistics/details/osfam/1/?utm_source=chatgpt.com)
-* [Plan 9 — documentación del proyecto](https://9p.io/plan9/about.html?utm_source=chatgpt.com)
-* [BeOS — Wikipedia en español](https://es.wikipedia.org/wiki/BeOS?utm_source=chatgpt.com)
-* [Symbian — Wikipedia en español](https://es.wikipedia.org/wiki/Symbian?utm_source=chatgpt.com)
+* [Multics — Wikipedia en español](https://es.wikipedia.org/wiki/Multics)
+* [UNIX — Wikipedia en español](https://es.wikipedia.org/wiki/Unix)
+* [Xerox Alto — Computer History Museum](https://computerhistory.org/blog/xerox-alto-source-code)
+* [Smalltalk — Computer History Museum](https://computerhistory.org/blog/introducing-the-smalltalk-zoo-48-years-of-smalltalk-history-at-chm)
+* [CP/M — Computer History Museum](https://www.computerhistory.org/timeline/1976)
+* [OpenVMS — Wikipedia en español](https://es.wikipedia.org/wiki/OpenVMS)
+* [QNX — documentación oficial](https://qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.sys_arch/topic/kernel.html)
+* [AmigaOS — Wikipedia en español](https://es.wikipedia.org/wiki/AmigaOS)
+* [NeXTSTEP — Wikipedia en español](https://es.wikipedia.org/wiki/NeXTSTEP)
+* [GNU/Linux - Wikipedia en español](https://es.wikipedia.org/wiki/GNU/Linux)
+* [Linux — estadística de familias de sistemas operativos de TOP500](https://www.top500.org/statistics/details/osfam/1)
+* [Plan 9 — documentación del proyecto](https://9p.io/plan9/about.html)
+* [BeOS — Wikipedia en español](https://es.wikipedia.org/wiki/BeOS)
+* [Symbian — Wikipedia en español](https://es.wikipedia.org/wiki/Symbian)
 
 *Para la planificación, estructura y optimización de este texto se utilizaron herramientas de Inteligencia Artificial. La redacción final, los argumentos y la verificación de datos corrieron a cargo del autor.*
