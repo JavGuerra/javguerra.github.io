@@ -418,3 +418,5 @@ Muchas de las tecnologías que hoy parecen obvias fueron consideradas radicales 
 * [Plan 9 — documentación del proyecto](https://9p.io/plan9/about.html?utm_source=chatgpt.com)
 * [BeOS — Wikipedia en español](https://es.wikipedia.org/wiki/BeOS?utm_source=chatgpt.com)
 * [Symbian — Wikipedia en español](https://es.wikipedia.org/wiki/Symbian?utm_source=chatgpt.com)
+
+*Para la planificación, estructura y optimización de este texto se utilizaron herramientas de Inteligencia Artificial. La redacción final, los argumentos y la verificación de datos corrieron a cargo del autor.*
