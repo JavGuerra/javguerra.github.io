@@ -21,7 +21,7 @@ A lo largo de las décadas han existido sistemas que experimentaron con ideas qu
 
 Algunas de estas ideas acabaron incorporándose a los sistemas que utilizamos todos los días. Otras fueron demasiado adelantadas a su tiempo y quedaron como experimentos, productos de nicho o auténticas joyas de la historia de la informática.
 
-Este es un ranking necesariamente subjetivo de 12 sistemas especialmente innovadores, valorados por su originalidad arquitectónica, su audacia técnica, su influencia posterior y su capacidad para introducir ideas que terminarían reapareciendo en otros sistemas.
+Este es un ranking -en orden cronológico- necesariamente subjetivo de 12 sistemas especialmente innovadores, valorados por su originalidad arquitectónica, su audacia técnica, su influencia posterior y su capacidad para introducir ideas que terminarían reapareciendo en otros sistemas.
 
 ---
 
