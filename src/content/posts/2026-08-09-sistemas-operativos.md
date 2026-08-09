@@ -263,12 +263,6 @@ Antes de que Linux hiciera su aparición, **Richard Stallman** lanzó en 1983 el
 
 Fue en 1991 cuando **Linus Torvalds** comenzó a desarrollar Linux como un proyecto personal. Al liberar este núcleo bajo la licencia **GNU GPL**, creada por Stallman, Torvalds completó la última pieza que faltaba, dando origen al sistema operativo que hoy conocemos como [GNU/Linux](https://es.wikipedia.org/wiki/GNU/Linux).
 
----
-
-<Image src="image_agent_tag_8351238207509410809" alt="Richard Stallman hablando sobre software libre y el proyecto GNU" caption="Richard Stallman, fundador del Proyecto GNU y del movimiento del software libre" />
-
----
-
 ### La revolución técnica
 
 Desde el punto de vista de la arquitectura, Linux siguió el modelo monolítico de los sistemas tipo Unix, aunque enriquecido con módulos cargables y técnicas modernas. Sin embargo, su verdadera transformación radicó en **cómo se construyó**.
