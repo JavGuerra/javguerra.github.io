@@ -103,6 +103,8 @@ La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la 
 
 El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
 
+![SmallTalk 76](https://commons.wikimedia.org/wiki/File:Smalltalk-76.popup.png#/media/File:Smalltalk-76.popup.png)
+
 ---
 
 ## 4. CP/M (Digital Research, 1974) — El sistema que ayudó a separar el software del hardware
@@ -215,6 +217,8 @@ Cuando un error grave ocurría, podía aparecer la famosa **«Guru Meditation»*
 
 AmigaOS demostró que un ordenador doméstico podía ofrecer multitarea, gráficos, sonido y una interfaz sofisticada años antes de que esas capacidades fueran normales en los PCs.
 
+![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
+
 ---
 
 ## 8. NeXTSTEP (NeXT, 1989) — El sistema que conectó UNIX con el futuro de Apple
@@ -248,6 +252,8 @@ En 1990, **Tim Berners-Lee utilizó un ordenador NeXT en el CERN para desarrolla
 Y en 1996 Apple adquirió NeXT. La tecnología resultante acabó dando lugar a **Mac OS X y, posteriormente, a macOS y las plataformas de Apple basadas en Darwin/XNU**.
 
 Pocas plataformas desaparecidas pueden presumir de haber contribuido tanto a la historia de Internet y a la de Apple simultáneamente.
+
+![NextStep y la WWW](https://es.wikipedia.org/wiki/WorldWideWeb#/media/Archivo:WorldWideWeb.png)
 
 ---
 
