@@ -83,13 +83,13 @@ El **Xerox Alto**, diseñado en 1973, combinaba una pantalla bitmap, ratón, red
 
 No fue la primera interfaz gráfica de la historia —existían importantes antecedentes, como Sketchpad (1963), el programa de Ivan Sutherland que permitía dibujar con un lápiz óptico sobre la pantalla, o el trabajo de Douglas Engelbart, que en 1968 demostró el uso del ratón, el hipertexto y la edición colaborativa—, pero sí fue uno de los primeros sistemas en integrar de manera coherente ventanas, iconos y manipulación directa en un ordenador de propósito general.
 
-## La revolución técnica
+### La revolución técnica
 
 El Alto demostró que un ordenador podía diseñarse alrededor de la interacción humana y no alrededor de las limitaciones de los terminales de texto.
 
 El sistema permitió experimentar con documentos gráficos, edición [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG), tipografías, redes y entornos de programación visual.
 
-## Innovación clave
+### Innovación clave
 
 Aquí conviene distinguir entre **Alto** y **Smalltalk**.
 
@@ -97,11 +97,12 @@ Smalltalk fue concebido bajo la visión de **Alan Kay** y su equipo en PARC, fun
 
 La visión de Kay al combinar Alto y Smalltalk transformó el ordenador en un medio dinámico e interactivo, alejándolo definitivamente del concepto de simple calculadora electrónica.
 
-## El legado
+### El legado
 
 La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la informática gráfica de consumo.
 
 El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
+
 ---
 
 ## 4. CP/M (Digital Research, 1974) — El sistema que ayudó a separar el software del hardware
