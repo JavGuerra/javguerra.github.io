@@ -6,7 +6,7 @@ author: JavGuerra
 pubDate: 2026-08-09
 coverImage:
   image: '@/assets/img/so.jpg'
-  alt: Distintos sistemas operativos y máquuinas de la historia
+  alt: Distintos sistemas operativos y máquinas de la historia
 tags:
     - computación
     - historia
