@@ -27,7 +27,7 @@ Este es un ranking -en orden cronológico- <u>necesariamente subjetivo</u> de 12
 
 ## 1. Multics (MIT / Bell Labs, 1965) — El gigante que anticipó la seguridad moderna
 
-Multics fue uno de los proyectos más ambiciosos de la informática de los años sesenta. Su objetivo era convertir el ordenador en una especie de **«servicio informático» compartido**, al que numerosos usuarios pudieran acceder simultáneamente mediante *time-sharing*. No era computación en la nube en el sentido moderno, pero sí anticipaba la idea de utilizar la capacidad informática como un recurso compartido.
+Multics, el proyecto liderado por **Fernando J. Corbató**, fue uno de los S.O. más ambiciosos de la informática de los años sesenta. Su objetivo era convertir el ordenador en una especie de **«servicio informático» compartido**, al que numerosos usuarios pudieran acceder simultáneamente mediante *time-sharing*. No era computación en la nube en el sentido moderno, pero sí anticipaba la idea de utilizar la capacidad informática como un recurso compartido.
 
 ### La revolución técnica
 
@@ -93,16 +93,15 @@ El sistema permitió experimentar con documentos gráficos, edición [WYSIWYG](h
 
 Aquí conviene distinguir entre **Alto** y **Smalltalk**.
 
-Smalltalk fue simultáneamente un lenguaje de programación, un entorno de desarrollo y un sistema interactivo. Su entorno gráfico fue especialmente influyente en la evolución de las **ventanas, los menús y la programación orientada a objetos**.
+Smalltalk fue concebido bajo la visión de **Alan Kay** y su equipo en PARC, funcionando simultáneamente como lenguaje de programación, entorno de desarrollo y sistema interactivo. Su entorno gráfico fue especialmente influyente en la evolución de las **ventanas, los menús y la programación orientada a objetos**.
 
-La combinación de Alto y Smalltalk convirtió el ordenador en algo más cercano a un medio interactivo que a una simple calculadora electrónica.
+La visión de Kay al combinar Alto y Smalltalk transformó el ordenador en un medio dinámico e interactivo, alejándolo definitivamente del concepto de simple calculadora electrónica.
 
 ## El legado
 
 La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la informática gráfica de consumo.
 
 El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
-
 ---
 
 ## 4. CP/M (Digital Research, 1974) — El sistema que ayudó a separar el software del hardware
@@ -259,7 +258,7 @@ Su verdadera revolución fue, en buena medida, **cómo se construyó**.
 
 ### La revolución técnica
 
-Linus Torvalds comenzó Linux en 1991 como un proyecto personal y lo publicó con licencia GPL. Con el tiempo, miles de desarrolladores y empresas comenzaron a contribuir a su desarrollo.
+**Linus Torvalds** comenzó Linux en 1991 como un proyecto personal y lo publicó con licencia GPL. Con el tiempo, miles de desarrolladores y empresas comenzaron a contribuir a su desarrollo.
 
 La combinación de **software libre, control de versiones, listas de correo, desarrollo distribuido y revisión pública del código** terminó demostrando que un proyecto de enorme complejidad podía evolucionar mediante una comunidad global.
 
@@ -309,9 +308,9 @@ Su influencia sobre los sistemas contemporáneos es indirecta pero profunda, esp
 
 ## 11. BeOS (Be Inc., 1995) — El sistema operativo diseñado alrededor del multimedia
 
-BeOS fue diseñado desde cero por Be Inc. con una misión muy concreta: construir una plataforma extremadamente rápida y adecuada para **multimedia y procesamiento paralelo**.
+Tras su paso por Apple —donde llegó a liderar la división Macintosh tras la salida de Steve Jobs—, **Jean-Louis Gassée** fundó Be Inc. junto a Steve Sakoman con una misión muy concreta: construir una plataforma extremadamente rápida, libre de legados técnicos y totalmente orientada al **multimedia y el procesamiento paralelo** que se llamó BeOS.
 
-En una época en la que muchos sistemas de escritorio arrastraban décadas de compatibilidad hacia atrás, BeOS intentó empezar prácticamente desde cero.
+En una época en la que muchos sistemas de escritorio arrastraban décadas de compatibilidad hacia atrás, la apuesta fue empezar prácticamente de cero.
 
 ### La revolución técnica
 
@@ -323,15 +322,15 @@ Esto contribuía a una sensación de respuesta excepcionalmente buena para la é
 
 ### Innovación clave
 
-Otro de sus grandes avances fue **BFS (Be File System)**.
+Otro de sus grandes avances fue **BFS (Be File System)**, desarrollado por Benoît Schillings.
 
 BFS no trataba los archivos únicamente como bloques de datos, sino que permitía asociarles **atributos y metadatos indexables**. El sistema podía mantener índices sobre esos atributos y realizar búsquedas de forma mucho más integrada que los sistemas de archivos de escritorio tradicionales.
 
 ### El legado
 
-BeOS nunca consiguió convertirse en el sistema operativo dominante, pero su arquitectura dejó una fuerte impresión entre desarrolladores y usuarios.
+Aunque BeOS no logró imponerse en el mercado comercial —incluso después de que Apple barajara su compra en 1996 antes de decantarse por NeXT—, su elegante arquitectura dejó una huella imborrable en el mundo del software.
 
-Su espíritu continúa, en buena medida, en **Haiku**, un sistema operativo de código abierto que intenta preservar y desarrollar muchas de las ideas de BeOS.
+Su espíritu continúa vivo hoy en **Haiku**, un sistema operativo de código abierto que busca preservar y evolucionar las ambiciosas ideas de BeOS.
 
 ---
 
