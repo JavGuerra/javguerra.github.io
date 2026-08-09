@@ -103,7 +103,7 @@ La influencia de Xerox PARC llegó directamente a Apple y, posteriormente, a la 
 
 El modelo de ventanas, puntero y manipulación directa que hoy parece natural fue, en buena medida, una de las grandes ideas que PARC consiguió convertir en realidad práctica.
 
-![SmallTalk 76](https://commons.wikimedia.org/wiki/File:Smalltalk-76.popup.png#/media/File:Smalltalk-76.popup.png)
+![SmallTalk 76](https://upload.wikimedia.org/wikipedia/commons/8/8d/Smalltalk-76.popup.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
 
 ---
 
@@ -217,7 +217,7 @@ Cuando un error grave ocurría, podía aparecer la famosa **«Guru Meditation»*
 
 AmigaOS demostró que un ordenador doméstico podía ofrecer multitarea, gráficos, sonido y una interfaz sofisticada años antes de que esas capacidades fueran normales en los PCs.
 
-![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
+![Amiga OS](https://upload.wikimedia.org/wikipedia/en/e/e4/Amiga_Workbench_1_3_large.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original)
 
 ---
 
@@ -253,7 +253,7 @@ Y en 1996 Apple adquirió NeXT. La tecnología resultante acabó dando lugar a *
 
 Pocas plataformas desaparecidas pueden presumir de haber contribuido tanto a la historia de Internet y a la de Apple simultáneamente.
 
-![NextStep y la WWW](https://es.wikipedia.org/wiki/WorldWideWeb#/media/Archivo:WorldWideWeb.png)
+![NextStep y la WWW](https://upload.wikimedia.org/wikipedia/commons/8/8c/WorldWideWeb.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
 
 ---
 
