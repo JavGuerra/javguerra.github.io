@@ -77,7 +77,7 @@ Su mayor victoria quizá sea cultural: la combinación de procesos, archivos, tu
 
 Antes de que Apple lanzara Macintosh o Microsoft popularizara Windows, los investigadores de Xerox PARC ya estaban experimentando con una forma completamente distinta de utilizar los ordenadores.
 
-El [Xerox Alto](https://computerhistory.org/blog/xerox-alto-source-code), diseñado en 1973, combinaba una pantalla bitmap, ratón, redes, almacenamiento y una interfaz gráfica basada en ventanas, menús e interacción directa.
+El [Xerox Alto](https://computerhistory.org/blog/xerox-alto-source-code), diseñado en 1973, combinaba una pantalla bitmap, ratón, redes, almacenamiento y una interfaz gráfica basada en ventanas, menús e interacción directa. El S.O. llevaba el mismo nombre que la máquina.
 
 No fue la primera interfaz gráfica de la historia —existían importantes antecedentes, como Sketchpad (1963), el programa de Ivan Sutherland que permitía dibujar con un lápiz óptico sobre la pantalla, o el trabajo de Douglas Engelbart, que en 1968 demostró el uso del ratón, el hipertexto y la edición colaborativa—, pero sí fue uno de los primeros sistemas en integrar de manera coherente ventanas, iconos y manipulación directa en un ordenador de propósito general.
 
