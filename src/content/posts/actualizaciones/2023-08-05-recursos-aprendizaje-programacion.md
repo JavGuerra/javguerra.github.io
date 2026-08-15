@@ -134,6 +134,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 
 * [97 cosas que todo programador debería saber](https://97cosas.com/programador/)
 * [Patrones de diseño](https://refactoring.guru/es/design-patterns)
+* [Introducción a las Ciencias de la Computación de Harvard CS50](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
 * [Retos de programación](https://retosdeprogramacion.com/)
 * [Pruebas técnicas de programación](https://pruebastecnicas.com/)
 * [Fundamentos de programación](https://lenguajejs.com/fundamentos/)

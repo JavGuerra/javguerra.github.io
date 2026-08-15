@@ -122,7 +122,8 @@ Cursos online vinculados a unidades de competencia del Catálogo Nacional de Cua
 * [Aprender gratis](https://aprendergratis.es/) - Plataforma de búsqueda de cursos.
 * [Cibervoluntarios](https://www.cibervoluntarios.org/es) - Cursos y píldoras TIC impartidas por voluntarios.
 * [Procumún](https://procomun.intef.es/search-full?f%5B0%5D=knowledgearea_keyword%3AInform%C3%A1tica%20y%20Tecnolog%C3%ADas%20de%20la%20Informaci%C3%B3n&f%5B1%5D=knowledgearea_keyword%3ATecnolog%C3%ADas) - Red de recursos educativos en abierto. Tecnología, Informática y tecnologías de la información.
+* [Introducción a las Ciencias de la Computación de Harvard CS50](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
 * [Observatorio de tecnología educativa](https://intef.es/recursos-educativos/observatorio-de-tecnologia-educativa/) - Biblioteca virtual de artículos sobre tecnología educativa, creados por docentes para docentes, en torno a la innovación digital en el aula.
 * [DigComp](https://epale.ec.europa.eu/es/content/marco-europeo-de-competencias-digitales-digcomp) - Marco europeo de competencias digitales.
-* [Generación D](https://generaciond.gob.es/iniciativas) - El Pacto por la Generación D es una iniciativa del Gobierno de España. 
+* [Generación D](https://generaciond.gob.es/iniciativas) - El Pacto por la Generación D es una iniciativa del Gobierno de España.
 * [Ciberseguridad](https://www.incibe.es/incibe/formacion/catalogos-formacion-ciberseguridad) - Listado de recursos formativos recopilado por el INCIBE.
