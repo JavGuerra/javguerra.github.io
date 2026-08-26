@@ -1,6 +1,6 @@
 ---
 import { getNewPost } from '@/scripts/posts';
-import { getSlugName } from '@/scripts/urlUtils';
+import { getPostSlug } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
 const newPost =  await getNewPost();
@@ -10,7 +10,7 @@ const newPost =  await getNewPost();
   <ul class="my-8 text-center md:text-left">
     <BlogPostCard
       frontmatter={newPost.data}
-      href=`${newPost.data.route || getSlugName(newPost.id)}`
+      href={getPostSlug(newPost)}
     />
   </ul>
 }

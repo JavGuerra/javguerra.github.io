@@ -8,28 +8,24 @@ export async function getPosts(): Promise<CollectionEntry<'posts'>[]> {
 export async function getSortedPosts(): Promise<CollectionEntry<'posts'>[]> {
   const allPosts = await getPosts();
 
-  if (!allPosts || allPosts.length === 0) {
-    return [];
-  }
-
-  return [...allPosts].sort((a, b) => {
-    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
-    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
-    return dateB - dateA;
-  });
+  return [...allPosts].sort(
+    (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+  );
 }
 
 export async function getSortedPostsPrefixed(): Promise<CollectionEntry<'posts'>[]> {
   const sortedPosts = await getSortedPosts();
 
-  if (!sortedPosts || sortedPosts.length === 0) {
+  if (sortedPosts.length === 0) {
     return [];
   }
 
   const clonedPosts = [...sortedPosts];
   const firstPost = clonedPosts[0];
-  const title = firstPost.data.title ?? '';
-  const prefixedTitle = title.startsWith('Nuevo: ') ? title : `Nuevo: ${title}`;
+  const title = firstPost.data.title;
+  const prefixedTitle = title.startsWith('Nuevo: ')
+    ? title
+    : `Nuevo: ${title}`;
 
   clonedPosts[0] = {
     ...firstPost,
@@ -45,9 +41,9 @@ export async function getSortedPostsPrefixed(): Promise<CollectionEntry<'posts'>
 export async function getNewPost(): Promise<CollectionEntry<'posts'> | null> {
   const sortedPosts = await getSortedPostsPrefixed();
 
-  if (sortedPosts && sortedPosts.length > 0) {
+  if (sortedPosts.length > 0) {
     return sortedPosts[0];
   }
-  
+
   return null;
 }

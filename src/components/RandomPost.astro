@@ -1,6 +1,6 @@
 ---
 import { getSortedPostsPrefixed } from '@/scripts/posts';
-import { getSlugName } from '@/scripts/urlUtils';
+import { getPostSlug } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
 const sortedPosts = await getSortedPostsPrefixed();
@@ -11,7 +11,7 @@ const sortedPosts = await getSortedPostsPrefixed();
     <div class={index === 0 ? '' : 'hidden'} data-post-index={index}>
       <BlogPostCard
         frontmatter={post.data}
-        href={`${post.data.route || getSlugName(post.id)}`}
+        href={getPostSlug(post)}
         ignorePrefetch = {true}
       />
     </div>

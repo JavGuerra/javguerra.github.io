@@ -2,34 +2,38 @@ import siteConfig from '@/siteConfig.json';
 import rss from '@astrojs/rss';
 import { getSortedPosts } from '@/scripts/posts';
 import { getImage } from 'astro:assets';
-import { getSlugName } from '@/scripts/urlUtils';
-
+import { getPostSlug } from '@/scripts/urlUtils';
 
 export async function GET(context) {
   const allPosts = await getSortedPosts();
 
-  const items = await Promise.all(allPosts.map(async (post) => {
-    let imageUrl;
-    if (post.data.coverImage) {
-      const processedImage = await getImage({
-        src: post.data.coverImage.image,
-        width: post.data.coverImage.image.width,
-        height: post.data.coverImage.image.height,
-      });
-      imageUrl = new URL(processedImage.src, context.site).toString();
-    }
+  const items = await Promise.all(
+    allPosts.map(async (post) => {
+      let imageUrl;
 
-    return {
-      link: `${context.site}blog/${post.data.route || getSlugName(post.id)}`,
-      title: post.data.title,
-      description: post.data.description,
-      author: post.data.author || siteConfig.autor,
-      pubDate: post.data.pubDate,
-      // Añadir la URL de la imagen al ítem RSS si existe
-      ...(imageUrl && { customData: `<enclosure url="${imageUrl}" />` }),
-      categories: post.data.tags || [],
-    };
-  }));
+      if (post.data.coverImage) {
+        const processedImage = await getImage({
+          src: post.data.coverImage.image,
+          width: post.data.coverImage.image.width,
+          height: post.data.coverImage.image.height,
+        });
+
+        imageUrl = new URL(processedImage.src, context.site).toString();
+      }
+
+      return {
+        link: `${context.site}blog/${getPostSlug(post)}`,
+        title: post.data.title,
+        description: post.data.description,
+        author: post.data.author || siteConfig.autor,
+        pubDate: post.data.pubDate,
+        ...(imageUrl && {
+          customData: `<enclosure url="${imageUrl}" />`,
+        }),
+        categories: post.data.tags,
+      };
+    })
+  );
 
   return rss({
     title: `${siteConfig.title} | Blog`,

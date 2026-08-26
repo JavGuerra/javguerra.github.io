@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import { render } from 'astro:content';
 import MarkdownPostLayout from '@/layouts/MarkdownPostLayout.astro';
 import { getPosts } from '@/scripts/posts';
-import { getSlugName } from '@/scripts/urlUtils';
+import { getPostSlug } from '@/scripts/urlUtils';
 
 interface Props {
   post: CollectionEntry<'posts'>;
@@ -13,14 +13,14 @@ export async function getStaticPaths() {
   const allPosts = await getPosts();
 
   return allPosts.map(post => ({
-    params: { slug: post.data.route || getSlugName(post.id) }, 
+    params: { slug: getPostSlug(post) },
     props: { post }
   }));
 }
 
 const { post } = Astro.props;
 const { Content } = await render(post); 
-const postId = `post-${post.data.route}`;
+const postId = `post-${getPostSlug(post)}`;
 ---
 
 <MarkdownPostLayout frontmatter={post.data as any} id={postId}>
