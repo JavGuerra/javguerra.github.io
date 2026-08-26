@@ -1,38 +1,53 @@
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-export async function getPosts() {
-  const allPosts: Record<string, any>[] = await getCollection('posts');
+export async function getPosts(): Promise<CollectionEntry<'posts'>[]> {
+  const allPosts = await getCollection('posts');
   return allPosts;
 }
 
-export async function getSortedPosts() {
+export async function getSortedPosts(): Promise<CollectionEntry<'posts'>[]> {
   const allPosts = await getPosts();
-  let sortedPosts = null;
 
-  if (allPosts) {
-    sortedPosts = allPosts.sort(
-      (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-    );
+  if (!allPosts || allPosts.length === 0) {
+    return [];
   }
 
-  return sortedPosts;
+  return [...allPosts].sort((a, b) => {
+    const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+    const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+    return dateB - dateA;
+  });
 }
 
-export async function getSortedPostsPrefixed() {
+export async function getSortedPostsPrefixed(): Promise<CollectionEntry<'posts'>[]> {
   const sortedPosts = await getSortedPosts();
 
-  if (sortedPosts) {
-    const title = sortedPosts[0].data.title;
-    const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;
-    sortedPosts[0].data.title = prefixedTitle;
+  if (!sortedPosts || sortedPosts.length === 0) {
+    return [];
   }
 
-  return sortedPosts;
+  const clonedPosts = [...sortedPosts];
+  const firstPost = clonedPosts[0];
+  const title = firstPost.data.title ?? '';
+  const prefixedTitle = title.startsWith('Nuevo: ') ? title : `Nuevo: ${title}`;
+
+  clonedPosts[0] = {
+    ...firstPost,
+    data: {
+      ...firstPost.data,
+      title: prefixedTitle,
+    },
+  };
+
+  return clonedPosts;
 }
 
-export async function getNewPost() {
+export async function getNewPost(): Promise<CollectionEntry<'posts'> | null> {
   const sortedPosts = await getSortedPostsPrefixed();
 
-  if (sortedPosts) return sortedPosts[0];
+  if (sortedPosts && sortedPosts.length > 0) {
+    return sortedPosts[0];
+  }
+  
   return null;
 }

@@ -20,10 +20,10 @@ export async function GET(context) {
     }
 
     return {
-      link: `${context.site}blog/${post.data.route || getSlugName(post.slug)}`,
+      link: `${context.site}blog/${post.data.route || getSlugName(post.id)}`,
       title: post.data.title,
       description: post.data.description,
-      author: post.data.author || siteConfig.default.autor,
+      author: post.data.author || siteConfig.autor,
       pubDate: post.data.pubDate,
       // Añadir la URL de la imagen al ítem RSS si existe
       ...(imageUrl && { customData: `<enclosure url="${imageUrl}" />` }),
@@ -32,8 +32,8 @@ export async function GET(context) {
   }));
 
   return rss({
-    title: `${siteConfig.default.title} | Blog`,
-    description: siteConfig.default.description,
+    title: `${siteConfig.title} | Blog`,
+    description: siteConfig.description,
     site: context.site,
     items,
   });

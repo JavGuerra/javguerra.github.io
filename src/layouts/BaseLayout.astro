@@ -18,7 +18,7 @@ const { pageTitle, subTitle, coverImage } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
 const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog';
 const title = pageTitle.startsWith('Nuevo: ') ? pageTitle.replace('Nuevo: ', '') : pageTitle;
-const description = subTitle ? subTitle : siteConfig.default.description;
+const description = subTitle ? subTitle : siteConfig.description;
 
 let routeImage = '/assets/img/banner.png';
 if (coverImage && coverImage?.image && coverImage.image !== '') {

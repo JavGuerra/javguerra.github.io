@@ -1,22 +1,26 @@
 ---
-interface Props {
-    posts: Record<string, any>[];
-    tags: Array<string>;
-}
-
+import type { CollectionEntry } from 'astro:content';
 import { getPosts } from '@/scripts/posts';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
 import TagLabel from '@/components/TagLabel.astro';
 
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+  tags: string[];
+}
+
 export async function getStaticPaths() {
   const allPosts = await getPosts();
 
-  const uniqueTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+  // Protección contra posts sin etiquetas asignadas
+  const uniqueTags = [
+    ...new Set(allPosts.flatMap(post => post.data.tags ?? []))
+  ];
 
   return uniqueTags.map((tag, _, allTags) => {
-    const posts = allPosts.filter(post => post.data.tags.includes(tag));
+    const posts = allPosts.filter(post => post.data.tags?.includes(tag));
     const tags = allTags.filter(tagName => tagName !== tag);
     return {
       params: { tag },
@@ -33,25 +37,28 @@ const { posts, tags } = Astro.props;
   
   <h2>{`${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
 
-    <ul class="mt-8 mb-12 list-disc">
-      {posts.map(post => <BlogPostLink title={post.data.title} 
-          href=`/blog/${post.data.route || post.slug}` />
-      )}
-    </ul>
+  <ul class="mt-8 mb-12 list-disc">
+    {posts.map(post => (
+      <BlogPostLink 
+        title={post.data.title ?? 'Sin título'} 
+        href={`/blog/${post.data.route || post.id}`} 
+      />
+    ))}
+  </ul>
 
-    { tags.length ? (
-      <>
-        <h2>Otros temas</h2>
-        <div class="mt-4 mb-12 flex flex-wrap">
-          {tags
-            .sort((a, b) => String(a).localeCompare(String(b)))
-            .map(tag => <TagLabel tag={tag} />)}
-        </div>
-      </>
-    ) : ( "" ) }
+  {tags.length > 0 && (
+    <>
+      <h2>Otros temas</h2>
+      <div class="mt-4 mb-12 flex flex-wrap">
+        {tags
+          .sort((a, b) => a.localeCompare(b))
+          .map(tag => <TagLabel tag={tag} />)}
+      </div>
+    </>
+  )}
 
-    <div class="text-center md:text-left">
-      <ButtonLink text="←&nbsp;Volver" />
-    </div>
+  <div class="text-center md:text-left">
+    <ButtonLink text="←&nbsp;Volver" />
+  </div>
 
 </BaseLayout>

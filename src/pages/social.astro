@@ -6,11 +6,11 @@ import Card from '@/components/Card.astro';
 
 import '@/styles/mastodon.css';
 
-const social = siteConfig.default.social;
+const social = siteConfig.social;
 
 const server = 'https://indieweb.social';
 const profileId = '109292343224519197';
-const limit = siteConfig.default.socialPosts;
+const limit = siteConfig.socialPosts;
 const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
 ---
 

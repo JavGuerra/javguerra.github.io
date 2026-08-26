@@ -10,7 +10,7 @@ const newPost =  await getNewPost();
   <ul class="my-8 text-center md:text-left">
     <BlogPostCard
       frontmatter={newPost.data}
-      href=`${newPost.data.route || getSlugName(newPost.slug)}`
+      href=`${newPost.data.route || getSlugName(newPost.id)}`
     />
   </ul>
 }

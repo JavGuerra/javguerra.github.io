@@ -1,12 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": ["**/*", ".astro/types.d.ts"],
-  "exclude": ["dist"],
+  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["src/*"],
-      "@posts/*": ["src/content/posts/*"],
+      "@posts/*": ["src/content/posts/*"]
     }
-  }
+  },
+  "exclude": ["dist"]
 }

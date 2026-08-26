@@ -11,7 +11,7 @@ const sortedPosts = await getSortedPostsPrefixed();
     <div class={index === 0 ? '' : 'hidden'} data-post-index={index}>
       <BlogPostCard
         frontmatter={post.data}
-        href={`${post.data.route || getSlugName(post.slug)}`}
+        href={`${post.data.route || getSlugName(post.id)}`}
         ignorePrefetch = {true}
       />
     </div>

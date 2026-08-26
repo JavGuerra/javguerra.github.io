@@ -1,8 +1,10 @@
-import { z, defineCollection, type SchemaContext } from 'astro:content';
+import { defineCollection, type SchemaContext } from 'astro:content';
+import { z } from 'zod';
 import { rssSchema } from '@astrojs/rss';
+import { glob } from 'astro/loaders';
 
 const extendedRssCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/posts' }),
   schema: ({ image }: SchemaContext) =>
     rssSchema.extend({
       route: z.string().optional(),

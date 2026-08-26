@@ -2,7 +2,7 @@
 import siteConfig from '@/siteConfig.json';
 import FooterIcon from './FooterIcon.astro';
 
-const social = siteConfig.default.social;
+const social = siteConfig.social;
 //type SocialPlatform = keyof typeof social;
 //const getSocialUrl = (platform: SocialPlatform): string =>
 //  `https://www.${platform}.com/${social[platform]}`;
@@ -17,19 +17,20 @@ const getSvgIcon = (name: string) =>
   <div class="flex flex-wrap md:flex-row-reverse gap-4 items-center justify-center">
 
     <p class="w-full md:w-auto md:mt-4 leading-tight text-center md:text-left">
-      <a href={siteConfig.default.licenseUrl} >
-        <small>{siteConfig.default.license}</small>
+      <a href={siteConfig.licenseUrl} >
+        <small>{siteConfig.license}</small>
       </a>
-      <strong>{siteConfig.default.autor}</strong><br />
-      <small class="gray"><em>{siteConfig.default.footer}</em></small>
+      &nbsp;
+      <strong>{siteConfig.autor}</strong><br />
+      <small class="gray"><em>{siteConfig.footer}</em></small>
     </p>
 
     <div class="flex gap-4">
       <FooterIcon href={social.linkedin} icon={getSvgIcon("linkedin")} alt="Linked In" />
       <FooterIcon href={social.github} icon={getSvgIcon("github")} alt="GitHub" />
-      <FooterIcon href=`mailto:${siteConfig.default.email}` icon={getSvgIcon("email")} alt="Correo" />
+      <FooterIcon href=`mailto:${siteConfig.email}` icon={getSvgIcon("email")} alt="Correo" />
       <FooterIcon href="/rss.xml" icon={getSvgIcon("rss")} alt="Fuente RSS" />
-      <FooterIcon href={siteConfig.default.stats} icon={getSvgIcon("stats")} alt="Estadísticas" />
+      <FooterIcon href={siteConfig.stats} icon={getSvgIcon("stats")} alt="Estadísticas" />
     </div>
     
   </div>

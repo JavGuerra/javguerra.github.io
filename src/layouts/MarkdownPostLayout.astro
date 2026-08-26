@@ -28,7 +28,7 @@ const {
     title,
     description,
     pubDate,
-    author = siteConfig.default.autor,
+    author = siteConfig.autor,
     route,
     coverImage = {image: '', alt: ''},
     tags = []
@@ -40,7 +40,7 @@ const href = `/blog/${route}`;
 <BaseLayout pageTitle={title} subTitle={description} coverImage={coverImage}>
 
     <p class="-mt-6 mb-2 gray"><small>
-        {author ? author : siteConfig.default.autor}{
+        {author ? author : siteConfig.autor}{
             pubDate && <>, <FormattedDate date={pubDate} /></>}
     </small></p>
 
