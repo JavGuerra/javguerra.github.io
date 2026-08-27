@@ -37,25 +37,25 @@
             "text": "Fullstack Web Dev"
         },
         {
-            "href": "/blog/tag/JavaScript",
+            "href": "/blog/tag/javascript",
             "img": "react.svg",
             "alt": "Logo React",
             "text": "JavaScript MERN"
         },
         {
-            "href": "/blog/tag/Java",
+            "href": "/blog/tag/java",
             "img": "springboot.svg",
             "alt": "Logo Spring Boot",
             "text": "Spring Boot Java"
         },
         {
-            "href": "/blog/tag/PHP",
+            "href": "/blog/tag/php",
             "img": "laravel.svg",
             "alt": "Logo Laravel",
             "text": "PHP + Laravel"
         },
         {
-            "href": "/blog/tag/Python",
+            "href": "/blog/tag/python",
             "img": "python.svg",
             "alt": "Logo Python",
             "text": "Python"
@@ -67,10 +67,10 @@
             "text": "Diseño gráfico"
         },
         {
-            "href": "/blog/tag/Sinclair QL",
+            "href": "/blog/tag/sinclair ql",
             "img": "ql.svg",
             "alt": "Logo QL",
-            "text": "Sinclair QL"
+            "text": "sinclair ql"
         }
     ]
 }
