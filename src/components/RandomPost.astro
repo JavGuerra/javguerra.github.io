@@ -8,11 +8,14 @@ const sortedPosts = await getSortedPostsPrefixed();
 
 <ul class="my-8 text-center md:text-left">
   {sortedPosts && sortedPosts.map((post, index) => (
-    <div class={index === 0 ? '' : 'hidden'} data-post-index={index}>
+    <div
+      class={index === 0 ? '' : 'hidden'}
+      data-post-index={index}
+    >
       <BlogPostCard
         frontmatter={post.data}
         href={getPostSlug(post)}
-        ignorePrefetch = {true}
+        ignorePrefetch={true}
       />
     </div>
   ))}
@@ -21,23 +24,36 @@ const sortedPosts = await getSortedPostsPrefixed();
 <script is:inline>
   let interval;
   let currentIndex = 0;
+  let isTransitioning = false;
 
   function handleContentLoaded() {
     const $postContainers = document.querySelectorAll('[data-post-index]');
-    let randomIndex = 0;
-    const maxAttempts = 5;
+
+    if ($postContainers.length <= 1) return;
 
     function showRandomPost() {
-      if ($postContainers.length <= 1) return;
+      // No iniciar una nueva transición mientras la anterior sigue activa
+      if (isTransitioning) return;
 
+      let randomIndex = 0;
+      const maxAttempts = 5;
       let attempts = 0;
+
       do {
         randomIndex = Math.floor(Math.random() * $postContainers.length);
         attempts++;
-      } while (randomIndex === currentIndex && attempts < maxAttempts && $postContainers.length > 1);
+      } while (
+        randomIndex === currentIndex &&
+        attempts < maxAttempts &&
+        $postContainers.length > 1
+      );
 
       const $actual = $postContainers[currentIndex];
       const $next = $postContainers[randomIndex];
+
+      if (!$actual || !$next || $actual === $next) return;
+
+      isTransitioning = true;
 
       $actual.classList.add('fade-out');
 
@@ -46,11 +62,14 @@ const sortedPosts = await getSortedPostsPrefixed();
         $actual.classList.remove('fade-out');
 
         $next.classList.remove('hidden');
-        
-        currentIndex = randomIndex;
 
-        $actual.removeEventListener('transitionend', fadeOutHandler);
+        currentIndex = randomIndex;
+        isTransitioning = false;
       }, { once: true });
+    }
+
+    if (interval) {
+      clearInterval(interval);
     }
 
     interval = setInterval(showRandomPost, 7000);
@@ -59,20 +78,26 @@ const sortedPosts = await getSortedPostsPrefixed();
   function cleanup() {
     if (interval) {
       clearInterval(interval);
+      interval = null;
     }
 
+    isTransitioning = false;
+
     const $postContainers = document.querySelectorAll('[data-post-index]');
+
     $postContainers.forEach(($post, index) => {
       if (index === currentIndex) {
         $post.classList.remove('hidden');
+        $post.classList.remove('fade-out');
       } else {
         $post.classList.add('hidden');
+        $post.classList.remove('fade-out');
       }
     });
   }
 
   document.addEventListener('astro:page-load', handleContentLoaded);
-  document.addEventListener('astro:before-preparation', cleanup); 
+  document.addEventListener('astro:before-preparation', cleanup);
 </script>
 
 <style>
