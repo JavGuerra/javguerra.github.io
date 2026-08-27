@@ -11,10 +11,14 @@ const quotesList = quotes.list;
 </div>
 
 <script define:vars={{ quotesList }} is:inline>
-    document.addEventListener('astro:page-load', () => {
-      const randomIndex = Math.floor(Math.random() * quotesList.length);
-      const quote = quotesList[randomIndex];
-      document.getElementById('quote-text').innerHTML = quote.text;
-      document.getElementById('quote-source').textContent = `— ${quote.source}`;
-    });
+  function showRandomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotesList.length);
+    const quote = quotesList[randomIndex];
+
+    document.getElementById('quote-text').innerHTML = quote.text;
+    document.getElementById('quote-source').textContent = `— ${quote.source}`;
+  }
+
+  document.removeEventListener('astro:page-load', showRandomQuote);
+  document.addEventListener('astro:page-load', showRandomQuote);
 </script>

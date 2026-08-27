@@ -21,7 +21,7 @@ const title = pageTitle.startsWith('Nuevo: ') ? pageTitle.replace('Nuevo: ', '')
 const description = subTitle ? subTitle : siteConfig.description;
 
 let routeImage = '/assets/img/banner.png';
-if (coverImage && coverImage?.image && coverImage.image !== '') {
+if (coverImage?.image) {
   const processedImage = await getImage({ src: coverImage.image });
   routeImage = processedImage.src;
 }

@@ -11,12 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/react": "^6.0.4",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.2.6",
-    "astro-pagefind": "^1.8.6",
-    "typescript": "^5.5.3"
+    "astro-pagefind": "^1.8.6"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
@@ -28,7 +26,8 @@
     "postcss": "^8.5.26",
     "postcss-html": "^1.7.0",
     "stylelint-config-html": "^1.1.0",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "@astrojs/tailwind": {

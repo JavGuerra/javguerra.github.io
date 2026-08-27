@@ -1,17 +1,21 @@
 ---
 import recommendations from '@/content/_recommendations.json';
+
 const slides = recommendations.list.map(slide => slide.quote);
 
 const style = "height: 160px;";
+
 const duration = 9; // seconds
 ---
 
 <style is:global define:vars={{ animationDuration: `${duration}s` }}>
+
     #slideshow-container {
         width: 100%;
         overflow: hidden;
         position: relative;
     }
+
     .content-slide {
         position: absolute;
         top: 0;
@@ -23,21 +27,27 @@ const duration = 9; // seconds
         justify-content: center;
         text-align: center;
     }
+
     @keyframes slideInOut {
         0% { transform: translateX(100%); }
         11.11%, 88.89% { transform: translateX(0); }
         100% { transform: translateX(-100%); }
     }
+
     .animating {
         animation: slideInOut var(--animationDuration) linear;
     }
+
 </style>
 
 <div id="slideshow" class="w-full font-serif">
     <div id="slideshow-container" class="p-4 mt-0 mb-8" style={style}></div>
 </div>
 
-<script is:inline define:vars={{slides, duration}}>
+<script is:inline define:vars={{ slides, duration }}>
+    let timeoutId = null;
+    let currentIndex = 0;
+    let shuffleSlides = [];
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -47,31 +57,69 @@ const duration = 9; // seconds
         return array;
     };
 
-    const shuffleSlides = shuffleArray(slides);
-    const container = document.getElementById('slideshow-container');
-    let currentIndex = 0;
-
     function createSlide(content) {
         const slide = document.createElement('div');
+
         slide.className = 'content-slide';
         slide.innerHTML = content;
+
         return slide;
     }
 
     function updateSlide() {
+        const container = document.getElementById('slideshow-container');
+
+        if (!container || shuffleSlides.length === 0) return;
+
         const newSlide = createSlide(shuffleSlides[currentIndex]);
+
         container.appendChild(newSlide);
-        
+
         void newSlide.offsetWidth; // Trigger reflow
+
         newSlide.classList.add('animating');
 
         currentIndex = (currentIndex + 1) % shuffleSlides.length;
 
-        setTimeout(() => {
+        timeoutId = setTimeout(() => {
             newSlide.remove();
             updateSlide();
         }, duration * 1000);
     }
 
-    updateSlide();
+    function startCarousel() {
+        const container = document.getElementById('slideshow-container');
+
+        if (!container || slides.length === 0) return;
+
+        // Por si quedara alguna instancia anterior.
+        if (timeoutId !== null) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+        }
+
+        container.replaceChildren();
+
+        shuffleSlides = shuffleArray([...slides]);
+        currentIndex = 0;
+
+        updateSlide();
+    }
+
+    function stopCarousel() {
+        if (timeoutId !== null) {
+            clearTimeout(timeoutId);
+            timeoutId = null;
+        }
+
+        const container = document.getElementById('slideshow-container');
+
+        if (container) {
+            container.replaceChildren();
+        }
+    }
+
+    document.addEventListener('astro:before-preparation', stopCarousel);
+
+    document.addEventListener('astro:page-load', startCarousel);
 </script>
