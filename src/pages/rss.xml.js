@@ -1,6 +1,6 @@
 import siteConfig from '@/siteConfig.json';
 import rss from '@astrojs/rss';
-import { getSortedPosts } from '@/scripts/posts';
+import { getSortedPosts } from '@/scripts/postsUtils';
 import { getImage } from 'astro:assets';
 import { getPostSlug } from '@/scripts/urlUtils';
 

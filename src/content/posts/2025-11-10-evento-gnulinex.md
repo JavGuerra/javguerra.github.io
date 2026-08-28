@@ -1,7 +1,7 @@
 ---
 route: evento-gnulinex
 title: El legado de gnuLinEx
-description: Coloquio con los principales artífices de la distro Linux extremeña.
+description: Coloquio con los principales artífices de la distro Linux extremeña
 author: JavGuerra
 pubDate: 2025-11-10
 coverImage:

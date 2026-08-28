@@ -1,7 +1,7 @@
 ---
 route: sistemas-operativos
 title: 12 sistemas operativos que cambiaron la informática
-description: Las ideas revolucionarias que dieron forma a los sistemas que usamos hoy.
+description: Las ideas revolucionarias que dieron forma a los sistemas que usamos hoy
 author: JavGuerra
 pubDate: 2026-08-09
 coverImage:

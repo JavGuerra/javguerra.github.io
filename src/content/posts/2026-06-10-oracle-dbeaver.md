@@ -1,7 +1,7 @@
 ---
 route: oracle-dbeaver
 title: Acceder a BBDD Oracle con DBeaver
-description: Configuración de la aplicación con los drivers originales.
+description: Configuración de la aplicación con los drivers originales
 author: JavGuerra
 pubDate: 2026-06-10
 coverImage:

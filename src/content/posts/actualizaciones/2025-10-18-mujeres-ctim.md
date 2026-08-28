@@ -1,7 +1,7 @@
 ---
 route: mujeres-ctim
 title: Mujeres científicas
-description: Su contribución a la Ciencia, la Tecnología, la Ingeniería y las Matemáticas.
+description: Su contribución a la Ciencia, la Tecnología, la Ingeniería y las Matemáticas
 author: JavGuerra
 pubDate: 2025-10-18
 coverImage:
