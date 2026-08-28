@@ -1,5 +1,6 @@
 ---
-import type { Page } from 'astro';
+import type { GetStaticPathsOptions, Page } from 'astro';
+import type { CollectionEntry } from 'astro:content';
 import Search from "astro-pagefind/components/Search";
 import '@/styles/pagefind-ui-custom.css';
 import siteConfig from '@/siteConfig.json';
@@ -11,17 +12,17 @@ import ButtonLink from '@/components/ButtonLink.astro';
 import Card from '@/components/Card.astro';
 
 interface Props {
-    page: Page<any>;
+    page: Page<CollectionEntry<'posts'>>;
 }
 
-export async function getStaticPaths({ paginate }: any) {
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
     const sortedPosts = await getSortedPostsPrefixed();
     return paginate(sortedPosts, { pageSize: siteConfig.pageSize });
 }
 
 const { page } = Astro.props;
 
-function getFirstParagraph(text: string): string {
+function getFirstParagraph(text?: string): string {
   if (!text) return '';
   const firstParagraph = text.split('\n\n')[0];
   return firstParagraph.replace(/\[([^\]]+)\](\([^\)]+\))/g, '$1');
@@ -42,15 +43,15 @@ if (page.currentPage === 1 && page.data.length > 0) {
 
   { page.data.length ? (
 
-    <ul>
+    <ul class="list-none p-0">
         {page.data.map(post => (
-          <div class="my-8 text-center md:text-left">
+          <li class="my-8 text-center md:text-left">
               <BlogPostCard
                 frontmatter={post.data}
                 href={getPostSlug(post)}
                 firstParagraph={getFirstParagraph(post.body)}
               />
-          </div>
+          </li>
         ))}
     </ul>
 

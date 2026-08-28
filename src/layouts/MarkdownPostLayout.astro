@@ -1,19 +1,6 @@
 ---
-interface frontmatterInfo {
-    title: string;
-    description: string;
-    pubDate: string;
-    author?: string;
-    route: string;
-    coverImage?: Record<string, string>;
-    tags?: Array<string>;
-}
-
-interface Props {
-    frontmatter: frontmatterInfo;
-    id: string;
-}
-
+import type { CollectionEntry } from 'astro:content';
+import type { ImageMetadata } from 'astro';
 import '@/styles/markdown.css';
 import { Image } from 'astro:assets';
 import siteConfig from '@/siteConfig.json';
@@ -23,6 +10,11 @@ import ButtonLink from '@/components/ButtonLink.astro';
 import FormattedDate from '@/components/FormattedDate.astro';
 import Disqus from '@/components/Disqus.astro';
 
+interface Props {
+    frontmatter: CollectionEntry<'posts'>['data'];
+    id: string;
+}
+
 const { frontmatter, id } = Astro.props;
 const { 
     title,
@@ -30,7 +22,7 @@ const {
     pubDate,
     author = siteConfig.autor,
     route,
-    coverImage = {image: '', alt: ''},
+    coverImage,
     tags = []
 } = frontmatter;
 
@@ -44,8 +36,8 @@ const href = `/blog/${route}`;
             pubDate && <>, <FormattedDate date={pubDate} /></>}
     </small></p>
 
-    {coverImage && <Image src={coverImage.image} title={coverImage.alt}
-        alt={coverImage.alt} inferSize class="my-8" loading="eager" transition:name={href} />}
+    {coverImage && <Image src={coverImage.image as ImageMetadata} title={coverImage.alt}
+        alt={coverImage.alt} class="my-8" loading="eager" transition:name={href} />}
 
     <div data-pagefind-ignore="all">
         <div class="flex flex-wrap mt-4">

@@ -6,29 +6,51 @@ interface Props {
     small?: boolean;
 }
 
-import { generateUniqueId } from '@/scripts/urlUtils';
-const uniqueId = generateUniqueId();
+const { href, text, ariaLabel, small } = Astro.props;
 
-let { href, text, ariaLabel, small } = Astro.props;
+// Si 'href' es "#" se entiende como botón deshabilitado
+const isDisabled = href === "#";
+// Si no hay 'href', actuará como botón de "Volver atrás"
+const isBackButton = !href;
 
-// Si 'href' es "#" se entiende como botón deshabilitado, pero se muestra.
-const isDisabled = href == "#";
-let buttonClass = "inline-block px-3 pb-1 font-bold rounded ";
-buttonClass = buttonClass + (href != "#"
-    ? "bg-violet-500 text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500/50 transition-colors"
-    : "bg-gray-200 text-gray-500 dark:bg-gray-800 cursor-not-allowed disabled");
-if (small) buttonClass = buttonClass + " text-sm";
+const baseClass = "inline-block px-3 pb-1 font-bold rounded cursor-pointer";
+const stateClass = isDisabled
+    ? "bg-gray-200 text-gray-500 dark:bg-gray-800 cursor-not-allowed disabled"
+    : "bg-violet-500 text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500/50 transition-colors";
+const sizeClass = small ? "text-sm" : "";
+
+const buttonClass = `${baseClass} ${stateClass} ${sizeClass}`.trim();
 ---
 
-<a id={uniqueId} href={href} class={buttonClass} aria-label={ariaLabel || text}
-    aria-disabled={isDisabled} role="button" data-astro-prefetch set:html={text}>
+<a 
+  href={href || "#"} 
+  class={buttonClass} 
+  aria-label={ariaLabel || text}
+  aria-disabled={isDisabled} 
+  role="button" 
+  data-astro-prefetch={!isBackButton && !isDisabled ? true : undefined}
+  data-back-button={isBackButton ? "" : undefined}
+  set:html={text}
+>
 </a>
 
-<script is:inline define:vars={{ uniqueId, href }}>
-    document.getElementById(uniqueId)?.addEventListener('click', (event) => {
-      if (!href) {
+<script>
+  function setupBackButtons() {
+    const backButtons = document.querySelectorAll('[data-back-button]');
+    backButtons.forEach((button) => {
+      if (button.hasAttribute('data-has-back-listener')) return;
+      button.setAttribute('data-has-back-listener', 'true');
+
+      button.addEventListener('click', (event) => {
         event.preventDefault();
         window.history.back();
-      }
+      });
     });
+  }
+
+  // Carga inicial
+  setupBackButtons();
+
+  // Compatibilidad con View Transitions
+  document.addEventListener('astro:page-load', setupBackButtons);
 </script>

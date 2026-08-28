@@ -1,16 +1,18 @@
 ---
-interface Props {
-    pageTitle: string;
-    subTitle?: string;
-    coverImage?: Record<string, string>;
-}
-
+import type { CollectionEntry } from 'astro:content';
 import '@/styles/base.css';
 import siteConfig from '@/siteConfig.json';
 import BaseHead from '@/components/BaseHead.astro';
 import MenuBar from '@/components/MenuBar.astro';
 import Footer from '@/components/Footer.astro';
 import { getImage } from 'astro:assets';
+
+interface Props {
+    pageTitle: string;
+    subTitle?: string;
+    // Permite el tipo nativo de la colección o un objeto con rutas de texto
+    coverImage?: CollectionEntry<'posts'>['data']['coverImage'] | Record<string, string>;
+}
 
 const disqusShortname = 'codice-1';
 
@@ -22,7 +24,8 @@ const description = subTitle ? subTitle : siteConfig.description;
 
 let routeImage = '/assets/img/banner.png';
 if (coverImage?.image) {
-  const processedImage = await getImage({ src: coverImage.image });
+  // getImage procesa automáticamente tanto cadenas de texto como objetos ImageMetadata
+  const processedImage = await getImage({ src: coverImage.image as any });
   routeImage = processedImage.src;
 }
 ---
@@ -50,4 +53,3 @@ if (coverImage?.image) {
   </body>
 
 </html>
-

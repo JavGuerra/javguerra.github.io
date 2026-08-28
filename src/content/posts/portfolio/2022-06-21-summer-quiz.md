@@ -36,7 +36,7 @@ Se trata de un ejercicio que comprende todos los conceptos generales aprendidos,
 
 Conceptualmente hablando, las estadísticas de la parte 1 bien podrían aparecer en la fase 3, la de resultados, pero este es, en resumidas cuentas, el enunciado.
 
-Algunas características destacables del enunciado son que la aplicación se debe ejecutar en una sola página web (SPA), que realiza consultas a una API, que guarda las puntuaciones en localStorage y que muestra estadísticas. Esta última parte, aunque accesoria, pues no se ha visto en el bootcamp, supuso un reto interesante, ya que ha dado para escribir varias entradas previas en este blog: [Spinner loader asíncrono](/blog/spinner-loader-asincrono), [Creación de un contador de resultados](/blog/ontador-resultados), [Gráfica de lineas dinámica con SVG](/blog/grafica-lineas) y [Cargar SVG dinámicamente](/blog/carga-svg), todas ellas técnicas incluidas en el ejercicio.
+Algunas características destacables del enunciado son que la aplicación se debe ejecutar en una sola página web (SPA), que realiza consultas a una API, que guarda las puntuaciones en localStorage y que muestra estadísticas. Esta última parte, aunque accesoria, pues no se ha visto en el bootcamp, supuso un reto interesante, ya que ha dado para escribir varias entradas previas en este blog: [Spinner loader asíncrono](/blog/spinner-loader-asincrono), [Creación de un contador de resultados](/blog/contador-resultados), [Gráfica de lineas dinámica con SVG](/blog/grafica-lineas) y [Cargar SVG dinámicamente](/blog/carga-svg), todas ellas técnicas incluidas en el ejercicio.
 
 Es un buen ejercicio para practicar, e igualmente espero que puedas disfrutarlo jugándolo. Este ejercicio lo he llevado a cabo con el apoyo del compañero Alejando.
 

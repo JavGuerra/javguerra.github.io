@@ -1,14 +1,15 @@
 ---
+import type { ImageMetadata } from 'astro';
+import { Image } from "astro:assets";
+
 interface Props {
   href: string;
-  img: any;
+  img: ImageMetadata;
   alt: string;
   styles?: string;
   title?: string;
   transitionName?: boolean;
 }
-
-import { Image } from "astro:assets";
 
 const {
   href,

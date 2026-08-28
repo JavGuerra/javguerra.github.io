@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check-links": "npm run build && linkinator ./dist/index.html --recurse --skip \"^http\""
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
@@ -23,6 +24,7 @@
     "astro-eslint-parser": "^1.4.0",
     "eslint": "^10.9.1",
     "eslint-plugin-astro": "^1.7.0",
+    "linkinator": "^8.0.4",
     "postcss": "^8.5.26",
     "postcss-html": "^1.7.0",
     "stylelint-config-html": "^1.1.0",

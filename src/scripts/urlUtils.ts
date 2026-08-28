@@ -15,6 +15,6 @@ export function getPostSlug(post: CollectionEntry<'posts'>): string {
   return post.data.route || getSlugName(post.id);
 }
 
-export function generateUniqueId(): string {
-  return 'back-link-' + Date.now().toString(36) + Math.random().toString(36).slice(2);
-}
+// export function generateUniqueId(): string {
+//  return 'back-link-' + Date.now().toString(36) + Math.random().toString(36).slice(2);
+// }

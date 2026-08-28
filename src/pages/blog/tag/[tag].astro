@@ -16,11 +16,11 @@ export async function getStaticPaths() {
   const allPosts = await getPosts();
 
   const uniqueTags = [
-    ...new Set(allPosts.flatMap(post => post.data.tags))
+    ...new Set(allPosts.flatMap(post => post.data.tags ?? []))
   ];
 
   return uniqueTags.map((tag, _, allTags) => {
-    const posts = allPosts.filter(post => post.data.tags.includes(tag));
+    const posts = allPosts.filter(post => post.data.tags?.includes(tag));
     const tags = allTags.filter(tagName => tagName !== tag);
 
     return {
@@ -53,7 +53,7 @@ const { posts, tags } = Astro.props;
       <div class="mt-4 mb-12 flex flex-wrap">
         {tags
           .sort((a, b) => a.localeCompare(b))
-          .map(tag => <TagLabel tag={tag} />)}
+          .map(t => <TagLabel tag={t} />)}
       </div>
     </>
   )}
