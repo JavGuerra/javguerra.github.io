@@ -63,7 +63,7 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
         const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
 
         return `
-          <li class="intro post mt-4">
+          <li class="scroll-reveal post mt-4">
             ${isReblog 
               ? `${originalPost.content} <small>♻️ Republicado </small>`
               : contentIsEmpty && hasMedia
