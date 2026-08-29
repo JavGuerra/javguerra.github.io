@@ -75,6 +75,14 @@ article h3 { @apply text-3xl font-normal mt-0 -mb-2 !important; }
 
 li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-400; }
 
+.scroll-reveal {
+    animation-name: show;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
 @keyframes show {
     from {
         opacity: 0;
@@ -85,16 +93,4 @@ li, .link-card-grid li { @apply marker:text-orange-600 marker:dark:text-orange-4
         opacity: 1;
         scale: 100%;
     }
-}
-
-.intro {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-    animation: show 1s ease-in-out;
-
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 25% cover 30%;
-    animation-fill-mode: both;
 }
