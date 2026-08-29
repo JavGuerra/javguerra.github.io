@@ -1,25 +1,30 @@
 ---
 interface Props {
     title?: string;
+    tags: string[];
 }
 
-import { getPosts } from '@/scripts/postsUtils';
 import TagLabel from '@/components/TagLabel.astro';
 
-const { title } = Astro.props;
+const { title, tags } = Astro.props;
 
-const allPosts = await getPosts();
-const allTags = [...new Set(allPosts.flatMap(post => post.data.tags))];
+const sortedTags = [...tags].sort((a, b) =>
+    a.localeCompare(b)
+);
 ---
 
-
-{ allTags.length ? (
+{sortedTags.length > 0 ? (
     <div data-pagefind-ignore="all">
         {title && <h2>{title}</h2>}
+
         <div class="flex flex-wrap mt-4">
-        {allTags
-            .sort((a, b) => String(a).localeCompare(String(b)))
-            .map(tag => <TagLabel tag={tag} />)}
+            {sortedTags.map(tag => (
+                <TagLabel tag={tag} />
+            ))}
         </div>
     </div>
-) : ( "" ) }
+) : (
+    <span class="inline-block w-full my-4 pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100">
+        Aún no hay etiquetas en este blog.
+    </span>
+)}

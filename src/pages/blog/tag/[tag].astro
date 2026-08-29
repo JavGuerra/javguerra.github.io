@@ -5,61 +5,61 @@ import { getPostSlug } from '@/scripts/urlUtils';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
 import ButtonLink from '@/components/ButtonLink.astro';
-import TagLabel from '@/components/TagLabel.astro';
+import AllTags from '@/components/AllTags.astro';
 
 interface Props {
-  posts: CollectionEntry<'posts'>[];
-  tags: string[];
+    posts: CollectionEntry<'posts'>[];
+    tags: string[];
 }
 
 export async function getStaticPaths() {
-  const allPosts = await getPosts();
+    const allPosts = await getPosts();
 
-  const uniqueTags = [
-    ...new Set(allPosts.flatMap(post => post.data.tags ?? []))
-  ];
+    const uniqueTags = [
+        ...new Set(allPosts.flatMap(post => post.data.tags))
+    ];
 
-  return uniqueTags.map((tag, _, allTags) => {
-    const posts = allPosts.filter(post => post.data.tags?.includes(tag));
-    const tags = allTags.filter(tagName => tagName !== tag);
+    return uniqueTags.map((tag, _, allTags) => {
+        const posts = allPosts.filter(
+            post => post.data.tags.includes(tag)
+        );
 
-    return {
-      params: { tag },
-      props: { posts, tags },
-    };
-  });
+        const tags = allTags.filter(
+            tagName => tagName !== tag
+        );
+
+        return {
+            params: { tag },
+            props: { posts, tags },
+        };
+    });
 }
 
 const { tag } = Astro.params;
 const { posts, tags } = Astro.props;
 ---
 
-<BaseLayout pageTitle={`Tema: ${tag}`} subTitle="Etiquetas del blog">
+<BaseLayout pageTitle={`«${tag}»`} subTitle="Etiquetas del blog">
   
-  <h2>{`${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
+    <h2>{`${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
+    <ul class="mt-8 mb-12 list-disc">
+        {posts.map(post => (
+            <BlogPostLink
+                title={post.data.title}
+                href={`/blog/${getPostSlug(post)}`}
+            />
+        ))}
+    </ul>
 
-  <ul class="mt-8 mb-12 list-disc">
-    {posts.map(post => (
-      <BlogPostLink 
-        title={post.data.title} 
-        href={`/blog/${getPostSlug(post)}`}
-      />
-    ))}
-  </ul>
+    <div class="mb-12">
+        <AllTags
+            title="Otros temas"
+            tags={tags}
+        />
+    </div>
 
-  {tags.length > 0 && (
-    <>
-      <h2>Otros temas</h2>
-      <div class="mt-4 mb-12 flex flex-wrap">
-        {tags
-          .sort((a, b) => a.localeCompare(b))
-          .map(t => <TagLabel tag={t} />)}
-      </div>
-    </>
-  )}
-
-  <div class="text-center md:text-left">
-    <ButtonLink text="←&nbsp;Volver" />
-  </div>
+    <div class="text-center md:text-left">
+        <ButtonLink text="←&nbsp;Volver" />
+    </div>
 
 </BaseLayout>
