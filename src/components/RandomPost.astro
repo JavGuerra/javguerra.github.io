@@ -8,99 +8,108 @@ const sortedPosts = await getSortedPostsData({
 ---
 
 <ul class="my-8 text-center md:text-left">
-  {sortedPosts && sortedPosts.map((post, index) => (
-    <div
-      class={index === 0 ? '' : 'hidden'}
-      data-post-index={index}
-    >
-      <BlogPostCard
-        frontmatter={post.frontmatter}
-        href={post.href}
-        ignorePrefetch={true}
-      />
-    </div>
-  ))}
+    {sortedPosts && sortedPosts.map((post, index) => (
+        <div
+            class={index === 0 ? '' : 'hidden'}
+            data-post-index={index}
+        >
+        <BlogPostCard
+            frontmatter={post.frontmatter}
+            href={post.href}
+            ignorePrefetch={true}
+        />
+        </div>
+    ))}
 </ul>
 
 <script is:inline>
-  let interval;
-  let currentIndex = 0;
-  let isTransitioning = false;
+    let interval = null;
+    let currentIndex = 0;
+    let isTransitioning = false;
 
-  function handleContentLoaded() {
-    const $postContainers = document.querySelectorAll('[data-post-index]');
+    function handleContentLoaded() {
+        const postContainers = document.querySelectorAll('[data-post-index]');
 
-    if ($postContainers.length <= 1) return;
+        if (postContainers.length <= 1) return;
 
-    function showRandomPost() {
-      // No iniciar una nueva transición mientras la anterior sigue activa
-      if (isTransitioning) return;
+        if (interval !== null) {
+            clearInterval(interval);
+            interval = null;
+        }
 
-      let randomIndex = 0;
-      const maxAttempts = 5;
-      let attempts = 0;
-
-      do {
-        randomIndex = Math.floor(Math.random() * $postContainers.length);
-        attempts++;
-      } while (
-        randomIndex === currentIndex &&
-        attempts < maxAttempts &&
-        $postContainers.length > 1
-      );
-
-      const $actual = $postContainers[currentIndex];
-      const $next = $postContainers[randomIndex];
-
-      if (!$actual || !$next || $actual === $next) return;
-
-      isTransitioning = true;
-      $actual.classList.add('fade-out');
-
-      $actual.addEventListener('transitionend', function fadeOutHandler() {
-        $actual.classList.add('hidden');
-        $actual.classList.remove('fade-out');
-        $next.classList.remove('hidden');
-        currentIndex = randomIndex;
+        currentIndex = 0;
         isTransitioning = false;
-      }, { once: true });
+
+        postContainers.forEach((post, index) => {
+            post.classList.toggle('hidden', index !== 0);
+            post.classList.remove('fade-out');
+        });
+
+        function showRandomPost() {
+            if (isTransitioning) return;
+
+            let randomIndex = Math.floor(
+                Math.random() * postContainers.length
+            );
+
+            while (randomIndex === currentIndex) {
+                randomIndex = Math.floor(
+                    Math.random() * postContainers.length
+                );
+            }
+
+            const actual = postContainers[currentIndex];
+            const next = postContainers[randomIndex];
+
+            if (!actual || !next) return;
+
+            isTransitioning = true;
+            actual.classList.add('fade-out');
+
+            actual.addEventListener('transitionend', function fadeOutHandler() {
+                actual.classList.add('hidden');
+                actual.classList.remove('fade-out');
+                next.classList.remove('hidden');
+                currentIndex = randomIndex;
+                isTransitioning = false;
+            }, { once: true });
+        }
+
+        interval = setInterval(showRandomPost, 7000);
     }
 
-    if (interval) clearInterval(interval);
+    function cleanup() {
+        if (interval !== null) {
+            clearInterval(interval);
+            interval = null;
+        }
 
-    interval = setInterval(showRandomPost, 7000);
-  }
+        currentIndex = 0;
+        isTransitioning = false;
 
-  function cleanup() {
-    if (interval) {
-      clearInterval(interval);
-      interval = null;
+        const postContainers = document.querySelectorAll('[data-post-index]');
+
+        postContainers.forEach((post, index) => {
+            post.classList.toggle('hidden', index !== 0);
+            post.classList.remove('fade-out');
+        });
     }
 
-    isTransitioning = false;
+    document.addEventListener('astro:page-load', handleContentLoaded);
+    document.addEventListener('astro:before-preparation', cleanup);
 
-    const $postContainers = document.querySelectorAll('[data-post-index]');
-
-    $postContainers.forEach(($post, index) => {
-
-      if (index === currentIndex) {
-        $post.classList.remove('hidden');
-        $post.classList.remove('fade-out');
-      } else {
-        $post.classList.add('hidden');
-        $post.classList.remove('fade-out');
-      }
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            cleanup();
+        } else {
+            handleContentLoaded();
+        }
     });
-  }
-
-  document.addEventListener('astro:page-load', handleContentLoaded);
-  document.addEventListener('astro:before-preparation', cleanup);
-
 </script>
 
 <style>
-  .fade-out {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-  }
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
 </style>
