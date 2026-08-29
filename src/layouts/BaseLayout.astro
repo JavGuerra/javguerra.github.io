@@ -1,6 +1,6 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import '@/styles/base.css';
+import type { CollectionEntry } from 'astro:content';
 import siteConfig from '@/siteConfig.json';
 import BaseHead from '@/components/BaseHead.astro';
 import MenuBar from '@/components/MenuBar.astro';
@@ -15,30 +15,29 @@ interface Props {
 }
 
 const disqusShortname = 'codice-1';
-
 const { pageTitle, subTitle, coverImage } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
-const shouldIgnore = pageTitle.startsWith('Tema: ') || pageTitle === 'Blog';
-const title = pageTitle.startsWith('Nuevo: ') ? pageTitle.replace('Nuevo: ', '') : pageTitle;
+const shouldIgnore = pageTitle.startsWith('«') || pageTitle === 'Blog';
 const description = subTitle ? subTitle : siteConfig.description;
-
 let routeImage = '/assets/img/banner.png';
+
 if (coverImage?.image) {
-  // getImage procesa automáticamente tanto cadenas de texto como objetos ImageMetadata
-  const processedImage = await getImage({ src: coverImage.image as any });
-  routeImage = processedImage.src;
+    // getImage procesa automáticamente la imagen
+    const processedImage = await getImage({ src: coverImage.image as any });
+    routeImage = processedImage.src;
 }
 ---
 
 <html lang="es">
-  <BaseHead pageTitle={title} description={description} img={routeImage} />
+
+  <BaseHead pageTitle={pageTitle} description={description} img={routeImage} />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
 
-    <MenuBar title={title} />
+    <MenuBar title={pageTitle} />
 
     <header transition:animate="slide">
-      {showTitle && <h1>{title}</h1>}
+      {showTitle && <h1>{pageTitle}</h1>}
       {subTitle && <p class="subtitle">{subTitle}</p>}
     </header>
 
@@ -48,8 +47,13 @@ if (coverImage?.image) {
 
     <Footer />
 
-    <script id="dsq-count-scr" src={'//' + disqusShortname + '.disqus.com/count.js'} async is:inline></script>
-    
+    <script
+      id="dsq-count-scr"
+      src={'//' + disqusShortname + '.disqus.com/count.js'}
+      async
+      is:inline
+    ></script>
+
   </body>
 
 </html>

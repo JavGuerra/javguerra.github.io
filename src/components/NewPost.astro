@@ -1,16 +1,20 @@
 ---
 import { getNewPost } from '@/scripts/postsUtils';
-import { getPostSlug } from '@/scripts/urlUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const newPost =  await getNewPost();
+const newPost = await getNewPost();
 ---
 
-{ newPost && 
+{newPost && 
+
   <ul class="my-8 text-center md:text-left">
+
     <BlogPostCard
-      frontmatter={newPost.data}
-      href={getPostSlug(newPost)}
+      frontmatter={newPost.frontmatter}
+      href={newPost.href}
+      firstParagraph={newPost.firstParagraph}
     />
+
   </ul>
+
 }

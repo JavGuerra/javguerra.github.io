@@ -2,14 +2,11 @@
 import recommendations from '@/content/_recommendations.json';
 
 const slides = recommendations.list.map(slide => slide.quote);
-
 const style = "height: 160px;";
-
 const duration = 9; // seconds
 ---
 
 <style is:global define:vars={{ animationDuration: `${duration}s` }}>
-
     #slideshow-container {
         width: 100%;
         overflow: hidden;
@@ -29,15 +26,12 @@ const duration = 9; // seconds
     }
 
     @keyframes slideInOut {
-        0% { transform: translateX(100%); }
-        11.11%, 88.89% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
+        0% {transform: translateX(100%);}
+        11.11%, 88.89% {transform: translateX(0);}
+        100% {transform: translateX(-100%);}
     }
 
-    .animating {
-        animation: slideInOut var(--animationDuration) linear;
-    }
-
+    .animating {animation: slideInOut var(--animationDuration) linear;}
 </style>
 
 <div id="slideshow" class="w-full font-serif">
@@ -45,9 +39,9 @@ const duration = 9; // seconds
 </div>
 
 <script is:inline define:vars={{ slides, duration }}>
+
     let timeoutId = null;
     let currentIndex = 0;
-    let shuffleSlides = [];
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -69,17 +63,13 @@ const duration = 9; // seconds
     function updateSlide() {
         const container = document.getElementById('slideshow-container');
 
-        if (!container || shuffleSlides.length === 0) return;
+        if (!container || slides.length === 0) return;
 
-        const newSlide = createSlide(shuffleSlides[currentIndex]);
-
+        const newSlide = createSlide(slides[currentIndex]);
         container.appendChild(newSlide);
-
-        void newSlide.offsetWidth; // Trigger reflow
-
+        void newSlide.offsetWidth;
         newSlide.classList.add('animating');
-
-        currentIndex = (currentIndex + 1) % shuffleSlides.length;
+        currentIndex = (currentIndex + 1) % slides.length;
 
         timeoutId = setTimeout(() => {
             newSlide.remove();
@@ -91,18 +81,15 @@ const duration = 9; // seconds
         const container = document.getElementById('slideshow-container');
 
         if (!container || slides.length === 0) return;
-
-        // Por si quedara alguna instancia anterior.
         if (timeoutId !== null) {
+
             clearTimeout(timeoutId);
             timeoutId = null;
         }
 
         container.replaceChildren();
-
-        shuffleSlides = shuffleArray([...slides]);
+        shuffleArray(slides);
         currentIndex = 0;
-
         updateSlide();
     }
 
@@ -114,12 +101,9 @@ const duration = 9; // seconds
 
         const container = document.getElementById('slideshow-container');
 
-        if (container) {
-            container.replaceChildren();
-        }
+        if (container) container.replaceChildren();
     }
 
     document.addEventListener('astro:before-preparation', stopCarousel);
-
     document.addEventListener('astro:page-load', startCarousel);
 </script>

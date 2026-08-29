@@ -1,78 +1,76 @@
 ---
 import type { GetStaticPathsOptions, Page } from 'astro';
-import type { CollectionEntry } from 'astro:content';
 import Search from "astro-pagefind/components/Search";
 import '@/styles/pagefind-ui-custom.css';
 import siteConfig from '@/siteConfig.json';
-import { getSortedPostsPrefixed } from '@/scripts/postsUtils';
-import { getPostSlug } from '@/scripts/urlUtils';
+import { getSortedPostsData } from '@/scripts/postsUtils';
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPostCard from "@/components/BlogPostCard.astro";
 import ButtonLink from '@/components/ButtonLink.astro';
 import Card from '@/components/Card.astro';
 
 interface Props {
-    page: Page<CollectionEntry<'posts'>>;
+    page: Page<Awaited<ReturnType<typeof getSortedPostsData>>[number]>;
 }
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const sortedPosts = await getSortedPostsPrefixed();
+    const sortedPosts = await getSortedPostsData();
     return paginate(sortedPosts, { pageSize: siteConfig.pageSize });
 }
 
 const { page } = Astro.props;
-
-function getFirstParagraph(text?: string): string {
-  if (!text) return '';
-
-  const firstParagraph = text.split('\n\n')[0];
-
-  return firstParagraph
-    .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
-    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/_(.+?)_/g, '<em>$1</em>');
-}
-
-if (page.currentPage === 1 && page.data.length > 0) {
-  const title = page.data[0].data.title;
-  const prefixedTitle = title.startsWith("Nuevo: ") ? title : `Nuevo: ${title}`;   
-  page.data[0].data.title = prefixedTitle;
-}
 ---
 
-<BaseLayout pageTitle='Blog' subTitle="Mis aprendizajes">
+<BaseLayout pageTitle="Blog" subTitle="Mis aprendizajes">
 
   <h2 class="mt-2 mb-6">Entradas</h2>
 
-  <Search id="search" aria-label="Buscar" className="pagefind-ui" uiOptions={{ showImages: false }} />
+  <Search
+    id="search"
+    aria-label="Buscar"
+    className="pagefind-ui"
+    uiOptions={{ showImages: false }}
+  />
 
-  { page.data.length ? (
-
+  {page.data.length ? (
     <ul class="list-none p-0">
-        {page.data.map(post => (
-          <li class="my-8 text-center md:text-left">
-              <BlogPostCard
-                frontmatter={post.data}
-                href={getPostSlug(post)}
-                firstParagraph={getFirstParagraph(post.body)}
-              />
-          </li>
-        ))}
+      {page.data.map(post => (
+        <li class="my-8 text-center md:text-left">
+          <BlogPostCard
+            frontmatter={post.frontmatter}
+            href={post.href}
+            firstParagraph={post.firstParagraph}
+          />
+        </li>
+      ))}
     </ul>
 
     <section class="mt-8 mb-14 flex justify-between items-center gap-3">
-      <ButtonLink href={page.url.prev ? page.url.prev : "#"} text="←&nbsp;Anterior" />
+      <ButtonLink
+        href={page.url.prev ? page.url.prev : "#"}
+        text="←&nbsp;Anterior"
+      />
+
       <span class="gray text-center">
-        <small>Página {page.currentPage}&nbsp;de&nbsp;{page.lastPage}</small>
+        <small>
+          Página {page.currentPage}&nbsp;de&nbsp;{page.lastPage}
+        </small>
       </span>
+
       <span class="mt-2">
-        <ButtonLink href={page.url.next ? page.url.next : "#"} text="Siguiente&nbsp;→" />
+        <ButtonLink
+          href={page.url.next ? page.url.next : "#"}
+          text="Siguiente&nbsp;→"
+        />
       </span>
     </section>
 
-  ) : <span class="inline-block w-full my-4 pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100">
-    Aún no hay entradas en este blog.</span> }
+  ) : (
+
+    <span class="inline-block w-full my-4 pt-2 pb-4 px-4 border-s-4 bg-violet-200 dark:bg-violet-800 border-orange-600 dark:border-orange-400 text-violet-900 dark:text-violet-100">
+      Aún no hay entradas en este blog.
+    </span>
+  )}
 
   <div class="my-8">
     <ul>
@@ -81,5 +79,5 @@ if (page.currentPage === 1 && page.data.length > 0) {
       </Card>
     </ul>
   </div>
-  
+
 </BaseLayout>

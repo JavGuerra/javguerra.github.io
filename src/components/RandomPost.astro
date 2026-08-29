@@ -1,9 +1,10 @@
 ---
-import { getSortedPostsPrefixed } from '@/scripts/postsUtils';
-import { getPostSlug } from '@/scripts/urlUtils';
+import { getSortedPostsData } from '@/scripts/postsUtils';
 import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const sortedPosts = await getSortedPostsPrefixed();
+const sortedPosts = await getSortedPostsData({
+    includeFirstParagraph: false
+});
 ---
 
 <ul class="my-8 text-center md:text-left">
@@ -13,8 +14,8 @@ const sortedPosts = await getSortedPostsPrefixed();
       data-post-index={index}
     >
       <BlogPostCard
-        frontmatter={post.data}
-        href={getPostSlug(post)}
+        frontmatter={post.frontmatter}
+        href={post.href}
         ignorePrefetch={true}
       />
     </div>
@@ -54,23 +55,18 @@ const sortedPosts = await getSortedPostsPrefixed();
       if (!$actual || !$next || $actual === $next) return;
 
       isTransitioning = true;
-
       $actual.classList.add('fade-out');
 
       $actual.addEventListener('transitionend', function fadeOutHandler() {
         $actual.classList.add('hidden');
         $actual.classList.remove('fade-out');
-
         $next.classList.remove('hidden');
-
         currentIndex = randomIndex;
         isTransitioning = false;
       }, { once: true });
     }
 
-    if (interval) {
-      clearInterval(interval);
-    }
+    if (interval) clearInterval(interval);
 
     interval = setInterval(showRandomPost, 7000);
   }
@@ -86,6 +82,7 @@ const sortedPosts = await getSortedPostsPrefixed();
     const $postContainers = document.querySelectorAll('[data-post-index]');
 
     $postContainers.forEach(($post, index) => {
+
       if (index === currentIndex) {
         $post.classList.remove('hidden');
         $post.classList.remove('fade-out');
@@ -98,6 +95,7 @@ const sortedPosts = await getSortedPostsPrefixed();
 
   document.addEventListener('astro:page-load', handleContentLoaded);
   document.addEventListener('astro:before-preparation', cleanup);
+
 </script>
 
 <style>
