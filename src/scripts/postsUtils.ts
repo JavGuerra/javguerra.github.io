@@ -1,11 +1,7 @@
 import { getCollection } from 'astro:content';
 
-export async function getPosts() {
-  return getCollection('posts');
-}
-
 export async function getSortedPosts() {
-  const allPosts = await getPosts();
+  const allPosts = await getCollection('posts');
 
   return allPosts.toSorted(
     (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()

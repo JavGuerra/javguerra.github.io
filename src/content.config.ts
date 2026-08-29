@@ -1,10 +1,10 @@
 import { defineCollection, type SchemaContext } from 'astro:content';
-import { z } from 'zod';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const posts = defineCollection({
   loader: glob({
-    pattern: '**/[!_]*.{md,mdx}',
+    pattern: '**/[^_]*.{md,mdx}',
     base: './src/content/posts',
   }),
 

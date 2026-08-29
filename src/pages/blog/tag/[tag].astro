@@ -1,6 +1,5 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import { getPosts } from '@/scripts/postsUtils';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import { getPostSlug } from '@/scripts/urlUtils';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import BlogPostLink from '@/components/BlogPostLink.astro';
@@ -13,7 +12,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-    const allPosts = await getPosts();
+    const allPosts = await getCollection('posts');
 
     const uniqueTags = [
         ...new Set(allPosts.flatMap(post => post.data.tags))

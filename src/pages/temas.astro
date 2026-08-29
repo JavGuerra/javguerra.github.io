@@ -1,6 +1,6 @@
 ---
 import '@/styles/pagefind-ui-custom.css';
-import { getPosts } from '@/scripts/postsUtils';
+import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Search from 'astro-pagefind/components/Search';
 import NewPost from '@/components/NewPost.astro';
@@ -8,7 +8,7 @@ import ResourceList from '@/components/ResourceList.astro';
 import AllTags from '@/components/AllTags.astro';
 import Card from '@/components/Card.astro';
 import resources from '@/content/_resources.json';
-const pots = await getPosts();
+const pots = await getCollection('posts');
 const tags = [
     ...new Set(pots.flatMap(post => post.data.tags))
 ];
