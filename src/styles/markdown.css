@@ -2,13 +2,13 @@
 
     @apply prose dark:prose-invert prose-sm sm:prose lg:prose-lg xl:prose-xl;
 
-    h1 { @apply text-5xl font-medium mt-10 mb-4 }
+    h1 { @apply text-4xl md:text-5xl font-medium mt-10 mb-4 }
     
-    h2 { @apply text-4xl font-medium mt-8 mb-3 }
+    h2 { @apply text-3xl md:text-4xl font-medium mt-8 mb-3 }
     
-    h3 { @apply text-3xl font-normal mt-6 mb-2 }
+    h3 { @apply text-2xl md:text-3xl font-normal mt-6 mb-2 }
     
-    h4 { @apply text-2xl font-normal mt-4 mb-1 }
+    h4 { @apply text-xl md:text-2xl font-normal mt-4 mb-1 }
 
     a { @apply no-underline hover:underline text-blue-600 dark:text-blue-400; }
 
