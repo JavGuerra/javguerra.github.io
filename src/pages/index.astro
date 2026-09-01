@@ -1,6 +1,6 @@
 ---
 import '@/styles/pagefind-ui-custom.css';
-import Search from "astro-pagefind/components/Search";
+import SearchBox from '@/components/SearchBox.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import siteConfig from '@/siteConfig.json';
 import Hero from "@/components/Hero.astro";
@@ -33,7 +33,7 @@ import RandomPost from '@/components/RandomPost.astro';
   </ul>
 
   <dir class="mt-8 ps-0">
-    <Search id="search" aria-label="Buscar" className="pagefind-ui" uiOptions={{ showImages: false }} />
+    <SearchBox />
   </dir>
 
   <RandomPost />

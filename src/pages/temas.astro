@@ -1,16 +1,17 @@
 ---
 import '@/styles/pagefind-ui-custom.css';
-import { getCollection } from 'astro:content';
+import { getPosts, getNewPost } from '@/scripts/postsUtils';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import Search from 'astro-pagefind/components/Search';
-import NewPost from '@/components/NewPost.astro';
+import SearchBox from '@/components/SearchBox.astro';
+import BlogPostCard from "@/components/BlogPostCard.astro";
 import ResourceList from '@/components/ResourceList.astro';
 import AllTags from '@/components/AllTags.astro';
 import Card from '@/components/Card.astro';
 import resources from '@/content/_resources.json';
-const pots = await getCollection('posts');
+const allPosts = await getPosts();
+const newPost = await getNewPost();
 const tags = [
-    ...new Set(pots.flatMap(post => post.data.tags))
+    ...new Set(allPosts.flatMap(post => post.data.tags))
 ];
 ---
 
@@ -18,14 +19,17 @@ const tags = [
 
     <h2 class="mt-2 mb-6">Buscador</h2>
 
-    <Search
-        id="search"
-        aria-label="Buscar"
-        className="pagefind-ui"
-        uiOptions={{ showImages: false }}
-    />
+    <SearchBox />
 
-    <NewPost />
+    {newPost && 
+        <ul class="my-8 text-center md:text-left">
+            <BlogPostCard
+                frontmatter={newPost.frontmatter}
+                href={newPost.href}
+                firstParagraph={newPost.firstParagraph}
+            />
+        </ul>
+    }
 
     <ul class="link-card-grid mt-10">
         <ResourceList

@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, render } from 'astro:content';
 import MarkdownPostLayout from '@/layouts/MarkdownPostLayout.astro';
-import { getCollection } from 'astro:content';
+import { getPosts } from '@/scripts/postsUtils';
 import { getPostSlug } from '@/scripts/urlUtils';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection('posts');
+  const allPosts = await getPosts();
 
   return allPosts.map(post => ({
     params: { slug: getPostSlug(post) },

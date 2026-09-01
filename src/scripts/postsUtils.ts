@@ -1,17 +1,24 @@
 import { getCollection } from 'astro:content';
 import { getPostSlug } from '@/scripts/urlUtils';
 
-export async function getSortedPosts() {
-  const allPosts = await getCollection('posts');
+const postsPromise = getCollection('posts');
 
-  return allPosts.toSorted(
-    (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
-  );
+const sortedPostsPromise = postsPromise.then(posts => 
+  posts.toSorted((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+);
+
+export async function getPosts() {
+  return await postsPromise;
 }
+
+export async function getSortedPosts() {
+  return await sortedPostsPromise;
+}
+
 export async function getSortedPostsData(
     { includeFirstParagraph = true } = {}
 ) {
-    const sortedPosts = await getSortedPosts();
+    const sortedPosts = await sortedPostsPromise;
 
     if (sortedPosts.length === 0) return [];
 
