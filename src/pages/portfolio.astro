@@ -14,7 +14,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true }
 );
 
-const projects = portfolio.projects.map(project => {
+const projects = portfolio.map(project => {
   const image = images[`/src/assets/portfolio/${project.img}`];
 
   return { ...project, image };

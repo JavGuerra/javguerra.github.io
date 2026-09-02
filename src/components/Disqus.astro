@@ -10,20 +10,35 @@ const disqusShortname = 'codice-1';
 <div id="disqus_thread" transition:persist></div>
 
 <script is:inline define:vars={{ id, disqusShortname }}>
-    // var disqus_config = function () {
+  function loadDisqus() {
+    // Si Disqus ya existe en memoria, reseteamos con los datos del nuevo post
+    if (window.DISQUS) {
+      window.DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.url = window.location.href;
+          this.page.identifier = id;
+        }
+      });
+      return;
+    }
+
+    // Configuración e inyección para la primera carga
     window.disqus_config = function () {
-        this.page.url = window.location.href;
-        this.page.identifier = id;
+      this.page.url = window.location.href;
+      this.page.identifier = id;
     };
-    
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+
+    const d = document;
+    const s = d.createElement('script');
+    s.src = `https://${disqusShortname}.disqus.com/embed.js`;
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+
+  document.addEventListener('astro:page-load', loadDisqus);
 </script>
 
 <noscript>
-    Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios.</a>
+  Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios.</a>
 </noscript>

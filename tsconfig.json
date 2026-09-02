@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "@/*": ["src/*"],
       "@posts/*": ["src/content/posts/*"]

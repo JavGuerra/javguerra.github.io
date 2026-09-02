@@ -6,11 +6,6 @@ import Loading from '@/components/Loading.astro';
 import Card from '@/components/Card.astro';
 
 const social = siteConfig.social;
-
-const server = 'https://indieweb.social';
-const profileId = '109292343224519197';
-const limit = siteConfig.socialPosts;
-const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
 ---
 
 <BaseLayout pageTitle="Social" subTitle="Mi conexión con el mundo">
@@ -31,58 +26,58 @@ const route = `${server}/api/v1/accounts/${profileId}/statuses?limit=${limit}`;
   
 </BaseLayout>
 
-<script is:inline define:vars={{ route }}>
-  
-  async function getLatestPosts(route) {
+<script>
+  import siteConfig from '@/siteConfig.json';
+
+  const route = `https://indieweb.social/api/v1/accounts/109292343224519197/statuses?limit=${siteConfig.socialPosts}`;
+
+  async function loadPosts() {
+    const postsElement = document.getElementById('posts');
+    if (!postsElement) return;
+
     try {
       const response = await fetch(route);
       if (!response.ok) throw new Error(response.statusText);
-      return await response.json();
+      const posts = await response.json();
+
+      if (!posts || posts.length === 0) {
+        postsElement.innerHTML = '<p>No se encontraron posts.</p>';
+        return;
+      }
+
+      postsElement.innerHTML = `
+        <h2 class="mb-6">Últimas publicaciones</h2>
+        <ul>
+        ${posts.map((post: any) => {
+          const isReblog = post.reblog != null;
+          const originalPost = isReblog ? post.reblog : post;
+          const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
+          const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
+          const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
+
+          return `
+            <li class="scroll-reveal post mt-4">
+              ${isReblog 
+                ? `${originalPost.content} <small>♻️ Republicado </small>`
+                : contentIsEmpty && hasMedia
+                  ? multimediaLink
+                  : originalPost.content + multimediaLink}
+
+              <a href="${originalPost.url}">
+                <small class="gray">
+                  📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
+                </small>
+              </a>
+            </li>
+          `;
+        }).join('')}
+        </ul>
+      `;
     } catch (error) {
       console.error(error);
-      return [];
+      postsElement.innerHTML = '<p>Error al cargar las publicaciones.</p>';
     }
   }
 
-  function displayPosts(posts) {
-    const postsElement = document.getElementById('posts');
-
-    if (!posts || posts.length === 0) {
-      postsElement.innerHTML = '<p>No se encontraron posts.</p>';
-      return;
-    }
-
-    postsElement.innerHTML = `
-      <h2 class="mb-6">Últimas publicaciones</h2>
-      <ul>
-      ${posts.map(post => {
-        const isReblog = post.reblog != null;
-        const originalPost = isReblog ? post.reblog : post;
-        const contentIsEmpty = !originalPost.content || originalPost.content.replace(/<[^>]*>/g, '').trim() === '';
-        const hasMedia = originalPost.media_attachments && originalPost.media_attachments.length > 0;
-        const multimediaLink = hasMedia ? `<small>Incluye contenido multimedia <a href="${originalPost.url}">👁️ Ver en origen →</a></small><br />` : '';
-
-        return `
-          <li class="scroll-reveal post mt-4">
-            ${isReblog 
-              ? `${originalPost.content} <small>♻️ Republicado </small>`
-              : contentIsEmpty && hasMedia
-                ? multimediaLink
-                : originalPost.content + multimediaLink}
-
-            <a href="${originalPost.url}">
-              <small class="gray">
-                📢 ${new Date(originalPost.created_at).toLocaleString('es-ES', {dateStyle: 'medium', timeStyle: 'short'})}
-              </small>
-            </a>
-          </li>
-          `
-        }).join('')}
-      </ul>
-    `;
-  }
-
-  document.addEventListener('astro:page-load', async () => {  
-    displayPosts(await getLatestPosts(route));
-  });
+  document.addEventListener('astro:page-load', loadPosts);
 </script>

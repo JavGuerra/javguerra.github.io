@@ -1,24 +1,29 @@
----
-import quotes from '@/content/_quotes.json';
-const quotesList = quotes.list;
----
-
 <div class="text-right font-serif">
-    <p id="random-quote">
-      «<span id="quote-text" class="italic">...</span>»<br />
-      <small id="quote-source" class="gray"></small>
-    </p>
+  <p id="random-quote">
+    «<span id="quote-text" class="italic">...</span>»<br />
+    <small id="quote-source" class="gray"></small>
+  </p>
 </div>
 
-<script define:vars={{ quotesList }} is:inline>
-  function showRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotesList.length);
-    const quote = quotesList[randomIndex];
+<script>
+  import quotes from '@/content/_quotes.json';
 
-    document.getElementById('quote-text').innerHTML = quote.text;
-    document.getElementById('quote-source').textContent = `— ${quote.source}`;
+  function showRandomQuote() {
+    const textEl = document.getElementById('quote-text');
+    const sourceEl = document.getElementById('quote-source');
+
+    if (!textEl || !sourceEl || !quotes.length) return;
+
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quote = quotes[randomIndex];
+
+    textEl.innerHTML = quote.text;
+    sourceEl.textContent = `— ${quote.source}`;
   }
 
-  document.removeEventListener('astro:page-load', showRandomQuote);
+  // Carga inicial
+  showRandomQuote();
+
+  // Compatibilidad con View Transitions al navegar
   document.addEventListener('astro:page-load', showRandomQuote);
 </script>
