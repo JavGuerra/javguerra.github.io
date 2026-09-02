@@ -1,86 +1,142 @@
 [
-    {
-        "quote": "<div>\n\t<p>«Javier no solo domina la parte técnica, sino que también sabe cómo<br />transmitir conceptos de manera estructurada y aplicada a casos reales,<br />lo que hizo que la formación fuera muy enriquecedora.»</p>\n<p class='gray'><small>— <strong>Lola Fernández</strong>, alumna</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Enhorabuena, Javier, has sido lo que se puede definir como un 10 de alumno:<br />disposición, ganas de aprender, mucho nivel y compañerismo.<br />Tendrás todo lo que te propongas dentro de este sector.»</p>\n<p class='gray'><small>— <strong>Jairo Sanchez</strong>, profesor de ciberseguridad</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Demostró una gran capacidad de implementar todo lo aprendido en ciberseguridad<br />a su ámbito, el desarrollo web, haciendo un gran trabajo de fin de formación.»</p>\n<p class='gray'><small>— <strong>Pascual Gómez</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Me quedé alucinado con sus conocimientos de desarrollo web y<br />programación. Tengo claro que va a llegar muy lejos.»</p>\n<p class='gray'><small>— <strong>Sergio Guerra</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Su capacidad de análisis, pensamiento crítico y enfoque estratégico<br />lo convierten en un profesional brillante.»</p>\n<p class='gray'><small>— <strong>Mª Pilar Prado</strong>, compañera de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Es un gran compañero de equipo gracias a su habilidad para abordar desafíos<br />con gran determinación, cosa que he aprendido de el.»</p>\n<p class='gray'><small>— <strong>Guillermo Illera</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Fue un placer trabajar con él, y muy enriquecedor.»</p>\n<p class='gray'><small>— <strong>Kevin Zamora</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Trabajador, constructivo, capacidad de liderazgo.»</p>\n<p class='gray'><small>— <strong>Juan Raimundo Álvaro</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Su curiosidad innata lo lleva constantemente<br />a explorar nuevas tecnologías y perfeccionar<br />sus habilidades, manteniéndose siempre al día<br />con las mejores prácticas del sector.»</p>\n<p class='gray'><small>— <strong>Ana Cascante</strong>, compañera de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier es un gran profesional, con una<br />fuerte vocación y dedicación en el trabajo.»</p>\n<p class='gray'><small>— <strong>Alberto Vieira</strong>, compañero de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Destaco su dedicación, compromiso y la gran<br />capacidad para transmitir sus conocimientos en la formación.»</p>\n<p class='gray'><small>— <strong>Javier López</strong>, compañero de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Destacaría de Javier su paciencia a la hora de<br />transmitir sus conocimientos y enseñar a otras personas.»</p>\n<p class='gray'><small>— <strong>Gema Pérez</strong>, compañera de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Destacar su profesionalidad y seriedad<br />demostradas así como su alto nivel de conocimientos TIC.»</p>\n<p class='gray'><small>— <strong>Álvaro Morcillo</strong>, compañero de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Considero que es un buen docente<br />con grandes dotes de comunicación y empatía.»</p>\n<p class='gray'><small>— <strong>Beatriz Aldecoa</strong>, compañera de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Destaco su gran capacidad de comunicación y<br />los muchos conocimientos que tiene, además del<br />compromiso, la dedicación y profesionalidad al trabajar.»</p>\n<p class='gray'><small>— <strong>Jaime Arjonilla</strong>, compañero de trabajo</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier es una persona con amplios<br />conocimientos en programación, que es capaz de<br />desarrollar código de forma muy avanzada y con<br />buena calidad, destacando por su capacidad de<br />organización y resolución.»</p>\n<p class='gray'><small>— <strong>Alan Sastre</strong>, profesor de programación</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Sus grandes conocimientos, su gran capacidad<br />de trabajo en equipo y su afán por lograr la<br />excelencia hacen de Javier un gran valor<br />añadido para cualquier empresa.»</p>\n<p class='gray'><small>— <strong>Fernando Martínez</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Es muy buen profesor, explica de una forma<br />muy intuitiva y a la vez sencilla.»</p>\n<p class='gray'><small>— <strong>Alejandro Rodríguez</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Es una máquina de resolver problemas, y un<br />muy buen miembro de cualquier equipo que<br />tenga la suerte de tenerlo.»</p>\n<p class='gray'><small>— <strong>Julio Cabanillas</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier always lead the team and helps the<br />colleages at any time. An excellent team player.»</p>\n<p class='gray'><small>— <strong>Jesús Martín</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Excelente compañero y trabajador, preparado,<br />siempre dispuesto a echar un cable.»</p>\n<p class='gray'><small>— <strong>Marina Vallejo</strong>, compañera de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier es un magnífico programador y un<br />excelente compañero, siempre dispuesto a ayudar y a colaborar.»</p>\n<p class='gray'><small>— <strong>Sergio Alvariño</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Trabajar con Javier es todo un placer. Generoso<br />en sus aportaciones, incisivo y pertinaz en la<br />clarificación de los puntos más turbios.»</p>\n<p class='gray'><small>— <strong>Francesc Adrià</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Buen comunicador, capacidad de liderazgo,<br />atento a los detalles, capacidad de resolución de<br />incidencias de manera eficiente.»</p>\n<p class='gray'><small>— <strong>Anatoly Myndresku</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Gran persona con ambición por aprender.<br />Muy buen trabajador en grupo con mucho<br />conocimiento y que le encanta compartir<br /> conocimiento con el resto de compañeros.»</p>\n<p class='gray'><small>— <strong>Juanjo Casco</strong>, profesor de programación</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier tiene la habilidad de llevar proyectos<br /> a cabo trabajando en equipo con una gran productividad.»</p>\n<p class='gray'><small>— <strong>Jorge Medrano</strong>, compañero de estudios</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Tuve el placer de realizar las prácticas de mi<br />grado con Javier y no pude quedar más<br />satisfecho. Se mostró muy atento y me sentí<br />acogido desde el primer momento.»</p>\n<p class='gray'><small>— <strong>Manuel Megias</strong>, alumno en prácticas</small>\n</p>\n</div>"
-    },
-    {
-        "quote": "<div>\n\t<p>«Javier se mostró responsable y comprometido<br />en la implantación de recursos, respetando<br />los plazos de entrega, y proactivo al proponer<br />soluciones adaptadas a nuestras necesidades.»</p>\n<p class='gray'><small>— <strong>Gloria Pino</strong>, directora ejecutiva</small>\n</p>\n</div>"
-    }
+  {
+    "text": "Javier no solo domina la parte técnica, sino que también sabe cómo\ntransmitir conceptos de manera estructurada y aplicada a casos reales,\nlo que hizo que la formación fuera muy enriquecedora.",
+    "author": "Lola Fernández",
+    "role": "alumna"
+  },
+  {
+    "text": "Enhorabuena, Javier, has sido lo que se puede definir como \nalumno de 10: disposición, ganas de aprender, mucho nivel y\ncompañerismo. Tendrás todo lo que te propongas dentro del sector.",
+    "author": "Jairo Sanchez",
+    "role": "profesor de ciberseguridad"
+  },
+  {
+    "text": "Demostró una gran capacidad de implementar todo lo aprendido\nen ciberseguridad a su ámbito, el desarrollo web,\nhaciendo un gran trabajo de fin de formación.",
+    "author": "Pascual Gómez",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Me quedé alucinado con sus conocimientos de desarrollo web y\nprogramación. Tengo claro que va a llegar muy lejos.",
+    "author": "Sergio Guerra",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Su capacidad de análisis, pensamiento crítico y enfoque\nestratégico lo convierten en un profesional brillante.",
+    "author": "Mª Pilar Prado",
+    "role": "compañera de estudios"
+  },
+  {
+    "text": "Es un gran compañero de equipo gracias a su habilidad para resolver\ndesafíos con gran determinación, cosa que he aprendido de el.",
+    "author": "Guillermo Illera",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Fue un placer trabajar con él, y muy enriquecedor.",
+    "author": "Kevin Zamora",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Trabajador, constructivo, capacidad de liderazgo.",
+    "author": "Juan Raimundo Álvaro",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Su curiosidad innata lo lleva constantemente\na explorar nuevas tecnologías y perfeccionar\nsus habilidades, manteniéndose siempre al día\ncon las mejores prácticas del sector.",
+    "author": "Ana Cascante",
+    "role": "compañera de estudios"
+  },
+  {
+    "text": "Javier es un gran profesional, con una\nfuerte vocación y dedicación en el trabajo.",
+    "author": "Alberto Vieira",
+    "role": "compañero de trabajo"
+  },
+  {
+    "text": "Destaco su dedicación, compromiso y la gran\ncapacidad para transmitir sus conocimientos en la formación.",
+    "author": "Javier López",
+    "role": "compañero de trabajo"
+  },
+  {
+    "text": "Destacaría de Javier su paciencia a la hora de\ntransmitir sus conocimientos y enseñar a otras personas.",
+    "author": "Gema Pérez",
+    "role": "compañera de trabajo"
+  },
+  {
+    "text": "Destacar su profesionalidad y seriedad\ndemostradas así como su alto nivel de conocimientos TIC.",
+    "author": "Álvaro Morcillo",
+    "role": "compañero de trabajo"
+  },
+  {
+    "text": "Considero que es un buen docente\ncon grandes dotes de comunicación y empatía.",
+    "author": "Beatriz Aldecoa",
+    "role": "compañera de trabajo"
+  },
+  {
+    "text": "Destaco su gran capacidad de comunicación y\nlos muchos conocimientos que tiene, además del\ncompromiso, la dedicación y profesionalidad al trabajar.",
+    "author": "Jaime Arjonilla",
+    "role": "compañero de trabajo"
+  },
+  {
+    "text": "Javier es una persona con amplios\nconocimientos en programación, que es capaz de\ndesarrollar código de forma muy avanzada y con\nbuena calidad, destacando por su capacidad de\norganización y resolución.",
+    "author": "Alan Sastre",
+    "role": "profesor de programación"
+  },
+  {
+    "text": "Sus grandes conocimientos, su gran capacidad\nde trabajo en equipo y su afán por lograr la\nexcelencia hacen de Javier un gran valor\nañadido para cualquier empresa.",
+    "author": "Fernando Martínez",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Es muy buen profesor, explica de una forma\nmuy intuitiva y a la vez sencilla.",
+    "author": "Alejandro Rodríguez",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Es una máquina de resolver problemas, y un\nmuy buen miembro de cualquier equipo que\ntenga la suerte de tenerlo.",
+    "author": "Julio Cabanillas",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Javier always lead the team and helps the\ncolleages at any time. An excellent team player.",
+    "author": "Jesús Martín",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Excelente compañero y trabajador, preparado,\nsiempre dispuesto a echar un cable.",
+    "author": "Marina Vallejo",
+    "role": "compañera de estudios"
+  },
+  {
+    "text": "Javier es un magnífico programador y un\nexcelente compañero, siempre dispuesto a ayudar y a colaborar.",
+    "author": "Sergio Alvariño",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Trabajar con Javier es todo un placer. Generoso\nen sus aportaciones, incisivo y pertinaz en la\nclarificación de los puntos más turbios.",
+    "author": "Francesc Adrià",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Buen comunicador, capacidad de liderazgo,\natento a los detalles, capacidad de resolución de\nincidencias de manera eficiente.",
+    "author": "Anatoly Myndresku",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Gran persona con ambición por aprender.\nMuy buen trabajador en grupo con mucho\nconocimiento y que le encanta compartir\n conocimiento con el resto de compañeros.",
+    "author": "Juanjo Casco",
+    "role": "profesor de programación"
+  },
+  {
+    "text": "Javier tiene la habilidad de llevar proyectos\n a cabo trabajando en equipo con una gran productividad.",
+    "author": "Jorge Medrano",
+    "role": "compañero de estudios"
+  },
+  {
+    "text": "Tuve el placer de realizar las prácticas de mi\ngrado con Javier y no pude quedar más\nsatisfecho. Se mostró muy atento y me sentí\nacogido desde el primer momento.",
+    "author": "Manuel Megias",
+    "role": "alumno en prácticas"
+  },
+  {
+    "text": "Javier se mostró responsable y comprometido\nen la implantación de recursos, respetando\nlos plazos de entrega, y proactivo al proponer\nsoluciones adaptadas a nuestras necesidades.",
+    "author": "Gloria Pino",
+    "role": "directora ejecutiva"
+  }
 ]

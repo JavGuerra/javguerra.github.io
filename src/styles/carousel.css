@@ -1,0 +1,31 @@
+@keyframes slideInOut {
+  0% {
+    transform: translateX(100%);
+  }
+  11.11%, 88.89% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#slideshow-container {
+  @apply relative w-full overflow-hidden min-h-[200px] md:min-h-[160px] lg:min-h-[180px] p-2 md:p-4 mt-0 mb-8;
+}
+
+.content-slide {
+  @apply absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center px-2;
+}
+
+.content-slide .quote-text {
+  @apply whitespace-pre-line text-base leading-6 md:text-lg md:leading-7 lg:text-xl lg:leading-8;
+}
+
+.content-slide .quote-author {
+  @apply mt-2 text-sm leading-5 md:text-base md:leading-6 lg:text-lg lg:leading-7;
+}
+
+.animating {
+  animation: slideInOut 9s linear;
+}

@@ -1,59 +1,41 @@
-<style>
-  #slideshow-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  /* :global() le dice a Astro que no le añada el hash de scoping a esta clase */
-  :global(.content-slide) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  @keyframes slideInOut {
-    0% { transform: translateX(100%); }
-    11.11%, 88.89% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-  }
-
-  :global(.animating) {
-    animation: slideInOut 9s linear;
-  }
-</style>
-
 <div id="slideshow" class="w-full font-serif">
-  <div id="slideshow-container" class="p-4 mt-0 mb-8" style="height: 160px;"></div>
+  <div id="slideshow-container"></div>
 </div>
 
 <script>
   import recommendations from '@/content/_recommendations.json';
+  import '@/styles/carousel.css';
+
+  interface Recommendation {
+    text: string;
+    author: string;
+    role: string;
+  }
 
   const DURATION_SECONDS = 9;
-  const slides = recommendations.map((slide) => slide.quote);
+  let slides: Recommendation[] = [];
 
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
   let currentIndex = 0;
 
   const shuffleArray = <T,>(array: T[]): T[] => {
-    for (let i = array.length - 1; i > 0; i--) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
-    return array;
+    return shuffled;
   };
 
-  function createSlide(content: string) {
+  function createSlide(recommendation: Recommendation) {
     const slide = document.createElement('div');
     slide.className = 'content-slide';
-    slide.innerHTML = content;
+
+    slide.innerHTML = `
+      <p class="quote-text">«${recommendation.text}»</p>
+      <p class="quote-author gray">— <strong>${recommendation.author}</strong>, ${recommendation.role}</p>
+    `;
+
     return slide;
   }
 
@@ -76,7 +58,7 @@
 
   function startCarousel() {
     const container = document.getElementById('slideshow-container');
-    if (!container || slides.length === 0) return;
+    if (!container || recommendations.length === 0) return;
 
     if (timeoutId !== null) {
       clearTimeout(timeoutId);
@@ -84,7 +66,7 @@
     }
 
     container.replaceChildren();
-    shuffleArray(slides);
+    slides = shuffleArray(recommendations);
     currentIndex = 0;
     updateSlide();
   }

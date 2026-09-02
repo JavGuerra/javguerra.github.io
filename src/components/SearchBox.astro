@@ -1,9 +1,21 @@
 ---
 import Search from 'astro-pagefind/components/Search';
 ---
+
 <Search
-    id="search"
-    aria-label="Buscar"
-    className="pagefind-ui"
-    uiOptions={{ showImages: false }}
+  id="search"
+  aria-label="Buscar"
+  className="pagefind-ui"
+  uiOptions={{
+    showImages: false,
+    translations: {
+      clear_search: "Limpiar",
+      load_more: "Cargar más resultados",
+      zero_results: "No se encontraron resultados para «[SEARCH_TERM]»",
+      one_result: "[COUNT] resultado para «[SEARCH_TERM]»",
+      many_results: "[COUNT] resultados para «[SEARCH_TERM]»",
+      search_label: "Buscar en el sitio",
+      placeholder: "Buscar...",
+    }
+  }}
 />
