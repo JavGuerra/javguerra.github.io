@@ -7,11 +7,15 @@ const { id } = Astro.props;
 const disqusShortname = 'codice-1';
 ---
 
-<div id="disqus_thread" transition:persist></div>
+<section aria-labelledby="comments-header">
+  <h2 id="comments-header" class="mb-8">Comentarios</h2>
+
+  <div id="disqus_thread" transition:persist></div>
+</section>
 
 <script is:inline define:vars={{ id, disqusShortname }}>
   function loadDisqus() {
-    // Si Disqus ya existe en memoria, reseteamos con los datos del nuevo post
+    // Si Disqus ya existe en memoria (navegación entre páginas), reseteamos con los datos del nuevo post
     if (window.DISQUS) {
       window.DISQUS.reset({
         reload: true,

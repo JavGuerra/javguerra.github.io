@@ -15,18 +15,20 @@ interface Props {
     id: string;
 }
 
-const { frontmatter, id } = Astro.props;
 const { 
+  id, 
+  frontmatter: {
+    route,
     title,
     description,
+    author,
     pubDate,
-    author = siteConfig.autor,
-    route,
+    updatedDate = pubDate,
     coverImage,
-    tags = []
-} = frontmatter;
-
-const href = `/blog/${route}`;
+    tags,
+    info
+  } 
+} = Astro.props;
 ---
 
 <BaseLayout pageTitle={title} subTitle={description} coverImage={coverImage}>
@@ -37,7 +39,7 @@ const href = `/blog/${route}`;
     </small></p>
 
     {coverImage && <Image src={coverImage.image as ImageMetadata} title={coverImage.alt}
-        alt={coverImage.alt} class="my-8" loading="eager" transition:name={href} />}
+        alt={coverImage.alt} class="my-8" loading="eager" transition:name={`/blog/${route}`} />}
 
     <div data-pagefind-ignore="all">
         <div class="flex flex-wrap mt-4">
@@ -49,18 +51,7 @@ const href = `/blog/${route}`;
         <slot />
     </div>
 
-    <h1 id="comments-header" class="mb-8" style="display: none;">Comentarios</h1>
     <Disqus id={id} />
-  
-    <script>
-    document.addEventListener('astro:page-load', () => {
-        const $header = document.getElementById('comments-header');
-        // Si está disponible Disqus...
-        if ($header && typeof (window as any).DISQUS !== 'undefined') {
-            $header.style.display = 'block';
-        }
-    });
-    </script>
 
     <div class="text-center mt-8 md:text-left">
         <ButtonLink text="←&nbsp;Volver" />

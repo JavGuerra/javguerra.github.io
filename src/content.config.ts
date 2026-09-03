@@ -10,18 +10,20 @@ const posts = defineCollection({
 
   schema: ({ image }: SchemaContext) =>
     z.object({
+      route: z.string().optional(),
+
       title: z.string(),
       description: z.string(),
+
+      author: z.string(),
 
       pubDate: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
 
-      author: z.string().optional(),
-
       coverImage: z.object({
         image: image(),
         alt: z.string(),
-      }).optional(),
+      }),
 
       tags: z.array(
         z.string()
@@ -29,7 +31,6 @@ const posts = defineCollection({
           .toLowerCase()
       ).default([]),
 
-      route: z.string().optional(),
       info: z.string().optional(),
     }),
 });

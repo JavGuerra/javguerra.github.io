@@ -6,13 +6,23 @@ interface Props {
   ignorePrefetch?: boolean;
 }
   
-import siteConfig from '@/siteConfig.json';
 import { Image } from "astro:assets";
 import ButtonLink from "./ButtonLink.astro";
 import FormattedDate from '@/components/FormattedDate.astro';
 
-const { frontmatter, href, firstParagraph, ignorePrefetch = false } = Astro.props;
-const { coverImage, title, author, pubDate, description } = frontmatter;
+const { 
+  href, 
+  firstParagraph, 
+  ignorePrefetch = false,
+  frontmatter: { 
+    coverImage, 
+    title, 
+    author, 
+    pubDate, 
+    description 
+  } 
+} = Astro.props;
+
 const route = `/blog/${href}`;
 ---
 
@@ -26,8 +36,7 @@ const route = `/blog/${href}`;
       
       <div class="w-full md:me-4">
         <small class="gray">
-          {author ? author : siteConfig.autor}{
-            pubDate && <>, <FormattedDate date={pubDate} /></> }
+          {author}, <FormattedDate date={pubDate} />
         </small>
         <h3 class="pt-1">{title}</h3>
         <p class="mt-2">{description}</p>
