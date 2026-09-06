@@ -16,7 +16,7 @@ Estar actualizado es importante, tanto para aprender conocimientos nuevos como p
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
-# Certificaciones
+## Certificaciones
 
 * [Título FPGS DAW](/assets/img/certificados/titulo_fpgs_daw.jpg)
 * [IFCD0210 Desarrollo de Aplicaciones con Tecnologías web](/assets/img/certificados/IFCD0210.jpg) - Certificado de profesionalidad de nivel 3 - SEXPE  
@@ -28,12 +28,12 @@ Estar actualizado es importante, tanto para aprender conocimientos nuevos como p
 * [PHP](https://community.open-bootcamp.com/user/javguerra/certificaciones/2821d390-7744-4657-a74c-7d6e4907f8ad) - Open Bootcamp
 * [PHP](/assets/img/certificados/PHP-Linked-In.png) - Linked-In  
 * [Full Stack Web Developer](/assets/img/certificados/javguerra-fswd.png) - The Bridge  
-* [Java](https://community.open-bootcamp.com/user/javguerra/certificaciones/f487036b-77f6-4cc2-a02b-74654d287b2f) - Open Bootcamp   
+* [Java](https://community.open-bootcamp.com/user/javguerra/certificaciones/f487036b-77f6-4cc2-a02b-74654d287b2f) - Open Bootcamp
 * [Java + Spring](/assets/img/certificados/java-adecco.png) - Fundación Adecco
 * [Testing con Java + Spring](/assets/img/certificados/testing-java-adecco.png) - Fundación Adecco
 * [Ciberseguridad BlueTeam](/assets/img/certificados/blue-team-01.jpg), [y reverso](/assets/img/certificados/blue-team-02.jpg) - The Bridge, Incibe  
 
-## Badges
+### Badges
 
 * [Web dev Fundamentals](https://badgr.com/public/assertions/sfMbjaRBRhesk8_3OHHwZQ) - The Bridge  
 * [Backend developer](https://badgr.com/public/assertions/4hyWt_gnSOOY3uNApKi9Mg) - The Bridge  
@@ -42,7 +42,7 @@ Estar actualizado es importante, tanto para aprender conocimientos nuevos como p
 * [CSS](https://badgr.com/public/assertions/HqxCGrbYQeeaqRDUYtPQWQ) - The Bridge  
 * [JavaScript](https://badgr.com/public/assertions/V2P3yFAxTemAfk3nvGK7mw) - The Bridge  
 * [ES6](https://badgr.com/public/assertions/G20ghDb1QCmRX3qdhqOE3Q) - The Bridge  
-* [Programación Orientada a Objetos (OOP)](https://badgr.com/public/assertions/cltpw5JPQJmNeoLuPVcvRw) - The Bridge 
+* [Programación Orientada a Objetos (OOP)](https://badgr.com/public/assertions/cltpw5JPQJmNeoLuPVcvRw) - The Bridge
 * [Node.js](https://badgr.com/public/assertions/o61ERhieSlyDVgSR586sAQ) - The Bridge  
 * [Express.JS](https://badgr.com/public/assertions/ftjl0em_Sr-8V8AM784p7g) - The Bridge  
 * [SQL](https://badgr.com/public/assertions/ME9Mu2uhTZ-mPeETfiRONA) - The Bridge  
@@ -51,8 +51,7 @@ Estar actualizado es importante, tanto para aprender conocimientos nuevos como p
 * [GitHub](https://badgr.com/public/assertions/n6lkSO2VQtOuX2CQZfZ1fg) - The Bridge  
 * [Firebase](https://badgr.com/public/assertions/jay8ViRwQJmJahFrIz3RRw) - The Bridge  
 
-
-# TODO 
+## TODO
 
 * [Cloud Computing](https://learndigital.withgoogle.com/activate/course/cloud-computing) - Google Activate
 * [Desarrollo de aplicaciones móviles](https://learndigital.withgoogle.com/activate/course/apps) - Google Activate

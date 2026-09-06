@@ -10,9 +10,10 @@ coverImage:
 tags:
     - formación
 ---
+
 Me gustan los [fractales](http://es.wikipedia.org/wiki/Fractal), la [teoría del caos](http://es.wikipedia.org/wiki/Teor%C3%ADa_del_caos)… Cuando adquirí mi primer [PC](http://es.wikipedia.org/wiki/Computadora_personal), un [486 DX2 a 66 Mhz.](http://es.wikipedia.org/wiki/Intel_80486) allá por 1992, uno de los primeros programas para [MS-DOS](http://es.wikipedia.org/wiki/MS-DOS) que instalé fue [Fractint](http://www.fractint.org/), incluido en un CD que acompañaba a la revista [PC Actual](https://www.malavida.com/es/pcactual/), revista que compraba puntualmente cada mes.
 
-Se trataba de un programa realizado por el auto-denominado «[Stone Soup Group](http://spanky.triumf.ca/www/fractint/stone_soup.html)» (_enlace roto_) que generaba dibujos fractales bellísimos como el de la ilustración. Incluía el programa una lista de posibles fractales y, junto a ellos, aparecía el nombre del autor del diseño. La lista era interminable, y los nombres eran todos distintos. Deben ser matemáticos de una gran universidad, pensé. Luego supe que cada diseño fractal era una aportación de gente desconocida que colaboraba voluntariamente, pues, el programa en sí, sólo generaba las imágenes a partir de los datos que le se indicasen, o sea, aquello que aportaban los colaboradores.
+Se trataba de un programa realizado por el auto-denominado «Stone Soup Group» (que estuvo alojado en la dirección "spanky.triumf.ca/www/fractint/stone_soup.html") que generaba dibujos fractales bellísimos como el de la ilustración. Incluía el programa una lista de posibles fractales y, junto a ellos, aparecía el nombre del autor del diseño. La lista era interminable, y los nombres eran todos distintos. Deben ser matemáticos de una gran universidad, pensé. Luego supe que cada diseño fractal era una aportación de gente desconocida que colaboraba voluntariamente, pues, el programa en sí, sólo generaba las imágenes a partir de los datos que le se indicasen, o sea, aquello que aportaban los colaboradores.
 
 Otra cosa que me llamó la atención del programa es que se distribuía como [Dominio Público](http://es.wikipedia.org/wiki/Dominio_p%C3%BAblico), es decir, que cualquiera podía obtenerlo listo para ejecutarse en el ordenador y también podía obtener la lista de instrucciones que lo componía, hacer los cambios que se le antojase en ella, y si, fruto de esa investigación y manipulación, encontraba que podía aportar alguna mejora, la enviaba a los autores para que fuese incluida en la siguiente versión que se distribuyese.
 
@@ -20,7 +21,7 @@ No me entraba en la cabeza. Esta gente estaba regalando su programa. Con la de i
 
 Leí con interés la ayuda (en inglés) del programa, y a duras penas pude entender de qué iba todo esto. Entre la documentación, se incluía una fábula titulada «[La sopa de piedra](http://es.wikipedia.org/wiki/Sopa_de_piedra)». De ahí han debido tomar el nombre el grupo de programadores, -concluí-, no hay duda.
 
-[Este era el relato](http://www.nahee.com/spanky/www/fractint/stone_soup.html) (_enlace roto_) que podía leerse, y aquí os dejo uno ya traducido:
+El relato estaba en "www.nahee.com/spanky/www/fractint/stone_soup.html", y aquí os dejo uno ya traducido:
 
 > En un pequeño pueblo, una mujer se llevó una gran sorpresa al ver que había llamado a su puerta un extraño, correctamente vestido, que le pedía algo de comer.
 >
@@ -45,3 +46,7 @@ Leí con interés la ayuda (en inglés) del programa, y a duras penas pude enten
 El programa Fractint sigue disponible en Internet décadas después. Aún acepta correcciones. Muchos otros programas han reutilizado el trabajo de estos pioneros y han realizado versiones para otras plataformas y sistemas operativos como [GNU/Linux](http://es.wikipedia.org/wiki/GNU/Linux) o [Mac OS X](http://es.wikipedia.org/wiki/Mac_OS_X). Ha sido un trabajo provechoso.
 
 Desde que conocí esta historia, he intentado seguir su filosofía en todo lo que he emprendido. Ahora os toca a vosotros/as ponerla en práctica. 😉
+
+## Enlaces
+
+- [Fractin en archive.org](https://dn711101.ca.archive.org/0/items/tucows_10221_Xfractint/)

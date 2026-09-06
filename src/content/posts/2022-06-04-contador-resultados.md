@@ -15,6 +15,7 @@ tags:
     - SVG
     - usabilidad
 ---
+
 La información visual es percibida con más claridad que la escrita. A la hora de mostrar resultados, por ejemplo los aciertos o fallos de un examen on-line, podemos complementar la información escrita con una gráfica dinámica que muestre los resultados de un vistazo, aportando además valor al resultado.
 
 [<button>Ver contador de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/contador.html)
@@ -31,6 +32,7 @@ El fichero SVG lo he creado con [InkScape](https://inkscape.org/es/), una herram
 ```html
 <g id="aguja" transform="matrix(.28946 0 0 .28839 126 -138.93)">
 ```
+
 El atributo «transform» dentro del SVG indica la posición de la aguja, su tamaño y ángulo de giro. El que se muestra aquí corresponde a la aguja en posición vertical, equivalente a un resultado de 5, entre 0 y 10. Para cubrir todo el rango de puntuaciones, la aguja debe girar 18 grados en un sentido y en otro, es decir, que irá girando de 0 a 180 grados en saltos de 18 grados.
 
 Calcular los valores de la posición de la aguja en cada uno de esos intervalos no es tarea fácil. Para acortar camino, guardé la misma gráfica con la aguja en las distintas 11 posiciones y obtuve el valor de transform en cada una de ellas. Este será el valor que luego pasaremos a la gráfica para indicar qué posición debe tener la aguja en función de la puntuación obtenida. Esta es la tabla obtenida:
@@ -38,7 +40,7 @@ Calcular los valores de la posición de la aguja en cada uno de esos intervalos 
 ![Contadores](https://javguerra.github.io/ejercicios-web-javascript/img/contadores.png)
 
 | Puntos | Valores de la aguja |
-| :------ |:--- |
+| :------ | :--- |
 | 0 | transform="matrix(0 -.28946 .28839 0 -139.16 -20.501)" |
 | 1 | transform="matrix(.089449 -.2753 .27428 .089119 -107.1 -76.177)" |
 | 2 | transform="matrix(.17014 -.23418 .23332 .16951 -59.407 -119.22)" |
@@ -77,6 +79,7 @@ El código html sería el siguiente:
     <p><span id="nota">0</span> de 10 aciertos</p>
 </div>
 ```
+
 Para no ocupar espacio de esta entrada el SVG no se muestra completo. Los puntos suspensivos corresponden a las etiquetas que deberían estar ahi. El SVG como se aprecia, estaría incrustado, completo, y el elemento que agrupa a los elementos que dibujan la aguja bien identificado.
 
 En el párrafo se mostraría el resultado de forma textual. ambos, imagen y resultado, están dentro de un DIV contenedor llamado «resultados».
@@ -112,6 +115,7 @@ Los estilos CSS para mostrar correctamente estos elementos son los siguientes:
     text-shadow: 2px 2px 0 DimGray;
 }
 ```
+
 ## Dinamismo
 
 Ya disponemos de la gráfica incrustada en el HTML correctamente representada con CSS, y la tabla de posiciones de la aguja, y en esta parte veremos el motivo de toda esta preparación.
@@ -144,6 +148,7 @@ function ponAguja(aciertos) {
     aguja.setAttribute('transform', `matrix(${posicionAguja[aciertos]})`);
 }
 ```
+
 Obtengo el elemento «nota» donde pondremos el número de aciertos.
 
 La variable «aciertos», en este ejemplo, se obtiene aleatoriamente en un rango entero entre 0 y 10.
@@ -244,5 +249,4 @@ Con cada recarga de la página, la gráfica y el cuadro de texto mostrarán un v
 * Ver ejemplo de aplicación práctica. [Summer Quiz](https://javguerra.github.io/summer-quiz/) Es necesario terminar una partida para obtener resultados.
 * Ver también: [Creación de gráfica de lineas dinámica con SVG](/blog/grafica-lineas)
 * Ver también: [Cargar SVG dinámicamente](/blog/carga-svg)
-* [Tutorial SVG](http://w3.unpocodetodo.info/svg/introduccion.php).
 * Libro sobre SVG [SCALABLE](https://leanpub.com/scalable/) de Jorge Aznar.

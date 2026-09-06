@@ -22,8 +22,7 @@ tags:
     - responsive
 ---
 
-Durante el año 2022 cursé el [Bootcamp de Desarrollo Web Full Stack](/blog/beca-santander-fswd) que [Becas Santander](https://www.becas-santander.com/es/index.html) llevó a cabo en colaboración con [Fundación Universia](https://jobs.universia.net/), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
-
+Durante el año 2022 cursé el [Bootcamp de Desarrollo Web Full Stack](/blog/beca-santander-fswd) que [Becas Santander](https://www.becas-santander.com/es/index.html) llevó a cabo en colaboración con [Fundación Universia](https://www.universia.net/es/empleo), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
 
 [<button>Ir a la aplicación on-line</button>](https://javguerra.badared.com/proyecto/tienda8bits/)
 
@@ -31,7 +30,7 @@ El día 17 de noviembre finalizó la formación con un acto de entrega de diplom
 
 A parte de los compañeros y los profesores, asistieron al evento Alejandra Cuenca y Diego Díaz por parte de The Bridge, Cristina Soriano por Minsait/Indra, y Beatriz Arribas y Carlos Sánchez por Universia.
 
-# Video
+## Video
 
 El evento se llevó a cabo de forma presencial y on-line, y de él he rescatado el video de mi presentación que comparto a continuación.
 
@@ -39,42 +38,44 @@ El evento se llevó a cabo de forma presencial y on-line, y de él he rescatado 
 
 [<button>Ver el video en YouTube</button>](https://youtu.be/XlswjqhxJZ8)
 
-# Descripción técnica
+## Descripción técnica
 
-## Back end
+### Back end
 
 __Tecnologías empleadas__: Node.js + Express + MongoDB + Mongoose  
 __Módulos__: compression, cors, helmet, dotenv, nodemon, mongoose-paginator-v2
 
 __Características destacadas de la API__:
-* Emplea módulos ESM. 
-* Está preparada para el versionado de la API.  
-* Está preparada para el uso de BBDD MongoDB local o en remoto (config.js).  
-* Preserva la seguridad del acceso a la API con el uso del módulo helmet.  
-* Devuelve las rutas de los enlaces a las fotos y logos dinámicamente.  
-* Cuenta con documentación de la API.  
 
-## Front end
+- Emplea módulos ESM.  
+- Está preparada para el versionado de la API.  
+- Está preparada para el uso de BBDD MongoDB local o en remoto (config.js).  
+- Preserva la seguridad del acceso a la API con el uso del módulo helmet.  
+- Devuelve las rutas de los enlaces a las fotos y logos dinámicamente.  
+- Cuenta con documentación de la API.  
+
+### Front end
 
 __Tecnologías empleadas__: React + Vite, axios, react-router-dom, react-hook-form  
 __Módulos propios__: setSpin, inactiveBtn, compareTwoObjects
 
 __Características destacadas de la App__:
-* El diseño es adaptable (responsive) según el dispositivo.  
-* CSS propio. No usa frameworks.  
-* Es accesible (revisado con el complemento [WAVE](https://wave.webaim.org/)).   
-* Utiliza fuentes de Google Font en los títulos para preservar la accesibilidad.  
-* Implementa el protocolo [Open Graph](https://ogp.me/) para la correcta inserción de la web en RRSS.  
-* Es compatible con Progessive Web Aplication ([PWA](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)) a través de fichero [manifest.json](https://developer.mozilla.org/es/docs/Web/Manifest), por lo que la página puede ser instalada en dispositivos móviles como una web app.  
-* Ha sido probada con los navegadores web Firefox y Chrome.  
-* Tratamiento de imágenes con software libre: Gimp e InkScape.  
 
-## Fuentes
+- El diseño es adaptable (responsive) según el dispositivo.  
+- CSS propio. No usa frameworks.  
+- Es accesible (revisado con el complemento [WAVE](https://wave.webaim.org/)).   
+- Utiliza fuentes de Google Font en los títulos para preservar la accesibilidad.  
+- Implementa el protocolo [Open Graph](https://ogp.me/) para la correcta inserción de la web en RRSS.  
+- Es compatible con Progessive Web Aplication ([PWA](https://developer.mozilla.org/es/docs/Web/Progressive_web_apps)) a través de fichero [manifest.json](https://developer.mozilla.org/es/docs/Web/Manifest), por lo que la página puede ser instalada en dispositivos móviles como una web app.  
+- Ha sido probada con los navegadores web Firefox y Chrome.  
+- Tratamiento de imágenes con software libre: Gimp e InkScape.  
 
-* Wikipedia  
-* Enciclopedia «Mi Computer», editorial Delta, 1984.  
+### Fuentes
 
-## Licencias
+- Wikipedia  
+- Enciclopedia «Mi Computer», editorial Delta, 1984.  
+
+### Licencias
 
 Sobre el código fuente: [GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/JavGuerra/tienda-8-bits/blob/main/LICENSE)  
 Sobre el contenido de la web: [(CC) BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/es/)  
@@ -83,13 +84,14 @@ Sobre las fuentes de letra: [Google Fonts](https://fonts.google.com/)
 Sobre los iconos: [Heroicons](https://heroicons.com/)  
 Material usado sin ánimo de lucro bajo criterios didácticos y formativos.   
 
-## Acceder a la aplicación
+### Acceder a la aplicación
 
 ![Código QR](https://raw.githubusercontent.com/JavGuerra/tienda-8-bits/0d3d3a968787a438379d003fe31aaede91011e40/qrcode.svg)  
 
 [<button>Ir a la aplicación on-line</button>](https://javguerra.badared.com/proyecto/tienda8bits/)  
 
-## Enlaces
+### Enlaces
+
 - [Aplicación on-line](https://javguerra.badared.com/proyecto/tienda8bits/)  
 - [Documentación de la API](https://api-tienda8bits.up.railway.app/)  
 - [Enunciado de la práctica en PDF](https://github.com/JavGuerra/tienda-8-bits/blob/main/enunciado.pdf)  
@@ -102,4 +104,4 @@ __Artículos informativos elaborados por el autor relacionados con esta práctic
 - [Usando populate con paginate y filtrando los resultados](/blog/populate-paginate-fitrado)  
 - [Generar enlaces dinámicos de imágenes almacenadas en MongoDB](/blog/rutas-dinamicas-imagenes-mongodb)  
 - [Ordenando resultados en React](/blog/ordenacion-react)  
-- [Spinner loader asíncrono](/blog/spinner-loader-asincrono)  
+- [Spinner loader asíncrono](/blog/spinner-loader-asincrono)

@@ -18,13 +18,13 @@ Recopilo en esta entrada algunos recursos documentales sobre la historia de la c
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.<br/>Fecha de última actualización: 2026-01-25</span>
 
-# Recursos documentales
+## Recursos documentales
 
 El término «Paleoinformática» se refiere a la rama de la informática que combina historia, tecnología y ciencias de la computación para estudiar el origen y evolución temprana de los sistemas informáticos. Esto ayuda a entender el contexto en el que fueron desarrolladas ciertas tecnologías, cuál fue su uso, y aporta ideas para que este conocimiento se pueda aprovechar en el presente.
 
 Los siguientes documentos son, para mi, de gran interés, y de los que disfruto cuando puedo releer algunos de ellos o consultar información.
 
-## Historia
+### Historia
 
 - [Historia de un viejo informático](https://eltamiz.com/elcedazo/series/historia-de-un-viejo-informatico/), por Macluskey, en El Cedazo.
 
@@ -50,11 +50,11 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Lanzamiento Amiga 1000 en 1985](https://youtu.be/rgRn44377No?si=QjQhTeHzlhFWRHLF) - Ordenador Amiga 1000.
 
-## Hardware
+### Hardware
 
-- [Old-Computers Museum](https://www.old-computers.com/), actualmente en reconstrucción, puede verse en Archive.org.
+- [Old-Computers Museum](https://web.archive.org/web/20231120221617/https://www.old-computers.com/museum/default.asp), actualmente en reconstrucción. www.old-computers.com puede verse en Archive.org.
 
-## Software y sistemas operativos
+### Software y sistemas operativos
 
 - [The Architecture of Open Source Applications](https://aosabook.org/en/index.html), libros sobre cómo están construidas algunas aplicaciones libres.
 
@@ -82,10 +82,8 @@ Los siguientes documentos son, para mi, de gran interés, y de los que disfruto 
 
 - [Dan Bricklin's Web Site](http://www.bricklin.com/default.htm) historia de Visical, web de la primera hoja de cálculo, mantenido por su autor.
 
-## Otros
+### Otros
 
 - [Internet Artifacts](https://neal.fun/internet-artifacts/) Hitos de la red.
-
 - [La edad dorada de los videojuegos](https://youtu.be/5-5t11Qb3Uw?si=YELimIJHaX3hYpPj) video.
-
 - [Chiken chiken chiken](https://youtu.be/yL_-1d9OSdk?si=NhS9jltk8CwSH1Ln), #humor, lenguaje esotérico, memorable.

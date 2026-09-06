@@ -19,9 +19,9 @@ tags:
 
 Así describe el autor de esta herramienta la funcionalidad de su Generador de Sitios Estáticos. Se trata de una utilidad simple que permite hacer importaciones de código en nuestro HTML empleando Node.js para generar la página resultante.
 
-# La página de ejemplo
+## La página de ejemplo
 
-En esta entrada voy a mostrar un ejemplo práctico. Cómo usar [Sergey SSG](https://sergey.cool/) en la web de una iniciativa sobre tarjetas de emergencia para [enfermedades raras o poco frecuentes](https://es.wikipedia.org/wiki/Enfermedad_rara).
+En esta entrada voy a mostrar un ejemplo práctico. Cómo usar [Sergey SSG](https://sergey.trysmudford.com/) en la web de una iniciativa sobre tarjetas de emergencia para [enfermedades raras o poco frecuentes](https://es.wikipedia.org/wiki/Enfermedad_rara).
 
 [<button>Ir a la página de las tarjetas de emergencia</button>](https://conectiva.lat/emergencias)
 
@@ -32,19 +32,19 @@ Hay una serie de requisitos funcionales y operativos por los que se ha optado po
 
 Se optó por desarrollar la página sin usar ningún CMS ni base de datos de respaldo, empleando sólo HTML + CSS. Para la maquetación se usó Bootstrap, simplificando el desarrollo y su posterior mantenimiento, y las zonas comunes de las páginas web fueron extraídas para ser insertadas como _slots_, en cada página HTML. Esto permite que para hacer cambios en estos contenidos repetidos sólo sea necesario modificar un fichero, y el resto de páginas mostrarán los cambios.
 
-# Sergey SSG
+## Sergey SSG
 
 Todos los [generadores de sitios estáticos](https://www.cloudflare.com/es-es/learning/performance/static-site-generator/) funcionan de forma análoga. Toman una serie de páginas codificadas de una forma concreta y las convierten a HTML que puede ser usado en un navegador. lo que los diferencia es el código que incluyen estas páginas para generar el resultado que deseamos.
 
 Ya que el propósito de esta entrada no es hacer una revisión de la herramienta, te dejo enlace a un video de [Jonathan MirCha](https://jonmircha.com/) sobre sus características y uso básico paso a paso.
 
-* [LiveCoding Primeros pasos con Sergey un SSG minimalista](https://youtu.be/r5pfaxVCatU)
+- [LiveCoding Primeros pasos con Sergey un SSG minimalista](https://youtu.be/r5pfaxVCatU)
 
 La instalación y uso de **Sergey SSG** requiere tener instalado **Node.js**.
 
-Ver las indicaciones de instalación en: [https://sergey.cool/](https://sergey.cool/)
+Ver las indicaciones de instalación en: [https://sergey.trysmudford.com/](https://sergey.trysmudford.com/)
 
-# Importaciones
+## Importaciones
 
 La [página de ejemplo](https://conectiva.lat/emergencias) consta de una HTML principal o portada y de él derivan todas las otras páginas estáticas de la web. Todas ellas tienen la misma estructura:
 
@@ -63,13 +63,13 @@ Según parece, hay un estándar en ciernes llamado **HTML módulos** que permiti
 
 Hasta que se estandarice, Sergey SSG es una razonable alternativa.
 
-# Vamos por partes
+## Vamos por partes
 
 ...dijo el descuartizador de Boston. Este mal chiste da pie a entender cómo vamos a trabajar.
 
 Cada parte susceptible de repetirse en las distintas páginas se sacará, a una carpeta llamada `_imports`, y estos documentos «importables» serán referenciados en cada una de las páginas donde se utilicen.
 
-Para conocer las etiquetas de importación de Sergey SSG, puedes visitar la sección [Slots](https://sergey.cool/slots/) de su página.
+Para conocer las etiquetas de importación de Sergey SSG, puedes visitar la sección [Slots](https://sergey.trysmudford.com/slots/) de su página.
 
 Las partes que vamos a reutilizar son:
 
@@ -80,7 +80,7 @@ Las partes que vamos a reutilizar son:
 
 ![Tarjetas de emergencia](https://conectiva.lat/emergencias/assets/portada1.png)
 
-## 1. Inicio
+### 1. Inicio
 
 Este fichero contiene el `head` de la página, y el comienzo del `body`:
 
@@ -116,6 +116,7 @@ Este fichero contiene el `head` de la página, y el comienzo del `body`:
 <body>
     <div class="container">
 ```
+
 Como se aprecia, hay una serie de etiquetas `sergey-slot` en este fichero. Para entenderlo mejor, tenemos que ver cómo se inserta este fichero en las páginas.
 
 ```html
@@ -136,6 +137,7 @@ En este caso no incluyo _templates_ para los `<sergey-slot name="assets" />` en 
 ```html
 <sergey-template name="assets">../</sergey-template>
 ```
+
 para indicar así que estoy en una subcarpeta, añadiendo `../` al inicio de la ruta de `assets/favicon.png` y `assets/estilos.css`, que ahora serán `../assets/favicon.png` y `../assets/estilos.css` respectivamente, alcanzando sin errores los contenidos ubicados en la carpeta `assets`. Como vimos en el fichero inicio.html, los slot para estas rutas serían:
 
 ```html
@@ -148,7 +150,7 @@ No importa usar comillas dobles dentro de comillas dobles, ya que Sergey SSG se 
 {: .box-note}
 Nota: Cuando en el fichero de importación incluyo un `<sergey-slot />` pero no le envío contenido, Sergey SSG crea un salto de línea no deseado. Cuando hacemos un import de contenido que está tabulado, Sergey tabula la primera línea del contenido que incluye en `<sergey-slot />` correctamente, pero no hace lo mismo con el resto de líneas, que no conservan el tabulado original. Si eres un obseso de la tabulación de tus líneas de código tienes un problema. He abierto una [_Issue_](https://github.com/trys/sergey/issues/69) para que estas cuestiones puedan ser corregidas en la siguiente versión, si esta llega a ver la luz. Por lo demás, el software funciona correctamente y hace su función.
 
-## 2. Cabecera
+### 2. Cabecera
 
 La cabecera contiene el logo, el título y subtítulo. El código es:
 
@@ -178,6 +180,7 @@ que es llamado desde el HTML con:
     <sergey-template name="h2">Enfermedades Poco&nbsp;Frecuentes</sergey-template>
 </sergey-import>
 ```
+
 En este caso se trata del código incluido en el fichero `index.html`. si se tratase de un fichero en una subcarpeta, deberíamos incluir los `_template_` de la ruta del logo. Por ejemplo:
 
 ```html
@@ -187,9 +190,10 @@ En este caso se trata del código incluido en el fichero `index.html`. si se tra
     <sergey-template name="assets">../</sergey-template>
 </sergey-import>
 ```
+
 Como en `inicio.html`, el _import_ trae el fichero, en este caso `cabecera.html`, y lo inserta en el html rellenando las etiquetas `slots` con el contenido especificado en las etiquetas `template`.
 
-## 3. Cabecera múltiple
+### 3. Cabecera múltiple
 
 En algunas páginas, como ocurre [aquí](https://conectiva.lat/emergencias/acoed/eds/tarjeta.html), la cabeceras incluye dos logos. El código del _import_ en este caso es:
 
@@ -215,6 +219,7 @@ En algunas páginas, como ocurre [aquí](https://conectiva.lat/emergencias/acoed
 
 <a href="#contenido" class="visually-hidden-focusable">Ir a los recursos</a>
 ```
+
 que no se diferencia mucho de la cabecera simple, si no es por la inclusión de un `<sergey-slot />` y de la lista ordenada que va a incluir los distintos logos. Este _import_ será llamado desde las páginas con el código:
 
 ```html
@@ -229,9 +234,10 @@ que no se diferencia mucho de la cabecera simple, si no es por la inclusión de 
     </li>
 </sergey-import>
 ```
+
 Como se aprecia, no es necesario seguir el mismo orden de los _slots_ para definir los _template_.
 
-## 4. Fin
+### 4. Fin
 
 En el fichero fin.html defino el pie y el cierre de página:
 
@@ -267,9 +273,10 @@ En este caso no uso ningún _slot_, por lo que el código para importarlo es muy
 ```html
 <sergey-import src="fin" />
 ```
+
 Imagina la de cosas que se pueden hacer con esta forma de trabajar. Incluir por ejemplo un banner donde quieras en tu página y poder cambiarlo según las circunstancias, extraer partes de la página para hacerla modular, menús, secciones, etc.
 
-# Una página completa
+## Una página completa
 
 Una vez vista cada importación por partes, veamos cómo quedaría el index.html:
 
@@ -290,6 +297,7 @@ Una vez vista cada importación por partes, veamos cómo quedaría el index.html
 
 <sergey-import src="fin" />
 ```
+
 Al generar la página con `npm start` a partir de este código, se mostraría lo siguiente:
 
 ```html
@@ -368,25 +376,26 @@ Al generar la página con `npm start` a partir de este código, se mostraría lo
 
 </html>
 ```
+
 Los ficheros generados resultantes, ya como páginas estáticas con todo su contenido, estarán en la carpeta `public`, y serán estos ficheros los que podremos subir a nuestro servidor.
 
-# Más opciones en Sergey SSG
+## Más opciones en Sergey SSG
 
 Sergey SSG tiene un par de opciones más interesantes.
 
-Puede gestionar enlaces con [sergey-link](https://sergey.cool/links/), algo muy útil cuando queremos mostrar a los usuarios dónde se encuentran dentro de la página.
+Puede gestionar enlaces con [sergey-link](https://sergey.trysmudford.com/links/), algo muy útil cuando queremos mostrar a los usuarios dónde se encuentran dentro de la página.
 
-Sergey SSG también puede importar texto en formato Markdown como se indica [aquí](https://sergey.cool/markdown/).
+Sergey SSG también puede importar texto en formato Markdown como se indica [aquí](https://sergey.trysmudford.com/markdown/).
 
-Si intentas visualizar los cambios de las páginas que estás creando antes de generar tus ficheros estáticos, estos se mostrarán con errores, ya que el código de Sergey SSG no es reconocido por el navegador. Te recomiendo que revises las distintas [opciones](https://sergey.cool/options/) para ejecutar Sergey SSG e incluso para tener una previsualización de los cambios que vas realizando en tiempo real.
+Si intentas visualizar los cambios de las páginas que estás creando antes de generar tus ficheros estáticos, estos se mostrarán con errores, ya que el código de Sergey SSG no es reconocido por el navegador. Te recomiendo que revises las distintas [opciones](https://sergey.trysmudford.com/options/) para ejecutar Sergey SSG e incluso para tener una previsualización de los cambios que vas realizando en tiempo real.
 
-# Enlaces
+## Enlaces
 
-* [Ir a la página de las tarjetas de emergencia](https://conectiva.lat/emergencias)
-* [Generadores de sitios estáticos](https://www.cloudflare.com/es-es/learning/performance/static-site-generator/)
-* [Sergey SSG](https://sergey.cool/)
-* [Repositorio de Sergey SSG en GitHub](https://github.com/trys/sergey)
-* [LiveCoding Primeros pasos con Sergey un SSG minimalista](https://youtu.be/r5pfaxVCatU) - Video
-* [PostHTML Static Site Starter](https://www.telagraphic.com/posthtml) - Alternativa
-* [Mini SSG](https://minissg.vercel.app/) - Alternativa
-* [Eleventy](https://www.11ty.dev/) - Alternativa popular
+- [Ir a la página de las tarjetas de emergencia](https://conectiva.lat/emergencias)
+- [Generadores de sitios estáticos](https://www.cloudflare.com/es-es/learning/performance/static-site-generator/)
+- [Sergey SSG](https://sergey.trysmudford.com/)
+- [Repositorio de Sergey SSG en GitHub](https://github.com/trys/sergey)
+- [LiveCoding Primeros pasos con Sergey un SSG minimalista](https://youtu.be/r5pfaxVCatU) - Video
+- [PostHTML Static Site Starter](https://github.com/telagraphic/static-site-starter) - Alternativa
+- [Mini SSG](https://minissg.vercel.app/) - Alternativa
+- [Eleventy](https://www.11ty.dev/) - Alternativa popular

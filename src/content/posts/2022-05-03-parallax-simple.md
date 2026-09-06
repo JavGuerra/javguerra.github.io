@@ -38,6 +38,4 @@ Mis páginas de ejemplo con este efecto Parallax:
 
 [<button>página _landing_</button>](https://badared.com/conectiva/evento/THTC2021/)
 
-El efecto Parallax puede complicarse aún más para conseguir resultados increibles. [Aquí](https://www.paellacreativa.com.ar/2012/05/24/efecto-parallax-diseno-web/) puedees ver algunos ejemplos.
-
-**Actualización**. Francesc, un compañero del [bootcamp](/blog/beca-santander-fswd) que estoy realizando, me pasa un [interesante video](https://youtu.be/kN-eCBAOw60) de Walt Disney sobre cómo se aplica este efecto en las películas de animación. ¡Gracias por el aporte!
+El efecto Parallax puede complicarse aún más para conseguir resultados increibles. Puedes encontrar ejemplos con sólo una búsqueda.

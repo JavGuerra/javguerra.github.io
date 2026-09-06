@@ -23,6 +23,7 @@ tags:
   - viaje
   - Enigma
 ---
+
 Recientemente he estado de viaje familiar en Londres y creo que he aprovechado bien el tiempo. En esta entrada cuento brevemente la visita a distintos museos relacionados con la informática en la ciudad.
 
 [<button>Ver galería de fotos</button>](https://javguerra.badared.com/galeria/?dir=2024-12-COMPUTER-LONDON)
@@ -60,7 +61,7 @@ Además de mainframes, un par de ordenadores `CRAY`'s, de una buena colección d
 
 Este museo es muy pequeño, pero tiene voluntarios que explican con pasión lo que allí se encuentra, y merece la pena dedicarle el tiempo necesario para apreciar todo lo que tiene en tan poco espacio. Salí algo desencantado de allí por estacuestión, pensando qué mejor aprovechamiento podría hacerse de la exposición con más terreno, porque uno no es conciente de las maravillas que ese museo guarda.
 
-Se puede visitar en un [tour 3D online](https://www.tnmoc.org/3d-virtual-tour2) y ver todo con detalle. Y su página web está muy bien organizada.
+Se puede visitar en un [tour 3D online](https://www.tnmoc.org/3d-virtual-tour-2026) y ver todo con detalle. Y su página web está muy bien organizada.
 
 Antes de regresar, después de ver los dinosaurios del Museo de Historia Natural, visitamos lo poco que pudimos ver del Museo de la Ciencia, por falta de tiempo, donde además de cosas del espacio, encontramos máquinas tan interesantes como lo que queda del `LEO` de Lyons, el primer ordenador comercial, un `PDP 10`, un `IBM 360` o un `Control Data 6600`.
 
@@ -69,7 +70,7 @@ Antes de regresar, después de ver los dinosaurios del Museo de Historia Natural
 
 Si viajáis a Londres, ya tenéis plan turístico retro.
 
-# Enlaces
+## Enlaces
 
 - [Galería de fotos completa](https://javguerra.badared.com/galeria/?dir=2024-12-COMPUTER-LONDON)
 - [Bletchley Park](https://bletchleypark.org.uk/)

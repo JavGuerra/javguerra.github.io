@@ -11,6 +11,7 @@ tags:
     - retro
     - Sinclair QL
 ---
+
 Un 12 de enero de 1984 fue el alumbramiento del [Sinclair QL](https://es.wikipedia.org/wiki/Sinclair_QL) (Quantum Leap), una máquina novedosa y el intento de Sir Clive, fundador de la compañía, de crear un ordenador potente y avanzado, orientado al mercado semi-profesional y a un precio de risa para entonces (399£), anticipándose y siendo capaz de competir de igual a igual con las máquinas de 16 bits que empezarían a aparecer poco después.
 
 El QL era una ordenador repleto de buenas ideas, que contaba, entre otras cosas, con un procesador Motorola 68008 (16/32 bits), con un BASIC especial muy parecido al PASCAL llamado SuperBASIC, un sistema operativo de morirse (el QDOS), capaz de implementar multitarea preentiva, una pantalla de 32K con una resolución máxima de 512x256 pixels, caché de lectura de los dos infames [microdrives](https://es.wikipedia.org/wiki/ZX_Microdrive) que incorporaba de serie, puerto de ampliación para tarjetas auto reconocidas por el sistema (hoy se llamarían Plug & Play), cartuchos de ampliación ROM y un nuevo teclado que acabaría por imponerse en modelos posteriores de otras máquinas de Sinclair como el Spectrum Plus y el 128.
@@ -48,15 +49,15 @@ Poseer un QL resulta algo así como tener un pequeño pedazo de la historia de l
 
 ## Quiero saber más
 
-* [Paquete de supervivencia de QL en español](https://javguerra.github.io/Sinclair-QL-ES-pack/)
-* [Sinclair QL en Wikipedia](https://es.wikipedia.org/wiki/Sinclair_QL)
-* [Ventajas del SuperBASIC](https://sinclairql.speccy.org/articulos/programacion/superbasic.htm)
-* [Web Sinclair QL Recursos en Castellano](https://sinclairql.es)
-* [QBlog: El blog del QL](https://sinclairqles.wordpress.com/)
-* [Emuladores del QL](https://dilwyn.qlforum.co.uk/emu/index.html) _(en inglés)_
-* [Emulador de QL en línea](https://sqlux.qlforum.co.uk/)
-* [CRASH: Cómo programar un juego sencillo en el QL paso a paso](https://sinclairqles.wordpress.com/2013/04/05/crash/)
-* [Glosario de términos y siglas del Sinclair QL](https://sinclairqles.wordpress.com/2012/08/16/glosario-de-terminos-y-siglas-del-sinclair-ql/)
-* [Videos en Youtube sobre Sinclair QL](https://www.youtube.com/results?search_query=Sinclair+QL)
-* [QL Trivial](https://sinclairqles.wordpress.com/2009/08/02/ql-trivial/)
-* [Linux Torvals y el QL](https://sinclairqles.wordpress.com/2009/05/23/linus-torvals-y-el-ql/)
+- [Paquete de supervivencia de QL en español](https://javguerra.github.io/Sinclair-QL-ES-pack/)
+- [Sinclair QL en Wikipedia](https://es.wikipedia.org/wiki/Sinclair_QL)
+- [Ventajas del SuperBASIC](https://sinclairql.speccy.org/articulos/programacion/superbasic.htm)
+- [Web Sinclair QL Recursos en Castellano](https://sinclairql.es)
+- [QBlog: El blog del QL](https://sinclairqles.wordpress.com/)
+- [Emuladores del QL](https://sinclairql.net/djw/emu/index.html) _(en inglés)_
+- [Emulador de QL en línea](https://sqlux.theqlforum.com/)
+- [CRASH: Cómo programar un juego sencillo en el QL paso a paso](https://sinclairqles.wordpress.com/2013/04/05/crash/)
+- [Glosario de términos y siglas del Sinclair QL](https://sinclairqles.wordpress.com/2012/08/16/glosario-de-terminos-y-siglas-del-sinclair-ql/)
+- [Videos en Youtube sobre Sinclair QL](https://www.youtube.com/results?search_query=Sinclair+QL)
+- [QL Trivial](https://sinclairqles.wordpress.com/2009/08/02/ql-trivial/)
+- [Linux Torvals y el QL](https://sinclairqles.wordpress.com/2009/05/23/linus-torvals-y-el-ql/)

@@ -13,7 +13,7 @@ tags:
     - programación
 ---
 
-El pasado 9 de marzo fui informado de que había sido seleccionado para cursar el Bootcamp de Desarrollo Web Full Stack que [Becas Santander](https://www.becas-santander.com/es/index.html) lleva a cabo en colaboración con [Fundación Universia](https://jobs.universia.net/), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
+El pasado 9 de marzo fui informado de que había sido seleccionado para cursar el Bootcamp de Desarrollo Web Full Stack que [Becas Santander](https://www.becas-santander.com/es/index.html) lleva a cabo en colaboración con [Fundación Universia](https://www.universia.net/es/empleo), [Indra](https://www.indracompany.com/) y [The Bridge](https://www.thebridge.tech/).
 
 La beca, denominada **Programa DIGITAL RESKILLING Desarrolo Web Full Stack para estudiantes con Discapacidad**, me permite acceder al Bootcamp de formación impartido por The Bridge desde marzo a noviembre, y en él se verán los siguientes módulos:
 
@@ -26,11 +26,11 @@ La beca, denominada **Programa DIGITAL RESKILLING Desarrolo Web Full Stack para 
 
 ## Trabajos realizados en el Bootcamp
 
-* [Práctica final del Ramp up](/blog/conceptos-fswd)
-* [Ejercicios de JavaScript avanzado](https://javguerra.github.io/ejercicios-web-javascript)
-* [Práctica final JavaScript: «Summer Quiz»](/blog/summer-quiz)
-* [Ejercicios de backend con Node.js](https://github.com/JavGuerra/ejercicios-backend-nodejs)
-* [Ejercicios de frontend con React](https://github.com/JavGuerra/ejercicios-frontend-react)
-* [Proyecto final](/blog/tienda-8-bits)
+- [Práctica final del Ramp up](/blog/conceptos-fswd)
+- [Ejercicios de JavaScript avanzado](https://javguerra.github.io/ejercicios-web-javascript)
+- [Práctica final JavaScript: «Summer Quiz»](/blog/summer-quiz)
+- [Ejercicios de backend con Node.js](https://github.com/JavGuerra/ejercicios-backend-nodejs)
+- [Ejercicios de frontend con React](https://github.com/JavGuerra/ejercicios-frontend-react)
+- [Proyecto final](/blog/tienda-8-bits)
 
-Para saber más: [Página de la beca en The Bridge](https://www.thebridge.tech/curso/bootcamp-indra-fundacion-universia#solicitud-beca).
+La info de la formación estaba en el enlace ya desaparecido: "www.thebridge.tech/curso/bootcamp-indra-fundacion-universia#solicitud-beca".

@@ -15,6 +15,7 @@ tags:
     - SVG
     - usabilidad
 ---
+
 Como comentaba en el anterior artículo sobre [la creación de un contador de resultados](/blog/contador-resultados), la representación visual ayuda a asumir mejor la información. En este artículo mostraré cómo elaborar una gráfica de líneas dinámica que represente, por ejemplo, las puntuaciones de las últimas cinco jugadas con valores en un rango entre cero y diez.
 
 [<button>Ver gráfica de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/graficalineas.html)
@@ -32,6 +33,7 @@ He rehecho a mano la línea roja para poder acceder a los nodos con más facilid
 fill="none" marker-end="url(#dotLine)" marker-mid="url(#dotLine)" marker-start="url(#dotLine)"
 stroke="#d8232a" stroke-linecap="round" stroke-linejoin="round"/>
 ```
+
 En ```points="11 73 33.5 73 56 73 78.5 73 101 73"``` está toda la magia. Este parámetro contiene los valores de los puntos de la linea creada, diez valores en total que corresponden a la posición __x__ e __y__ de cada punto. Si tengo la ubicación de los puntos de la línea, y un identificador ```id="theline"``` para poder hacer cambios, ya puedo representar valores en la gráfica dinámicamente.
 
 Para los círculos en los puntos de conexión de la línea, que son referenciados en marker-end, marker-mid y marker-start, hice los siguientes cambios en el SVG:
@@ -66,6 +68,7 @@ El código HTML para insertar «en linea» el SVG sería el siguiente:
 
 </div>
 ```
+
 Para no ocupar espacio de esta entrada, el SVG no se muestra completo. Los puntos suspensivos corresponden a las etiquetas que deberían estar ahi. El SVG como se aprecia, estaría incrustado, y el elemento de la línea bien identificado con ```id="laLinea"```.
 
 En el párrafo ```"arreglo"``` es donde se mostrarán los valores numéricos que se usarán para representar la gráfica.
@@ -91,6 +94,7 @@ Los estilos CSS para mostrar correctamente estos elementos son los siguientes:
     100% {transform: translateY(0)    scaleY(1)}
 }
 ```
+
 Como se ve, he definido también una animación para mostrar el resultado. Al cargar los nuevos valores de la gráfica, los puntos de la línea estarán en la posición del eje de la puntuación cero, (en la posición 73px) con una escala de 0, es decir la línea estará totalmente aplastada. Durante un segundo, irá tomando su forma original ocupando toda la gráfica con las medidas correctas. Esto hace el efecto de que los nodos de la línea se elevan hasta la posición que debe ocupar en la gráfica. Se entiende mejor [viendo el ejemplo](https://javguerra.github.io/ejercicios-web-javascript/graficalineas.html).
 
 ## Dinamismo
@@ -118,6 +122,7 @@ function fijaLinea(ordenadas = []) {
         `11 ${ord[0]} 33.5 ${ord[1]} 56 ${ord[2]} 78.5 ${ord[3]} 101 ${ord[4]}`);
 }
 ```
+
 Primeramente obtengo los elementos que emplearé en el código ```elLinea``` y ```elArreg```, y declaro el arreglo ```ejesY``` que contendrá los valores a mostrar. Seguidamente relleno el arreglo con cinco valores al azar en un rango entre 0 y 10. Muestro los valores en la web, llamo a la función ```fijaLinea(ejesY)``` y le paso como parámetro el arreglo. Esta función es la responsable de que la línea tenga la forma deseada.
 
 En la posición y = 73 está la línea de la puntuación 0. Cada línea de puntuación esta a una distancia de -7.1px. Así: 0 = 73, 1 = 65,9, .. 9 = 9,1, 10 = 2. Con estos datos, la función ```fijaLinea()``` funciona de la siguiente manera: Si el arreglo que le pasamos tiene un número de elementos menor que cinco, rellena a ceros el arreglo. Después toma los últimos cinco elementos del arreglo (pudiera ser que el arreglo recibido tuviese más de cinco elementos).
@@ -127,11 +132,13 @@ A cada elemento del array le aplica el cálculo necesario para convertir la punt
 ```html
 points="11 73 33.5 73 56 73 78.5 73 101 73"
 ```
+
 pasa a ser:
 
 ```html
 `11 ${ord[0]} 33.5 ${ord[1]} 56 ${ord[2]} 78.5 ${ord[3]} 101 ${ord[4]}`
 ```
+
 siendo los valores del arreglo ```ord``` cada una de las cinco posiciones «__y__» de los puntos de la polilínea. Esto es todo lo que necesitamos para mostrar los datos.
 
 ## El código completo
@@ -211,8 +218,7 @@ Para conocer más sobre SVG y cómo editarlo, te recomiendo el libro [SCALABLE](
 
 [<button>Ver gráfica de ejemplo</button>](https://javguerra.github.io/ejercicios-web-javascript/graficalineas.html)  
 
-* Ver ejemplo de aplicación práctica. [Summer Quiz](https://javguerra.github.io/summer-quiz/) (Es necesario terminar una partida para obtener resultados.)
-* Ver también: [Creación de un contador de resultados](/blog/contador-resultados)
-* Ver también: [Cargar SVG dinámicamente](/blog/carga-svg)
-* [Tutorial SVG](http://w3.unpocodetodo.info/svg/introduccion.php).
-* Libro sobre SVG [SCALABLE](https://leanpub.com/scalable/) de Jorge Aznar.
+- Ver ejemplo de aplicación práctica. [Summer Quiz](https://javguerra.github.io/summer-quiz/) (Es necesario terminar una partida para obtener resultados.)
+- Ver también: [Creación de un contador de resultados](/blog/contador-resultados)
+- Ver también: [Cargar SVG dinámicamente](/blog/carga-svg)
+- Libro sobre SVG [SCALABLE](https://leanpub.com/scalable/) de Jorge Aznar.

@@ -17,9 +17,9 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 
 <span class="note">**Nota**: Esta entrada se actualizará cuando se produzcan novedades.</span>
 
-# Lenguajes de programación
+## Lenguajes de programación
 
-## JavaScript / TypeScript
+### JavaScript / TypeScript
 
 * [Lenguaje JavaScript](https://lenguajejs.com/javascript/)
 * [El tutorial de JavaScript moderno](https://es.javascript.info/)
@@ -35,7 +35,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Compilación de aplicaciones JavaScript con TypeScript](https://learn.microsoft.com/es-es/training/paths/build-javascript-applications-typescript/)
 * [Uso avanzado de TypeScript en un ejemplo real](https://neliosoftware.com/es/blog/uso-avanzado-de-typescript-parte-1/)
 
-## Python
+### Python
 
 * [Lenguaje Python](http://aprendepython.es)
 * [Python para todos](https://launchpadlibrarian.net/18980633/Python%20para%20todos.pdf)
@@ -47,28 +47,27 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [El libro de Python](https://ellibrodepython.com/)
 * [El manual de Python](https://www.freecodecamp.org/espanol/news/el-manual-de-python/)
 * [Curso de Python desde cero para principiantes](https://www.udemy.com/course/curso-basico-de-python-desde-cero-para-principiantes/)
-* [Python: aprender a programar](https://www.edx.org/es/course/python-aprender-a-programar)
+* [Python: aprender a programar](https://www.edx.org/learn/python/universitat-politecnica-de-valencia-python-aprender-a-programar)
 * [Aprende a pensar como un programador con Python](https://argentinaenpython.com/quiero-aprender-python/aprenda-a-pensar-como-un-programador-con-python.pdf)
-* [Ejercicios de programación con Python](https://aprendeconalf.es/docencia/python/ejercicios/)
+* [Ejercicios de programación con Python](https://aprendeconalf.es/python-ejercicios/)
 
-## Java
+### Java
 
 * [Mega Curso Java desde 0](https://www.youtube.com/playlist?list=PLG1qdjD__qH6ULjW5iN8E45m5nkaCNbUu)
 * [Arquitectura Java](https://cursos.arquitecturajava.com/p/cursos-gratuitos)
 * [CodeGym](https://codegym.cc/es/)
 * [Tutorial Spring Boot](https://www.freecodecamp.org/espanol/news/tutorial-spring-boot-crear-apps-java-modernas-y-rapidas/)
-* [Fundamentos de programación en Java](https://www.tesuva.edu.co/phocadownloadpap/Fundamentos%20de%20programcion%20en%20Java.pdf)
 
-## Kotlin
+### Kotlin
 
 * [Curso Kotlin para Android](https://cursokotlin.com/curso-programacion-kotlin-android/)
 
-## PHP
+### PHP
 
 * [PHP, la manera correcta](https://phpdevenezuela.github.io/php-the-right-way/)
 * [Programación PHP a través de ejemplos](https://mega.nz/file/AFIkhRpC#8muP4I2jZRiNirbQmXDMBDf8QPxw5HkbbaGk2xzDvNE)
 
-## Rust
+### Rust
 
 * [Aprendizaje Rust](https://riptutorial.com/Download/rust-es.pdf)
 * [El Lenguaje de Programación Rust (2016)](https://goyox86.github.io/elpr/README.html)
@@ -76,33 +75,29 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Comprehensive Rust](https://google.github.io/comprehensive-rust/es/)
 * [Rust para C#/.NET Developers](https://dotnet-book.rustlang-es.org/)
 
-## Ruby
+### Ruby
 
 * [Aprende a programar con Ruby](http://rubysur.org/aprende.a.programar/)
 
-## Golang
+### Golang
 
 * [El pequeño libro de Go](https://raulexposito.com/estaticos/pdf/go.pdf)
 * [Go en español](https://nachopacheco.gitbooks.io/go-es/content/doc/)
 
-## Haskell
+### Haskell
 
 * [Piensa en Haskell](https://www.cs.us.es/~jalonso/publicaciones/Piensa_en_Haskell.pdf)
 * [¡Aprende Haskell por el bien de todos!](http://aprendehaskell.es/main.html)
 
-# Frameworks y bibliotecas
+## Frameworks y bibliotecas
 
-## React
+### React
 
 * [React: De aprendiz a maestro](https://raulexposito.com/estaticos/pdf/survivejs-react-es.pdf)
 
-## Qwik
+## Desarrollo web / varios
 
-* [Qwik: Desde cero a producción](https://anartz-mugika.com/qwik-book/es/)
-
-# Desarrollo web / varios
-
-* [¿Cómo empezar en desarrollo web?](https://manz.dev/como-empezar/)
+* [Bootcamp de Manz](https://bootcamp.manz.dev/)
 * [Roadmap desarrollo web](https://lenguajejs.com/roadmap/)
 * [Roadmap Frontend](https://www.instagram.com/p/Cd3VLisIqAk/?img_index=1)
 * [Lenguaje HTML5](https://lenguajehtml.com/html/)
@@ -125,12 +120,12 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Certidevs](https://certidevs.com/)
 * [Programar Ya](https://www.programarya.com/)
 
-# Juegos de aprendizaje
+## Juegos de aprendizaje
 
 * [Blocky](https://blockly.games/)
 * [Zanahorias](https://www.google.com/logos/2017/logo17/logo17.html?hl=es)
 
-# Recursos complementarios
+## Recursos complementarios
 
 * [97 cosas que todo programador debería saber](https://97cosas.com/programador/)
 * [Patrones de diseño](https://refactoring.guru/es/design-patterns)
@@ -142,7 +137,6 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Programación 101](https://es.khanacademy.org/computing/ap-computer-science-principles/programming-101)
 * [Algoritmos 101](https://es.khanacademy.org/computing/ap-computer-science-principles/algorithms-101)
 * [Algoritmos](https://es.khanacademy.org/computing/computer-science/algorithms)
-* [Hola Algoritmos](https://the-algorithms.com/es)
 * [Teoría de la información](https://es.khanacademy.org/computing/computer-science/informationtheory)
 * [Los apuntes de Majo](https://losapuntesdemajo.vercel.app/)
 * [Apuntes Marea verde - Tecnología: Programación y robótica](https://www.apuntesmareaverde.org.es/)
@@ -158,7 +152,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [Tutorial Markdown](https://www.markdowntutorial.com/es/)
 * [MatesGG](https://intef.es/recursos-educativos/matesgg/)
 
-# Recursos propios
+## Recursos propios
 
 * [Aprende Informática en línea](/blog/recursos-aprendizaje-tic)
 * [Recursos becas TIC](/blog/recursos-becas-tic)

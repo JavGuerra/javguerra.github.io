@@ -14,7 +14,7 @@ tags:
     - Extremadura
 ---
 
-El pasado sábado 23 de abril de 2002 estuve en el <i class="fa fa-image"></i> [stand](https://javguerra.badared.com/galeria/photos/2022-04-23%20G-SEIS-MHC/01%20El%20stand.jpg) que Carlos Izquierdo, del [Museo de Historia de la Computación](https://museohc.com/) ha montado en la feria [G-SEIS Sports & Gaming](https://www.feriabadajoz.es/presentada-g-seis-sports-gaming-en-rueda-de-prensa/) en IFEBA.
+El sábado 23 de abril de 2002 estuve en el <i class="fa fa-image"></i> [stand](https://javguerra.badared.com/galeria/photos/2022-04-23%20G-SEIS-MHC/01%20El%20stand.jpg) que Carlos Izquierdo, del [Museo de Historia de la Computación](https://museohc.com/) ha montado en la feria «G-SEIS Sports & Gaming», en IFEBA.
 
 Siempre es un gusto volver a encontrarnos. Carlos tenía su museo en Cáceres hasta antes de la pandemia, y ahora está preparándolo para abrir sus puertas de nuevo, pero en Majadas de Tiétar.
 
@@ -24,7 +24,7 @@ No han faltado tampoco las consolas de videojuegos clásicos, desde La <i class=
 
 En la sección de retroinformática destaca, principalmente «<i class="fa fa-image"></i> [La Trinidad](https://javguerra.badared.com/galeria/photos/2022-04-23%20G-SEIS-MHC/05%20La%20trinidad.jpg)», el TSR 80, el Apple ][ y el Commodore PET.
 
-![MHC](https://museohc.com/imagenes/logomuseo.jpg)
+![MHC](https://museohc.com/retroweb/imagenes/logomuseo.jpg)
 
 Extremadura estaba representada por dos modelos de <i class="fa fa-image"></i> [ordenadores Dragón](https://javguerra.badared.com/galeria/photos/2022-04-23%20G-SEIS-MHC/06%20Dragon%20made%20in%20Extremadura.jpg) fabricados en nuestra tierra, más concretamente en Casar de Cáceres, en los 80. [Ver más info](https://elpais.com/tecnologia/2019/12/02/actualidad/1575302981_189309.html).
 

@@ -78,7 +78,7 @@ Haz click en los enlaces para más información:
 - [Patrick Melrouse](https://www.filmaffinity.com/es/film254511.html) - ¿?
 - [Then Newsreader](https://www.filmaffinity.com/es/film670356.html) - Netflix
 
-# Siglo XX
+## Siglo XX
 
 - [El ala oeste de la casa blanca](https://www.filmaffinity.com/es/film757900.html) - Prime Video
 - [The Wire](https://www.filmaffinity.com/es/film399474.html) - HBO Max   
@@ -89,8 +89,8 @@ Haz click en los enlaces para más información:
 
 Espero que las disfrutes ;)
 
-# Buscar series / obtener info
+## Buscar series / obtener info
 
 - [FilmAffinity](https://www.filmaffinity.com/es)
 - [Just Watch](https://www.justwatch.com/es)
-- [A good movie to watch](https://agoodmovietowatch.com/shows/) (_inglés_)
+- [A good movie to watch](https://agoodmovietowatch.com/all-shows/) (_inglés_)
