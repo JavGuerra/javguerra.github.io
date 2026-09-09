@@ -12,6 +12,7 @@ tags:
     - servidor
     - BBDD
     - software libre
+    - oracle
 ---
 
 [DBeaver](https://dbeaver.io/) es una herramienta de gestión de bases de datos multiplataforma y de código abierto que permite conectarse y trabajar con distintos sistemas como Oracle, MySQL, PostgreSQL o SQL Server desde una única interfaz. Ofrece funcionalidades como ejecución de consultas SQL, exploración de estructuras, edición de datos y administración de conexiones, destacando por su flexibilidad y compatibilidad con múltiples drivers. En esta te explico cómo instalar los drivers originales de Oracle en DBeaver.
