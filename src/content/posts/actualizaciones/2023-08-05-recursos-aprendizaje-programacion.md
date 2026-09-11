@@ -105,7 +105,7 @@ Este post es un compendio de recursos formativos gratuitos, en español y en lí
 * [PostCSS](https://lenguajecss.com/postcss/)
 * [Desarrollo web para principiantes](https://learn.microsoft.com/es-es/training/paths/web-development-101/)
 * [Curso gratis de programación básica](https://platzi.com/cursos/programacion-basica/)
-* [Profundización en el desarrollo web moderno](https://fullstackopen.com/es/)
+* [Inmersión Profunda en el Desarrollo Web Moderno](https://fullstackopen.com/es/)
 * [NPM (Node Package Manager)](https://lenguajejs.com/npm/)
 * [WebComponents](https://lenguajejs.com/webcomponents/)
 * [Framework Vue.js](https://lenguajejs.com/vuejs/)

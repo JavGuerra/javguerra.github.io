@@ -127,3 +127,4 @@ Cursos online vinculados a unidades de competencia del Catálogo Nacional de Cua
 * [DigComp](https://epale.ec.europa.eu/es/content/marco-europeo-de-competencias-digitales-digcomp) - Marco europeo de competencias digitales.
 * [Generación D](https://generaciond.gob.es/iniciativas) - El Pacto por la Generación D es una iniciativa del Gobierno de España.
 * [Ciberseguridad](https://www.incibe.es/incibe/formacion/catalogos-formacion-ciberseguridad) - Listado de recursos formativos recopilado por el INCIBE.
+* [Elementos de IA](https://course.elementsofai.com/es/) - Curso de Introducción a la Inteligencia Artificial por la universidad de Helsinki.
