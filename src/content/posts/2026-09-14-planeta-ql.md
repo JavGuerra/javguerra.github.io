@@ -17,7 +17,7 @@ En el mundo de la informática retro, la información sobre un sistema tan de ni
 
 ## ¿Qué es Pluto?
 
-[Pluto](https://github.com/feedreader) es un motor de feed estático y agregador de noticias en línea de código abierto que recopila artículos desde múltiples fuentes [RSS](https://es.wikipedia.org/wiki/RSS) o [Atom](https://es.wikipedia.org/wiki/Atom_(formato_de_redifusi%C3%B3n)) para combinarlos en una única página web personalizada. Utiliza Ruby porque se beneficia de la flexibilidad de su sintaxis y del maduro ecosistema de procesamiento de textos y plantillas ERB (Embedded Ruby) característico de este lenguaje, lo que permite transformar datos estructurados en sitios web de forma limpia e intuitiva. En el entorno de Ruby, las gemas (gems) son paquetes de software o librerías independientes reusables (similares a los paquetes de npm en JavaScript o pip en Python) que permiten añadir funcionalidades específicas a una aplicación —como en el caso de la propia gema pluto, que encapsula todas las herramientas necesarias para descargar, parsear y compilar tus feeds automáticamente.
+[Pluto](https://github.com/feedreader/pluto) es un motor de feed estático y agregador de noticias en línea de código abierto que recopila artículos desde múltiples fuentes [RSS](https://es.wikipedia.org/wiki/RSS) o [Atom](https://es.wikipedia.org/wiki/Atom_(formato_de_redifusi%C3%B3n)) para combinarlos en una única página web personalizada. Utiliza Ruby porque se beneficia de la flexibilidad de su sintaxis y del maduro ecosistema de procesamiento de textos y plantillas ERB (Embedded Ruby) característico de este lenguaje, lo que permite transformar datos estructurados en sitios web de forma limpia e intuitiva. En el entorno de Ruby, las gemas (gems) son paquetes de software o librerías independientes reusables (similares a los paquetes de npm en JavaScript o pip en Python) que permiten añadir funcionalidades específicas a una aplicación —como en el caso de la propia gema pluto, que encapsula todas las herramientas necesarias para descargar, parsear y compilar tus feeds automáticamente.
 
 ## ¿Cómo funciona el agregador?
 
@@ -37,9 +37,7 @@ El sitio opera como un generador de sitios estáticos ([SSG](https://es.wikipedi
 
 5. Despliegue automatizado (GitHub Actions): Un workflow programado ejecuta el proceso de generación periódicamente y publica el resultado directo en GitHub Pages.
 
-Puedes acceder al [<button>Sinclair QL Planet</button>](https://javguerra.github.io/Sinclair-QL-planet/)
-
-O también a su [reposirorio en GitHub](https://github.com/JavGuerra/Sinclair-QL-planet/).
+Puedes acceder a [<button>Sinclair QL Planet</button>](https://javguerra.github.io/Sinclair-QL-planet/) y a su [reposirorio en GitHub](https://github.com/JavGuerra/Sinclair-QL-planet/).
 
 ## Pasos para ponerlo en funcionamiento
 
@@ -78,7 +76,7 @@ El resultado es un agregador ultrarrápido, ligero, de bajo mantenimiento y con 
 
 - [Sinclair QL Planet](https://javguerra.github.io/Sinclair-QL-planet/)  
 - [reposirorio en GitHub](https://github.com/JavGuerra/Sinclair-QL-planet/)  
-- [Pluto](https://github.com/feedreader)  
+- [Pluto](https://github.com/feedreader/pluto)  
 - [Plantilla base empleada](https://github.com/feedreader/pluto.starter)
 - [Static Site Generator (SSG)](https://es.wikipedia.org/wiki/Generador_de_sitios_est%C3%A1ticos)
 - [RSS](https://es.wikipedia.org/wiki/RSS) y [Atom](https://es.wikipedia.org/wiki/Atom_(formato_de_redifusi%C3%B3n))  
