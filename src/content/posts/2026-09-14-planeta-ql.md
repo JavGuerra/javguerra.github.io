@@ -37,9 +37,9 @@ El sitio opera como un generador de sitios estáticos ([SSG](https://es.wikipedi
 
 5. Despliegue automatizado (GitHub Actions): Un workflow programado ejecuta el proceso de generación periódicamente y publica el resultado directo en GitHub Pages.
 
-Puedes acceder al: [<button>Sinclair QL Planet</button>](https://javguerra.github.io/Sinclair-QL-planet/)
+Puedes acceder al [<button>Sinclair QL Planet</button>](https://javguerra.github.io/Sinclair-QL-planet/)
 
-O también a su: [reposirorio en GitHub](https://github.com/JavGuerra/Sinclair-QL-planet/).
+O también a su [reposirorio en GitHub](https://github.com/JavGuerra/Sinclair-QL-planet/).
 
 ## Pasos para ponerlo en funcionamiento
 
@@ -51,24 +51,24 @@ El primer paso fue crear el archivo de configuración donde se listan las fuente
 
 Para lograr la estética CRT deseada y solucionar limitaciones de algunos feeds, adaptamos la plantilla ERB:
 
-    - Sencillez en los metadatos: Dado que muchos feeds no estandarizan el autor de cada entrada, simplificamos los metadatos para mostrar la hora de publicación y el tiempo transcurrido (14:30 GMT (hace 2 horas)).
+- Sencillez en los metadatos: Dado que muchos feeds no estandarizan el autor de cada entrada, simplificamos los metadatos para mostrar la hora de publicación y el tiempo transcurrido (14:30 GMT (hace 2 horas)).
 
-    - Filtro anti-respuestas para foros: Como los feeds de phpBB suelen devolver todas las respuestas cuando el servidor tiene deshabilitado el modo de solo temas, añadimos una condición Ruby para saltar cualquier publicación cuyo título contenga `Re:`.
+- Filtro anti-respuestas para foros: Como los feeds de phpBB suelen devolver todas las respuestas cuando el servidor tiene deshabilitado el modo de solo temas, añadimos una condición Ruby para saltar cualquier publicación cuyo título contenga `Re:`.
 
-    ```erb
-      <% next if item.title.downcase.include?('re:') %>
-    ```
+```erb
+  <% next if item.title.downcase.include?('re:') %>
+```
 
-    - Límite de artículos: Ajustamos el bucle a .limit(100) al consultar la base de datos y un contador para mostrar un máximo de 50 artículos principales limpios en portada.
+- Límite de artículos: Ajustamos el bucle a .limit(100) al consultar la base de datos y un contador para mostrar un máximo de 50 artículos principales limpios en portada.
 
 ### 3. Automatización continua con GitHub Actions
 
 Para evitar tener que compilar el sitio a mano en local cada vez que hay noticias, creo un flujo de trabajo en .github/workflows/static.yml que:
 
-    1. Se ejecuta periódicamente (por ejemplo, cada pocas horas mediante un cron de GitHub).
-    2. Instala Ruby y la gema pluto.
-    3. Ejecuta el comando de compilación: `pluto build planet.ini -t planet-starter`
-    4. Sube el directorio generado a la rama de GitHub Pages.
+1. Se ejecuta periódicamente (por ejemplo, cada pocas horas mediante un cron de GitHub).
+2. Instala Ruby y la gema pluto.
+3. Ejecuta el comando de compilación: `pluto build planet.ini -t planet-starter`.
+4. Sube el directorio generado a la rama de GitHub Pages.
 
 ## Resultado final
 
