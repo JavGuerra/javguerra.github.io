@@ -12,10 +12,12 @@ interface Props {
     subTitle?: string;
     // Permite el tipo nativo de la colección o un objeto con rutas de texto
     coverImage?: CollectionEntry<'posts'>['data']['coverImage'] | Record<string, string>;
+    rssUrl?: string;
+    rssTitle?: string;
 }
 
 const disqusShortname = 'codice-1';
-const { pageTitle, subTitle, coverImage } = Astro.props;
+const { pageTitle, subTitle, coverImage, rssUrl, rssTitle } = Astro.props;
 const showTitle = pageTitle != 'Error 404';
 const shouldIgnore = pageTitle.startsWith('«') || pageTitle === 'Blog';
 const description = subTitle ? subTitle : siteConfig.description;
@@ -30,7 +32,13 @@ if (coverImage?.image) {
 
 <html lang="es">
 
-  <BaseHead pageTitle={pageTitle} description={description} img={routeImage} />
+  <BaseHead 
+    pageTitle={pageTitle} 
+    description={description} 
+    img={routeImage} 
+    rssUrl={rssUrl}
+    rssTitle={rssTitle}
+  />
 
   <body data-pagefind-ignore={shouldIgnore ? '' : null}>
 
@@ -47,11 +55,10 @@ if (coverImage?.image) {
 
     <Footer />
 
-    <script
+    <script is:inline
       id="dsq-count-scr"
       src={'//' + disqusShortname + '.disqus.com/count.js'}
       async
-      is:inline
     ></script>
 
   </body>

@@ -3,14 +3,20 @@ interface Props {
     pageTitle: string;
     description: string;
     img: string;
+    rssUrl?: string;
+    rssTitle?: string;
 }
 
 import { ClientRouter } from "astro:transitions";
 
-const { pageTitle, description, img } = Astro.props;
+const { pageTitle, description, img, rssUrl, rssTitle } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const imageURL = new URL(img, Astro.site);
+
+// Si se pasa una rssUrl la usamos, de lo contrario usamos el feed general /rss.xml
+const feedLink = rssUrl ? new URL(rssUrl, Astro.site) : new URL('/rss.xml', Astro.site);
+const feedTitle = rssTitle || `${pageTitle} - RSS`;
 ---
 
 <head>
@@ -20,9 +26,16 @@ const imageURL = new URL(img, Astro.site);
     <meta name="author" content="Javier Guerra" />
     <meta name="copyright" content="CC BY-SA 4.0" />
 
+    <link rel="alternate" 
+        type="application/rss+xml" 
+        title={feedTitle} 
+        href={feedLink} 
+    />
+
     <link rel="canonical" href={canonicalURL} />
 
     <title>{pageTitle}</title>
+
     <meta name="title" content={pageTitle} />
     <meta name="description" content={description} />
 
@@ -40,16 +53,24 @@ const imageURL = new URL(img, Astro.site);
     <meta name="twitter:image" content={imageURL} />
     <meta name="twitter:site" content="@javgr" />
     
-    <link rel="preload" href="/assets/fonts/Blogger_Sans-Medium.otf"
-    as="font" type="font/otf" crossorigin />
+    <link rel="preload"
+        href="/assets/fonts/Blogger_Sans-Medium.otf"
+        as="font"
+        type="font/otf"
+        crossorigin
+    />
     
     <link rel="sitemap" href="/sitemap-index.xml" />
+
     <link rel="manifest" href="/manifest.json" />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     
    <ClientRouter />
+
     <meta name="view-transition" content="same-origin" />
 
-    <script is:inline data-goatcounter="https://codice-javguerra.goatcounter.com/count"
+    <script is:inline
+        data-goatcounter="https://codice-javguerra.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </head>

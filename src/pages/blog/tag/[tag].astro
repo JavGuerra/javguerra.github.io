@@ -39,10 +39,16 @@ const { tag } = Astro.params;
 const { posts, tags } = Astro.props;
 ---
 
-<BaseLayout pageTitle={`«${tag}»`} subTitle="Etiquetas del blog">
-  
+<BaseLayout 
+    pageTitle={`«${tag}»`} 
+    subTitle="Etiquetas del blog"
+    rssUrl={`/blog/tag/${tag}.xml`}
+    rssTitle={`Entradas sobre «${tag}» - RSS`}
+>    
+    
     <h2>{`${posts.length} entrada${posts.length > 1 ? "s" : ""}`}</h2>
-    <ul class="mt-8 mb-12 list-disc">
+
+    <ul class="mt-8 mb-8 list-disc">
         {posts.map(post => (
             <BlogPostLink
                 title={post.data.title}
@@ -50,6 +56,23 @@ const { posts, tags } = Astro.props;
             />
         ))}
     </ul>
+
+    <!-- Enlace visual al feed RSS de esta etiqueta -->
+        <a 
+            href={`/blog/tag/${tag}.xml`} 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mb-4 inline-flex items-center gap-2 text-sm font-medium text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors w-max"
+            title={`Suscribirse al feed RSS de «${tag}»`}
+        >
+            <img 
+                src="/rss.svg" 
+                alt="" 
+                class="w-5 h-5 shrink-0" 
+                aria-hidden="true"
+            />
+            <span>Feed RSS de la etiqueta «{tag}»</span>
+        </a>
 
     <div class="mb-12">
         <AllTags
