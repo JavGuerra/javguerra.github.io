@@ -5,23 +5,20 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-
     "check:types": "astro check",
     "check:links": "lychee --root-dir ./dist --offline \"dist/**/*.html\"",
     "check:links:full": "lychee --root-dir ./dist --insecure --accept 200..=299,403,429 --max-concurrency 4 --user-agent \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\" --exclude '(youtube\\.com|linkedin\\.com|twitter\\.com|x\\.com|filmaffinity\\.com|javguerra\\.github\\.io/404)' \"dist/**/*.html\"",
-    
     "build": "astro build",
     "build:check": "npm run check:types && npm run build && npm run check:links",
     "build:check:full": "npm run check:types && npm run build && npm run check:links:full",
     "preview": "astro preview",
-
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.2.10",
+    "astro": "^7.3.2",
     "astro-pagefind": "^1.8.6"
   },
   "devDependencies": {

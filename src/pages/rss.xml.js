@@ -25,6 +25,7 @@ export async function GET(context) {
         link: `${context.site}blog/${getPostSlug(post)}`,
         title: post.data.title,
         description: post.data.description,
+        content: post.rendered?.html || post.body || '',
         author: post.data.author || siteConfig.autor,
         pubDate: post.data.pubDate,
         ...(imageUrl && {
